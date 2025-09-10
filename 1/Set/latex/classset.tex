@@ -1,0 +1,542 @@
+\doxysection{set Class Reference}
+\hypertarget{classset}{}\label{classset}\index{set@{set}}
+
+
+Класс для представления множества.  
+
+
+
+
+{\ttfamily \#include $<$set.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classset_a9a9e7ac66eda015ed84f790dda70c0a4}{set}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор для set по умолчанию. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classset_a8a1d4b83219d7ae210b1f09c63216d86}{set}} (const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em Конструктор для set от std\+::string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classset_a17ff9e7f360e039f176ebb2dd40d2a6c}{set}} (const char \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Конструктор для set от C-\/style строки. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classset_ab9333b5140a1926282c30d78ec43e1a4}{set}} (const \mbox{\hyperlink{classset}{set}} \&)
+\begin{DoxyCompactList}\small\item\em Конструктор копирования для set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classset}{set}} \& \mbox{\hyperlink{classset_ab182035e5d84ca7dcd108a25caa294c0}{operator=}} (const \mbox{\hyperlink{classset}{set}} \&)
+\begin{DoxyCompactList}\small\item\em Оператор присваивания для set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classset_a28a81c594948abf1126063ea9c1eed80}{set}} (\mbox{\hyperlink{classset}{set}} \&\&) noexcept
+\begin{DoxyCompactList}\small\item\em Конструктор перемещения для set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classset}{set}} \& \mbox{\hyperlink{classset_ae480ea17ddae878d95e7a77c4f1f463e}{operator=}} (\mbox{\hyperlink{classset}{set}} \&\&) noexcept
+\begin{DoxyCompactList}\small\item\em Оператор перемещающего присваивания для set. \end{DoxyCompactList}\item 
+\Hypertarget{classset_ab68f093e56e520f5db34cc4167e224de}\label{classset_ab68f093e56e520f5db34cc4167e224de} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}set} ()
+\begin{DoxyCompactList}\small\item\em Деструктор для set. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classset_ac6bb7853a467ccda85b29daecc0f7daa}{operator==}} (const \mbox{\hyperlink{classset}{set}} \&) const noexcept
+\begin{DoxyCompactList}\small\item\em Оператор сравнения (равенство) двух множеств. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classset_a2a585d93f4e4b3f5f0a703d165f9c16b}{operator!=}} (const \mbox{\hyperlink{classset}{set}} \&) const noexcept
+\begin{DoxyCompactList}\small\item\em Оператор сравнения (неравенство) двух множеств. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classset_a02dbbd2691ebc2d0aaffb3bcb7ed34d4}{operator\mbox{[}$\,$\mbox{]}}} (const std\+::variant$<$ char \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{classset}{set}} $>$ \&) const noexcept
+\begin{DoxyCompactList}\small\item\em Оператор проверки принадлежности элемента множеству. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classset_a1eddf08d36f518d4d238f7a21e87418e}{operator\mbox{[}$\,$\mbox{]}}} (const char \texorpdfstring{$\ast$}{*}) const noexcept
+\begin{DoxyCompactList}\small\item\em Оператор проверки принадлежности строки множеству. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classset_a3687fb06d43f052a4ad22dc665c2077e}{cardinality}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Получение мощности множества. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classset_aa4a9353a5d47bf44016b5b2aee4221a6}{empty}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Проверка пустоты множества. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classset_a0a71d9d5c21e025fff3f4f9aa8521a2e}{insert}} (const std\+::variant$<$ char \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{classset}{set}} $>$ \&)
+\begin{DoxyCompactList}\small\item\em Добавление элемента в множество. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classset_a614997d5933aadb557eca557e79dcffd}{insert}} (const char \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Добавление строки в множество. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classset_aadc6614fd89506946a1e998a68177952}{remove}} (const std\+::variant$<$ char \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{classset}{set}} $>$ \&)
+\begin{DoxyCompactList}\small\item\em Удаление элемента из множества. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classset_a5e27222a9eaae6d6d08fe699ae83d385}{remove}} (const char \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Удаление строки из множества. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classset}{set}} \& \mbox{\hyperlink{classset_a776a1833778381d113fdc04290d01327}{operator+=}} (const \mbox{\hyperlink{classset}{set}} \&)
+\begin{DoxyCompactList}\small\item\em Оператор объединения множеств с присваиванием. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classset}{set}} \mbox{\hyperlink{classset_af09aaa02522fda9ee6647b373b8b2958}{operator+}} (const \mbox{\hyperlink{classset}{set}} \&) const
+\begin{DoxyCompactList}\small\item\em Оператор объединения множеств. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classset}{set}} \& \mbox{\hyperlink{classset_a5b06f5478c18aba892c9020a68506ea8}{operator\texorpdfstring{$\ast$}{*}=}} (const \mbox{\hyperlink{classset}{set}} \&)
+\begin{DoxyCompactList}\small\item\em Оператор пересечения множеств с присваиванием. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classset}{set}} \mbox{\hyperlink{classset_abe76030a149c8aabb215c3c6af4a56d6}{operator\texorpdfstring{$\ast$}{*}}} (const \mbox{\hyperlink{classset}{set}} \&) const
+\begin{DoxyCompactList}\small\item\em Оператор пересечения множеств. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classset}{set}} \& \mbox{\hyperlink{classset_ac062e9fb5e3b2a17979f2890b722b534}{operator-\/=}} (const \mbox{\hyperlink{classset}{set}} \&)
+\begin{DoxyCompactList}\small\item\em Оператор разности множеств с присваиванием. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classset}{set}} \mbox{\hyperlink{classset_a6a0a52b7fe0d135c3b454d834d87842b}{operator-\/}} (const \mbox{\hyperlink{classset}{set}} \&) const
+\begin{DoxyCompactList}\small\item\em Оператор разности множеств. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classset}{set}} \mbox{\hyperlink{classset_ac279027700b54897601749acff660439}{powerset}} () const
+\begin{DoxyCompactList}\small\item\em Построение булеана (множества всех подмножеств). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classset_a47f09d9e344c3fcd78e3c61d597a5634}{swap}} (\mbox{\hyperlink{classset}{set}} \&a, \mbox{\hyperlink{classset}{set}} \&b)
+\begin{DoxyCompactList}\small\item\em Обмен значениями двух множеств. \end{DoxyCompactList}\item 
+std\+::istream \& \mbox{\hyperlink{classset_a505ff3c92a812c2ad60dd32bfd56b0c7}{operator$>$$>$}} (std\+::istream \&is, \mbox{\hyperlink{classset}{set}} \&s)
+\begin{DoxyCompactList}\small\item\em Оператор ввода для множества. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{classset_a1093b35f964ea5d0496452003af765c8}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classset}{set}} \&s)
+\begin{DoxyCompactList}\small\item\em Оператор вывода для множества. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для представления множества. 
+
+В объекте класса set могут храниться строковые элементы (строковые элементы могут содержать любые символы, за исключением спец. символов и кавычек) и другие множества. Вложенность множеств не ограничена. 
+
+\label{doc-constructors}
+\Hypertarget{classset_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classset_a9a9e7ac66eda015ed84f790dda70c0a4}\index{set@{set}!set@{set}}
+\index{set@{set}!set@{set}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \label{classset_a9a9e7ac66eda015ed84f790dda70c0a4} 
+set\+::set (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор для set по умолчанию. 
+
+Создаёт пустое множество. \Hypertarget{classset_a8a1d4b83219d7ae210b1f09c63216d86}\index{set@{set}!set@{set}}
+\index{set@{set}!set@{set}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \label{classset_a8a1d4b83219d7ae210b1f09c63216d86} 
+set\+::set (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{set\+\_\+str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Конструктор для set от std\+::string. 
+
+Конвертирует строку std\+::string в множество. 
+\begin{DoxyParams}{Parameters}
+{\em set\+\_\+str} & должен являться валидным множеством, т. е. любое множество (внешнее, вложенное) должно быть заключено в фигурные скобки, элементы друг от друга должны отделяться запятыми. Атомарные строковые элементы могут содержать любые символы, кроме пробельных, фигурных скобок, спец. символов и др. Для поддержки фигурных скобок, пробелов, запятых в атомарном элементе, в записи множества этот элемент должен быть взят в кавычки. Лишние пробелы в записи множества не являются помехой для работы функции. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & в случае, если переданная в функцию строка не является валидным множеством. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classset_a17ff9e7f360e039f176ebb2dd40d2a6c}\index{set@{set}!set@{set}}
+\index{set@{set}!set@{set}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \label{classset_a17ff9e7f360e039f176ebb2dd40d2a6c} 
+set\+::set (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{set\+\_\+str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Конструктор для set от C-\/style строки. 
+
+Конструктор полностью аналогичен конструктору от std\+::string. \begin{DoxySeeAlso}{See also}
+документацию для \doxylink{classset}{set(const std\+::string)}. 
+\end{DoxySeeAlso}
+\Hypertarget{classset_ab9333b5140a1926282c30d78ec43e1a4}\index{set@{set}!set@{set}}
+\index{set@{set}!set@{set}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \label{classset_ab9333b5140a1926282c30d78ec43e1a4} 
+set\+::set (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classset}{set}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор копирования для set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Копируемое множество. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classset_a28a81c594948abf1126063ea9c1eed80}\index{set@{set}!set@{set}}
+\index{set@{set}!set@{set}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \label{classset_a28a81c594948abf1126063ea9c1eed80} 
+set\+::set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classset}{set}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Конструктор перемещения для set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Адрес в памяти, откуда нужно переместить множество. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classset_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classset_a3687fb06d43f052a4ad22dc665c2077e}\index{set@{set}!cardinality@{cardinality}}
+\index{cardinality@{cardinality}!set@{set}}
+\doxysubsubsection{\texorpdfstring{cardinality()}{cardinality()}}
+{\footnotesize\ttfamily \label{classset_a3687fb06d43f052a4ad22dc665c2077e} 
+size\+\_\+t set\+::cardinality (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Получение мощности множества. 
+
+\begin{DoxyReturn}{Returns}
+Количество элементов в множестве 
+\end{DoxyReturn}
+\Hypertarget{classset_aa4a9353a5d47bf44016b5b2aee4221a6}\index{set@{set}!empty@{empty}}
+\index{empty@{empty}!set@{set}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily \label{classset_aa4a9353a5d47bf44016b5b2aee4221a6} 
+bool set\+::empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Проверка пустоты множества. 
+
+\begin{DoxyReturn}{Returns}
+true если множество пустое, false в противном случае 
+\end{DoxyReturn}
+\Hypertarget{classset_a614997d5933aadb557eca557e79dcffd}\index{set@{set}!insert@{insert}}
+\index{insert@{insert}!set@{set}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classset_a614997d5933aadb557eca557e79dcffd} 
+void set\+::insert (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{atom}{}\end{DoxyParamCaption})}
+
+
+
+Добавление строки в множество. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em atom} & Строка для добавления\\
+\hline
+\end{DoxyParams}
+Если строка уже присутствует в множестве, операция не производится \Hypertarget{classset_a0a71d9d5c21e025fff3f4f9aa8521a2e}\index{set@{set}!insert@{insert}}
+\index{insert@{insert}!set@{set}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classset_a0a71d9d5c21e025fff3f4f9aa8521a2e} 
+void set\+::insert (\begin{DoxyParamCaption}\item[{const std\+::variant$<$ char \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{classset}{set}} $>$ \&}]{elem}{}\end{DoxyParamCaption})}
+
+
+
+Добавление элемента в множество. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em elem} & Элемент для добавления (строка или множество)\\
+\hline
+\end{DoxyParams}
+Если элемент уже присутствует в множестве, операция не производится \Hypertarget{classset_a2a585d93f4e4b3f5f0a703d165f9c16b}\index{set@{set}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!set@{set}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \label{classset_a2a585d93f4e4b3f5f0a703d165f9c16b} 
+bool set\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classset}{set}} \&}]{other}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Оператор сравнения (неравенство) двух множеств. 
+
+Противоположен оператору ==. \begin{DoxySeeAlso}{See also}
+документацию к bool \doxylink{classset_ac6bb7853a467ccda85b29daecc0f7daa}{operator==(const set \&) const }noexcept. 
+\end{DoxySeeAlso}
+\Hypertarget{classset_abe76030a149c8aabb215c3c6af4a56d6}\index{set@{set}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!set@{set}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}}
+{\footnotesize\ttfamily \label{classset_abe76030a149c8aabb215c3c6af4a56d6} 
+\mbox{\hyperlink{classset}{set}} set\+::operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classset}{set}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Оператор пересечения множеств. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Множество для пересечения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Новое множество -\/ результат пересечения 
+\end{DoxyReturn}
+\Hypertarget{classset_a5b06f5478c18aba892c9020a68506ea8}\index{set@{set}!operator\texorpdfstring{$\ast$}{*}=@{operator\texorpdfstring{$\ast$}{*}=}}
+\index{operator\texorpdfstring{$\ast$}{*}=@{operator\texorpdfstring{$\ast$}{*}=}!set@{set}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}=()}{operator*=()}}
+{\footnotesize\ttfamily \label{classset_a5b06f5478c18aba892c9020a68506ea8} 
+\mbox{\hyperlink{classset}{set}} \& set\+::operator\texorpdfstring{$\ast$}{*}= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classset}{set}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Оператор пересечения множеств с присваиванием. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Множество для пересечения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ссылку на текущее множество после пересечения 
+\end{DoxyReturn}
+\Hypertarget{classset_af09aaa02522fda9ee6647b373b8b2958}\index{set@{set}!operator+@{operator+}}
+\index{operator+@{operator+}!set@{set}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \label{classset_af09aaa02522fda9ee6647b373b8b2958} 
+\mbox{\hyperlink{classset}{set}} set\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classset}{set}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Оператор объединения множеств. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Множество для объединения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Новое множество -\/ результат объединения 
+\end{DoxyReturn}
+\Hypertarget{classset_a776a1833778381d113fdc04290d01327}\index{set@{set}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!set@{set}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \label{classset_a776a1833778381d113fdc04290d01327} 
+\mbox{\hyperlink{classset}{set}} \& set\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classset}{set}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Оператор объединения множеств с присваиванием. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Множество для объединения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ссылку на текущее множество после объединения 
+\end{DoxyReturn}
+\Hypertarget{classset_a6a0a52b7fe0d135c3b454d834d87842b}\index{set@{set}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!set@{set}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \label{classset_a6a0a52b7fe0d135c3b454d834d87842b} 
+\mbox{\hyperlink{classset}{set}} set\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classset}{set}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Оператор разности множеств. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Множество для вычитания \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Новое множество -\/ результат вычитания 
+\end{DoxyReturn}
+\Hypertarget{classset_ac062e9fb5e3b2a17979f2890b722b534}\index{set@{set}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!set@{set}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily \label{classset_ac062e9fb5e3b2a17979f2890b722b534} 
+\mbox{\hyperlink{classset}{set}} \& set\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classset}{set}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Оператор разности множеств с присваиванием. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Множество для разности \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ссылку на текущее множество после разности 
+\end{DoxyReturn}
+\Hypertarget{classset_ab182035e5d84ca7dcd108a25caa294c0}\index{set@{set}!operator=@{operator=}}
+\index{operator=@{operator=}!set@{set}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classset_ab182035e5d84ca7dcd108a25caa294c0} 
+\mbox{\hyperlink{classset}{set}} \& set\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classset}{set}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Оператор присваивания для set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & присваиваемое множество. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+присвоенное множество. 
+\end{DoxyReturn}
+\Hypertarget{classset_ae480ea17ddae878d95e7a77c4f1f463e}\index{set@{set}!operator=@{operator=}}
+\index{operator=@{operator=}!set@{set}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classset_ae480ea17ddae878d95e7a77c4f1f463e} 
+\mbox{\hyperlink{classset}{set}} \& set\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classset}{set}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Оператор перемещающего присваивания для set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Адрес в памяти, откуда нужно переместить множество. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Адрес в памяти, куда переместилось множество. 
+\end{DoxyReturn}
+\Hypertarget{classset_ac6bb7853a467ccda85b29daecc0f7daa}\index{set@{set}!operator==@{operator==}}
+\index{operator==@{operator==}!set@{set}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{classset_ac6bb7853a467ccda85b29daecc0f7daa} 
+bool set\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classset}{set}} \&}]{other}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Оператор сравнения (равенство) двух множеств. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Правый операнд (левый – this). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Если множества равны. 
+
+false Если множества не равны. 
+\end{DoxyReturn}
+\Hypertarget{classset_a1eddf08d36f518d4d238f7a21e87418e}\index{set@{set}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!set@{set}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classset_a1eddf08d36f518d4d238f7a21e87418e} 
+bool set\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{atom}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Оператор проверки принадлежности строки множеству. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em atom} & Строка для проверки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true если строка содержится в множестве, false в противном случае 
+\end{DoxyReturn}
+\Hypertarget{classset_a02dbbd2691ebc2d0aaffb3bcb7ed34d4}\index{set@{set}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!set@{set}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classset_a02dbbd2691ebc2d0aaffb3bcb7ed34d4} 
+bool set\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const std\+::variant$<$ char \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{classset}{set}} $>$ \&}]{elem}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Оператор проверки принадлежности элемента множеству. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em elem} & Элемент для проверки (строка или множество) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true если элемент содержится в множестве, false в противном случае 
+\end{DoxyReturn}
+\Hypertarget{classset_ac279027700b54897601749acff660439}\index{set@{set}!powerset@{powerset}}
+\index{powerset@{powerset}!set@{set}}
+\doxysubsubsection{\texorpdfstring{powerset()}{powerset()}}
+{\footnotesize\ttfamily \label{classset_ac279027700b54897601749acff660439} 
+\mbox{\hyperlink{classset}{set}} set\+::powerset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Построение булеана (множества всех подмножеств). 
+
+\begin{DoxyReturn}{Returns}
+Новое множество, содержащее все подмножества текущего множества 
+\end{DoxyReturn}
+\Hypertarget{classset_a5e27222a9eaae6d6d08fe699ae83d385}\index{set@{set}!remove@{remove}}
+\index{remove@{remove}!set@{set}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classset_a5e27222a9eaae6d6d08fe699ae83d385} 
+void set\+::remove (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{atom}{}\end{DoxyParamCaption})}
+
+
+
+Удаление строки из множества. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em atom} & Строка для удаления\\
+\hline
+\end{DoxyParams}
+Если строка отсутствует в множестве, операция не производится \Hypertarget{classset_aadc6614fd89506946a1e998a68177952}\index{set@{set}!remove@{remove}}
+\index{remove@{remove}!set@{set}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classset_aadc6614fd89506946a1e998a68177952} 
+void set\+::remove (\begin{DoxyParamCaption}\item[{const std\+::variant$<$ char \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{classset}{set}} $>$ \&}]{elem}{}\end{DoxyParamCaption})}
+
+
+
+Удаление элемента из множества. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em elem} & Элемент для удаления (строка или множество)\\
+\hline
+\end{DoxyParams}
+Если элемент отсутствует в множестве, операция не производится 
+
+\label{doc-related-members}
+\Hypertarget{classset_doc-related-members}
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classset_a1093b35f964ea5d0496452003af765c8}\index{set@{set}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!set@{set}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{classset_a1093b35f964ea5d0496452003af765c8} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{const \mbox{\hyperlink{classset}{set}} \&}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Оператор вывода для множества. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Поток вывода \\
+\hline
+{\em s} & Выводимое множество \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Модифицированный поток вывода 
+\end{DoxyReturn}
+\Hypertarget{classset_a505ff3c92a812c2ad60dd32bfd56b0c7}\index{set@{set}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!set@{set}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily \label{classset_a505ff3c92a812c2ad60dd32bfd56b0c7} 
+std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is}{, }\item[{\mbox{\hyperlink{classset}{set}} \&}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Оператор ввода для множества. 
+
+Получает из потока ввода строку множества и создаёт на её основании множество 
+\begin{DoxyParams}{Parameters}
+{\em is} & Поток ввода \\
+\hline
+{\em s} & Вводимое множество \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Модифицированный поток ввода 
+\end{DoxyReturn}
+\Hypertarget{classset_a47f09d9e344c3fcd78e3c61d597a5634}\index{set@{set}!swap@{swap}}
+\index{swap@{swap}!set@{set}}
+\doxysubsubsection{\texorpdfstring{swap}{swap}}
+{\footnotesize\ttfamily \label{classset_a47f09d9e344c3fcd78e3c61d597a5634} 
+void swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classset}{set}} \&}]{a}{, }\item[{\mbox{\hyperlink{classset}{set}} \&}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Обмен значениями двух множеств. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Первое множество. \\
+\hline
+{\em b} & Второе множество. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{set_8hpp}{set.\+hpp}}\item 
+\mbox{\hyperlink{set_8cpp}{set.\+cpp}}\end{DoxyCompactItemize}

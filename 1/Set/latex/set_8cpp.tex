@@ -1,0 +1,94 @@
+\doxysection{set.\+cpp File Reference}
+\hypertarget{set_8cpp}{}\label{set_8cpp}\index{set.cpp@{set.cpp}}
+{\ttfamily \#include "{}set.\+hpp"{}}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{set_8cpp_a17bc89d75a9b90780c2477a184ea5d32}{GET\+\_\+\+SUBSTRING}}(name,  start,  end)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{set_8cpp_a47f09d9e344c3fcd78e3c61d597a5634}{swap}} (\mbox{\hyperlink{classset}{set}} \&a, \mbox{\hyperlink{classset}{set}} \&b)
+\item 
+std\+::istream \& \mbox{\hyperlink{set_8cpp_a505ff3c92a812c2ad60dd32bfd56b0c7}{operator$>$$>$}} (std\+::istream \&is, \mbox{\hyperlink{classset}{set}} \&s)
+\item 
+std\+::ostream \& \mbox{\hyperlink{set_8cpp_a1093b35f964ea5d0496452003af765c8}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classset}{set}} \&s)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Файл с реализацией всех методов из \doxylink{set_8hpp}{set.\+hpp} \begin{DoxyAuthor}{Author}
+Вашкевич Максим Викторович, гр. 421702 
+\end{DoxyAuthor}
+
+
+\label{doc-define-members}
+\Hypertarget{set_8cpp_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{set_8cpp_a17bc89d75a9b90780c2477a184ea5d32}\index{set.cpp@{set.cpp}!GET\_SUBSTRING@{GET\_SUBSTRING}}
+\index{GET\_SUBSTRING@{GET\_SUBSTRING}!set.cpp@{set.cpp}}
+\doxysubsubsection{\texorpdfstring{GET\_SUBSTRING}{GET\_SUBSTRING}}
+{\footnotesize\ttfamily \label{set_8cpp_a17bc89d75a9b90780c2477a184ea5d32} 
+\#define GET\+\_\+\+SUBSTRING(\begin{DoxyParamCaption}\item[{}]{name}{, }\item[{}]{start}{, }\item[{}]{end}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{size\_t}\ STR\_LEN\ =\ end\ -\/\ start;\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{char}\ *name\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{char}[STR\_LEN\ +\ 1];\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ std::strncpy(name,\ start,\ STR\_LEN);\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ name[STR\_LEN]\ =\ \textcolor{charliteral}{'\(\backslash\)0'}}
+
+\end{DoxyCode}
+
+
+\label{doc-func-members}
+\Hypertarget{set_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{set_8cpp_a1093b35f964ea5d0496452003af765c8}\index{set.cpp@{set.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!set.cpp@{set.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily \label{set_8cpp_a1093b35f964ea5d0496452003af765c8} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{const \mbox{\hyperlink{classset}{set}} \&}]{s}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Поток вывода \\
+\hline
+{\em s} & Выводимое множество \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Модифицированный поток вывода 
+\end{DoxyReturn}
+\Hypertarget{set_8cpp_a505ff3c92a812c2ad60dd32bfd56b0c7}\index{set.cpp@{set.cpp}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!set.cpp@{set.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily \label{set_8cpp_a505ff3c92a812c2ad60dd32bfd56b0c7} 
+std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is}{, }\item[{\mbox{\hyperlink{classset}{set}} \&}]{s}{}\end{DoxyParamCaption})}
+
+Получает из потока ввода строку множества и создаёт на её основании множество 
+\begin{DoxyParams}{Parameters}
+{\em is} & Поток ввода \\
+\hline
+{\em s} & Вводимое множество \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Модифицированный поток ввода 
+\end{DoxyReturn}
+\Hypertarget{set_8cpp_a47f09d9e344c3fcd78e3c61d597a5634}\index{set.cpp@{set.cpp}!swap@{swap}}
+\index{swap@{swap}!set.cpp@{set.cpp}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily \label{set_8cpp_a47f09d9e344c3fcd78e3c61d597a5634} 
+void swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classset}{set}} \&}]{a}{, }\item[{\mbox{\hyperlink{classset}{set}} \&}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Первое множество. \\
+\hline
+{\em b} & Второе множество. \\
+\hline
+\end{DoxyParams}

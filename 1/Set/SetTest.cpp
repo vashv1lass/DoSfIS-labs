@@ -47,7 +47,7 @@ TEST(BraceElementConstructorTest) {
 	sample.insert("}");
 	sample.insert("{}{{}}{}}}}");
 	sample.insert("{");
-			
+	
 	CHECK(braceSet == sample);
 }
 
@@ -61,7 +61,7 @@ TEST(NestedSetConstructorTest) {
 	innerSample.insert(set("{2}"));
 	innerSample.insert(set("{1}"));
 	sample.insert(innerSample);
-			
+	
 	CHECK(braceSet == sample);
 }
 
@@ -71,7 +71,7 @@ TEST(STDStringConstructorTest) {
 	sample.insert("32");
 	sample.insert("1");
 	sample.insert("4");
-			
+	
 	CHECK(sample == setSTDString);
 }
 
@@ -165,7 +165,7 @@ TEST(RemoveTest) {
 	s.remove("2");
 	
 	bool nothingHappenedInEmptySet = s.empty();
-			
+	
 	CHECK(innerRemoved && stringRemoved && notRemovedNotExisted && isEmpty && nothingHappenedInEmptySet);
 }
 
@@ -278,9 +278,9 @@ TEST(PowersetTest3) {
 }
 
 TEST(PowersetTest4) {
-			CHECK(set("{a, b, c}").powerset() == set("{{}, {a},{b}, {c} , {a, b}, {a, c}, {b, c}, {a, c, b}}"));
+	CHECK(set("{a, b, c}").powerset() == set("{{}, {a},{b}, {c} , {a, b}, {a, c}, {b, c}, {a, c, b}}"));
 }
 
-int main() {
-	return UnitTest::RunAllTests();
-}
+//int main() {
+//	return UnitTest::RunAllTests();
+//}

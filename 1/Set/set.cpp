@@ -1,3 +1,8 @@
+/**
+ * @file set.cpp Файл с реализацией всех методов из set.hpp
+ * @author Вашкевич Максим Викторович, гр. 421702
+ */
+
 #include "set.hpp"
 
 #include <cstring>
@@ -310,13 +315,10 @@ set::set(const set &other) : set() {
 	}
 }
 
-set &set::operator=(const set &other) {
+set& set::operator=(const set& other) {
 	if (this != &other) {
-		this->~set();
-		new (this) set();
-		for (size_t i = 0; i < other.m_size; ++i) {
-			this->insert(other.m_data[i]);
-		}
+		set temp(other);
+		swap(*this, temp);
 	}
 	return *this;
 }
@@ -327,33 +329,36 @@ set::set(set &&other) noexcept : m_data(other.m_data), m_capacity(other.m_capaci
 	other.m_size = 0;
 }
 
-set &set::operator=(set &&other) noexcept {
+set& set::operator=(set&& other) noexcept {
 	if (this != &other) {
-		this->~set();
-		
-		this->m_data = other.m_data;
-		this->m_capacity = other.m_capacity;
-		this->m_size = other.m_size;
-		
-		other.m_data = nullptr;
-		other.m_capacity = 0;
-		other.m_size = 0;
+		set copy(std::move(*this));
+		swap(*this, other);
 	}
-	
 	return *this;
 }
 
 set::~set() {
-	for (size_t i = 0; i < this->m_size; i++) {
-		if (std::holds_alternative<char *>(this->m_data[i])) {
-			delete[] std::get<char *>(this->m_data[i]);
+	if (this->m_data == nullptr) {
+		for (size_t i = 0; i < this->m_size; i++) {
+			if (std::holds_alternative<char *>(this->m_data[i])) {
+				delete[] std::get<char *>(this->m_data[i]);
+			}
 		}
+		delete[] this->m_data;
+		
+		this->m_data = nullptr;
+		this->m_capacity = 0;
+		this->m_size = 0;
+	} else {
+		this->m_capacity = 0;
+		this->m_size = 0;
 	}
-	delete[] this->m_data;
-	
-	this->m_data = nullptr;
-	this->m_capacity = 0;
-	this->m_size = 0;
+}
+
+void swap(set &a, set &b) noexcept {
+	std::swap(a.m_data, b.m_data);
+	std::swap(a.m_capacity, b.m_capacity);
+	std::swap(a.m_size, b.m_size);
 }
 
 bool set::operator==(const set &other) const noexcept {
@@ -384,6 +389,7 @@ std::istream &operator>>(std::istream &is, set &s) {
 	std::string set_str;
 	getline(is, set_str);
 	
+	s.~set();
 	s = set(set_str);
 	
 	return is;
@@ -502,7 +508,7 @@ set &set::operator+=(const set &other) {
 }
 
 set set::operator+(const set &other) const {
-	set copy = *this;
+	set copy(*this);
 	return copy += other;
 }
 
@@ -520,7 +526,7 @@ set &set::operator*=(const set &other) {
 }
 
 set set::operator*(const set &other) const {
-	set copy = *this;
+	set copy(*this);
 	return copy *= other;
 }
 
@@ -535,14 +541,14 @@ set &set::operator-=(const set &other) {
 }
 
 set set::operator-(const set &other) const {
-	set copy = *this;
+	set copy(*this);
 	return copy -= other;
 }
 
 set set::powerset() const {
 	set result;
 	result.insert(set());
-	
+
 	for (size_t i = 0; i < this->m_size; i++) {
 		set temp = result;
 		for (size_t j = 0; j < temp.m_size; j++) {
@@ -551,6 +557,6 @@ set set::powerset() const {
 			result.insert(s);
 		}
 	}
-	
+
 	return result;
 }
