@@ -3,76 +3,76 @@
 #include <stdexcept>
 
 TEST(DefaultConstructorTest) {
-	set defaultSet;
-	CHECK(defaultSet.cardinality() == 0);
+	set default_set;
+	CHECK(default_set.cardinality() == 0);
 }
 
 TEST(EmptySetConstructorTest) {
-	set emptySet("{}");
-	CHECK(emptySet.cardinality() == 0);
+	set empty_set("{}");
+	CHECK(empty_set.cardinality() == 0);
 }
 
 TEST(UnbalancedBracketsConstructorTest1) {
-	CHECK_THROW(set badBrackets("{1, 2, 3}{}"), std::invalid_argument);
+	CHECK_THROW(set bad_brackets("{1, 2, 3}{}"), std::invalid_argument);
 }
 
 TEST(UnbalancedBracketsConstructorTest2) {
-	CHECK_THROW(set badBrackets("{1, 2, 3}}"), std::invalid_argument);
+	CHECK_THROW(set bad_brackets("{1, 2, 3}}"), std::invalid_argument);
 }
 
 TEST(UnbalancedBracketsConstructorTest3) {
-	CHECK_THROW(set badBrackets("{1, {2, {3, {4}, 5}, 6}"), std::invalid_argument);
+	CHECK_THROW(set bad_brackets("{1, {2, {3, {4}, 5}, 6}"), std::invalid_argument);
 }
 
 TEST(EmptySetStringConstructorTest) {
-	CHECK_THROW(set emptyStringSet(""), std::invalid_argument);
+	CHECK_THROW(set empty_string_set(""), std::invalid_argument);
 }
 
 TEST(InvalidSetStringConstructorTest1) {
-	CHECK_THROW(set badSetString("{a, v, , }"), std::invalid_argument);
+	CHECK_THROW(set bad_set_string("{a, v, , }"), std::invalid_argument);
 }
 
 TEST(InvalidSetStringConstructorTest2) {
-	CHECK_THROW(set badSetString("{\"hello\", wdwed weded}"), std::invalid_argument);
+	CHECK_THROW(set bad_set_string("{\"hello\", wdwed weded}"), std::invalid_argument);
 }
 
 TEST(InvalidSetStringConstructorBadQuotesTest) {
-	CHECK_THROW(set badSetString("{\"hello\", \"wdwed weded}"), std::invalid_argument);
+	CHECK_THROW(set bad_set_string("{\"hello\", \"wdwed weded}"), std::invalid_argument);
 }
 
 TEST(BraceElementConstructorTest) {
-	set braceSet("{\"{}{{}}{}}}}\", \"{\", \"}\" }");
+	set brace_set("{\"{}{{}}{}}}}\", \"{\", \"}\" }");
 	
 	set sample;
 	sample.insert("}");
 	sample.insert("{}{{}}{}}}}");
 	sample.insert("{");
 	
-	CHECK(braceSet == sample);
+	CHECK(brace_set == sample);
 }
 
 TEST(NestedSetConstructorTest) {
-	set braceSet("{{{1}, {2}, 3}, 4}");
+	set brace_set("{{{1}, {2}, 3}, 4}");
 	
 	set sample;
 	sample.insert("4");
-	set innerSample;
-	innerSample.insert("3");
-	innerSample.insert(set("{2}"));
-	innerSample.insert(set("{1}"));
-	sample.insert(innerSample);
+	set inner_sample;
+	inner_sample.insert("3");
+	inner_sample.insert(set("{2}"));
+	inner_sample.insert(set("{1}"));
+	sample.insert(inner_sample);
 	
-	CHECK(braceSet == sample);
+	CHECK(brace_set == sample);
 }
 
 TEST(STDStringConstructorTest) {
-	set setSTDString(std::string("      {     1,    32 , 4 }     "));
+	set set_std_string(std::string("      {     1,    32 , 4 }     "));
 	set sample;
 	sample.insert("32");
 	sample.insert("1");
 	sample.insert("4");
 	
-	CHECK(sample == setSTDString);
+	CHECK(sample == set_std_string);
 }
 
 TEST(CopyConstructorTest) {
@@ -103,17 +103,17 @@ TEST(AssignmentAddressTest) {
 
 TEST(MoveConstructorTest) {
 	set s("{1, 2, 3}");
-	set prevS = s;
+	set prev_s = s;
 	set s2(std::move(s));
-	CHECK(s2 == prevS && s.cardinality() == 0);
+	CHECK(s2 == prev_s && s.cardinality() == 0);
 }
 
 TEST(MoveAssignmentTest) {
 	set s("{1, 2, 3}");
 	set s2("{1}");
-	set prevS = s;
+	set prev_s = s;
 	s2 = std::move(s);
-	CHECK(s2 == prevS && s.cardinality() == 0);
+	CHECK(s2 == prev_s && s.cardinality() == 0);
 }
 
 TEST(EqualOperatorTestEqual) {
@@ -145,28 +145,28 @@ TEST(FoundOperatorNotFoundSetTest) {
 TEST(RemoveTest) {
 	set s("{1, 2, {3, 4}, 5, \"ee ee\"}");
 	
-	set sampleNoInner("{1, 2, 5, \"ee ee\"}");
+	set sample_no_inner("{1, 2, 5, \"ee ee\"}");
 	s.remove(set("{3, 4}"));
-	bool innerRemoved = (s == sampleNoInner && s.cardinality() == 4);
+	bool inner_removed = (s == sample_no_inner && s.cardinality() == 4);
 	
-	set sampleNoInnerAndString("{1, 2, 5}");
+	set sample_no_inner_and_string("{1, 2, 5}");
 	s.remove("ee ee");
-	bool stringRemoved = (s == sampleNoInnerAndString && s.cardinality() == 3);
+	bool string_removed = (s == sample_no_inner_and_string && s.cardinality() == 3);
 	
 	s.remove("123");
-	bool notRemovedNotExisted = (s == sampleNoInnerAndString && s.cardinality() == 3);
+	bool not_removed_not_existed = (s == sample_no_inner_and_string && s.cardinality() == 3);
 	
 	s.remove("1");
 	s.remove("2");
 	s.remove("5");
 	
-	bool isEmpty = s.empty();
+	bool is_empty = s.empty();
 	
 	s.remove("2");
 	
-	bool nothingHappenedInEmptySet = s.empty();
+	bool nothing_happened_in_empty_set = s.empty();
 	
-	CHECK(innerRemoved && stringRemoved && notRemovedNotExisted && isEmpty && nothingHappenedInEmptySet);
+	CHECK(inner_removed && string_removed && not_removed_not_existed && is_empty && nothing_happened_in_empty_set);
 }
 
 TEST(IntersectionTest1) {
@@ -280,7 +280,3 @@ TEST(PowersetTest3) {
 TEST(PowersetTest4) {
 	CHECK(set("{a, b, c}").powerset() == set("{{}, {a},{b}, {c} , {a, b}, {a, c}, {b, c}, {a, c, b}}"));
 }
-
-//int main() {
-//	return UnitTest::RunAllTests();
-//}
