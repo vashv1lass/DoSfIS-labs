@@ -1,5 +1,7 @@
 #include "medical_card.h"
 
+#include "utils/date.h"
+
 MedicalCard::MedicalCard(
     const std::string &name,
     const Date &birth_date,

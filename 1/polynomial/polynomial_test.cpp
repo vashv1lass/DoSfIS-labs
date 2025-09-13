@@ -1,4 +1,4 @@
-#include "UnitTest++.h"
+#include <UnitTest++/UnitTest++.h>
 #include "polynomial.hpp"
 #include <vector>
 
@@ -220,5 +220,5 @@ TEST(DivisionTest6) {
 	polynomial p1(3, std::vector<double>({0, 2, 4, 2}).data());
 	polynomial p2(1, std::vector<double>({0, 2}).data());
 	polynomial result = p1 / p2;
-		CHECK(result[0] == 1 && result[1] == 2 && result[2] == 1);
+	CHECK(result[0] == 1 && result[1] == 2 && result[2] == 1);
 }
