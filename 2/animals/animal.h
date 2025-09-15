@@ -13,13 +13,17 @@ public:
 	
 	Animal(Animal &&) noexcept = default;
 	Animal &operator=(Animal &&) noexcept = default;
-	
+
+	virtual ~Animal() = default;
+
 	void SetMedicalCard(const MedicalCard &);
 	void SetTank(const Tank &) noexcept;
 	
 	MedicalCard GetMedicalCard() const noexcept;
 	Tank GetTank() const noexcept;
-private:
+
+	virtual std::string GetSpecies() = 0;
+protected:
 	MedicalCard medical_card_;
 	Tank tank_;
 };
