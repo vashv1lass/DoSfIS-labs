@@ -7,7 +7,7 @@
 
 class PaymentMethod {
 public:
-    explicit PaymentMethod(const Date &operation_date = Date(), double price = -1.);
+    PaymentMethod(const Date &operation_date = Date(), double price = -1.);
 
     virtual ~PaymentMethod() = default;
 
