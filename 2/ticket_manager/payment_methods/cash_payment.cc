@@ -1,24 +1,27 @@
 #include "cash_payment.h"
 
 #include <iostream>
-#include <mutex>
-#include <ostream>
+#include <stdexcept>
 
 CashPayment::CashPayment(
-        const Date &operation_date,
-        double price,
-        double amount_given
-) noexcept : PaymentMethod(operation_date, price), amount_given_(amount_given) {}
-
-void CashPayment::Process() const {
-    if (this->amount_given_ < this->price_) {
-        // throw NotEnoughFundsException
+    const Date &operation_date,
+    double price,
+    double amount_given
+) : PaymentMethod(operation_date, price), amount_given_(amount_given) {
+    if (amount_given < 0.0) {
+        throw std::invalid_argument("Negative value of given amount");
     }
-
-    std::cout << "Cash deposited: " << this->amount_given_ << " BYN.\n" <<
-        "Сдача: " << this->price_ - this->amount_given_ << std::endl;
 }
 
-std::string CashPayment::GetPaymentMethod() const {
+void CashPayment::Process() const {
+    if (amount_given_ < price_) {
+        // throw NotEnoughFundsException("Not enough cash provided");
+    }
+
+    std::cout << "Cash deposited: " << amount_given_ << " BYN.\nChange: "
+              << amount_given_ - price_ << std::endl;
+}
+
+std::string CashPayment::GetPaymentMethod() const noexcept {
     return "Cash payment";
 }

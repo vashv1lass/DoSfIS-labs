@@ -3,13 +3,13 @@
 int IDGenerator::current_id_ = 1;
 
 int IDGenerator::GetCurrentID() {
-    return IDGenerator::current_id_;
-}
-
-void IDGenerator::Reset() {
-    IDGenerator::current_id_ = 1;
+    return current_id_;
 }
 
 int IDGenerator::GenerateID() {
-    return IDGenerator::current_id_++;
+    return current_id_++;
+}
+
+void IDGenerator::Reset() {
+    current_id_ = 1;
 }

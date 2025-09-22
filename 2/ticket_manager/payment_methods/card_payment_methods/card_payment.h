@@ -7,14 +7,11 @@
 
 class CardPayment : public PaymentMethod {
 public:
-    CardPayment(
-        const Date &operation_date, double price, double card_balance
-    );
+    CardPayment(const Date &, double, double);
 
-    ~CardPayment() override = default;
+    std::string GetPaymentMethod() const noexcept override;
 
     void Process() const override;
-    std::string GetPaymentMethod() const override;
 protected:
     double card_balance_;
 };

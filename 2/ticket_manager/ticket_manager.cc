@@ -1,6 +1,9 @@
 #include "ticket_manager.h"
 
+#include <optional>
+#include <memory>
 #include <iostream>
+#include <exception>
 
 std::optional<Ticket> TicketManager::Purchase(
     std::unique_ptr<Tariff> tariff,
@@ -10,14 +13,14 @@ std::optional<Ticket> TicketManager::Purchase(
     
     try {
         std::cout << "Purchasing a ticket.\n"
-                     "Tariff: " << ticket.GetTariff()->GetTariffType() <<
-                     " Price: " << ticket.GetTariff()->GetPrice() << " BYN\n";
+                  << "Tariff: " << ticket.GetTariff()->GetTariffType()
+                  << " Price: " << ticket.GetTariff()->GetPrice() << " BYN\n";
         
         payment_method->SetPrice(ticket.GetTariff()->GetPrice());
         payment_method->Process();
 
-        std::cout << "Ticket " << ticket.GetID() << " was successfully "
-                     "purchased!\n";
+        std::cout << "Ticket " << ticket.GetID()
+                  << " was successfully purchased!\n";
 
         return ticket;
     } catch (const std::exception &e) {

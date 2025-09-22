@@ -7,18 +7,18 @@
 
 class PaymentMethod {
 public:
-    PaymentMethod(const Date &operation_date = Date(), double price = -1.);
+    PaymentMethod(const Date &, double);
 
     virtual ~PaymentMethod() = default;
 
-    void SetOperationDate(const Date &) noexcept;
-    Date GetOperationDate() const noexcept;
-
     void SetPrice(double) noexcept;
+
+    Date GetOperationDate() const noexcept;
     double GetPrice() const noexcept;
 
+    virtual std::string GetPaymentMethod() const noexcept = 0;
+
     virtual void Process() const = 0;
-    virtual std::string GetPaymentMethod() const = 0;
 protected:
     Date operation_date_;
     double price_;

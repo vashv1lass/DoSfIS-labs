@@ -3,19 +3,11 @@
 
 class Date {
 public:
-    Date(int day = -1, int month = -1, int year = -1);
+    Date(int, int, int);
 
-    Date(const Date &) = default;
-    Date &operator=(const Date &) = default;
-
-    Date(Date &&) noexcept = default;
-    Date &operator=(Date &&) noexcept = default;
-
-    ~Date() = default;
-
-    void SetDay(int) noexcept;
-    void SetMonth(int) noexcept;
-    void SetYear(int) noexcept;
+    void SetDay(int);
+    void SetMonth(int);
+    void SetYear(int);
 
     int GetDay() const noexcept;
     int GetMonth() const noexcept;

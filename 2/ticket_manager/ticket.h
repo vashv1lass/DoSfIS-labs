@@ -1,6 +1,8 @@
 #ifndef TICKET_MANAGER_TICKET_H_
 #define TICKET_MANAGER_TICKET_H_
 
+#include <memory>
+
 #include "tariffs/tariff.h"
 
 class Ticket {

@@ -7,9 +7,9 @@ class VIPTariff : public Tariff {
 public:
     VIPTariff();
 
+    std::string GetTariffType() const noexcept override;
+
     std::unique_ptr<Tariff> Clone() const override;
-    
-    std::string GetTariffType() const override;
 };
 
-#endif
+#endif // TICKET_MANAGER_TARIFFS_VIP_TARIFF_H_

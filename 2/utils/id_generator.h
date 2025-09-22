@@ -5,6 +5,7 @@ class IDGenerator {
 public:
     static int GetCurrentID();
     static int GenerateID();
+    
     static void Reset();
 private:
     static int current_id_;

@@ -3,7 +3,7 @@
 
 class Tank {
 public:
-	Tank(int id = 0, double volume = -1.f);
+	Tank(double, double);
 	
 	Tank(const Tank &) = default;
 	Tank &operator=(const Tank &) = default;
@@ -11,14 +11,19 @@ public:
 	Tank(Tank &&) noexcept = default;
 	Tank &operator=(Tank &&) noexcept = default;
 	
-	void SetId(int) noexcept;
-	void SetVolume(double) noexcept;
-	
+	void SetWaterSalinity(double) noexcept;
+
 	int GetId() const noexcept;
+	double GetDepth() const noexcept;
 	double GetVolume() const noexcept;
+	double GetWaterSalinity() const noexcept;
 private:
 	int id_;
+
+	double depth_;
 	double volume_;
+
+	double water_salinity_;
 };
 
 #endif // ANIMALS_TANK_TANK_H_

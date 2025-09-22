@@ -2,17 +2,19 @@
 #define TICKET_MANAGER_TARIFFS_TARIFF_H_
 
 #include <string>
+#include <memory>
 
 class Tariff {
 public:
-    Tariff(double);
+    explicit Tariff(double);
 
     virtual ~Tariff() = default;
 
-    virtual std::unique_ptr<Tariff> Clone() const = 0;
+    virtual std::string GetTariffType() const noexcept = 0;
 
     virtual double GetPrice() const noexcept;
-    virtual std::string GetTariffType() const = 0;
+
+    virtual std::unique_ptr<Tariff> Clone() const = 0;
 protected:
     double price_;
 };

@@ -6,13 +6,16 @@
 class OnlineCardPayment : public CardPayment {
 public:
     OnlineCardPayment(
-        const Date &, double, double, const std::string &, const std::string &
+        const Date &,
+        double,
+        double,
+        const std::string &,
+        const std::string &
     );
 
-    ~OnlineCardPayment() override = default;
+    std::string GetPaymentMethod() const noexcept override;
 
     void Process() const override;
-    std::string GetPaymentMethod() const override;
 private:
     std::string card_number_;
     std::string security_code_;
