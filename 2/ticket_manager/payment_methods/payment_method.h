@@ -18,7 +18,8 @@ public:
 
     virtual std::string GetPaymentMethod() const noexcept = 0;
 
-    virtual void Process() const = 0;
+    virtual void Process() = 0;
+    virtual void Refund() = 0;
 protected:
     Date operation_date_;
     double price_;

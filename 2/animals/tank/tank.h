@@ -5,17 +5,13 @@ class Tank {
 public:
 	Tank(double, double);
 	
-	Tank(const Tank &) = default;
-	Tank &operator=(const Tank &) = default;
-	
-	Tank(Tank &&) noexcept = default;
-	Tank &operator=(Tank &&) noexcept = default;
-	
-	void SetWaterSalinity(double) noexcept;
-
 	int GetId() const noexcept;
+
 	double GetDepth() const noexcept;
+
 	double GetVolume() const noexcept;
+
+	void SetWaterSalinity(double) noexcept;
 	double GetWaterSalinity() const noexcept;
 private:
 	int id_;

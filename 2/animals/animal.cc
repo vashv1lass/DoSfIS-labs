@@ -1,12 +1,10 @@
 #include "animal.h"
 
-Animal::Animal(const MedicalCard &medical_card, const Tank &tank)
-	: medical_card_(medical_card), tank_(tank) {}
+#include "medical/medical_card.h"
 
-MedicalCard Animal::GetMedicalCard() const noexcept {
-	return this->medical_card_;
-}
+Animal::Animal(const MedicalCard &medical_card)
+	: medical_card_(medical_card) {}
 
-Tank Animal::GetTank() const noexcept {
-	return this->tank_;
+MedicalCard &Animal::GetMedicalCard() noexcept {
+	return medical_card_;
 }

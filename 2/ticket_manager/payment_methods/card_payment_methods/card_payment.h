@@ -11,7 +11,8 @@ public:
 
     std::string GetPaymentMethod() const noexcept override;
 
-    void Process() const override;
+    void Process() override;
+    void Refund() override;
 protected:
     double card_balance_;
 };

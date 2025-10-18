@@ -30,3 +30,24 @@ std::optional<Ticket> TicketManager::Purchase(
         return std::nullopt;
     }
 }
+
+void TicketManager::Refund(const Ticket &ticket, std::unique_ptr<PaymentMethod> payment_method) {
+    if (!ticket.IsValid()) {
+        // throw InvalidTicketException("Ticket " + ticket.GetID() + " is invalid and cannot be refunded");
+    }
+
+    try {
+        std::cout << "Refunding ticket " << ticket.GetID() << ".\n"
+                  << "Tariff: " << ticket.GetTariff()->GetTariffType()
+                  << " Price: " << ticket.GetTariff()->GetPrice() << " BYN\n";
+
+        payment_method->SetPrice(ticket.GetTariff()->GetPrice());
+        payment_method->Refund();
+
+        std::cout << "Ticket " << ticket.GetID()
+                  << " was successfully refunded!\n";
+
+    } catch (const std::exception &e) {
+        std::cerr << "Refund process error: " << e.what() << "\n\n";
+    }
+}

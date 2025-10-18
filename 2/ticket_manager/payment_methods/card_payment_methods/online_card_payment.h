@@ -15,7 +15,8 @@ public:
 
     std::string GetPaymentMethod() const noexcept override;
 
-    void Process() const override;
+    void Process() override;
+    void Refund() override;
 private:
     std::string card_number_;
     std::string security_code_;

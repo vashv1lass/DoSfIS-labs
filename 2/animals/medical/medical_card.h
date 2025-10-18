@@ -13,16 +13,16 @@ public:
         INJURED
     };
 
-    MedicalCard(
-        const std::string &, const Date &, double, const HealthStatus &
-    );
-
-    void SetHealthStatus(const HealthStatus &) noexcept;
-    void SetWeight(double) noexcept;
+    MedicalCard(const std::string &, const Date &, double, const HealthStatus &);
 
     std::string GetName() const noexcept;
+
     Date GetBirthDate() const noexcept;
+
+    void SetWeight(double) noexcept;
     double GetWeight() const noexcept;
+    
+    void SetHealthStatus(const HealthStatus &) noexcept;
     HealthStatus GetHealthStatus() const noexcept;
 private:
     std::string name_;

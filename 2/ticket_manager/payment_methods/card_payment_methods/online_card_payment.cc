@@ -37,13 +37,23 @@ OnlineCardPayment::OnlineCardPayment(
     }
 }
 
-void OnlineCardPayment::Process() const {
+void OnlineCardPayment::Process() {
     if (card_balance_ < price_) {
         // throw NotEnoughFundsException("Insufficient funds on card");
     }
 
+    card_balance_ -= price_;
+
     std::cout << "Online transaction approved. " << price_
               << "BYN was debited.\nCurrent balance: " << card_balance_
+              << "BYN." << std::endl;
+}
+
+void OnlineCardPayment::Refund() {
+    card_balance_ += price_;
+
+    std::cout << "Online transaction approved. " << price_
+              << "BYN was credited.\nCurrent balance: " << card_balance_
               << "BYN." << std::endl;
 }
 

@@ -1,13 +1,18 @@
 #ifndef ANIMALS_SHARK_H_
 #define ANIMALS_SHARK_H_
 
-#include "animal.h"
+#include <string>
 
-class Shark : public Animal {
+#include "fish.h"
+#include "medical/medical_card.h"
+#include "tank/tank.h"
+
+class Shark : public Fish {
 public:
     Shark(const MedicalCard &, const Tank &, double);
 
     double GetPreferredDepth() const noexcept;
+
     std::string GetSpecies() const noexcept override;
 private:
     double preferred_depth_;
