@@ -1,31 +1,35 @@
-#include "stingray.h"
+#include "animals/fish/stingray.h"
 
-#include <string>
-#include <stdexcept>
+#include <iostream>
 
-#include "medical/medical_card.h"
-#include "tank/tank.h"
-#include "animal.h"
-#include "fish.h"
+namespace animals {
 
-Stingray::Stingray(const MedicalCard &medical_card, const Tank &tank, double wingspan, bool is_venomous)
-    : Animal(medical_card), Fish(medical_card, tank), wingspan_(wingspan), is_venomous_(is_venomous) {}
+Stingray::Stingray(std::string name, double swim_speed, bool venomous,
+                   double fin_span)
+    : Fish(std::move(name), swim_speed),
+      venomous_(venomous),
+      fin_span_(fin_span) {
+  if (fin_span_ <= 0.0 || fin_span_ > 10.0) {
+    throw std::out_of_range("Fin span must be positive "
+                            "and less or equal to 10 meters.");
+  }
+}
 
-void Stingray::SetWingspan(double wingspan) {
-    if (wingspan <= 0 || wingspan > 1200) {
-        throw std::invalid_argument("Wingspan must be between 0 and 1200 cm.");
+void Stingray::Move() const noexcept {
+  std::cout << name_ << " glides with fin span of " << fin_span_ << " meters.\n";
+}
+
+std::string Stingray::GetSpecies() const noexcept { return "Stingray"; }
+
+bool Stingray::IsVenomous() const noexcept { return venomous_; }
+
+void Stingray::SetFinSpan(double fin_span) {
+    if (fin_span <= 0.0 || fin_span > 10.0) {
+        throw std::out_of_range("Fin span must be positive "
+                                "and less than or equal to 10 meters.");
     }
-    wingspan_ = wingspan;
 }
 
-double Stingray::GetWingspan() const noexcept {
-    return wingspan_;
-}
+double Stingray::GetFinSpan() const { return fin_span_; }
 
-bool Stingray::IsVenomous() const noexcept {
-    return is_venomous_;
-}
-
-std::string Stingray::GetSpecies() const noexcept {
-    return "Stingray";
-}
+}  // namespace animals

@@ -1,22 +1,15 @@
-#include "shark.h"
+#include "animals/fish/shark.h"
 
-#include <string>
+#include <iostream>
 
-#include "medical/medical_card.h"
-#include "tank/tank.h"
-#include "animal.h"
-#include "fish.h"
+namespace animals {
 
-Shark::Shark(
-    const MedicalCard &medical_card,
-    const Tank &tank,
-    double preferred_depth
-) : Animal(medical_card), Fish(medical_card, tank), preferred_depth_(preferred_depth) {}
-
-double Shark::GetPreferredDepth() const noexcept {
-    return this->preferred_depth_;
+void Shark::Eat() const noexcept {
+  std::cout << name_ << " hunts smaller fish.\n";
 }
 
 std::string Shark::GetSpecies() const noexcept {
-    return "Shark";
+  return "Shark";
 }
+
+}  // namespace animals

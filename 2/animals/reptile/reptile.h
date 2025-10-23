@@ -1,20 +1,24 @@
 #ifndef ANIMALS_REPTILE_REPTILE_H_
 #define ANIMALS_REPTILE_REPTILE_H_
 
-#include "animal.h"
-#include "medical/medical_card.h"
-#include "tank/tank.h"
+#include "animals/animal.h"
 
-class Reptile : public virtual Animal {
-public:
-    Reptile(const MedicalCard &, const Tank &, double);
+namespace animals {
 
-    virtual void SetBodyTemperature(double) = 0;
-    double GetBodyTemperature() const noexcept;
-protected:
-    Tank tank_;
-    double body_temperature_;
+class Reptile : public Animal {
+ public:
+  Reptile(std::string name, double body_temperature);
+  void Move() const noexcept override;
+  void Eat() const noexcept override;
+  std::string GetSpecies() const noexcept override;
+
+  void SetBodyTemperature(double temperature);
+  double GetBodyTemperature() const noexcept;
+
+ protected:
+  double body_temperature_;
 };
 
+}  // namespace animals
 
-#endif // ANIMALS_REPTILE_REPTILE_H_
+#endif  // ANIMALS_REPTILE_REPTILE_H_

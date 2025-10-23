@@ -1,21 +1,19 @@
-#ifndef ANIMALS_SHARK_H_
-#define ANIMALS_SHARK_H_
+#ifndef ANIMALS_FISH_SHARK_H_
+#define ANIMALS_FISH_SHARK_H_
 
-#include <string>
+#include "animals/fish/fish.h"
 
-#include "fish.h"
-#include "medical/medical_card.h"
-#include "tank/tank.h"
+namespace animals {
 
 class Shark : public Fish {
 public:
-    Shark(const MedicalCard &, const Tank &, double);
+  using Fish::Fish;
 
-    double GetPreferredDepth() const noexcept;
+  void Eat() const noexcept override;
 
-    std::string GetSpecies() const noexcept override;
-private:
-    double preferred_depth_;
+  std::string GetSpecies() const noexcept override;
 };
 
-#endif // ANIMALS_SHARK_H_
+}  // namespace animals
+
+#endif  // ANIMALS_FISH_SHARK_H_

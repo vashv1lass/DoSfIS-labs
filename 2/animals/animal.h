@@ -1,19 +1,33 @@
 #ifndef ANIMALS_ANIMAL_H_
 #define ANIMALS_ANIMAL_H_
 
-#include "medical/medical_card.h"
+#include <memory>
+#include <string>
+#include <stdexcept>
+
+#include "animals/medical/medical.h"
+
+namespace animals {
 
 class Animal {
-public:
-	Animal(const MedicalCard &);
+ public:
+  explicit Animal(std::string name);
+  virtual ~Animal() noexcept = default;
 
-	virtual ~Animal() = default;
+  virtual void Eat() const noexcept = 0;
+  virtual void Move() const noexcept = 0;
+  virtual std::string GetSpecies() const noexcept = 0;
 
-	MedicalCard &GetMedicalCard() noexcept;
+  void AssignMedicalRecordBook(std::shared_ptr<medical::MedicalRecordBook> record_book);
+  std::shared_ptr<medical::MedicalRecordBook> GetMedicalRecordBook() const noexcept;
 
-	virtual std::string GetSpecies() const noexcept = 0;
-protected:
-	MedicalCard medical_card_;
+  const std::string& GetName() const noexcept;
+
+ protected:
+  std::string name_;
+  std::shared_ptr<medical::MedicalRecordBook> medical_record_book_;
 };
 
-#endif
+}  // namespace animals
+
+#endif  // ANIMALS_ANIMAL_H_

@@ -1,24 +1,23 @@
 #ifndef ANIMALS_REPTILE_SEA_TURTLE_H_
 #define ANIMALS_REPTILE_SEA_TURTLE_H_
 
-#include "reptile.h"
+#include "animals/reptile/reptile.h"
+
+namespace animals {
 
 class SeaTurtle : public Reptile {
-public:
-    enum ShellType {
-        CORIACEUS,
-        GREEN
-    };
+ public:
+  SeaTurtle(std::string name, double body_temperature,
+            double shell_diameter);
+  void Move() const noexcept override;
+  std::string GetSpecies() const noexcept override;
 
-    SeaTurtle(const MedicalCard &, const Tank &, double, const ShellType &);
+  double GetShellDiameter() const noexcept;
 
-    void SetBodyTemperature(double) override;
-
-    ShellType GetShellType() const noexcept;
-
-    std::string GetSpecies() const noexcept override;
-private:
-    ShellType shell_type_;
+ private:
+  double shell_diameter_;
 };
 
-#endif // ANIMALS_SEA_TURTLE_H_
+}  // namespace animals
+
+#endif  // ANIMALS_REPTILE_SEA_TURTLE_H_

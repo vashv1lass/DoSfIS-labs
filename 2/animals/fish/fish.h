@@ -1,20 +1,24 @@
 #ifndef ANIMALS_FISH_FISH_H_
 #define ANIMALS_FISH_FISH_H_
 
-#include <string>
+#include "animals/animal.h"
 
-#include "animal.h"
-#include "medical/medical_card.h"
-#include "tank/tank.h"
+namespace animals {
 
-class Fish : public virtual Animal {
-public:
-    Fish(const MedicalCard &, const Tank &);
+class Fish : public Animal {
+ public:
+  Fish(std::string name, double swim_speed);
+  void Move() const noexcept override;
+  void Eat() const noexcept override;
+  std::string GetSpecies() const noexcept override;
 
-    void SetTank(const Tank &) noexcept;
-    Tank GetTank() const noexcept;
-protected:
-    Tank tank_;
+  double GetSwimSpeed() const noexcept;
+  void SetSwimSpeed(double speed);
+
+ protected:
+  double swim_speed_;
 };
 
-#endif // ANIMALS_FISH_FISH_H_
+}  // namespace animals
+
+#endif  // ANIMALS_FISH_FISH_H_

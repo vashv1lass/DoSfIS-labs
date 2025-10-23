@@ -1,25 +1,27 @@
-#ifndef ANIMALS_STINGRAY_H_
-#define ANIMALS_STINGRAY_H_
+#ifndef ANIMALS_FISH_STINGRAY_H_
+#define ANIMALS_FISH_STINGRAY_H_
 
-#include <string>
+#include "animals/fish/fish.h"
 
-#include "fish.h"
-#include "medical/medical_card.h"
-#include "tank/tank.h"
+namespace animals {
 
 class Stingray : public Fish {
-public:
-    Stingray(const MedicalCard &, const Tank &, double, bool);
+ public:
+  Stingray(std::string name, double swim_speed, bool venomous,
+           double fin_span);
+  void Move() const noexcept override;
+  std::string GetSpecies() const noexcept override;
 
-    void SetWingspan(double);
-    double GetWingspan() const noexcept;
+  bool IsVenomous() const noexcept;
 
-    bool IsVenomous() const noexcept;
+  void SetFinSpan(double fin_span);
+  double GetFinSpan() const;
 
-    std::string GetSpecies() const noexcept override;
-private:
-    double wingspan_;
-    bool is_venomous_;
+ private:
+  bool venomous_;
+  double fin_span_;
 };
 
-#endif // ANIMALS_STINGRAY_H_
+}  // namespace animals
+
+#endif  // ANIMALS_FISH_STINGRAY_H_
