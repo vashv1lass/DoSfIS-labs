@@ -8,7 +8,7 @@ namespace staff {
 Trainer::Trainer(std::string name, double salary, int experience_level)
     : Employee(std::move(name), salary), experience_level_(experience_level) {
   if (experience_level_ <= 0) {
-    throw std::invalid_argument("Experience level must be positive.");
+    throw std::out_of_range("Experience level must be positive.");
   }
 }
 

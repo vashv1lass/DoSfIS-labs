@@ -14,7 +14,7 @@ namespace animals {
 namespace medical {
 
 class MedicalRecord {
- public:
+public:
   MedicalRecord(Diagnosis diagnosis);
 
   const Diagnosis& GetDiagnosis() const noexcept;
@@ -22,14 +22,14 @@ class MedicalRecord {
   std::chrono::system_clock::time_point GetCreationDate() const noexcept;
   std::string GetFormattedCreationDate() const;
 
- private:
+private:
   Diagnosis diagnosis_;
   std::string treatment_plan_;
   std::chrono::system_clock::time_point created_at_;
 };
 
 class MedicalRecordBook {
- public:
+public:
   explicit MedicalRecordBook(std::string owner);
 
   void AddRecord(std::unique_ptr<MedicalRecord> record);
@@ -39,7 +39,7 @@ class MedicalRecordBook {
 
   const std::string& GetOwner() const noexcept;
 
- private:
+private:
   std::string owner_;
   std::vector<std::unique_ptr<MedicalRecord>> records_;
 };

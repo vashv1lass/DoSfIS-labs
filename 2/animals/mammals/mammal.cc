@@ -16,10 +16,6 @@ void Mammal::Move() const noexcept {
   std::cout << name_ << " walks or runs.\n";
 }
 
-void Mammal::Eat() const noexcept {
-  std::cout << name_ << " eats plants or meat.\n";
-}
-
 std::string Mammal::GetSpecies() const noexcept { return "Mammal"; }
 
 void Mammal::SetMilkProduction(double milk_production) { 
@@ -31,6 +27,10 @@ void Mammal::SetMilkProduction(double milk_production) {
 }
 
 double Mammal::GetMilkProduction() const noexcept { return milk_production_; }
+
+void Mammal::Eat() const noexcept {
+  std::cout << name_ << " eats plants or meat.\n";
+}
 
 SeaMammal::SeaMammal(std::string name, double milk_production,
                      double dive_depth, double breath_hold)

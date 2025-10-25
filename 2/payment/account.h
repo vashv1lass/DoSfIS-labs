@@ -6,7 +6,7 @@
 namespace payment {
 
 class Account {
- public:
+public:
   explicit Account(std::string owner, double balance);
 
   const std::string& GetOwner() const noexcept;
@@ -16,7 +16,7 @@ class Account {
   void Withdraw(double amount);
   bool HasEnough(double amount) const noexcept;
 
- private:
+private:
   std::string owner_;
   double balance_;
 };

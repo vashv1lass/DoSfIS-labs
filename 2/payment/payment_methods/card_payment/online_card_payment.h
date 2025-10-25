@@ -12,14 +12,14 @@ namespace payment {
 namespace payment_methods {
 
 class OnlineCardPayment : public CardPayment {
- public:
+public:
   OnlineCardPayment(PaymentContext& context,
                     std::shared_ptr<Account> card_account,
                     std::string cvv);
   void Pay(Account& customer, double amount) override;
   std::string GetPaymentMethodInfo() const noexcept override;
   
- private:
+private:
   std::string cvv_;
   
   bool VerifyCardData_() const noexcept;

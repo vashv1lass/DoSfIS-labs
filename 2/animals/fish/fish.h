@@ -6,17 +6,18 @@
 namespace animals {
 
 class Fish : public Animal {
- public:
+public:
   Fish(std::string name, double swim_speed);
   void Move() const noexcept override;
-  void Eat() const noexcept override;
   std::string GetSpecies() const noexcept override;
 
   double GetSwimSpeed() const noexcept;
   void SetSwimSpeed(double speed);
 
- protected:
+protected:
   double swim_speed_;
+
+  void Eat() const noexcept override;
 };
 
 }  // namespace animals

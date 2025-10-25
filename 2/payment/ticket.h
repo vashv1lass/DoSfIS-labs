@@ -14,14 +14,14 @@ enum class TicketCategory {
 };
 
 class Ticket {
- public:
+public:
   explicit Ticket(TicketCategory category);
 
   TicketCategory GetCategory() const noexcept;
   double GetPrice() const noexcept;
   std::string GetInfo() const noexcept;
 
- private:
+private:
   TicketCategory category_;
   double price_;
 };

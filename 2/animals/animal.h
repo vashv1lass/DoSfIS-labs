@@ -6,15 +6,15 @@
 #include <stdexcept>
 
 #include "animals/medical/medical.h"
+#include "staff/diver_feeder.h"
 
 namespace animals {
 
 class Animal {
- public:
+public:
   explicit Animal(std::string name);
   virtual ~Animal() noexcept = default;
 
-  virtual void Eat() const noexcept = 0;
   virtual void Move() const noexcept = 0;
   virtual std::string GetSpecies() const noexcept = 0;
 
@@ -23,9 +23,13 @@ class Animal {
 
   const std::string& GetName() const noexcept;
 
- protected:
+protected:
   std::string name_;
   std::shared_ptr<medical::MedicalRecordBook> medical_record_book_;
+
+  virtual void Eat() const noexcept = 0;
+
+  friend class staff::DiverFeeder;
 };
 
 }  // namespace animals

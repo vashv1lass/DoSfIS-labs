@@ -25,14 +25,14 @@ Transaction::Transaction(std::string visitor_name,
 
 void Transaction::Process() {
   if (is_paid_) {
-    throw std::runtime_error("Transaction already processed.");
+    throw utils::exceptions::TransactionAlreadyProcessedError("Transaction has already processed.");
   }
 
   double total = ticket_.GetPrice();
 
   if (auto* account_method = dynamic_cast<payment_methods::IAccountPaymentMethod*>(method_.get())) {
     if (!visitor_account_) {
-      throw std::runtime_error("Account-based payment requires an account.");
+      throw utils::exceptions::MismatchingPaymentMethodError("Account-based payment requires an account.");
     }
 
     account_method->Pay(*visitor_account_, total);

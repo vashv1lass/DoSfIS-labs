@@ -14,13 +14,21 @@ Dolphin::Dolphin(std::string name, double milk_production, double dive_depth,
   }
 }
 
-void Dolphin::Eat() const noexcept {
-  std::cout << name_ << " eats small fish.\n";
-}
-
 std::string Dolphin::GetSpecies() const noexcept { return "Dolphin"; }
 
 bool Dolphin::CanDraw() const noexcept { return can_draw_; }
+
+void Dolphin::Draw() const noexcept {
+  if (can_draw_) {
+    std::cout << name_ << " draws a beautiful picture.\n";
+  } else {
+    std::cout << name_ << " doesn't know how to draw.\n";
+  }
+}
+
+void Dolphin::Eat() const noexcept {
+  std::cout << name_ << " eats small fish.\n";
+}
 
 void Dolphin::LearnToDraw() noexcept {
   if (iq_ > 120) {
@@ -28,14 +36,6 @@ void Dolphin::LearnToDraw() noexcept {
     std::cout << name_ << " learned to draw!\n";
   } else {
     std::cout << name_ << " is not intelligent enough to learn drawing.\n";
-  }
-}
-
-void Dolphin::Draw() const noexcept {
-  if (can_draw_) {
-    std::cout << name_ << " draws a beautiful picture.\n";
-  } else {
-    std::cout << name_ << " doesn't know how to draw.\n";
   }
 }
 

@@ -6,15 +6,17 @@
 namespace animals {
 
 class SeaTurtle : public Reptile {
- public:
+public:
   SeaTurtle(std::string name, double body_temperature,
             double shell_diameter);
+
   void Move() const noexcept override;
+  
   std::string GetSpecies() const noexcept override;
 
   double GetShellDiameter() const noexcept;
 
- private:
+private:
   double shell_diameter_;
 };
 

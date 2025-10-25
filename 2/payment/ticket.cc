@@ -17,7 +17,7 @@ Ticket::Ticket(TicketCategory category) : category_(category) {
       price_ = 30.0;
       break;
     default:
-      throw std::invalid_argument("Unknown ticket category.");
+      throw utils::exceptions::UnknownTypeError("Unknown ticket category.");
   }
 }
 

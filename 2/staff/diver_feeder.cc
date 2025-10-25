@@ -5,8 +5,8 @@ namespace staff {
 DiverFeeder::DiverFeeder(std::string name, double salary, double oxygen_tank_volume)
     : Employee(std::move(name), salary), oxygen_tank_volume_(oxygen_tank_volume) {
   if (oxygen_tank_volume_ <= 0.0 || oxygen_tank_volume_ > 250.0) {
-    throw std::invalid_argument("Oxygen tank volume must be positive "
-                                "and less or equal to 250 liters.");
+    throw std::out_of_range("Oxygen tank volume must be positive "
+                            "and less or equal to 250 liters.");
   }
 }
 

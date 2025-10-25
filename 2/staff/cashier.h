@@ -9,7 +9,7 @@
 namespace staff {
 
 class Cashier : public Employee {
- public:
+public:
   Cashier(std::string name, double salary);
   std::string GetRole() const noexcept override;
   void ProcessTransaction(payment::Transaction& transaction);

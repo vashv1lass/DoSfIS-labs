@@ -8,14 +8,14 @@
 namespace payment {
 
 class PaymentContext {
- public:
+public:
   explicit PaymentContext(std::shared_ptr<Account> oceanarium_account);
 
-  Account& GetOceanariumAccount() noexcept;
-  const Account& GetOceanariumAccount() const noexcept;
+  Account& GetAquariumAccount() noexcept;
+  const Account& GetAquariumAccount() const noexcept;
 
- private:
-  std::shared_ptr<Account> oceanarium_account_;
+private:
+  std::shared_ptr<Account> aquarium_account_;
 };
 
 }  // namespace payment

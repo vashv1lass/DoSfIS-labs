@@ -2,23 +2,29 @@
 #define ANIMALS_MAMMALS_SEAL_H_
 
 #include "animals/mammals/mammal.h"
+#include "staff/trainer.h"
 
 namespace animals {
 
 class Seal : public SeaMammal {
- public:
+public:
   Seal(std::string name, double milk_production, double dive_depth,
        double breath_hold);
 
-  void Eat() const noexcept override;
   std::string GetSpecies() const noexcept override;
 
   bool CanBalanceBall() const noexcept;
-  void LearnToBalanceBall() noexcept;
   void BalanceBall() const noexcept;
 
- private:
+protected:
+  void Eat() const noexcept override;
+
+  void LearnToBalanceBall() noexcept;
+  
+private:
   bool can_balance_ball_;
+
+  friend class staff::Trainer;
 };
 
 }  // namespace animals

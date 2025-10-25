@@ -22,17 +22,14 @@ bool OnlineCardPayment::VerifyCardData_() const noexcept {
 
 void OnlineCardPayment::Pay(Account &customer, double amount) {
   if (!VerifyCardData_()) {
-    throw std::runtime_error("Card verification failed.");
+    throw utils::exceptions::CardVerificationError("Card verification failed.");
   }
   if (amount <= 0.0) {
-    throw std::invalid_argument("Amount must be positive.");
-  }
-  if (!card_account_->HasEnough(amount)) {
-    throw std::runtime_error("Insufficient funds for online payment.");
+    throw std::out_of_range("Amount must be positive.");
   }
 
   card_account_->Withdraw(amount);
-  context_.GetOceanariumAccount().Deposit(amount);
+  context_.GetAquariumAccount().Deposit(amount);
 
   std::cout << "Online payment of " << amount << " BYN from "
             << card_account_->GetOwner() << " processed.\n";

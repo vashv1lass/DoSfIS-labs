@@ -5,7 +5,7 @@
 namespace animals {
 
 void Shark::Eat() const noexcept {
-  std::cout << name_ << " hunts smaller fish.\n";
+  std::cout << name_ << " eats smaller fish.\n";
 }
 
 std::string Shark::GetSpecies() const noexcept {

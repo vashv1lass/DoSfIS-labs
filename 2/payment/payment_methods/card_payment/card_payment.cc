@@ -17,12 +17,9 @@ void CardPayment::Pay(Account& customer, double amount) {
   if (amount <= 0.0) {
     throw std::invalid_argument("Amount must be positive.");
   }
-  if (!card_account_->HasEnough(amount)) {
-    throw std::runtime_error("Insufficient funds on card.");
-  }
 
   card_account_->Withdraw(amount);
-  context_.GetOceanariumAccount().Deposit(amount);
+  context_.GetAquariumAccount().Deposit(amount);
 
   std::cout << "Card charged: " << amount <<
                " BYN from " << card_account_->GetOwner() << ".\n";

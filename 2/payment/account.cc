@@ -31,7 +31,7 @@ void Account::Withdraw(double amount) {
     throw std::invalid_argument("Withdraw amount must be positive.");
   }
   if (amount > balance_) {
-    throw std::runtime_error("Insufficient funds for withdrawal.");
+    throw utils::exceptions::InsufficientFundsError("Balance is too low for withdrawal.");
   }
   balance_ -= amount;
 }

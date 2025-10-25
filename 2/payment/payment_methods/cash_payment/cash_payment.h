@@ -11,12 +11,12 @@ namespace payment {
 namespace payment_methods {
 
 class CashPayment : public IPaymentMethod {
- public:
+public:
   explicit CashPayment(PaymentContext& context, double amount_given);
   void Pay(double amount) override;
   std::string GetPaymentMethodInfo() const noexcept override;
 
- private:
+private:
   PaymentContext& context_;
   double amount_given_;
 };

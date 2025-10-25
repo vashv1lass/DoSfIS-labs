@@ -10,12 +10,13 @@
 namespace staff {
 
 class DiverFeeder : public Employee {
- public:
+public:
   DiverFeeder(std::string name, double salary, double oxygen_tank_volume);
   std::string GetRole() const noexcept override;
+  
   void Feed(animals::Animal& animal);
 
- private:
+private:
   double oxygen_tank_volume_;
 };
 

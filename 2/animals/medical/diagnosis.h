@@ -15,7 +15,7 @@ enum class DiagnosisType {
 };
 
 class Diagnosis {
- public:
+public:
   explicit Diagnosis(DiagnosisType type);
 
   DiagnosisType GetType() const noexcept;
@@ -23,7 +23,7 @@ class Diagnosis {
 
   std::string ToString() const;
 
- private:
+private:
   DiagnosisType type_;
 };
 

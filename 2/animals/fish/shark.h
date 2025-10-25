@@ -7,11 +7,10 @@ namespace animals {
 
 class Shark : public Fish {
 public:
-  using Fish::Fish;
-
-  void Eat() const noexcept override;
-
   std::string GetSpecies() const noexcept override;
+
+protected:
+  void Eat() const noexcept override;
 };
 
 }  // namespace animals

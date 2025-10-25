@@ -6,17 +6,20 @@
 namespace animals {
 
 class Reptile : public Animal {
- public:
+public:
   Reptile(std::string name, double body_temperature);
+
   void Move() const noexcept override;
-  void Eat() const noexcept override;
+
   std::string GetSpecies() const noexcept override;
 
   void SetBodyTemperature(double temperature);
   double GetBodyTemperature() const noexcept;
 
- protected:
+protected:
   double body_temperature_;
+
+  void Eat() const noexcept override;
 };
 
 }  // namespace animals

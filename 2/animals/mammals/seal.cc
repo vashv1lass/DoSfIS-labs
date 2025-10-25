@@ -9,19 +9,10 @@ Seal::Seal(std::string name, double milk_production, double dive_depth,
     : SeaMammal(std::move(name), milk_production, dive_depth, breath_hold),
       can_balance_ball_(false) {}
 
-void Seal::Eat() const {
-  std::cout << name_ << " eats fish and crustaceans.\n";
-}
-
 std::string Seal::GetSpecies() const noexcept { return "Seal"; }
 
 bool Seal::CanBalanceBall() const noexcept {
   return can_balance_ball_;
-}
-
-void Seal::LearnToBalanceBall() noexcept {
-  can_balance_ball_ = true;
-  std::cout << name_ << " learned to balance a ball!\n";
 }
 
 void Seal::BalanceBall() const noexcept {
@@ -30,6 +21,15 @@ void Seal::BalanceBall() const noexcept {
   } else {
     std::cout << name_ << " hasn't learned to balance yet.\n";
   }
+}
+
+void Seal::LearnToBalanceBall() noexcept {
+  can_balance_ball_ = true;
+  std::cout << name_ << " learned to balance a ball!\n";
+}
+
+void Seal::Eat() const {
+  std::cout << name_ << " eats fish and crustaceans.\n";
 }
 
 }  // namespace animals

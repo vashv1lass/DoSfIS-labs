@@ -11,7 +11,7 @@
 namespace payment {
 
 class Transaction {
- public:
+public:
   Transaction(std::string visitor_name,
               Ticket ticket,
               std::unique_ptr<payment_methods::IPaymentMethod> method,
@@ -20,7 +20,7 @@ class Transaction {
   void Process();
   double GetTotalAmount() const noexcept;
 
- private:
+private:
   std::string visitor_name_;
   Ticket ticket_;
   std::unique_ptr<payment_methods::IPaymentMethod> method_;

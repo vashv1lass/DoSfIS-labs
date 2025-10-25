@@ -10,11 +10,7 @@ namespace medical {
 
 MedicalRecord::MedicalRecord(Diagnosis diagnosis)
     : diagnosis_(std::move(diagnosis)),
-      created_at_(std::chrono::system_clock::now()) {
-  if (treatment_plan_.empty()) {
-    throw std::invalid_argument("Treatment plan cannot be empty.");
-  }
-}
+      created_at_(std::chrono::system_clock::now()) {}
 
 const Diagnosis& MedicalRecord::GetDiagnosis() const noexcept {
   return diagnosis_;
@@ -55,8 +51,7 @@ std::optional<const MedicalRecord*> MedicalRecordBook::GetLastRecord() const noe
 }
 
 std::vector<const MedicalRecord*> MedicalRecordBook::GetRecords() const noexcept {
-  std::vector<const MedicalRecord*> result;
-  result.reserve(records_.size());
+  std::vector<const MedicalRecord*> result(records_.size());
   for (const auto& rec : records_) {
     result.push_back(rec.get());
   }

@@ -16,10 +16,6 @@ void Fish::Move() const noexcept {
   std::cout << name_ << " swims at " << swim_speed_ << " m/s.\n";
 }
 
-void Fish::Eat() const noexcept {
-  std::cout << name_ << " eats plankton.\n";
-}
-
 std::string Fish::GetSpecies() const noexcept { return "Fish"; }
 
 double Fish::GetSwimSpeed() const noexcept { return swim_speed_; }
@@ -30,6 +26,10 @@ void Fish::SetSwimSpeed(double speed) {
                             "and less or equal to 50 m/s.");
   }
   swim_speed_ = speed;
+}
+
+void Fish::Eat() const noexcept {
+  std::cout << name_ << " eats plankton.\n";
 }
 
 }  // namespace animals

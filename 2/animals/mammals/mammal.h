@@ -6,21 +6,22 @@
 namespace animals {
 
 class Mammal : public Animal {
- public:
+public:
   Mammal(std::string name, double milk_production);
   void Move() const noexcept override;
-  void Eat() const noexcept override;
   std::string GetSpecies() const noexcept override;
 
   void SetMilkProduction(double milk_production);
   double GetMilkProduction() const noexcept;
 
- protected:
+protected:
   double milk_production_;
+
+  void Eat() const noexcept override;
 };
 
 class SeaMammal : public Mammal {
- public:
+public:
   SeaMammal(std::string name, double milk_production, double dive_depth,
             double breath_hold);
   void Move() const noexcept override;
@@ -29,7 +30,7 @@ class SeaMammal : public Mammal {
   double GetDiveDepth() const noexcept;
   double GetBreathHoldTime() const noexcept;
 
- protected:
+protected:
   double dive_depth_;
   double breath_hold_time_;
 };

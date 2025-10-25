@@ -11,12 +11,12 @@ namespace payment {
 namespace payment_methods {
 
 class CardPayment : public IAccountPaymentMethod {
- public:
+public:
   CardPayment(PaymentContext& context, std::shared_ptr<Account> card_account);
   void Pay(Account& customer, double amount) override;
   std::string GetPaymentMethodInfo() const noexcept override;
   
- protected:
+protected:
   PaymentContext& context_;
   std::shared_ptr<Account> card_account_;
 };

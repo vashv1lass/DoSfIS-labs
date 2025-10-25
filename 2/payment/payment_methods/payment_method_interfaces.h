@@ -9,14 +9,14 @@ namespace payment {
 namespace payment_methods {
 
 class IPaymentMethod {
- public:
+public:
   virtual ~IPaymentMethod() = default;
   virtual void Pay(double amount) = 0;
   virtual std::string GetPaymentMethodInfo() const noexcept = 0;
 };
 
 class IAccountPaymentMethod : public IPaymentMethod {
- public:
+public:
   virtual void Pay(Account& customer, double amount) = 0;
 };
 

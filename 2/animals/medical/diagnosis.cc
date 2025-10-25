@@ -18,7 +18,7 @@ std::string Diagnosis::GetDescription() const {
     case DiagnosisType::kInfection:
       return "Possible bacterial infection.";
     default:
-      throw std::runtime_error("Unknown diagnosis type.");
+      throw utils::exceptions::UnknownTypeError("Diagnosis type is unknown.");
   }
 }
 

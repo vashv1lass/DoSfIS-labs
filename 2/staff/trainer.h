@@ -10,14 +10,14 @@
 namespace staff {
 
 class Trainer : public Employee {
- public:
+public:
   Trainer(std::string name, double salary, int experience_level);
   std::string GetRole() const noexcept override;
 
   void TeachDrawing(animals::Dolphin& dolphin);
   void TeachBallBalancing(animals::Seal& seal);
 
- private:
+private:
   int experience_level_;
 };
 

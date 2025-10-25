@@ -6,7 +6,7 @@
 namespace staff {
 
 class Employee {
- public:
+public:
   explicit Employee(std::string name, double salary);
   virtual ~Employee() = default;
 
@@ -14,7 +14,7 @@ class Employee {
   double GetSalary() const noexcept;
   virtual std::string GetRole() const noexcept = 0;
 
- protected:
+protected:
   std::string name_;
   double salary_;
 };

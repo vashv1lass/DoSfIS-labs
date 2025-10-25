@@ -16,10 +16,6 @@ void Reptile::Move() const noexcept {
   std::cout << name_ << " crawls slowly.\n";
 }
 
-void Reptile::Eat() const noexcept {
-  std::cout << name_ << " eats insects.\n";
-}
-
 std::string Reptile::GetSpecies() const noexcept { return "Reptile"; }
 
 void Reptile::SetBodyTemperature(double temperature) {
@@ -31,5 +27,9 @@ void Reptile::SetBodyTemperature(double temperature) {
 }
 
 double Reptile::GetBodyTemperature() const noexcept { return body_temperature_; }
+
+void Reptile::Eat() const noexcept {
+  std::cout << name_ << " eats insects.\n";
+}
 
 }  // namespace animals

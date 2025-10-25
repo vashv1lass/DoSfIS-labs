@@ -1,10 +1,16 @@
-#include "animals/tank.h"
+#include "infrastructure/tank.h"
 
 #include <iostream>
 
-namespace animals {
+#include "utils/id_generator.h"
 
-Tank::Tank(double depth, double volume) : depth_(depth), volume_(volume) {
+namespace infrastructure {
+
+Tank::Tank(double depth, double volume)
+    : id_(utils::IDGenerator::Instance().NextID()),
+      depth_(depth),
+      volume_(volume),
+      is_clean_(true) {
   if (depth_ <= 0.0 || depth_ > 100.0) {
     throw std::out_of_range("Tank depth must be positive and "
                             "less or equal to 100 meters.");
@@ -15,7 +21,7 @@ Tank::Tank(double depth, double volume) : depth_(depth), volume_(volume) {
   }
 }
 
-void Tank::AddAnimal(std::shared_ptr<Animal> animal) {
+void Tank::AddAnimal(std::shared_ptr<animals::Animal> animal) {
   if (!animal) {
     throw std::invalid_argument("Cannot add null animal to tank.");
   }
@@ -29,9 +35,13 @@ void Tank::ShowAll() const noexcept {
   }
 }
 
+int Tank::GetID() const noexcept { return id_; }
+
 double Tank::GetDepth() const noexcept { return depth_; }
 
 double Tank::GetVolume() const noexcept { return volume_; }
+
+bool Tank::IsClean() const noexcept { return is_clean_; }
 
 void Tank::SetDepth(double depth) {
   if (depth <= 0.0 || depth > 100.0) {
@@ -49,4 +59,12 @@ void Tank::SetVolume(double volume) {
   volume_ = volume;
 }
 
-}  // namespace animals
+void Tank::MarkClean() noexcept {
+  is_clean_ = true;
+}
+
+void Tank::MarkDirty() noexcept {
+  is_clean_ = false;
+}
+
+}  // namespace infrastructure

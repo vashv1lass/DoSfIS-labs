@@ -11,7 +11,7 @@
 namespace staff {
 
 class Veterinarian : public Employee {
- public:
+public:
   Veterinarian(std::string name, double salary);
   std::string GetRole() const noexcept override;
   

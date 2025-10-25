@@ -14,11 +14,11 @@ Animal::Animal(std::string name) : name_(std::move(name)) {
   }
 }
 
-void Animal::AssignMedicalRecordBook(std::shared_ptr<medical::MedicalRecordBook> card) {
-  if (!card) {
-    throw std::invalid_argument("MedicalRecordBook cannot be null.");
+void Animal::AssignMedicalRecordBook(std::shared_ptr<medical::MedicalRecordBook> record_book) {
+  if (!record_book) {
+    throw std::invalid_argument("Medical record book cannot be null.");
   }
-  medical_record_book_ = std::move(card);
+  medical_record_book_ = std::move(record_book);
 }
 
 std::shared_ptr<medical::MedicalRecordBook> Animal::GetMedicalRecordBook() const noexcept {
