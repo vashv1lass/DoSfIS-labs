@@ -3,6 +3,8 @@
 #include <string>
 #include <stdexcept>
 
+#include "utils/exceptions/payment_errors.h"
+
 namespace payment {
 
 Account::Account(std::string owner, double balance)

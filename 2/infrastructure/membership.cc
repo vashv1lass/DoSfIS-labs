@@ -2,6 +2,9 @@
 
 #include <stdexcept>
 
+#include "utils/exceptions/not_found_errors.h"
+#include "utils/exceptions/already_exists_errors.h"
+
 namespace infrastructure {
 
 Member::Member(std::string name, MembershipLevel level)
@@ -40,7 +43,7 @@ void Member::Upgrade() {
     case MembershipLevel::kPlatinum:
       throw std::runtime_error("User " + name_ + " already has a platinum membership level.");
     default:
-      throw std::invalid_argument("Unknown membership level.");
+      throw utils::exceptions::UnknownTypeError("Unknown membership level.");
       break;
   }
 }
@@ -53,7 +56,7 @@ const std::string& Member::GetName() const noexcept { return name_; }
 
 void MembershipSystem::RegisterMember(std::string name, MembershipLevel level) {
   if (members_.find(name) != members_.end()) {
-    throw utils::exceptions::AlreadyExistsError("Member " + name + " already exists.");
+    throw utils::exceptions::MemberAlreadyExistsError("Member " + name + " already exists.");
   }
 
   members_.emplace(name, Member(std::move(name), level));
@@ -62,7 +65,7 @@ void MembershipSystem::RegisterMember(std::string name, MembershipLevel level) {
 void MembershipSystem::AddPoints(const std::string& name, int points) {
   auto it = members_.find(name);
   if (it == members_.end()) {
-    throw utils::exceptions::NotFoundError("Member " + name + " not found.");
+    throw utils::exceptions::MemberNotFoundError("Member " + name + " not found.");
   }
 
   it->second.AddPoints(points);
@@ -71,7 +74,7 @@ void MembershipSystem::AddPoints(const std::string& name, int points) {
 void MembershipSystem::AddPoints(const std::string& name, int points) {
   auto it = members_.find(name);
   if (it == members_.end()) {
-    throw utils::exceptions::NotFoundError("Member " + name + " not found.");
+    throw utils::exceptions::MemberNotFoundError("Member " + name + " not found.");
   }
 
   it->second.RedeemPoints(points);
@@ -80,7 +83,7 @@ void MembershipSystem::AddPoints(const std::string& name, int points) {
 int MembershipSystem::GetMemberPoints(const std::string& name) const {
   auto it = members_.find(name);
   if (it == members_.end()) {
-    throw utils::exceptions::NotFoundError("Member " + name + " not found.");
+    throw utils::exceptions::MemberNotFoundError("Member " + name + " not found.");
   }
 
   return it->second.GetPoints();

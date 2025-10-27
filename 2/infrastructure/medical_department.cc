@@ -2,6 +2,8 @@
 
 #include <stdexcept>
 
+#include "utils/exceptions/not_found_errors.h"
+
 namespace infrastructure {
 
 void MedicalDepartment::RegisterBook(std::string animal_name,
@@ -16,7 +18,7 @@ void MedicalDepartment::AddRecord(const std::string& animal_name,
                                   animals::medical::Diagnosis diagnosis) {
   auto it = record_books_.find(animal_name);
   if (it == record_books_.end()) {
-    throw utils::exceptions::NotFoundError("No record book for " + animal_name + ".");
+    throw utils::exceptions::MedicalRecordBookNotFoundError("No record book for " + animal_name + ".");
   }
 
   it->second->AddRecord(std::make_unique<animals::medical::MedicalRecord>(diagnosis));
@@ -25,7 +27,7 @@ void MedicalDepartment::AddRecord(const std::string& animal_name,
 std::string MedicalDepartment::GetSummary(const std::string& animal_name) const {
   auto it = record_books_.find(animal_name);
   if (it == record_books_.end()) {
-    throw utils::exceptions::NotFoundError("No record book for " + animal_name + ".");
+    throw utils::exceptions::MedicalRecordBookNotFoundError("No record book for " + animal_name + ".");
   }
 
   return it->second->GetSummary();

@@ -4,6 +4,8 @@
 #include <chrono>
 #include <iomanip>
 
+#include "utils/exceptions/closed_aquarium_error.h"
+
 namespace infrastructure {
 
 Aquarium& Aquarium::Instance() {

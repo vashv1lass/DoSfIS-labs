@@ -1,5 +1,7 @@
 #include "animals/medical/diagnosis.h"
 
+#include "utils/exceptions/unknown_type_error.h"
+
 namespace animals {
 namespace medical {
 

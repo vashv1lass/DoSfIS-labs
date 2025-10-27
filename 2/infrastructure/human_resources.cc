@@ -3,6 +3,8 @@
 #include <algorithm>
 #include <stdexcept>
 
+#include "utils/exceptions/not_found_errors.h"
+
 namespace infrastructure {
 
 EmployeeInfo::EmployeeInfo(std::string name, std::string role, int salary)
@@ -20,7 +22,7 @@ void HumanResources::Fire(const std::string& name) {
                            [&](const auto& e) { return e->GetName() == name; });
 
   if (it == employees_.end()) {
-    throw utils::exceptions::NotFoundError("Employee not found.");
+    throw utils::exceptions::EmployeeNotFoundError("Employee not found.");
   }
 
   employees_.erase(it, employees_.end());

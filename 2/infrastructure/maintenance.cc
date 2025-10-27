@@ -2,6 +2,8 @@
 
 #include <cstdlib>
 
+#include "utils/exceptions/not_found_errors.h"
+
 namespace infrastructure {
 
 void MaintenanceUnit::RegisterTank(std::shared_ptr<Tank> tank) {
@@ -14,7 +16,7 @@ void MaintenanceUnit::RegisterTank(std::shared_ptr<Tank> tank) {
 void MaintenanceUnit::CleanTank(int id) {
   auto it = tanks_.find(id);
   if (it == tanks_.end()) {
-    throw utils::exceptions::NotFoundError("Tank not found: " + std::to_string(id));
+    throw utils::exceptions::TankNotFoundError("Tank not found: " + std::to_string(id));
   }
 
   auto& tank = it->second;

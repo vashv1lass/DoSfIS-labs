@@ -3,6 +3,8 @@
 #include <iostream>
 #include <stdexcept>
 
+#include "utils/exceptions/payment_errors.h"
+
 namespace payment {
 namespace payment_methods {
 

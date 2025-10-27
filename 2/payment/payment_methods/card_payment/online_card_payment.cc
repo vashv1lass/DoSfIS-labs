@@ -4,6 +4,8 @@
 #include <stdexcept>
 #include <string>
 
+#include "utils/exceptions/payment_errors.h"
+
 namespace payment {
 namespace payment_methods {
 
