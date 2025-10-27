@@ -1,11 +1,16 @@
 #ifndef STAFF_TRAINER_H_
 #define STAFF_TRAINER_H_
 
-#include "staff/employee.h"
-#include "animals/mammals/dolphin.h"
-#include "animals/mammals/seal.h"
-
 #include <iostream>
+
+#include "staff/employee.h"
+
+namespace animals {
+
+class Dolphin;
+class Seal;
+
+}  // namespace animals
 
 namespace staff {
 

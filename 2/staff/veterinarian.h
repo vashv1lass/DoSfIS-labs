@@ -2,11 +2,21 @@
 #define STAFF_VETERINARIAN_H_
 
 #include "staff/employee.h"
-#include "animals/animal.h"
 #include "animals/medical/diagnosis.h"
-#include "animals/medical/medical.h"
 
 #include <iostream>
+
+namespace animals {
+
+class Animal;
+
+namespace medical {
+
+class MedicalRecordBook;
+
+}  // namespace medical
+
+}  // namespace animals
 
 namespace staff {
 

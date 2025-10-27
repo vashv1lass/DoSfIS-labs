@@ -3,7 +3,11 @@
 
 #include <memory>
 
-#include "payment/account.h"
+namespace payment {
+
+class Account;
+
+}  // namespace payment
 
 namespace payment {
 

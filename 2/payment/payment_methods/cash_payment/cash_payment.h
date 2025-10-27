@@ -3,9 +3,14 @@
 
 #include <string>
 
-#include "payment/context.h"
 #include "payment/payment_methods/payment_method_interfaces.h"
-#include "payment/account.h"
+
+namespace payment {
+
+class PaymentContext;
+class Account;
+
+}  // namespace payment
 
 namespace payment {
 namespace payment_methods {

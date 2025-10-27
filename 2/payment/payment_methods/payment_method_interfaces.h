@@ -3,7 +3,11 @@
 
 #include <string>
 
-#include "payment/account.h"
+namespace payment {
+
+class Account;
+
+}  // namespace payment
 
 namespace payment {
 namespace payment_methods {
@@ -17,6 +21,7 @@ public:
 
 class IAccountPaymentMethod : public IPaymentMethod {
 public:
+  virtual ~IAccountPaymentMethod() = default;
   virtual void Pay(Account& customer, double amount) = 0;
 };
 

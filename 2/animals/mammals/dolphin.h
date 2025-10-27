@@ -2,7 +2,12 @@
 #define ANIMALS_MAMMALS_DOLPHIN_H_
 
 #include "animals/mammals/mammal.h"
-#include "staff/trainer.h"
+
+namespace staff {
+
+class Trainer;
+
+}  // namespace staff
 
 namespace animals {
 

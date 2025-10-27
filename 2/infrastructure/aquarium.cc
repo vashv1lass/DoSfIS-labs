@@ -4,7 +4,7 @@
 #include <chrono>
 #include <iomanip>
 
-#include "utils/exceptions/closed_aquarium_error.h"
+#include "utils/exceptions/aquarium_errors.h"
 
 namespace infrastructure {
 
@@ -39,7 +39,23 @@ Ecosystem& Aquarium::GetEcosystem() {
   return ecosystem_; 
 }
 
+const Ecosystem& Aquarium::GetEcosystem() const {
+  if (!is_opened_) {
+    throw utils::exceptions::ClosedAquariumError("Aquarium is closed.");
+  }
+
+  return ecosystem_; 
+}
+
 HumanResources& Aquarium::GetHumanResources() {
+  if (!is_opened_) {
+    throw utils::exceptions::ClosedAquariumError("Aquarium is closed.");
+  }
+
+  return human_resources_;
+}
+
+const HumanResources& Aquarium::GetHumanResources() const {
   if (!is_opened_) {
     throw utils::exceptions::ClosedAquariumError("Aquarium is closed.");
   }
@@ -55,7 +71,23 @@ MembershipSystem& Aquarium::GetMembershipSystem() {
   return membership_system_;
 }
 
+const MembershipSystem& Aquarium::GetMembershipSystem() const {
+  if (!is_opened_) {
+    throw utils::exceptions::ClosedAquariumError("Aquarium is closed.");
+  }
+
+  return membership_system_;
+}
+
 MaintenanceUnit& Aquarium::GetMaintenanceUnit() {
+  if (!is_opened_) {
+    throw utils::exceptions::ClosedAquariumError("Aquarium is closed.");
+  }
+
+  return maintenance_unit_;
+}
+
+const MaintenanceUnit& Aquarium::GetMaintenanceUnit() const {
   if (!is_opened_) {
     throw utils::exceptions::ClosedAquariumError("Aquarium is closed.");
   }
@@ -71,7 +103,23 @@ Schedule& Aquarium::GetSchedule() {
   return schedule_;
 }
 
+const Schedule& Aquarium::GetSchedule() const {
+  if (!is_opened_) {
+    throw utils::exceptions::ClosedAquariumError("Aquarium is closed.");
+  }
+
+  return schedule_;
+}
+
 payment::PaymentContext& Aquarium::GetPaymentContext() {
+  if (!is_opened_) {
+    throw utils::exceptions::ClosedAquariumError("Aquarium is closed.");
+  }
+
+  return payment_context_;
+}
+
+const payment::PaymentContext& Aquarium::GetPaymentContext() const {
   if (!is_opened_) {
     throw utils::exceptions::ClosedAquariumError("Aquarium is closed.");
   }

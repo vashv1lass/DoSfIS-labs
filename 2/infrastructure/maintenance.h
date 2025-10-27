@@ -5,7 +5,11 @@
 #include <memory>
 #include <unordered_map>
 
-#include "infrastructure/tank.h"
+namespace infrastructure {
+
+class Tank;
+
+}  // namespace infrastructure
 
 namespace infrastructure {
 

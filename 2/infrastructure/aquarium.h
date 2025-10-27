@@ -2,7 +2,6 @@
 #define INFRASTRUCTURE_AQUARIUM_H_
 
 #include <memory>
-#include <mutex>
 #include <string>
 
 #include "infrastructure/ecosystem.h"
@@ -28,11 +27,22 @@ public:
   void Close() noexcept;
 
   Ecosystem& GetEcosystem();
+  const Ecosystem& GetEcosystem() const;
+
   HumanResources& GetHumanResources();
+  const HumanResources& GetHumanResources() const;
+
   MembershipSystem& GetMembershipSystem();
+  const MembershipSystem& GetMembershipSystem() const;
+
   MaintenanceUnit& GetMaintenanceUnit();
+  const MaintenanceUnit& GetMaintenanceUnit() const;
+
   Schedule& GetSchedule();
+  const Schedule& GetSchedule() const;
+
   payment::PaymentContext& GetPaymentContext();
+  const payment::PaymentContext& GetPaymentContext() const;
 
 private:
   Aquarium();

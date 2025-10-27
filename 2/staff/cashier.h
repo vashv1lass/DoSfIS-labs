@@ -4,7 +4,12 @@
 #include <string>
 
 #include "staff/employee.h"
-#include "payment/transaction.h"
+
+namespace payment {
+
+class Transaction;
+
+}  // namespace payment
 
 namespace staff {
 

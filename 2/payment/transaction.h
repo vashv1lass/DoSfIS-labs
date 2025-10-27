@@ -5,8 +5,13 @@
 #include <string>
 
 #include "payment/ticket.h"
-#include "payment/payment_methods/payment_method_interfaces.h"
-#include "payment/account.h"
+
+namespace payment {
+
+class IPaymentMethod;
+class Account;
+
+}  // namespace payment
 
 namespace payment {
 

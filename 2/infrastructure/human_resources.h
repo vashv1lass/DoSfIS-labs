@@ -5,7 +5,11 @@
 #include <string>
 #include <vector>
 
-#include "staff/employee.h"
+namespace staff {
+
+class Employee;
+
+}  // namespace staff
 
 namespace infrastructure {
 

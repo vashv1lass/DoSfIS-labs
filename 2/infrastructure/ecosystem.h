@@ -5,7 +5,11 @@
 #include <string>
 #include <vector>
 
-#include "animals/animal.h"
+namespace animals {
+
+class Animal;
+
+}  // namespace animals
 
 namespace infrastructure {
 

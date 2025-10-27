@@ -5,7 +5,11 @@
 #include <stdexcept>
 #include <vector>
 
-#include "animals/animal.h"
+namespace animals {
+
+class Animal;
+
+} // namespace animals
 
 namespace infrastructure {
 
@@ -28,9 +32,12 @@ public:
 
 private:
   int id_;
+
   double depth_;
   double volume_;
+
   bool is_clean_;
+  
   std::vector<std::shared_ptr<animals::Animal>> animals_;
 };
 

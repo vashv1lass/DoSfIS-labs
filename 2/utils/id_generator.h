@@ -2,7 +2,6 @@
 #define UTILS_ID_GENERATOR_H_
 
 #include <atomic>
-#include <mutex>
 
 namespace utils {
 

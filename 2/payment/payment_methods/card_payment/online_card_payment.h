@@ -4,9 +4,14 @@
 #include <memory>
 #include <string>
 
-#include "payment/context.h"
-#include "payment/account.h"
 #include "payment/payment_methods/card_payment/card_payment.h"
+
+namespace payment {
+
+class PaymentContext;
+class Account;
+
+}  // namespace payment
 
 namespace payment {
 namespace payment_methods {

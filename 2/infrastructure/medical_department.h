@@ -5,7 +5,15 @@
 #include <string>
 #include <unordered_map>
 
-#include "animals/medical/medical.h"
+#include "animals/medical/diagnosis.h"
+
+namespace animals {
+namespace medical {
+  
+class MedicalRecordBook;
+
+}  // namespace medical
+}  // namespace animals
 
 namespace infrastructure {
 

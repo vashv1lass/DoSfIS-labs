@@ -5,7 +5,12 @@
 #include <string>
 
 #include "staff/employee.h"
-#include "animals/animal.h"
+
+namespace animals {
+
+class Animal;
+
+}  // namespace animals
 
 namespace staff {
 
