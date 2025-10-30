@@ -7,7 +7,13 @@
 #define ANIMALS_MAMMALS_DOLPHIN_H_
 
 #include "animals/mammals/mammal.h"
-#include "staff/trainer.h"
+
+// Forward declaration of Trainer class in staff namespace
+namespace staff {
+
+class Trainer;
+
+}  // namespace staff
 
 /**
  * @brief Namespace for all animal-related classes and functions.
