@@ -7,13 +7,7 @@
 #define ANIMALS_MAMMALS_SEAL_H_
 
 #include "animals/mammals/mammal.h"
-
-// Forward declaration of Trainer class in staff namespace
-namespace staff {
-
-class Trainer;
-
-}  // namespace staff
+#include "staff/trainer.h"
 
 /**
  * @brief Namespace for all animal-related classes and functions.

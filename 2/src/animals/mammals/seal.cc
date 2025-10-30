@@ -28,7 +28,7 @@ void Seal::LearnToBalanceBall() noexcept {
   std::cout << name_ << " learned to balance a ball!\n";
 }
 
-void Seal::Eat() const {
+void Seal::Eat() const noexcept {
   std::cout << name_ << " eats fish and crustaceans.\n";
 }
 

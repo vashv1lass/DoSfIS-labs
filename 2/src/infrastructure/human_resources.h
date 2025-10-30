@@ -10,12 +10,7 @@
 #include <string>
 #include <vector>
 
-// Forward declaration of Employee class in staff namespace
-namespace staff {
-
-class Employee;
-
-}  // namespace staff
+#include "staff/employee.h"
 
 /**
  * @brief Namespace for all infrastructure-related classes and functions.

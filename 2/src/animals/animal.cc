@@ -4,8 +4,6 @@
 #include <stdexcept>
 #include <memory>
 
-#include "animals/medical/medical.h"
-
 namespace animals {
 
 Animal::Animal(std::string name)

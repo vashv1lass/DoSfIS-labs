@@ -8,15 +8,9 @@
 
 #include <string>
 
+#include "animals/mammals/dolphin.h"
+#include "animals/mammals/seal.h"
 #include "staff/employee.h"
-
-// Forward declaration of Dolphin and Seal classes in animals namespace
-namespace animals {
-
-class Dolphin;
-class Seal;
-
-}  // namespace animals
 
 /**
  * @brief Namespace for all staff-related classes and functions.

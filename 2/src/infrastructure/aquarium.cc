@@ -1,8 +1,6 @@
 #include "infrastructure/aquarium.h"
 
-#include <iostream>
 #include <chrono>
-#include <iomanip>
 
 #include "payment/account.h"
 #include "utils/exceptions/aquarium_errors.h"
@@ -24,11 +22,11 @@ Aquarium::Aquarium()
     payment_context_(std::make_shared<payment::Account>(payment::Account("Aquarium", 0.0))),
     is_opened_(false) {}
 
-void Aquarium::Open() {
+void Aquarium::Open() noexcept {
   is_opened_ = true;
 }
 
-void Aquarium::Close() {
+void Aquarium::Close() noexcept {
   is_opened_ = false;
 }
 

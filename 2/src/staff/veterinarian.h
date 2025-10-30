@@ -6,21 +6,10 @@
 #ifndef STAFF_VETERINARIAN_H_
 #define STAFF_VETERINARIAN_H_
 
+#include "animals/animal.h"
 #include "animals/medical/diagnosis.h"
+#include "animals/medical/medical.h"
 #include "staff/employee.h"
-
-// Forward declaration of Animal and MedicalRecordBook classes in animals namespace
-namespace animals {
-
-class Animal;
-
-namespace medical {
-
-class MedicalRecordBook;
-
-}  // namespace medical
-
-}  // namespace animals
 
 /**
  * @brief Namespace for all staff-related classes and functions.

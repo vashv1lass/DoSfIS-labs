@@ -8,12 +8,7 @@
 
 #include <memory>
 
-// Forward declaration of Account class in payment namespace
-namespace payment {
-
-class Account;
-
-}  // namespace payment
+#include "payment/account.h"
 
 /**
  * @brief Namespace for payment-related classes and functions.

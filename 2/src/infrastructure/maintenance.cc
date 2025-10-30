@@ -1,7 +1,5 @@
 #include "infrastructure/maintenance.h"
 
-#include <cstdlib>
-
 #include "infrastructure/tank.h"
 #include "utils/exceptions/not_found_errors.h"
 

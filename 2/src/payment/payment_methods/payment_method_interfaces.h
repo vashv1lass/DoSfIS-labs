@@ -8,10 +8,10 @@
 
 #include <string>
 
-// Forward declaration for Account and Transaction classes in payment namespace
+#include "payment/account.h"
+
 namespace payment {
 
-class Account;
 class Transaction;
 
 }  // namespace payment

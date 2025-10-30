@@ -8,15 +8,9 @@
 
 #include <string>
 
+#include "payment/account.h"
+#include "payment/context.h"
 #include "payment/payment_methods/payment_method_interfaces.h"
-
-// Forward declaration of PaymentContext and Account classes in payment namespace
-namespace payment {
-
-class PaymentContext;
-class Account;
-
-}  // namespace payment
 
 /**
  * @brief Namespace for payment-related classes and functions.

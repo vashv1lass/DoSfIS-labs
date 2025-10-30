@@ -10,12 +10,7 @@
 #include <memory>
 #include <unordered_map>
 
-// Forward declaration of Tank
-namespace infrastructure {
-
-class Tank;
-
-}  // namespace infrastructure
+#include "infrastructure/tank.h"
 
 /**
  * @brief Namespace for all infrastructure-related classes and functions.
@@ -53,7 +48,7 @@ private:
    * @param tank Reference to the tank to clean.
    * @note This function carries out the detailed cleaning procedure.
    */
-  void PerformCleaning(Tank& tank);
+  void PerformCleaning(Tank& tank) noexcept;
 };
 
 }  // namespace infrastructure

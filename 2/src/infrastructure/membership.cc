@@ -72,7 +72,7 @@ void MembershipSystem::AddPoints(const std::string& name, int points) {
   it->second.AddPoints(points);
 }
 
-void MembershipSystem::AddPoints(const std::string& name, int points) {
+void MembershipSystem::RedeemPoints(const std::string& name, int points) {
   auto it = members_.find(name);
   if (it == members_.end()) {
     throw utils::exceptions::MemberNotFoundError("Member " + name + " not found.");

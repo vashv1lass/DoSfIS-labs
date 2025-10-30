@@ -9,15 +9,9 @@
 #include <memory>
 #include <string>
 
+#include "payment/account.h"
+#include "payment/context.h"
 #include "payment/payment_methods/card_payment/card_payment.h"
-
-// Forward declaration of PaymentContext and Account classes in payment namespace
-namespace payment {
-
-class PaymentContext;
-class Account;
-
-}  // namespace payment
 
 /**
  * @brief Namespace for payment-related classes and functions.

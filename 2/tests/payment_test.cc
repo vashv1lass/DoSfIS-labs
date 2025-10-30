@@ -1,16 +1,11 @@
 #include <UnitTest++/UnitTest++.h>
+
 #include <memory>
 #include <stdexcept>
 
-#include "staff/cashier.h"
-#include "payment/context.h"
-#include "payment/account.h"
-#include "payment/ticket.h"
-#include "payment/transaction.h"
-#include "payment/payment_methods/cash_payment/cash_payment.h"
-#include "payment/payment_methods/card_payment/card_payment.h"
-#include "payment/payment_methods/card_payment/online_card_payment.h"
-#include "utils/exceptions/payment_errors.h"
+#include "payment/payment.h"
+#include "staff/staff.h"
+#include "utils/utils.h"
 
 using namespace payment;
 using namespace payment::payment_methods;
@@ -105,4 +100,4 @@ TEST_FIXTURE(PaymentFixture, TransactionCannotBeProcessedTwice) {
 
 int main(int argc, char** argv) {
   return UnitTest::RunAllTests();
-}
+} 

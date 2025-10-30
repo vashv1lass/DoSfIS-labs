@@ -9,28 +9,22 @@
 #include <memory>
 #include <string>
 
+#include "payment/account.h"
+#include "payment/payment_methods/payment_method_interfaces.h"
 #include "payment/ticket.h"
 
-// Forward declarations of Account class and payment method interfaces in payment namespace 
-namespace payment {
-
-class Account;
-
-namespace payment_methods {
+namespace payment::payment_methods {
 
 class IPaymentMethod;
 class IAccountPaymentMethod;
 
-}  // namespace payment_methods
+}
 
-}  // namespace payemnt
-
-// Forward declaration of Cashier class in staff namespace
 namespace staff {
 
 class Cashier;
 
-}  // namespace staff
+}
 
 /**
  * @brief Namespace for payment-related classes and functions.

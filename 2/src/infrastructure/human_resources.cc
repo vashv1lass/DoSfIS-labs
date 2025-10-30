@@ -39,7 +39,8 @@ staff::Employee* HumanResources::FindEmployee(const std::string& name) noexcept 
 }
 
 std::vector<EmployeeInfo> HumanResources::ListEmployees() const {
-  std::vector<EmployeeInfo> result(employees_.size());
+  std::vector<EmployeeInfo> result;
+  result.reserve(employees_.size());
   for (const auto& e : employees_) {
     result.push_back(EmployeeInfo(e->GetName(), e->GetRole(), e->GetSalary()));
   }

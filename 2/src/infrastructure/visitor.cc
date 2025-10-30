@@ -1,5 +1,7 @@
 #include "infrastructure/visitor.h"
 
+#include <stdexcept>
+
 namespace infrastructure {
 
 Visitor::Visitor(std::string name, int age) : name_(std::move(name)), age_(age) {

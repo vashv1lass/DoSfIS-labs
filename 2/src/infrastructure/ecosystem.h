@@ -10,12 +10,7 @@
 #include <string>
 #include <vector>
 
-// Forward declaration of Animal class in animals namespace
-namespace animals {
-
-class Animal;
-
-}  // namespace animals
+#include "animals/animal.h"
 
 namespace infrastructure {
 

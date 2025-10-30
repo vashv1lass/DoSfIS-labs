@@ -19,7 +19,7 @@ void SeaTurtle::Move() const noexcept {
             << shell_diameter_ << " cm.\n";
 }
 
-std::string SeaTurtle::GetSpecies() const { return "Sea Turtle"; }
+std::string SeaTurtle::GetSpecies() const noexcept { return "Sea Turtle"; }
 
 double SeaTurtle::GetShellDiameter() const noexcept { return shell_diameter_; }
 

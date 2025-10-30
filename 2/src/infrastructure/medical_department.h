@@ -11,15 +11,7 @@
 #include <unordered_map>
 
 #include "animals/medical/diagnosis.h"
-
-// Forward declaration of MedicalRecordBook class in animals::medical namespace
-namespace animals {
-namespace medical {
-  
-class MedicalRecordBook;
-
-}  // namespace medical
-}  // namespace animals
+#include "animals/medical/medical.h"
 
 /**
  * @brief Namespace for all infrastructure-related classes and functions.

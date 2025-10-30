@@ -6,16 +6,14 @@
 #ifndef STAFF_CASHIER_H_
 #define STAFF_CASHIER_H_
 
+#include <memory>
 #include <string>
 
+#include "payment/account.h"
+#include "payment/payment_methods/payment_method_interfaces.h"
+#include "payment/ticket.h"
+#include "payment/transaction.h"
 #include "staff/employee.h"
-
-// Forward declaration of Transaction class in payment namespaces
-namespace payment {
-
-class Transaction;
-
-}  // namespace payment
 
 /**
  * @brief Namespace for all staff-related classes and functions.

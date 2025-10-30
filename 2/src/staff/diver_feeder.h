@@ -9,14 +9,8 @@
 #include <iostream>
 #include <string>
 
+#include "animals/animal.h"
 #include "staff/employee.h"
-
-// Forward declaration of Animal class in animals namespace
-namespace animals {
-
-class Animal;
-
-}  // namespace animals
 
 /**
  * @brief Namespace for all staff-related classes and functions.

@@ -36,7 +36,7 @@ public:
   virtual ~Animal() noexcept = default;
 
   /**
-   * @brief Pure virtual function to immitate the animal movement.
+   * @brief Pure virtual function to imitate the animal movement.
    */
   virtual void Move() const noexcept = 0;
   
@@ -72,7 +72,7 @@ protected:
   std::shared_ptr<medical::MedicalRecordBook> medical_record_book_;   /// The medical record book of the animal.
 
   /**
-   * @brief Pure virtual function to immitate the animal eating.
+   * @brief Pure virtual function to imitate the animal eating.
    * @note Accessible only to DiverFeeder staff.
    */
   virtual void Eat() const noexcept = 0;
