@@ -52,8 +52,10 @@ public:
   /**
    * @brief Makes the seal balance a ball.
    * @note This function performs the ball balancing action.
+   * @throws utils::exceptions::CannotPerformActionException if the seal
+   *         has not learned to balance a ball yet.
    */
-  void BalanceBall() const noexcept;
+  void BalanceBall() const;
 
 protected:
   /**

@@ -13,6 +13,13 @@
 #include "animals/medical/diagnosis.h"
 #include "animals/medical/medical.h"
 
+// Forward declaration of Veterinarian class in staff namespace
+namespace staff {
+
+class Veterinarian;
+
+}  // namespace staff
+
 /**
  * @brief Namespace for all infrastructure-related classes and functions.
  */
@@ -41,15 +48,22 @@ public:
    * @param animal_name The name of the animal to add the record for.
    * @param diagnosis The diagnosis to add to the record.
    */
-  void AddRecord(const std::string& animal_name, animals::medical::Diagnosis diagnosis);
-  
+  void AddRecord(const std::string& animal_name,
+                 animals::medical::Diagnosis diagnosis,
+                 const staff::Veterinarian& vet);
+
   /**
    * @brief Retrieves the medical summary for an animal.
    * @param animal_name The name of the animal to get the summary for.
    * @return A string containing the medical summary.
    */
   std::string GetSummary(const std::string& animal_name) const;
-  
+ 
+  /**
+   * @brief Retrieves all registered medical record books.
+   * @return A constant reference to the map of medical record books.
+   */
+  const std::unordered_map<std::string, std::unique_ptr<animals::medical::MedicalRecordBook>>& GetRecordBooks() const;
 private:
   std::unordered_map<std::string, std::unique_ptr<animals::medical::MedicalRecordBook>> record_books_;  /// Map of medical record books by animal name.
 };

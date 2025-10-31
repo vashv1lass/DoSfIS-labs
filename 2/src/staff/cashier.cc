@@ -31,7 +31,6 @@ std::unique_ptr<payment::Transaction> Cashier::CreateTransaction(
 
 void Cashier::ProcessTransaction(payment::Transaction& transaction) {
   transaction.Process();
-  std::cout << "Cashier " << name_ << " processed the transaction.\n";
 }
 
 }  // namespace staff

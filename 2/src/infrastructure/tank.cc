@@ -1,6 +1,6 @@
 #include "infrastructure/tank.h"
 
-#include <iostream>
+#include <sstream>
 
 #include "animals/animal.h"
 #include "utils/id_generator.h"
@@ -29,11 +29,13 @@ void Tank::AddAnimal(std::shared_ptr<animals::Animal> animal) {
   animals_.push_back(std::move(animal));
 }
 
-void Tank::ShowAll() const noexcept {
-  std::cout << "Tank depth: " << depth_ << " m, volume: " << volume_ << " m³\n";
+std::string Tank::ShowAll() const noexcept {
+  std::ostringstream oss;
+  oss << "Tank depth: " << depth_ << " m, volume: " << volume_ << " m³\n";
   for (const auto& a : animals_) {
-    std::cout << " - " << a->GetName() << " (" << a->GetSpecies() << ")\n";
+    oss << " - " << a->GetName() << " (" << a->GetSpecies() << ")\n";
   }
+  return oss.str();
 }
 
 int Tank::GetID() const noexcept { return id_; }

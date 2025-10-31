@@ -44,7 +44,7 @@ public:
    * @note This function creates a new medical record with the given diagnosis.
    */
   void Diagnose(animals::Animal& animal,
-                animals::medical::MedicalRecordBook& record_book,
+                infrastructure::MedicalDepartment& department,
                 animals::medical::Diagnosis diagnosis);
 };
 

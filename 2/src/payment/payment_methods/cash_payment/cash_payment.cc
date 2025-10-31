@@ -27,13 +27,10 @@ void CashPayment::Pay(double amount) {
 
   double change = amount_given_ - amount;
   context_.GetAquariumAccount().Deposit(amount);
-
-  std::cout << "Given: " << amount_given_ << " BYN. Received: "
-            << amount << " BYN. Change: " << change << " BYN.";
 }
 
 std::string CashPayment::GetPaymentMethodInfo() const noexcept {
-  return "Cash Payment";
+  return "Cash payment";
 }
 
 }  // namespace payment_methods

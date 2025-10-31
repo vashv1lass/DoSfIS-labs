@@ -18,5 +18,8 @@ PaymentError::PaymentError(std::string message)
 UnknownTypeError::UnknownTypeError(std::string message)
     : BaseException(std::move(message)) {}
 
+CannotPerformActionException::CannotPerformActionException(std::string message)
+    : BaseException(std::move(message)) {}
+
 }  // namespace exceptions
 }  // namespace utils

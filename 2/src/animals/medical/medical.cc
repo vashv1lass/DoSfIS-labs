@@ -51,7 +51,8 @@ std::optional<const MedicalRecord*> MedicalRecordBook::GetLastRecord() const noe
 }
 
 std::vector<const MedicalRecord*> MedicalRecordBook::GetRecords() const noexcept {
-  std::vector<const MedicalRecord*> result(records_.size());
+  std::vector<const MedicalRecord*> result;
+  result.reserve(records_.size());
   for (const auto& rec : records_) {
     result.push_back(rec.get());
   }

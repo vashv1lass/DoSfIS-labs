@@ -83,6 +83,15 @@ public:
   explicit UnknownTypeError(std::string message);
 };
 
+/**
+ * @class CannotPerformActionException
+ * @brief Exception thrown when an action cannot be performed.
+ */
+class CannotPerformActionException : public BaseException {
+public:
+  explicit CannotPerformActionException(std::string message);
+};
+
 }  // namespace exceptions
 }  // namespace utils
 

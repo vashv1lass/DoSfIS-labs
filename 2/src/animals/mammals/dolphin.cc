@@ -2,6 +2,8 @@
 
 #include <iostream>
 
+#include "utils/exceptions/base_exceptions.h"
+
 namespace animals {
 
 Dolphin::Dolphin(std::string name, double milk_production, double dive_depth,
@@ -16,27 +18,31 @@ Dolphin::Dolphin(std::string name, double milk_production, double dive_depth,
 
 std::string Dolphin::GetSpecies() const noexcept { return "Dolphin"; }
 
+int Dolphin::GetIQ() const noexcept { return iq_; }
+
 bool Dolphin::CanDraw() const noexcept { return can_draw_; }
 
-void Dolphin::Draw() const noexcept {
-  if (can_draw_) {
-    std::cout << name_ << " draws a beautiful picture.\n";
-  } else {
-    std::cout << name_ << " doesn't know how to draw.\n";
+void Dolphin::Draw() const {
+  if (!can_draw_) {
+    throw utils::exceptions::CannotPerformActionException(
+      name_ + " cannot draw. It needs to learn first."
+    );
   }
+  std::cout << name_ << " draws a beautiful picture.\n";
 }
 
 void Dolphin::Eat() const noexcept {
   std::cout << name_ << " eats small fish.\n";
 }
 
-void Dolphin::LearnToDraw() noexcept {
-  if (iq_ > 120) {
-    can_draw_ = true;
-    std::cout << name_ << " learned to draw!\n";
-  } else {
-    std::cout << name_ << " is not intelligent enough to learn drawing.\n";
+void Dolphin::LearnToDraw() {
+  if (iq_ <= 120) {
+    throw utils::exceptions::CannotPerformActionException(
+      name_ + " has insufficient IQ to learn drawing."
+    );
   }
+
+  can_draw_ = true;
 }
 
 }  // namespace animals

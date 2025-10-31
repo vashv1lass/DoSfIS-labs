@@ -4,6 +4,7 @@
 
 #include "animals/medical/medical.h"
 #include "utils/exceptions/not_found_errors.h"
+#include "staff/veterinarian.h"
 
 namespace infrastructure {
 
@@ -16,7 +17,8 @@ void MedicalDepartment::RegisterBook(std::string animal_name,
 }
 
 void MedicalDepartment::AddRecord(const std::string& animal_name,
-                                  animals::medical::Diagnosis diagnosis) {
+                                  animals::medical::Diagnosis diagnosis,
+                                  const staff::Veterinarian& vet) {
   auto it = record_books_.find(animal_name);
   if (it == record_books_.end()) {
     throw utils::exceptions::MedicalRecordBookNotFoundError("No record book for " + animal_name + ".");
@@ -32,6 +34,11 @@ std::string MedicalDepartment::GetSummary(const std::string& animal_name) const 
   }
 
   return it->second->GetSummary();
+}
+
+const std::unordered_map<std::string, std::unique_ptr<animals::medical::MedicalRecordBook>>&
+MedicalDepartment::GetRecordBooks() const {
+  return record_books_;
 }
 
 }  // namespace infrastructure

@@ -8,6 +8,7 @@
 
 #include <memory>
 #include <stdexcept>
+#include <string>
 #include <vector>
 
 #include "animals/animal.h"
@@ -39,9 +40,9 @@ public:
 
   /**
    * @brief Displays information about all animals in the tank.
-   * @note This function prints the details of each animal to the standard output.
+   * @return A string listing all animals in the tank.
    */
-  void ShowAll() const noexcept;
+  std::string ShowAll() const noexcept;
 
   /**
    * @brief Retrieves the ID of the tank.

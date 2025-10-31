@@ -18,18 +18,15 @@ CardPayment::CardPayment(PaymentContext& context, std::shared_ptr<Account> card_
 
 void CardPayment::Pay(Account& customer, double amount) {
   if (amount <= 0.0) {
-    throw std::invalid_argument("Amount must be positive.");
+    throw std::out_of_range("Amount must be positive.");
   }
 
   card_account_->Withdraw(amount);
   context_.GetAquariumAccount().Deposit(amount);
-
-  std::cout << "Card charged: " << amount <<
-               " BYN from " << card_account_->GetOwner() << ".\n";
 }
 
 std::string CardPayment::GetPaymentMethodInfo() const noexcept {
-  return "Card Payment (POS)";
+  return "Card payment (POS)";
 }
 
 }  // namespace payment_methods

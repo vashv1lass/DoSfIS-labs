@@ -36,11 +36,11 @@ std::string Ticket::GetInfo() const noexcept {
     case TicketCategory::kBase:
       return "Base ticket for adults.";
     case TicketCategory::kVip:
-      return "VIP ticket for adults with special access.";
+      return "VIP ticket for adults.";
     case TicketCategory::kChildBase:
-      return "Child ticket (base).";
+      return "Base ticket for children.";
     case TicketCategory::kChildVip:
-      return "Child VIP ticket with extra perks.";
+      return "VIP ticket for children.";
     default:
       return "Unknown ticket.";
   }

@@ -55,10 +55,8 @@ void Transaction::Process() {
 
   if (method_) {
     method_->Pay(total);
-    std::cout << "Transaction complete (cash/other) for " << visitor_name_ << ".\n";
   } else if (account_method_) {
     account_method_->Pay(*visitor_account_, total);
-    std::cout << "Transaction complete (account) for " << visitor_name_ << ".\n";
   } else {
     throw utils::exceptions::MismatchingPaymentMethodError("Invalid payment configuration.");
   }

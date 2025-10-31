@@ -31,7 +31,7 @@ std::string Diagnosis::ToString() const {
     case DiagnosisType::kCold:
       return "Cold";
     case DiagnosisType::kInjury:
-      return "Injurys";
+      return "Injury";
     case DiagnosisType::kInfection:
       return "Infection";
     default:

@@ -14,8 +14,11 @@ DiverFeeder::DiverFeeder(std::string name, double salary, double oxygen_tank_vol
 
 std::string DiverFeeder::GetRole() const noexcept { return "Diver Feeder"; }
 
+double DiverFeeder::GetOxygenTankVolume() const noexcept {
+  return oxygen_tank_volume_;
+}
+
 void DiverFeeder::Feed(animals::Animal& animal) {
-  std::cout << "Diver " << name_ << " is feeding " << animal.GetName() << ".\n";
   animal.Eat();
 }
 

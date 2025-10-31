@@ -20,6 +20,13 @@ namespace animals {
 class Shark : public Fish {
 public:
   /**
+   * @brief Constructor for Shark class.
+   * @param name The name of the shark.
+   * @param swim_speed The swimming speed of the shark.
+   */
+  Shark(std::string name, double swim_speed);
+  
+  /**
    * @brief Implements the GetSpecies function for shark.
    * @return The species of the shark as a string.
    * @note Overrides the GetSpecies function from the Fish base class.

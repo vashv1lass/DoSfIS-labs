@@ -2,6 +2,8 @@
 
 #include <iostream>
 
+#include "utils/exceptions/base_exceptions.h"
+
 namespace animals {
 
 Seal::Seal(std::string name, double milk_production, double dive_depth,
@@ -15,17 +17,17 @@ bool Seal::CanBalanceBall() const noexcept {
   return can_balance_ball_;
 }
 
-void Seal::BalanceBall() const noexcept {
-  if (can_balance_ball_) {
-    std::cout << name_ << " balances a ball skillfully!\n";
-  } else {
-    std::cout << name_ << " hasn't learned to balance yet.\n";
+void Seal::BalanceBall() const {
+  if (!can_balance_ball_) {
+    throw utils::exceptions::CannotPerformActionException(
+      name_ + " cannot balance a ball. It needs to learn first."
+    );
   }
+  std::cout << name_ << " balances a ball skillfully!\n";
 }
 
 void Seal::LearnToBalanceBall() noexcept {
   can_balance_ball_ = true;
-  std::cout << name_ << " learned to balance a ball!\n";
 }
 
 void Seal::Eat() const noexcept {

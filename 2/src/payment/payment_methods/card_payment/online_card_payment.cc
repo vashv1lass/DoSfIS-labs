@@ -34,13 +34,10 @@ void OnlineCardPayment::Pay(Account &customer, double amount) {
 
   card_account_->Withdraw(amount);
   context_.GetAquariumAccount().Deposit(amount);
-
-  std::cout << "Online payment of " << amount << " BYN from "
-            << card_account_->GetOwner() << " processed.\n";
 }
 
 std::string OnlineCardPayment::GetPaymentMethodInfo() const noexcept {
-  return "Online Card Payment";
+  return "Online card payment";
 }
 
 }  // namespace payment_methods

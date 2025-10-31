@@ -45,6 +45,12 @@ public:
   std::string GetRole() const noexcept override;
   
   /**
+   * @brief Retrieves the volume of the oxygen tank.
+   * @return The volume of the oxygen tank.
+   */
+  double GetOxygenTankVolume() const noexcept;
+
+  /**
    * @brief Feeds an animal.
    * @param animal Reference to the animal to feed.
    * @note This function accesses the protected Eat method of the animal.

@@ -15,6 +15,13 @@
 
 #include "animals/medical/diagnosis.h"
 
+// Forward declaration of MedicalDepartment class in infrastructure namespace
+namespace infrastructure {
+
+class MedicalDepartment;
+
+}  // namespace infrastructure
+
 /**
  * @brief Namespace for all animal-related classes and functions.
  */
@@ -73,12 +80,6 @@ public:
   explicit MedicalRecordBook(std::string owner);
 
   /**
-   * @brief Adds a medical record to the record book.
-   * @param record Unique pointer to the medical record to add.
-   */
-  void AddRecord(std::unique_ptr<MedicalRecord> record);
-
-  /**
    * @brief Retrieves the last medical record in the record book.
    * @return An optional containing a pointer to the last record, or std::nullopt if no records exist.
    */
@@ -105,6 +106,15 @@ public:
 private:
   std::string owner_;  /// The name of the animal that owns this record book.
   std::vector<std::unique_ptr<MedicalRecord>> records_;  /// The collection of medical records.
+
+  /**
+   * @brief Adds a medical record to the record book.
+   * @param record Unique pointer to the medical record to add.
+   * @note This function is private and intended to be used by the MedicalDepartment class.
+   */
+  void AddRecord(std::unique_ptr<MedicalRecord> record);
+
+  friend class infrastructure::MedicalDepartment;  // Allows MedicalDepartment to access private members.
 };
 
 }  // namespace medical

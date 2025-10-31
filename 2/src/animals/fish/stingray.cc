@@ -28,6 +28,7 @@ void Stingray::SetFinSpan(double fin_span) {
         throw std::out_of_range("Fin span must be positive "
                                 "and less than or equal to 10 meters.");
     }
+    fin_span_ = fin_span;
 }
 
 double Stingray::GetFinSpan() const { return fin_span_; }

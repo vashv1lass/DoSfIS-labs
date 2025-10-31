@@ -45,6 +45,12 @@ public:
   std::string GetSpecies() const noexcept override;
 
   /**
+   * @brief Retrieves the intelligence quotient of the dolphin.
+   * @return The intelligence quotient of the dolphin.
+   */
+  int GetIQ() const noexcept;
+
+  /**
    * @brief Checks if the dolphin can draw.
    * @return True if the dolphin can draw, false otherwise.
    */
@@ -53,8 +59,10 @@ public:
   /**
    * @brief Makes the dolphin draw.
    * @note This function performs the drawing action.
+   * @throws utils::exceptions::CannotPerformActionException if the dolphin
+   *         has not learned to draw yet.
    */
-  void Draw() const noexcept;
+  void Draw() const;
 
 protected:
   /**
@@ -72,8 +80,10 @@ private:
    * @brief Makes the dolphin learn to draw.
    * @note This function trains the dolphin to acquire drawing ability.
    * @note Accessible only to Trainer staff.
+   * @throws utils::exceptions::CannotPerformActionException if the dolphin's
+   *         IQ is insufficient to learn drawing.
    */
-  void LearnToDraw() noexcept;
+  void LearnToDraw();
 
   friend class staff::Trainer;  // Allows Trainer to access private members.
 };
