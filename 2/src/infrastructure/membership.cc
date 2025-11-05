@@ -17,14 +17,14 @@ Member::Member(std::string name, MembershipLevel level)
 
 void Member::AddPoints(int points) {
   if (points < 0) {
-    throw std::invalid_argument("Points must be positive.");
+    throw std::out_of_range("Points must be positive.");
   }
   points_ += points;
 }
 
 void Member::RedeemPoints(int points) {
   if (points > points_) {
-    throw std::invalid_argument("Not enough points.");
+    throw std::runtime_error("Not enough points.");
   }
   points_ -= points;
 }
@@ -38,9 +38,11 @@ void Member::Upgrade() {
     case MembershipLevel::kSilver:
       RedeemPoints(25);
       level_ = MembershipLevel::kGold;
+      break;
     case MembershipLevel::kGold:
       RedeemPoints(50);
       level_ = MembershipLevel::kPlatinum;
+      break;
     case MembershipLevel::kPlatinum:
       throw std::runtime_error("User " + name_ + " already has a platinum membership level.");
     default:
@@ -60,7 +62,7 @@ void MembershipSystem::RegisterMember(std::string name, MembershipLevel level) {
     throw utils::exceptions::MemberAlreadyExistsError("Member " + name + " already exists.");
   }
 
-  members_.emplace(name, Member(std::move(name), level));
+  members_.emplace(name, Member(name, level));
 }
 
 void MembershipSystem::AddPoints(const std::string& name, int points) {

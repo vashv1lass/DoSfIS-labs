@@ -17,7 +17,20 @@ const std::string& Visitor::GetName() const noexcept { return name_; }
 
 int Visitor::GetAge() const noexcept { return age_; }
 
-void Visitor::AddTicket(payment::Ticket ticket) { tickets_.push_back(std::move(ticket)); }
+void Visitor::AddTicket(payment::Ticket ticket) {
+  if (age_ < 18) {
+    if (ticket.GetCategory() == payment::TicketCategory::kBase ||
+        ticket.GetCategory() == payment::TicketCategory::kVip) {
+      throw std::invalid_argument("Cannot add adult ticket for child.");
+    }
+  } else {
+    if (ticket.GetCategory() == payment::TicketCategory::kChildBase ||
+        ticket.GetCategory() == payment::TicketCategory::kChildVip) {
+      throw std::invalid_argument("Cannot add child ticket for an adult.");
+    }
+  }
+  tickets_.push_back(std::move(ticket));
+}
 
 std::vector<payment::Ticket> Visitor::GetTickets() const noexcept { return tickets_; }
 

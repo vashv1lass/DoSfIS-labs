@@ -1,6 +1,3 @@
-#ifndef ANIMALS_TEST_CC_
-#define ANIMALS_TEST_CC_
-
 #include <UnitTest++/UnitTest++.h>
 
 #include "animals/animals.h"
@@ -546,5 +543,3 @@ SUITE(AnimalTests) {
     }
   }
 }
-
-#endif  // ANIMALS_TEST_CC_

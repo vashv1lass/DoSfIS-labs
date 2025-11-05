@@ -1,6 +1,3 @@
-#ifndef PAYMENT_TEST_CC_
-#define PAYMENT_TEST_CC_
-
 #include <UnitTest++/UnitTest++.h>
 
 #include <memory>
@@ -13,6 +10,7 @@
 using namespace payment;
 using namespace payment::payment_methods;
 using namespace staff;
+using namespace utils;
 using namespace utils::exceptions;
 
 struct PaymentFixture {
@@ -176,28 +174,36 @@ TEST_FIXTURE(PaymentFixture, InsufficientFundsCashPayment) {
 
 // Ticket tests
 TEST(BaseTicketCreation) {
+  IDGenerator::Instance().Reset();
   Ticket base_ticket(TicketCategory::kBase);
+  CHECK_EQUAL(1, base_ticket.GetID());
   CHECK(TicketCategory::kBase == base_ticket.GetCategory());
   CHECK_CLOSE(25.0, base_ticket.GetPrice(), 1e-6);
   CHECK_EQUAL("Base ticket for adults.", base_ticket.GetInfo());
 }
 
 TEST(VipTicketCreation) {
+  IDGenerator::Instance().Reset();
   Ticket vip_ticket(TicketCategory::kVip);
+  CHECK_EQUAL(1, vip_ticket.GetID());
   CHECK(TicketCategory::kVip == vip_ticket.GetCategory());
   CHECK_CLOSE(50.0, vip_ticket.GetPrice(), 1e-6);
   CHECK_EQUAL("VIP ticket for adults.", vip_ticket.GetInfo());
 }
 
 TEST(ChildBaseTicketCreation) {
+  IDGenerator::Instance().Reset();
   Ticket child_base_ticket(TicketCategory::kChildBase);
+  CHECK_EQUAL(1, child_base_ticket.GetID());
   CHECK(TicketCategory::kChildBase == child_base_ticket.GetCategory());
   CHECK_CLOSE(15.0, child_base_ticket.GetPrice(), 1e-6);
   CHECK_EQUAL("Base ticket for children.", child_base_ticket.GetInfo());
 }
 
 TEST(ChildVipTicketCreation) {
+  IDGenerator::Instance().Reset();
   Ticket child_vip_ticket(TicketCategory::kChildVip);
+  CHECK_EQUAL(1, child_vip_ticket.GetID());
   CHECK(TicketCategory::kChildVip == child_vip_ticket.GetCategory());
   CHECK_CLOSE(30.0, child_vip_ticket.GetPrice(), 1e-6);
   CHECK_EQUAL("VIP ticket for children.", child_vip_ticket.GetInfo());
@@ -235,5 +241,3 @@ TEST_FIXTURE(PaymentFixture, TransactionWithNullVisitorAccount) {
   auto card_method = std::make_unique<CardPayment>(context, visitor_account);
   CHECK_THROW(cashier.CreateTransaction("Test", ticket, std::move(card_method), nullptr), std::invalid_argument);
 }
-
-#endif  // PAYMENT_TEST_CC_

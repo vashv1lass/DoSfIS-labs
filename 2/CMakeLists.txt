@@ -33,6 +33,9 @@ file(GLOB TEST_SOURCES "${TEST_DIR}/*.cpp" "${TEST_DIR}/*.cc")
 add_executable(runTests ${TEST_SOURCES})
 target_link_libraries(runTests PRIVATE project_lib UnitTest++)
 
+target_compile_definitions(project_lib PRIVATE UNIT_TEST)
+target_compile_definitions(runTests PRIVATE UNIT_TEST)
+
 enable_testing()
 add_test(NAME run_all_tests COMMAND runTests)
 

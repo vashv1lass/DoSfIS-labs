@@ -50,14 +50,20 @@ public:
   double GetPrice() const noexcept;
 
   /**
+   * @brief Retrieves the ID of the ticket.
+   * @return The ID of the ticket.
+   */
+  int GetID() const noexcept;
+
+  /**
    * @brief Retrieves information about the ticket.
    * @return A string containing information about the ticket.
    */
   std::string GetInfo() const noexcept;
-
 private:
   TicketCategory category_;  /// The category of the ticket.
   double price_;             /// The price of the ticket.
+  int id_;                   /// The ID of the ticket.
 };
 
 }  // namespace payment

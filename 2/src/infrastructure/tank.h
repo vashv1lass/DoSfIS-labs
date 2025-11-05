@@ -39,12 +39,6 @@ public:
   void AddAnimal(std::shared_ptr<animals::Animal> animal);
 
   /**
-   * @brief Displays information about all animals in the tank.
-   * @return A string listing all animals in the tank.
-   */
-  std::string ShowAll() const noexcept;
-
-  /**
    * @brief Retrieves the ID of the tank.
    * @return The ID of the tank.
    */
@@ -61,6 +55,12 @@ public:
    * @return The volume of the tank.
    */
   double GetVolume() const noexcept;
+
+  /**
+   * @brief Retrieves the list of animals in the tank.
+   * @return Const reference to the vector of shared pointers to animals.
+   */
+  const std::vector<std::shared_ptr<animals::Animal>>& GetAnimals() const noexcept;
 
   /**
    * @brief Checks if the tank is clean.

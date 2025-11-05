@@ -1,7 +1,5 @@
 #include "infrastructure/tank.h"
 
-#include <sstream>
-
 #include "animals/animal.h"
 #include "utils/id_generator.h"
 
@@ -29,20 +27,15 @@ void Tank::AddAnimal(std::shared_ptr<animals::Animal> animal) {
   animals_.push_back(std::move(animal));
 }
 
-std::string Tank::ShowAll() const noexcept {
-  std::ostringstream oss;
-  oss << "Tank depth: " << depth_ << " m, volume: " << volume_ << " m³\n";
-  for (const auto& a : animals_) {
-    oss << " - " << a->GetName() << " (" << a->GetSpecies() << ")\n";
-  }
-  return oss.str();
-}
-
 int Tank::GetID() const noexcept { return id_; }
 
 double Tank::GetDepth() const noexcept { return depth_; }
 
 double Tank::GetVolume() const noexcept { return volume_; }
+
+const std::vector<std::shared_ptr<animals::Animal>>& Tank::GetAnimals() const noexcept {
+  return animals_;
+}
 
 bool Tank::IsClean() const noexcept { return is_clean_; }
 

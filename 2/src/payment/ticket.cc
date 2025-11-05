@@ -1,10 +1,11 @@
 #include "payment/ticket.h"
 
+#include "utils/id_generator.h"
 #include "utils/exceptions/unknown_type_errors.h"
 
 namespace payment {
 
-Ticket::Ticket(TicketCategory category) : category_(category) {
+Ticket::Ticket(TicketCategory category) : category_(category), id_(utils::IDGenerator::Instance().NextID()) {
   switch (category_) {
     case TicketCategory::kBase:
       price_ = 25.0;
@@ -29,6 +30,10 @@ TicketCategory Ticket::GetCategory() const noexcept {
 
 double Ticket::GetPrice() const noexcept {
   return price_;
+}
+
+int Ticket::GetID() const noexcept {
+  return id_;
 }
 
 std::string Ticket::GetInfo() const noexcept {

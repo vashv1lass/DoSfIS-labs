@@ -10,6 +10,9 @@ namespace infrastructure {
 
 void MedicalDepartment::RegisterBook(std::string animal_name,
                                      std::unique_ptr<animals::medical::MedicalRecordBook> record_book) {
+  if (empty(animal_name)) {
+    throw std::invalid_argument("Animal name cannot be empty.");
+  }
   if (!record_book) {
     throw std::invalid_argument("Medical record book cannot be null.");
   }

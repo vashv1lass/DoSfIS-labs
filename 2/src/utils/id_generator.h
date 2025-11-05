@@ -32,6 +32,16 @@ public:
    */
   int NextID() noexcept;
 
+#ifdef UNIT_TEST
+
+  /**
+   * @brief Resests the ID.
+   * @note This function is used only for testing purposes.
+   */
+  void Reset() noexcept;
+  
+#endif
+
 private:
   /**
    * @brief Private constructor for the singleton pattern.
