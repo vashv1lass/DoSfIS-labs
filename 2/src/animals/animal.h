@@ -13,13 +13,6 @@
 #include "animals/medical/medical.h"
 #include "staff/diver_feeder.h"
 
-// Forward declaration to avoid circular dependency.
-namespace infrastructure {
-
-class MedicalDepartment;
-
-}  // namespace infrastructure
-
 /**
  * @brief Namespace for all animal-related classes and functions.
  */
