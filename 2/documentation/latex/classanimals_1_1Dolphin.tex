@@ -1,0 +1,220 @@
+\doxysection{animals\+::Dolphin Class Reference}
+\hypertarget{classanimals_1_1Dolphin}{}\label{classanimals_1_1Dolphin}\index{animals::Dolphin@{animals::Dolphin}}
+
+
+Derived class representing a dolphin, inheriting from \doxylink{classanimals_1_1SeaMammal}{Sea\+Mammal}.  
+
+
+
+
+{\ttfamily \#include $<$dolphin.\+h$>$}
+
+Inheritance diagram for animals\+::Dolphin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classanimals_1_1Dolphin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classanimals_1_1Dolphin_a4d3e2d83887485a194fe7abce0dc1678}{Dolphin}} (std\+::string name, double milk\+\_\+production, double dive\+\_\+depth, double breath\+\_\+hold, int iq)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classanimals_1_1Dolphin}{Dolphin} class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classanimals_1_1Dolphin_ad3e785d4eed2fcdd7d786f5424ec57a4}{Get\+Species}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Implements the Get\+Species function for dolphin. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classanimals_1_1Dolphin_a86f95c8b2c686ce634407097dfd75f48}{Get\+IQ}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the intelligence quotient of the dolphin. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classanimals_1_1Dolphin_a028c869b7ee506aaf2a93106b9bdfd46}{Can\+Draw}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Checks if the dolphin can draw. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classanimals_1_1Dolphin_a1d235487f47dd660ecb2abf1fc166910}{Draw}} () const
+\begin{DoxyCompactList}\small\item\em Makes the dolphin draw. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classanimals_1_1SeaMammal}{animals\+::\+Sea\+Mammal}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classanimals_1_1SeaMammal_a9faf50ae76d8ac431fce55860f1c32c0}{Sea\+Mammal}} (std\+::string name, double milk\+\_\+production, double dive\+\_\+depth, double breath\+\_\+hold)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classanimals_1_1SeaMammal}{Sea\+Mammal} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classanimals_1_1SeaMammal_a4504e29f9adb768db7c14cc7ab9ee5cc}{Move}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Implements the Move function for sea mammal. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classanimals_1_1SeaMammal_a55497583060ea273c2a04408ab054ab4}{Get\+Species}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Implements the Get\+Species function for sea mammal. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classanimals_1_1SeaMammal_a7facee70e866834a68be3c5ae92df2e8}{Get\+Dive\+Depth}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the maximum dive depth of the sea mammal. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classanimals_1_1SeaMammal_a6f22546c2a2cf7bea3e1c38d44561d75}{Get\+Breath\+Hold\+Time}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the breath hold time of the sea mammal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classanimals_1_1Mammal}{animals\+::\+Mammal}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classanimals_1_1Mammal_a152ab832049c10fc9ddaa272fae8b5d9}{Mammal}} (std\+::string name, double milk\+\_\+production)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classanimals_1_1Mammal}{Mammal} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classanimals_1_1Mammal_a64fa9e0bfd3accdded0d69808fce5353}{Set\+Milk\+Production}} (double milk\+\_\+production)
+\begin{DoxyCompactList}\small\item\em Sets the milk production rate of the mammal. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classanimals_1_1Mammal_a3a8f73dbf7302a0cb3814909f8e7e403}{Get\+Milk\+Production}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the milk production rate of the mammal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classanimals_1_1Animal}{animals\+::\+Animal}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classanimals_1_1Animal_a4566837ea2fe896184f998b7e78ba864}{Animal}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classanimals_1_1Animal}{Animal} class. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Animal} () noexcept=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{classanimals_1_1Animal}{Animal} class. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classanimals_1_1Animal_a88c36cb9b50ce91773d784698df867a4}{Get\+Name}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the name of the animal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classanimals_1_1Dolphin_a36d7fa48055c7c0990918add7563c719}{Eat}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Implements the Eat function for dolphin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classanimals_1_1Mammal}{animals\+::\+Mammal}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classanimals_1_1Mammal_ab1192270c9102674f39a932f20e630b6}{Eat}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em The milk production rate of the mammal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classanimals_1_1Dolphin_abb73ec83f653b46716ae511e620d50f4}\label{classanimals_1_1Dolphin_abb73ec83f653b46716ae511e620d50f4} 
+class {\bfseries staff\+::\+Trainer}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classanimals_1_1SeaMammal}{animals\+::\+Sea\+Mammal}}}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries dive\+\_\+depth\+\_\+}
+\item 
+double {\bfseries breath\+\_\+hold\+\_\+time\+\_\+}
+\begin{DoxyCompactList}\small\item\em The maximum dive depth of the sea mammal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classanimals_1_1Mammal}{animals\+::\+Mammal}}}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries milk\+\_\+production\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classanimals_1_1Animal}{animals\+::\+Animal}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries name\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Derived class representing a dolphin, inheriting from \doxylink{classanimals_1_1SeaMammal}{Sea\+Mammal}. 
+
+\label{doc-constructors}
+\Hypertarget{classanimals_1_1Dolphin_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classanimals_1_1Dolphin_a4d3e2d83887485a194fe7abce0dc1678}\index{animals::Dolphin@{animals::Dolphin}!Dolphin@{Dolphin}}
+\index{Dolphin@{Dolphin}!animals::Dolphin@{animals::Dolphin}}
+\doxysubsubsection{\texorpdfstring{Dolphin()}{Dolphin()}}
+{\footnotesize\ttfamily \label{classanimals_1_1Dolphin_a4d3e2d83887485a194fe7abce0dc1678} 
+animals\+::\+Dolphin\+::\+Dolphin (\begin{DoxyParamCaption}\item[{std\+::string}]{name}{, }\item[{double}]{milk\+\_\+production}{, }\item[{double}]{dive\+\_\+depth}{, }\item[{double}]{breath\+\_\+hold}{, }\item[{int}]{iq}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{classanimals_1_1Dolphin}{Dolphin} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the dolphin. \\
+\hline
+{\em milk\+\_\+production} & The milk production rate of the dolphin. \\
+\hline
+{\em dive\+\_\+depth} & The maximum dive depth of the dolphin. \\
+\hline
+{\em breath\+\_\+hold} & The breath hold time of the dolphin. \\
+\hline
+{\em iq} & The intelligence quotient of the dolphin. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classanimals_1_1Dolphin_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classanimals_1_1Dolphin_a028c869b7ee506aaf2a93106b9bdfd46}\index{animals::Dolphin@{animals::Dolphin}!CanDraw@{CanDraw}}
+\index{CanDraw@{CanDraw}!animals::Dolphin@{animals::Dolphin}}
+\doxysubsubsection{\texorpdfstring{CanDraw()}{CanDraw()}}
+{\footnotesize\ttfamily \label{classanimals_1_1Dolphin_a028c869b7ee506aaf2a93106b9bdfd46} 
+bool animals\+::\+Dolphin\+::\+Can\+Draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Checks if the dolphin can draw. 
+
+\begin{DoxyReturn}{Returns}
+True if the dolphin can draw, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classanimals_1_1Dolphin_a1d235487f47dd660ecb2abf1fc166910}\index{animals::Dolphin@{animals::Dolphin}!Draw@{Draw}}
+\index{Draw@{Draw}!animals::Dolphin@{animals::Dolphin}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily \label{classanimals_1_1Dolphin_a1d235487f47dd660ecb2abf1fc166910} 
+void animals\+::\+Dolphin\+::\+Draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Makes the dolphin draw. 
+
+\begin{DoxyNote}{Note}
+This function performs the drawing action. 
+\end{DoxyNote}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{classutils_1_1exceptions_1_1CannotPerformActionException}{utils\+::exceptions\+::\+Cannot\+Perform\+Action\+Exception}} & if the dolphin has not learned to draw yet. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classanimals_1_1Dolphin_a36d7fa48055c7c0990918add7563c719}\index{animals::Dolphin@{animals::Dolphin}!Eat@{Eat}}
+\index{Eat@{Eat}!animals::Dolphin@{animals::Dolphin}}
+\doxysubsubsection{\texorpdfstring{Eat()}{Eat()}}
+{\footnotesize\ttfamily \label{classanimals_1_1Dolphin_a36d7fa48055c7c0990918add7563c719} 
+void animals\+::\+Dolphin\+::\+Eat (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Implements the Eat function for dolphin. 
+
+\begin{DoxyNote}{Note}
+Overrides the Eat function from the \doxylink{classanimals_1_1SeaMammal}{Sea\+Mammal} base class. 
+
+Accessible only to Diver\+Feeder staff. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{classanimals_1_1Animal_a21dcef7e5fd352f3c819f78384b6875a}{animals\+::\+Animal}}.
+
+\Hypertarget{classanimals_1_1Dolphin_a86f95c8b2c686ce634407097dfd75f48}\index{animals::Dolphin@{animals::Dolphin}!GetIQ@{GetIQ}}
+\index{GetIQ@{GetIQ}!animals::Dolphin@{animals::Dolphin}}
+\doxysubsubsection{\texorpdfstring{GetIQ()}{GetIQ()}}
+{\footnotesize\ttfamily \label{classanimals_1_1Dolphin_a86f95c8b2c686ce634407097dfd75f48} 
+int animals\+::\+Dolphin\+::\+Get\+IQ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the intelligence quotient of the dolphin. 
+
+\begin{DoxyReturn}{Returns}
+The intelligence quotient of the dolphin. 
+\end{DoxyReturn}
+\Hypertarget{classanimals_1_1Dolphin_ad3e785d4eed2fcdd7d786f5424ec57a4}\index{animals::Dolphin@{animals::Dolphin}!GetSpecies@{GetSpecies}}
+\index{GetSpecies@{GetSpecies}!animals::Dolphin@{animals::Dolphin}}
+\doxysubsubsection{\texorpdfstring{GetSpecies()}{GetSpecies()}}
+{\footnotesize\ttfamily \label{classanimals_1_1Dolphin_ad3e785d4eed2fcdd7d786f5424ec57a4} 
+std\+::string animals\+::\+Dolphin\+::\+Get\+Species (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Implements the Get\+Species function for dolphin. 
+
+\begin{DoxyReturn}{Returns}
+The species of the dolphin as a string. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Overrides the Get\+Species function from the \doxylink{classanimals_1_1SeaMammal}{Sea\+Mammal} base class. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{classanimals_1_1Animal_a11bed746f38494b5ea871a57802983e5}{animals\+::\+Animal}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+animals/mammals/\mbox{\hyperlink{dolphin_8h}{dolphin.\+h}}\item 
+animals/mammals/dolphin.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,187 @@
+\doxysection{animals\+::Mammal Class Reference}
+\hypertarget{classanimals_1_1Mammal}{}\label{classanimals_1_1Mammal}\index{animals::Mammal@{animals::Mammal}}
+
+
+Derived class representing a mammal, inheriting from \doxylink{classanimals_1_1Animal}{Animal}.  
+
+
+
+
+{\ttfamily \#include $<$mammal.\+h$>$}
+
+Inheritance diagram for animals\+::Mammal\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classanimals_1_1Mammal}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classanimals_1_1Mammal_a152ab832049c10fc9ddaa272fae8b5d9}{Mammal}} (std\+::string name, double milk\+\_\+production)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classanimals_1_1Mammal}{Mammal} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classanimals_1_1Mammal_a61f1e07129f11487d58511663d45bc8c}{Move}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Implements the Move function for mammal. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classanimals_1_1Mammal_a7694d93e0bcd312732cd083972dee1d3}{Get\+Species}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Implements the Get\+Species function for mammal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classanimals_1_1Mammal_a64fa9e0bfd3accdded0d69808fce5353}{Set\+Milk\+Production}} (double milk\+\_\+production)
+\begin{DoxyCompactList}\small\item\em Sets the milk production rate of the mammal. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classanimals_1_1Mammal_a3a8f73dbf7302a0cb3814909f8e7e403}{Get\+Milk\+Production}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the milk production rate of the mammal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classanimals_1_1Animal}{animals\+::\+Animal}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classanimals_1_1Animal_a4566837ea2fe896184f998b7e78ba864}{Animal}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classanimals_1_1Animal}{Animal} class. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Animal} () noexcept=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{classanimals_1_1Animal}{Animal} class. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classanimals_1_1Animal_a88c36cb9b50ce91773d784698df867a4}{Get\+Name}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the name of the animal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classanimals_1_1Mammal_ab1192270c9102674f39a932f20e630b6}{Eat}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em The milk production rate of the mammal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classanimals_1_1Mammal_a4dc0b047dd3c1528a3364c023d85ddb0}\label{classanimals_1_1Mammal_a4dc0b047dd3c1528a3364c023d85ddb0} 
+double {\bfseries milk\+\_\+production\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classanimals_1_1Animal}{animals\+::\+Animal}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries name\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Derived class representing a mammal, inheriting from \doxylink{classanimals_1_1Animal}{Animal}. 
+
+\label{doc-constructors}
+\Hypertarget{classanimals_1_1Mammal_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classanimals_1_1Mammal_a152ab832049c10fc9ddaa272fae8b5d9}\index{animals::Mammal@{animals::Mammal}!Mammal@{Mammal}}
+\index{Mammal@{Mammal}!animals::Mammal@{animals::Mammal}}
+\doxysubsubsection{\texorpdfstring{Mammal()}{Mammal()}}
+{\footnotesize\ttfamily \label{classanimals_1_1Mammal_a152ab832049c10fc9ddaa272fae8b5d9} 
+animals\+::\+Mammal\+::\+Mammal (\begin{DoxyParamCaption}\item[{std\+::string}]{name}{, }\item[{double}]{milk\+\_\+production}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{classanimals_1_1Mammal}{Mammal} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the mammal. \\
+\hline
+{\em milk\+\_\+production} & The milk production rate of the mammal. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classanimals_1_1Mammal_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classanimals_1_1Mammal_ab1192270c9102674f39a932f20e630b6}\index{animals::Mammal@{animals::Mammal}!Eat@{Eat}}
+\index{Eat@{Eat}!animals::Mammal@{animals::Mammal}}
+\doxysubsubsection{\texorpdfstring{Eat()}{Eat()}}
+{\footnotesize\ttfamily \label{classanimals_1_1Mammal_ab1192270c9102674f39a932f20e630b6} 
+void animals\+::\+Mammal\+::\+Eat (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+The milk production rate of the mammal. 
+
+Implements the Eat function for mammal. \begin{DoxyNote}{Note}
+Overrides the Eat function from the \doxylink{classanimals_1_1Animal}{Animal} base class. 
+
+Accessible only to Diver\+Feeder staff. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{classanimals_1_1Animal_a21dcef7e5fd352f3c819f78384b6875a}{animals\+::\+Animal}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classanimals_1_1Seal_a5c6791ed71c02bf922aede52dace0b52}{animals\+::\+Seal}}.
+
+\Hypertarget{classanimals_1_1Mammal_a3a8f73dbf7302a0cb3814909f8e7e403}\index{animals::Mammal@{animals::Mammal}!GetMilkProduction@{GetMilkProduction}}
+\index{GetMilkProduction@{GetMilkProduction}!animals::Mammal@{animals::Mammal}}
+\doxysubsubsection{\texorpdfstring{GetMilkProduction()}{GetMilkProduction()}}
+{\footnotesize\ttfamily \label{classanimals_1_1Mammal_a3a8f73dbf7302a0cb3814909f8e7e403} 
+double animals\+::\+Mammal\+::\+Get\+Milk\+Production (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the milk production rate of the mammal. 
+
+\begin{DoxyReturn}{Returns}
+The milk production rate of the mammal. 
+\end{DoxyReturn}
+\Hypertarget{classanimals_1_1Mammal_a7694d93e0bcd312732cd083972dee1d3}\index{animals::Mammal@{animals::Mammal}!GetSpecies@{GetSpecies}}
+\index{GetSpecies@{GetSpecies}!animals::Mammal@{animals::Mammal}}
+\doxysubsubsection{\texorpdfstring{GetSpecies()}{GetSpecies()}}
+{\footnotesize\ttfamily \label{classanimals_1_1Mammal_a7694d93e0bcd312732cd083972dee1d3} 
+std\+::string animals\+::\+Mammal\+::\+Get\+Species (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Implements the Get\+Species function for mammal. 
+
+\begin{DoxyReturn}{Returns}
+The species of the mammal as a string. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Overrides the Get\+Species function from the \doxylink{classanimals_1_1Animal}{Animal} base class. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{classanimals_1_1Animal_a11bed746f38494b5ea871a57802983e5}{animals\+::\+Animal}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classanimals_1_1Seal_ab017fcadb90761e73f71d19fd532e39f}{animals\+::\+Seal}}, and \mbox{\hyperlink{classanimals_1_1SeaMammal_a55497583060ea273c2a04408ab054ab4}{animals\+::\+Sea\+Mammal}}.
+
+\Hypertarget{classanimals_1_1Mammal_a61f1e07129f11487d58511663d45bc8c}\index{animals::Mammal@{animals::Mammal}!Move@{Move}}
+\index{Move@{Move}!animals::Mammal@{animals::Mammal}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily \label{classanimals_1_1Mammal_a61f1e07129f11487d58511663d45bc8c} 
+void animals\+::\+Mammal\+::\+Move (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Implements the Move function for mammal. 
+
+\begin{DoxyNote}{Note}
+Overrides the Move function from the \doxylink{classanimals_1_1Animal}{Animal} base class. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{classanimals_1_1Animal_aadd4c22b3bac68f247687c0d3098279b}{animals\+::\+Animal}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classanimals_1_1SeaMammal_a4504e29f9adb768db7c14cc7ab9ee5cc}{animals\+::\+Sea\+Mammal}}.
+
+\Hypertarget{classanimals_1_1Mammal_a64fa9e0bfd3accdded0d69808fce5353}\index{animals::Mammal@{animals::Mammal}!SetMilkProduction@{SetMilkProduction}}
+\index{SetMilkProduction@{SetMilkProduction}!animals::Mammal@{animals::Mammal}}
+\doxysubsubsection{\texorpdfstring{SetMilkProduction()}{SetMilkProduction()}}
+{\footnotesize\ttfamily \label{classanimals_1_1Mammal_a64fa9e0bfd3accdded0d69808fce5353} 
+void animals\+::\+Mammal\+::\+Set\+Milk\+Production (\begin{DoxyParamCaption}\item[{double}]{milk\+\_\+production}{}\end{DoxyParamCaption})}
+
+
+
+Sets the milk production rate of the mammal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em milk\+\_\+production} & The new milk production rate to set. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+animals/mammals/\mbox{\hyperlink{mammal_8h}{mammal.\+h}}\item 
+animals/mammals/mammal.\+cc\end{DoxyCompactItemize}

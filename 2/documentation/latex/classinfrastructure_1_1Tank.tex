@@ -1,0 +1,213 @@
+\doxysection{infrastructure\+::Tank Class Reference}
+\hypertarget{classinfrastructure_1_1Tank}{}\label{classinfrastructure_1_1Tank}\index{infrastructure::Tank@{infrastructure::Tank}}
+
+
+Represents a tank in the aquarium, containing animals and managing its state.  
+
+
+
+
+{\ttfamily \#include $<$tank.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classinfrastructure_1_1Tank_a9db96608f3017cb35c09ef09abe767a9}{Tank}} (double depth, double volume)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classinfrastructure_1_1Tank}{Tank} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinfrastructure_1_1Tank_ac682a64abdaace7f3034831dc3d7ea87}{Add\+Animal}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classanimals_1_1Animal}{animals\+::\+Animal}} $>$ animal)
+\begin{DoxyCompactList}\small\item\em Adds an animal to the tank. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classinfrastructure_1_1Tank_a4b918879ac1337269ae6bfbef6cdc594}{Get\+ID}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the ID of the tank. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classinfrastructure_1_1Tank_aa48d5e468fb951e3589704c98db233a3}{Get\+Depth}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the depth of the tank. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classinfrastructure_1_1Tank_a6f25103d4f0c8254ec179fa72715b05d}{Get\+Volume}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the volume of the tank. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classanimals_1_1Animal}{animals\+::\+Animal}} $>$ $>$ \& \mbox{\hyperlink{classinfrastructure_1_1Tank_a8725b4329147229b1a444557cf421e61}{Get\+Animals}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the list of animals in the tank. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classinfrastructure_1_1Tank_a662754db65d0344f54f90eccc4113988}{Is\+Clean}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Checks if the tank is clean. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinfrastructure_1_1Tank_addaedc3141f9e3bdaff748af3da7e6aa}{Set\+Depth}} (double depth)
+\begin{DoxyCompactList}\small\item\em Sets the depth of the tank. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinfrastructure_1_1Tank_a62cbbfb5817499d8c74b41d2728f116a}{Set\+Volume}} (double volume)
+\begin{DoxyCompactList}\small\item\em Sets the volume of the tank. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinfrastructure_1_1Tank_aacab87144b40930d1be9cd702526e9f1}{Mark\+Clean}} () noexcept
+\begin{DoxyCompactList}\small\item\em Marks the tank as clean. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinfrastructure_1_1Tank_aeaf8cfd202336405026c15576efc8520}{Mark\+Dirty}} () noexcept
+\begin{DoxyCompactList}\small\item\em Marks the tank as dirty. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a tank in the aquarium, containing animals and managing its state. 
+
+\label{doc-constructors}
+\Hypertarget{classinfrastructure_1_1Tank_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classinfrastructure_1_1Tank_a9db96608f3017cb35c09ef09abe767a9}\index{infrastructure::Tank@{infrastructure::Tank}!Tank@{Tank}}
+\index{Tank@{Tank}!infrastructure::Tank@{infrastructure::Tank}}
+\doxysubsubsection{\texorpdfstring{Tank()}{Tank()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Tank_a9db96608f3017cb35c09ef09abe767a9} 
+infrastructure\+::\+Tank\+::\+Tank (\begin{DoxyParamCaption}\item[{double}]{depth}{, }\item[{double}]{volume}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{classinfrastructure_1_1Tank}{Tank} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em depth} & The depth of the tank. \\
+\hline
+{\em volume} & The volume of the tank. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classinfrastructure_1_1Tank_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classinfrastructure_1_1Tank_ac682a64abdaace7f3034831dc3d7ea87}\index{infrastructure::Tank@{infrastructure::Tank}!AddAnimal@{AddAnimal}}
+\index{AddAnimal@{AddAnimal}!infrastructure::Tank@{infrastructure::Tank}}
+\doxysubsubsection{\texorpdfstring{AddAnimal()}{AddAnimal()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Tank_ac682a64abdaace7f3034831dc3d7ea87} 
+void infrastructure\+::\+Tank\+::\+Add\+Animal (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classanimals_1_1Animal}{animals\+::\+Animal}} $>$}]{animal}{}\end{DoxyParamCaption})}
+
+
+
+Adds an animal to the tank. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animal} & Shared pointer to the animal to add. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if animal is nullptr. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classinfrastructure_1_1Tank_a8725b4329147229b1a444557cf421e61}\index{infrastructure::Tank@{infrastructure::Tank}!GetAnimals@{GetAnimals}}
+\index{GetAnimals@{GetAnimals}!infrastructure::Tank@{infrastructure::Tank}}
+\doxysubsubsection{\texorpdfstring{GetAnimals()}{GetAnimals()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Tank_a8725b4329147229b1a444557cf421e61} 
+const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classanimals_1_1Animal}{animals\+::\+Animal}} $>$ $>$ \& infrastructure\+::\+Tank\+::\+Get\+Animals (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the list of animals in the tank. 
+
+\begin{DoxyReturn}{Returns}
+Const reference to the vector of shared pointers to animals. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Tank_aa48d5e468fb951e3589704c98db233a3}\index{infrastructure::Tank@{infrastructure::Tank}!GetDepth@{GetDepth}}
+\index{GetDepth@{GetDepth}!infrastructure::Tank@{infrastructure::Tank}}
+\doxysubsubsection{\texorpdfstring{GetDepth()}{GetDepth()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Tank_aa48d5e468fb951e3589704c98db233a3} 
+double infrastructure\+::\+Tank\+::\+Get\+Depth (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the depth of the tank. 
+
+\begin{DoxyReturn}{Returns}
+The depth of the tank. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Tank_a4b918879ac1337269ae6bfbef6cdc594}\index{infrastructure::Tank@{infrastructure::Tank}!GetID@{GetID}}
+\index{GetID@{GetID}!infrastructure::Tank@{infrastructure::Tank}}
+\doxysubsubsection{\texorpdfstring{GetID()}{GetID()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Tank_a4b918879ac1337269ae6bfbef6cdc594} 
+int infrastructure\+::\+Tank\+::\+Get\+ID (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the ID of the tank. 
+
+\begin{DoxyReturn}{Returns}
+The ID of the tank. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Tank_a6f25103d4f0c8254ec179fa72715b05d}\index{infrastructure::Tank@{infrastructure::Tank}!GetVolume@{GetVolume}}
+\index{GetVolume@{GetVolume}!infrastructure::Tank@{infrastructure::Tank}}
+\doxysubsubsection{\texorpdfstring{GetVolume()}{GetVolume()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Tank_a6f25103d4f0c8254ec179fa72715b05d} 
+double infrastructure\+::\+Tank\+::\+Get\+Volume (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the volume of the tank. 
+
+\begin{DoxyReturn}{Returns}
+The volume of the tank. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Tank_a662754db65d0344f54f90eccc4113988}\index{infrastructure::Tank@{infrastructure::Tank}!IsClean@{IsClean}}
+\index{IsClean@{IsClean}!infrastructure::Tank@{infrastructure::Tank}}
+\doxysubsubsection{\texorpdfstring{IsClean()}{IsClean()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Tank_a662754db65d0344f54f90eccc4113988} 
+bool infrastructure\+::\+Tank\+::\+Is\+Clean (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Checks if the tank is clean. 
+
+\begin{DoxyReturn}{Returns}
+True if the tank is clean, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Tank_aacab87144b40930d1be9cd702526e9f1}\index{infrastructure::Tank@{infrastructure::Tank}!MarkClean@{MarkClean}}
+\index{MarkClean@{MarkClean}!infrastructure::Tank@{infrastructure::Tank}}
+\doxysubsubsection{\texorpdfstring{MarkClean()}{MarkClean()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Tank_aacab87144b40930d1be9cd702526e9f1} 
+void infrastructure\+::\+Tank\+::\+Mark\+Clean (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Marks the tank as clean. 
+
+\begin{DoxyNote}{Note}
+This function updates the internal state of the tank. 
+\end{DoxyNote}
+\Hypertarget{classinfrastructure_1_1Tank_aeaf8cfd202336405026c15576efc8520}\index{infrastructure::Tank@{infrastructure::Tank}!MarkDirty@{MarkDirty}}
+\index{MarkDirty@{MarkDirty}!infrastructure::Tank@{infrastructure::Tank}}
+\doxysubsubsection{\texorpdfstring{MarkDirty()}{MarkDirty()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Tank_aeaf8cfd202336405026c15576efc8520} 
+void infrastructure\+::\+Tank\+::\+Mark\+Dirty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Marks the tank as dirty. 
+
+\begin{DoxyNote}{Note}
+This function updates the internal state of the tank. 
+\end{DoxyNote}
+\Hypertarget{classinfrastructure_1_1Tank_addaedc3141f9e3bdaff748af3da7e6aa}\index{infrastructure::Tank@{infrastructure::Tank}!SetDepth@{SetDepth}}
+\index{SetDepth@{SetDepth}!infrastructure::Tank@{infrastructure::Tank}}
+\doxysubsubsection{\texorpdfstring{SetDepth()}{SetDepth()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Tank_addaedc3141f9e3bdaff748af3da7e6aa} 
+void infrastructure\+::\+Tank\+::\+Set\+Depth (\begin{DoxyParamCaption}\item[{double}]{depth}{}\end{DoxyParamCaption})}
+
+
+
+Sets the depth of the tank. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em depth} & The new depth to set. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classinfrastructure_1_1Tank_a62cbbfb5817499d8c74b41d2728f116a}\index{infrastructure::Tank@{infrastructure::Tank}!SetVolume@{SetVolume}}
+\index{SetVolume@{SetVolume}!infrastructure::Tank@{infrastructure::Tank}}
+\doxysubsubsection{\texorpdfstring{SetVolume()}{SetVolume()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Tank_a62cbbfb5817499d8c74b41d2728f116a} 
+void infrastructure\+::\+Tank\+::\+Set\+Volume (\begin{DoxyParamCaption}\item[{double}]{volume}{}\end{DoxyParamCaption})}
+
+
+
+Sets the volume of the tank. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume} & The new volume to set. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+infrastructure/\mbox{\hyperlink{tank_8h}{tank.\+h}}\item 
+infrastructure/tank.\+cc\end{DoxyCompactItemize}

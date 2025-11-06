@@ -1,0 +1,99 @@
+\doxysection{infrastructure\+::Schedule\+Event Class Reference}
+\hypertarget{classinfrastructure_1_1ScheduleEvent}{}\label{classinfrastructure_1_1ScheduleEvent}\index{infrastructure::ScheduleEvent@{infrastructure::ScheduleEvent}}
+
+
+Represents a scheduled event with a name, time, and action.  
+
+
+
+
+{\ttfamily \#include $<$schedule.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classinfrastructure_1_1ScheduleEvent_a61d396648e2f807e2097fdaa519ed729}{Schedule\+Event}} (std\+::string name, std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point time, std\+::function$<$ void()$>$ action)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classinfrastructure_1_1ScheduleEvent}{Schedule\+Event} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinfrastructure_1_1ScheduleEvent_abbf339f7b2b3cc82d290e84cb3855308}{Execute\+If\+Due}} () const
+\begin{DoxyCompactList}\small\item\em Executes the event\textquotesingle{}s action if the scheduled time has passed. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classinfrastructure_1_1ScheduleEvent_af97bbaa389e69cbeb4954bed85edd816}{Get\+Name}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the name of the event. \end{DoxyCompactList}\item 
+std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point \mbox{\hyperlink{classinfrastructure_1_1ScheduleEvent_a9d62370fe2a80417deab2224acb80511}{Get\+Time}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the scheduled time of the event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a scheduled event with a name, time, and action. 
+
+\label{doc-constructors}
+\Hypertarget{classinfrastructure_1_1ScheduleEvent_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classinfrastructure_1_1ScheduleEvent_a61d396648e2f807e2097fdaa519ed729}\index{infrastructure::ScheduleEvent@{infrastructure::ScheduleEvent}!ScheduleEvent@{ScheduleEvent}}
+\index{ScheduleEvent@{ScheduleEvent}!infrastructure::ScheduleEvent@{infrastructure::ScheduleEvent}}
+\doxysubsubsection{\texorpdfstring{ScheduleEvent()}{ScheduleEvent()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1ScheduleEvent_a61d396648e2f807e2097fdaa519ed729} 
+infrastructure\+::\+Schedule\+Event\+::\+Schedule\+Event (\begin{DoxyParamCaption}\item[{std\+::string}]{name}{, }\item[{std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point}]{time}{, }\item[{std\+::function$<$ void()$>$}]{action}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{classinfrastructure_1_1ScheduleEvent}{Schedule\+Event} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the event. \\
+\hline
+{\em time} & The scheduled time for the event. \\
+\hline
+{\em action} & The function to execute when the event is due. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classinfrastructure_1_1ScheduleEvent_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classinfrastructure_1_1ScheduleEvent_abbf339f7b2b3cc82d290e84cb3855308}\index{infrastructure::ScheduleEvent@{infrastructure::ScheduleEvent}!ExecuteIfDue@{ExecuteIfDue}}
+\index{ExecuteIfDue@{ExecuteIfDue}!infrastructure::ScheduleEvent@{infrastructure::ScheduleEvent}}
+\doxysubsubsection{\texorpdfstring{ExecuteIfDue()}{ExecuteIfDue()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1ScheduleEvent_abbf339f7b2b3cc82d290e84cb3855308} 
+void infrastructure\+::\+Schedule\+Event\+::\+Execute\+If\+Due (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Executes the event\textquotesingle{}s action if the scheduled time has passed. 
+
+\begin{DoxyNote}{Note}
+This function checks the current time against the scheduled time. 
+\end{DoxyNote}
+\Hypertarget{classinfrastructure_1_1ScheduleEvent_af97bbaa389e69cbeb4954bed85edd816}\index{infrastructure::ScheduleEvent@{infrastructure::ScheduleEvent}!GetName@{GetName}}
+\index{GetName@{GetName}!infrastructure::ScheduleEvent@{infrastructure::ScheduleEvent}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1ScheduleEvent_af97bbaa389e69cbeb4954bed85edd816} 
+const std\+::string \& infrastructure\+::\+Schedule\+Event\+::\+Get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the name of the event. 
+
+\begin{DoxyReturn}{Returns}
+The name of the event as a string. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1ScheduleEvent_a9d62370fe2a80417deab2224acb80511}\index{infrastructure::ScheduleEvent@{infrastructure::ScheduleEvent}!GetTime@{GetTime}}
+\index{GetTime@{GetTime}!infrastructure::ScheduleEvent@{infrastructure::ScheduleEvent}}
+\doxysubsubsection{\texorpdfstring{GetTime()}{GetTime()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1ScheduleEvent_a9d62370fe2a80417deab2224acb80511} 
+std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point infrastructure\+::\+Schedule\+Event\+::\+Get\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the scheduled time of the event. 
+
+\begin{DoxyReturn}{Returns}
+The scheduled time as a system clock time point. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+infrastructure/\mbox{\hyperlink{schedule_8h}{schedule.\+h}}\item 
+infrastructure/schedule.\+cc\end{DoxyCompactItemize}

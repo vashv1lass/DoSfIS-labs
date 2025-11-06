@@ -1,0 +1,100 @@
+\doxysection{payment\+::payment\+\_\+methods\+::Online\+Card\+Payment Class Reference}
+\hypertarget{classpayment_1_1payment__methods_1_1OnlineCardPayment}{}\label{classpayment_1_1payment__methods_1_1OnlineCardPayment}\index{payment::payment\_methods::OnlineCardPayment@{payment::payment\_methods::OnlineCardPayment}}
+
+
+Derived class representing an online card payment, inheriting from \doxylink{classpayment_1_1payment__methods_1_1CardPayment}{Card\+Payment}.  
+
+
+
+
+{\ttfamily \#include $<$online\+\_\+card\+\_\+payment.\+h$>$}
+
+Inheritance diagram for payment\+::payment\+\_\+methods\+::Online\+Card\+Payment\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpayment_1_1payment__methods_1_1OnlineCardPayment}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpayment_1_1payment__methods_1_1OnlineCardPayment_a353c6d72d4034fe2ed9be53b39aefa9d}{Online\+Card\+Payment}} (\mbox{\hyperlink{classpayment_1_1PaymentContext}{Payment\+Context}} \&context, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpayment_1_1Account}{Account}} $>$ card\+\_\+account, std\+::string cvv)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classpayment_1_1payment__methods_1_1OnlineCardPayment}{Online\+Card\+Payment} class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classpayment_1_1payment__methods_1_1OnlineCardPayment_af13a0c2930682435509fa19b37484c69}{Get\+Payment\+Method\+Info}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Retrieves information about the online card payment method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpayment_1_1payment__methods_1_1CardPayment}{payment\+::payment\+\_\+methods\+::\+Card\+Payment}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpayment_1_1payment__methods_1_1CardPayment_a5f37c0f96701352fbc9e161263570e88}{Card\+Payment}} (\mbox{\hyperlink{classpayment_1_1PaymentContext}{Payment\+Context}} \&context, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpayment_1_1Account}{Account}} $>$ card\+\_\+account)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classpayment_1_1payment__methods_1_1CardPayment}{Card\+Payment} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpayment_1_1payment__methods_1_1IAccountPaymentMethod}{payment\+::payment\+\_\+methods\+::\+IAccount\+Payment\+Method}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IAccount\+Payment\+Method} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{classpayment_1_1payment__methods_1_1IAccountPaymentMethod}{IAccount\+Payment\+Method} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classpayment_1_1payment__methods_1_1CardPayment}{payment\+::payment\+\_\+methods\+::\+Card\+Payment}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpayment_1_1PaymentContext}{Payment\+Context}} \& {\bfseries context\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpayment_1_1Account}{Account}} $>$ {\bfseries card\+\_\+account\+\_\+}
+\begin{DoxyCompactList}\small\item\em Reference to the payment context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Derived class representing an online card payment, inheriting from \doxylink{classpayment_1_1payment__methods_1_1CardPayment}{Card\+Payment}. 
+
+\label{doc-constructors}
+\Hypertarget{classpayment_1_1payment__methods_1_1OnlineCardPayment_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpayment_1_1payment__methods_1_1OnlineCardPayment_a353c6d72d4034fe2ed9be53b39aefa9d}\index{payment::payment\_methods::OnlineCardPayment@{payment::payment\_methods::OnlineCardPayment}!OnlineCardPayment@{OnlineCardPayment}}
+\index{OnlineCardPayment@{OnlineCardPayment}!payment::payment\_methods::OnlineCardPayment@{payment::payment\_methods::OnlineCardPayment}}
+\doxysubsubsection{\texorpdfstring{OnlineCardPayment()}{OnlineCardPayment()}}
+{\footnotesize\ttfamily \label{classpayment_1_1payment__methods_1_1OnlineCardPayment_a353c6d72d4034fe2ed9be53b39aefa9d} 
+payment\+::payment\+\_\+methods\+::\+Online\+Card\+Payment\+::\+Online\+Card\+Payment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpayment_1_1PaymentContext}{Payment\+Context}} \&}]{context}{, }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpayment_1_1Account}{Account}} $>$}]{card\+\_\+account}{, }\item[{std\+::string}]{cvv}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{classpayment_1_1payment__methods_1_1OnlineCardPayment}{Online\+Card\+Payment} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & Reference to the payment context. \\
+\hline
+{\em card\+\_\+account} & Shared pointer to the card account used for payment. \\
+\hline
+{\em cvv} & The CVV code of the card. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classpayment_1_1payment__methods_1_1OnlineCardPayment_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpayment_1_1payment__methods_1_1OnlineCardPayment_af13a0c2930682435509fa19b37484c69}\index{payment::payment\_methods::OnlineCardPayment@{payment::payment\_methods::OnlineCardPayment}!GetPaymentMethodInfo@{GetPaymentMethodInfo}}
+\index{GetPaymentMethodInfo@{GetPaymentMethodInfo}!payment::payment\_methods::OnlineCardPayment@{payment::payment\_methods::OnlineCardPayment}}
+\doxysubsubsection{\texorpdfstring{GetPaymentMethodInfo()}{GetPaymentMethodInfo()}}
+{\footnotesize\ttfamily \label{classpayment_1_1payment__methods_1_1OnlineCardPayment_af13a0c2930682435509fa19b37484c69} 
+std\+::string payment\+::payment\+\_\+methods\+::\+Online\+Card\+Payment\+::\+Get\+Payment\+Method\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Retrieves information about the online card payment method. 
+
+\begin{DoxyReturn}{Returns}
+A string containing information about the payment method. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Overrides the Get\+Payment\+Method\+Info function from the \doxylink{classpayment_1_1payment__methods_1_1CardPayment}{Card\+Payment} base class. 
+\end{DoxyNote}
+
+
+Reimplemented from \mbox{\hyperlink{classpayment_1_1payment__methods_1_1CardPayment_acca2f8315dc1ce15b1710d8eef0056a0}{payment\+::payment\+\_\+methods\+::\+Card\+Payment}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+payment/payment\+\_\+methods/card\+\_\+payment/\mbox{\hyperlink{online__card__payment_8h}{online\+\_\+card\+\_\+payment.\+h}}\item 
+payment/payment\+\_\+methods/card\+\_\+payment/online\+\_\+card\+\_\+payment.\+cc\end{DoxyCompactItemize}

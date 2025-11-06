@@ -1,0 +1,58 @@
+\doxysection{tank.\+h}
+\hypertarget{tank_8h_source}{}\label{tank_8h_source}\index{infrastructure/tank.h@{infrastructure/tank.h}}
+\mbox{\hyperlink{tank_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ INFRASTRUCTURE\_TANK\_H\_}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ INFRASTRUCTURE\_TANK\_H\_}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{animal_8h}{animals/animal.h}}"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceinfrastructure}{infrastructure}}\ \{}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classinfrastructure_1_1Tank_a9db96608f3017cb35c09ef09abe767a9}{Tank}}\ \{}
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \mbox{\hyperlink{classinfrastructure_1_1Tank_a9db96608f3017cb35c09ef09abe767a9}{Tank}}(\textcolor{keywordtype}{double}\ depth,\ \textcolor{keywordtype}{double}\ volume);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00039\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classinfrastructure_1_1Tank_ac682a64abdaace7f3034831dc3d7ea87}{AddAnimal}}(std::shared\_ptr<animals::Animal>\ animal);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00045\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classinfrastructure_1_1Tank_a4b918879ac1337269ae6bfbef6cdc594}{GetID}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classinfrastructure_1_1Tank_aa48d5e468fb951e3589704c98db233a3}{GetDepth}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00057\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classinfrastructure_1_1Tank_a6f25103d4f0c8254ec179fa72715b05d}{GetVolume}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00063\ \ \ \textcolor{keyword}{const}\ std::vector<std::shared\_ptr<animals::Animal>>\&\ \mbox{\hyperlink{classinfrastructure_1_1Tank_a8725b4329147229b1a444557cf421e61}{GetAnimals}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00069\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classinfrastructure_1_1Tank_a662754db65d0344f54f90eccc4113988}{IsClean}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00075\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classinfrastructure_1_1Tank_addaedc3141f9e3bdaff748af3da7e6aa}{SetDepth}}(\textcolor{keywordtype}{double}\ depth);}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00081\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classinfrastructure_1_1Tank_a62cbbfb5817499d8c74b41d2728f116a}{SetVolume}}(\textcolor{keywordtype}{double}\ volume);}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00087\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classinfrastructure_1_1Tank_aacab87144b40930d1be9cd702526e9f1}{MarkClean}}()\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00093\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classinfrastructure_1_1Tank_aeaf8cfd202336405026c15576efc8520}{MarkDirty}}()\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00096\ \ \ \textcolor{keywordtype}{int}\ id\_;\ \ }
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \ \ \textcolor{keywordtype}{double}\ depth\_;\ \ }
+\DoxyCodeLine{00099\ \ \ \textcolor{keywordtype}{double}\ volume\_;\ \ }
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \ \ \textcolor{keywordtype}{bool}\ is\_clean\_;\ \ }
+\DoxyCodeLine{00102\ \ \ }
+\DoxyCodeLine{00103\ \ \ std::vector<std::shared\_ptr<animals::Animal>>\ animals\_;\ \ }
+\DoxyCodeLine{00104\ \};}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \}\ \ \textcolor{comment}{//\ namespace\ infrastructure}}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ INFRASTRUCTURE\_TANK\_H\_}}
+
+\end{DoxyCode}

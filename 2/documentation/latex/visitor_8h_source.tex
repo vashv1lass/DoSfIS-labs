@@ -1,0 +1,39 @@
+\doxysection{visitor.\+h}
+\hypertarget{visitor_8h_source}{}\label{visitor_8h_source}\index{infrastructure/visitor.h@{infrastructure/visitor.h}}
+\mbox{\hyperlink{visitor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ INFRASTRUCTURE\_VISITOR\_H\_}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ INFRASTRUCTURE\_VISITOR\_H\_}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ticket_8h}{payment/ticket.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceinfrastructure}{infrastructure}}\ \{}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classinfrastructure_1_1Visitor_af4e316ea92ffdee5b725b81d186901eb}{Visitor}}\ \{}
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classinfrastructure_1_1Visitor_af4e316ea92ffdee5b725b81d186901eb}{Visitor}}(std::string\ name,\ \textcolor{keywordtype}{int}\ age);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \ \ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classinfrastructure_1_1Visitor_a91b7ae0d0b2f76c4a440b8ec351a3c6b}{GetName}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00042\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classinfrastructure_1_1Visitor_a7b185f48a541b888e4a54b00ce57de81}{GetAge}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00048\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classinfrastructure_1_1Visitor_ad6a5cf181dc8f3e2752bbd5e8430cf2d}{AddTicket}}(\mbox{\hyperlink{classpayment_1_1Ticket}{payment::Ticket}}\ ticket);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00054\ \ \ std::vector<payment::Ticket>\ \mbox{\hyperlink{classinfrastructure_1_1Visitor_ac7be21d6c72da95ea31a18f667be38ae}{GetTickets}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00057\ \ \ std::string\ name\_;\ \ }
+\DoxyCodeLine{00058\ \ \ \textcolor{keywordtype}{int}\ age\_;\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00059\ \ \ std::vector<payment::Ticket>\ tickets\_;\ \ }
+\DoxyCodeLine{00060\ \};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \}\ \ \textcolor{comment}{//\ namespace\ infrastructure}}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ INFRASTRUCTURE\_VISITOR\_H\_}}
+
+\end{DoxyCode}

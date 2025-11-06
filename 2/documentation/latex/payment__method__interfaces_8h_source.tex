@@ -1,0 +1,52 @@
+\doxysection{payment\+\_\+method\+\_\+interfaces.\+h}
+\hypertarget{payment__method__interfaces_8h_source}{}\label{payment__method__interfaces_8h_source}\index{payment/payment\_methods/payment\_method\_interfaces.h@{payment/payment\_methods/payment\_method\_interfaces.h}}
+\mbox{\hyperlink{payment__method__interfaces_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ PAYMENT\_PAYMENT\_METHODS\_PAYMENT\_METHOD\_INTERFACES\_H\_}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ PAYMENT\_PAYMENT\_METHODS\_PAYMENT\_METHOD\_INTERFACES\_H\_}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{account_8h}{payment/account.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacepayment}{payment}}\ \{}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classpayment_1_1Transaction}{Transaction}};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \}\ \ \textcolor{comment}{//\ namespace\ payment}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacepayment}{payment}}\ \{}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacepayment_1_1payment__methods}{payment\_methods}}\ \{}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classpayment_1_1payment__methods_1_1IPaymentMethod}{IPaymentMethod}}\ \{}
+\DoxyCodeLine{00034\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00038\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classpayment_1_1payment__methods_1_1IPaymentMethod_a5516bd3763244f2c5508ebdf313867e1}{\string~IPaymentMethod}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00044\ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classpayment_1_1payment__methods_1_1IPaymentMethod_ac05c70a44b1ee15b2c126f3f38ca01d4}{GetPaymentMethodInfo}}()\ const\ noexcept\ =\ 0;}
+\DoxyCodeLine{00045\ protected:}
+\DoxyCodeLine{00050\ \ \ virtual\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classpayment_1_1payment__methods_1_1IPaymentMethod_a7dad9a452cd605744f18d6c5a2ab4e18}{Pay}}(\textcolor{keywordtype}{double}\ amount)\ =\ 0;}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ friend\ class\ \mbox{\hyperlink{namespacepayment}{payment}}::Transaction;\ \ \textcolor{comment}{//\ Granting\ access\ to\ Transaction\ class}}
+\DoxyCodeLine{00053\ \};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00059\ class\ \mbox{\hyperlink{classpayment_1_1payment__methods_1_1IAccountPaymentMethod}{IAccountPaymentMethod}}\ \{}
+\DoxyCodeLine{00060\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00064\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classpayment_1_1payment__methods_1_1IAccountPaymentMethod_ad37eb1ec0a13e9bcef88a8fa4edd0e09}{\string~IAccountPaymentMethod}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00070\ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classpayment_1_1payment__methods_1_1IAccountPaymentMethod_aaaf18839a6c962097b3e8960a9fdd79e}{GetPaymentMethodInfo}}()\ const\ noexcept\ =\ 0;}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ protected:}
+\DoxyCodeLine{00079\ \ \ virtual\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classpayment_1_1payment__methods_1_1IAccountPaymentMethod_a0743f691e51e597de842a5937205d934}{Pay}}(\mbox{\hyperlink{namespacepayment}{payment}}::\mbox{\hyperlink{classpayment_1_1Account}{Account}}\&\ account,\ \textcolor{keywordtype}{double}\ amount)\ =\ 0;}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ friend\ class\ \mbox{\hyperlink{namespacepayment}{payment}}::Transaction;\ \ \textcolor{comment}{//\ Granting\ access\ to\ Transaction\ class}}
+\DoxyCodeLine{00082\ \};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \}\ \ \textcolor{comment}{//\ namespace\ payment\_methods}}
+\DoxyCodeLine{00085\ \}\ \ \textcolor{comment}{//\ namespace\ payment}}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ PAYMENT\_PAYMENT\_METHODS\_PAYMENT\_METHOD\_INTERFACES\_H\_}}
+
+\end{DoxyCode}

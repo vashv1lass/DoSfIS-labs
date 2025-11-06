@@ -1,0 +1,64 @@
+\doxysection{payment Namespace Reference}
+\hypertarget{namespacepayment}{}\label{namespacepayment}\index{payment@{payment}}
+
+
+Namespace for payment-\/related classes and functions.  
+
+
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacepayment_1_1payment__methods}{payment\+\_\+methods}}
+\begin{DoxyCompactList}\small\item\em Namespace for payment method implementations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpayment_1_1Account}{Account}}
+\begin{DoxyCompactList}\small\item\em Represents a payment account with an owner and balance. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpayment_1_1PaymentContext}{Payment\+Context}}
+\begin{DoxyCompactList}\small\item\em Manages the payment context, including the aquarium\textquotesingle{}s account. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpayment_1_1Ticket}{Ticket}}
+\begin{DoxyCompactList}\small\item\em Represents a ticket with a category and price. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpayment_1_1Transaction}{Transaction}}
+\begin{DoxyCompactList}\small\item\em Represents a payment transaction for a ticket purchase. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{namespacepayment_a0f55980729c6083f0c9cec72d3a4b69f}{Ticket\+Category}} \{ {\bfseries k\+Base}
+, \mbox{\hyperlink{namespacepayment_a0f55980729c6083f0c9cec72d3a4b69faeaf8d10ed21cb232bdd2a26efb6474ea}{k\+Vip}}
+, \mbox{\hyperlink{namespacepayment_a0f55980729c6083f0c9cec72d3a4b69fa6d9d03bfbaa74c0c0433c8782fb31d2b}{k\+Child\+Base}}
+, \mbox{\hyperlink{namespacepayment_a0f55980729c6083f0c9cec72d3a4b69faa5bef21225bac6a7113ecb2f3e490600}{k\+Child\+Vip}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumerates the possible ticket categories. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Namespace for payment-\/related classes and functions. 
+
+\label{doc-enum-members}
+\Hypertarget{namespacepayment_doc-enum-members}
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{namespacepayment_a0f55980729c6083f0c9cec72d3a4b69f}\index{payment@{payment}!TicketCategory@{TicketCategory}}
+\index{TicketCategory@{TicketCategory}!payment@{payment}}
+\doxysubsubsection{\texorpdfstring{TicketCategory}{TicketCategory}}
+{\footnotesize\ttfamily \label{namespacepayment_a0f55980729c6083f0c9cec72d3a4b69f} 
+enum class \mbox{\hyperlink{namespacepayment_a0f55980729c6083f0c9cec72d3a4b69f}{payment\+::\+Ticket\+Category}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enumerates the possible ticket categories. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kVip@{kVip}!payment@{payment}}\index{payment@{payment}!kVip@{kVip}}}\Hypertarget{namespacepayment_a0f55980729c6083f0c9cec72d3a4b69faeaf8d10ed21cb232bdd2a26efb6474ea}\label{namespacepayment_a0f55980729c6083f0c9cec72d3a4b69faeaf8d10ed21cb232bdd2a26efb6474ea} 
+k\+Vip&Base category ticket. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kChildBase@{kChildBase}!payment@{payment}}\index{payment@{payment}!kChildBase@{kChildBase}}}\Hypertarget{namespacepayment_a0f55980729c6083f0c9cec72d3a4b69fa6d9d03bfbaa74c0c0433c8782fb31d2b}\label{namespacepayment_a0f55980729c6083f0c9cec72d3a4b69fa6d9d03bfbaa74c0c0433c8782fb31d2b} 
+k\+Child\+Base&VIP category ticket. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kChildVip@{kChildVip}!payment@{payment}}\index{payment@{payment}!kChildVip@{kChildVip}}}\Hypertarget{namespacepayment_a0f55980729c6083f0c9cec72d3a4b69faa5bef21225bac6a7113ecb2f3e490600}\label{namespacepayment_a0f55980729c6083f0c9cec72d3a4b69faa5bef21225bac6a7113ecb2f3e490600} 
+k\+Child\+Vip&Base category ticket for children. VIP category ticket for children. \\
+\hline
+
+\end{DoxyEnumFields}

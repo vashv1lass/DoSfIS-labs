@@ -1,0 +1,32 @@
+\doxysection{veterinarian.\+h}
+\hypertarget{veterinarian_8h_source}{}\label{veterinarian_8h_source}\index{staff/veterinarian.h@{staff/veterinarian.h}}
+\mbox{\hyperlink{veterinarian_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ STAFF\_VETERINARIAN\_H\_}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ STAFF\_VETERINARIAN\_H\_}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{animal_8h}{animals/animal.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{diagnosis_8h}{animals/medical/diagnosis.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{medical_8h}{animals/medical/medical.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{employee_8h}{staff/employee.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacestaff}{staff}}\ \{}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstaff_1_1Veterinarian_ab629380042f6a8dc9c025154c98ac54b}{Veterinarian}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classstaff_1_1Employee_aa599c2ee48214cf94d5769a65716d344}{Employee}}\ \{}
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \mbox{\hyperlink{classstaff_1_1Veterinarian_ab629380042f6a8dc9c025154c98ac54b}{Veterinarian}}(std::string\ name,\ \textcolor{keywordtype}{double}\ salary);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00037\ \ \ std::string\ \mbox{\hyperlink{classstaff_1_1Veterinarian_a96103968b9de9262d2d15eb80f8b3a71}{GetRole}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00038\ \ \ }
+\DoxyCodeLine{00046\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstaff_1_1Veterinarian_a9f81681d0bc26410235eee361f5f0d4c}{Diagnose}}(\mbox{\hyperlink{classanimals_1_1Animal}{animals::Animal}}\&\ animal,}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classinfrastructure_1_1MedicalDepartment}{infrastructure::MedicalDepartment}}\&\ department,}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classanimals_1_1medical_1_1Diagnosis}{animals::medical::Diagnosis}}\ diagnosis);}
+\DoxyCodeLine{00049\ \};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \}\ \ \textcolor{comment}{//\ namespace\ staff}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ STAFF\_VETERINARIAN\_H\_}}
+
+\end{DoxyCode}

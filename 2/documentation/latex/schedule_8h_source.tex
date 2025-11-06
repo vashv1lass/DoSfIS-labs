@@ -1,0 +1,66 @@
+\doxysection{schedule.\+h}
+\hypertarget{schedule_8h_source}{}\label{schedule_8h_source}\index{infrastructure/schedule.h@{infrastructure/schedule.h}}
+\mbox{\hyperlink{schedule_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ INFRASTRUCTURE\_SCHEDULE\_H\_}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ INFRASTRUCTURE\_SCHEDULE\_H\_}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <chrono>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceinfrastructure}{infrastructure}}\ \{}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classinfrastructure_1_1ScheduleEvent_a61d396648e2f807e2097fdaa519ed729}{ScheduleEvent}}\ \{}
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00033\ \ \ \mbox{\hyperlink{classinfrastructure_1_1ScheduleEvent_a61d396648e2f807e2097fdaa519ed729}{ScheduleEvent}}(std::string\ name,}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::chrono::system\_clock::time\_point\ time,}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::function<\textcolor{keywordtype}{void}()>\ action);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00041\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classinfrastructure_1_1ScheduleEvent_abbf339f7b2b3cc82d290e84cb3855308}{ExecuteIfDue}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00047\ \ \ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classinfrastructure_1_1ScheduleEvent_af97bbaa389e69cbeb4954bed85edd816}{GetName}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ std::chrono::system\_clock::time\_point\ \mbox{\hyperlink{classinfrastructure_1_1ScheduleEvent_a9d62370fe2a80417deab2224acb80511}{GetTime}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00056\ \ \ std::string\ name\_;\ \ }
+\DoxyCodeLine{00057\ \ \ std::chrono::system\_clock::time\_point\ time\_;\ \ }
+\DoxyCodeLine{00058\ \ \ std::function<void()>\ action\_;\ \ }
+\DoxyCodeLine{00059\ \};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00065\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classinfrastructure_1_1Schedule_a4457f527c830f33268f841726f21877e}{Schedule}}\ \{}
+\DoxyCodeLine{00066\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00070\ \ \ \mbox{\hyperlink{classinfrastructure_1_1Schedule_a4457f527c830f33268f841726f21877e}{Schedule}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00075\ \ \ \mbox{\hyperlink{classinfrastructure_1_1Schedule_a3ed775376ffff579dbd05a83bcd0aff1}{Schedule}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classinfrastructure_1_1Schedule_a4457f527c830f33268f841726f21877e}{Schedule}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00080\ \ \ \mbox{\hyperlink{classinfrastructure_1_1Schedule_a4457f527c830f33268f841726f21877e}{Schedule}}\&\ \mbox{\hyperlink{classinfrastructure_1_1Schedule_a86bb68b05e0413bc8db23e36c152d748}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classinfrastructure_1_1Schedule_a4457f527c830f33268f841726f21877e}{Schedule}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00086\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classinfrastructure_1_1Schedule_a8d239df494287b5652e76c9b91f2b6e5}{AddEvent}}(std::unique\_ptr<ScheduleEvent>\ event);}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00092\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classinfrastructure_1_1Schedule_afa745f81d70caa32697d64ebcbd66ca9}{RemoveEvent}}(\textcolor{keyword}{const}\ std::string\&\ name);}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00098\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classinfrastructure_1_1ScheduleEvent}{ScheduleEvent}}*\ \mbox{\hyperlink{classinfrastructure_1_1Schedule_a5d9e0d4ac659ce9ea47e80772092f361}{GetNextEvent}}()\ const\ noexcept;}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00104\ \ \ std::vector<const\ \mbox{\hyperlink{classinfrastructure_1_1ScheduleEvent}{ScheduleEvent}}*>\ \mbox{\hyperlink{classinfrastructure_1_1Schedule_acdf7bb538b07f8e627a81664cb369ef9}{GetAllEvents}}()\ const\ noexcept;}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00110\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classinfrastructure_1_1Schedule_a4d0f915359cbbc6f87568161d4722505}{ExecuteDueEvents}}()\ const\ noexcept;}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00116\ \ \ std::\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classinfrastructure_1_1Schedule_a648cb9c7284acf79b11eca641c8baf48}{GetSummary}}()\ const;}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ private:}
+\DoxyCodeLine{00119\ \ \ std::multimap<std::chrono::system\_clock::time\_point,}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::unique\_ptr<\mbox{\hyperlink{classinfrastructure_1_1ScheduleEvent}{ScheduleEvent}}>>\ events\_;\ \ }
+\DoxyCodeLine{00121\ \};}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \}\ \ \textcolor{comment}{//\ namespace\ infrastructure}}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ INFRASTRUCTURE\_SCHEDULE\_H\_}}
+
+\end{DoxyCode}

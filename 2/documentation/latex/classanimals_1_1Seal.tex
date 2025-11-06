@@ -1,0 +1,198 @@
+\doxysection{animals\+::Seal Class Reference}
+\hypertarget{classanimals_1_1Seal}{}\label{classanimals_1_1Seal}\index{animals::Seal@{animals::Seal}}
+
+
+Derived class representing a seal, inheriting from \doxylink{classanimals_1_1SeaMammal}{Sea\+Mammal}.  
+
+
+
+
+{\ttfamily \#include $<$seal.\+h$>$}
+
+Inheritance diagram for animals\+::Seal\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classanimals_1_1Seal}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classanimals_1_1Seal_a1586255de78579fba2b6008bcb7f3abb}{Seal}} (std\+::string name, double milk\+\_\+production, double dive\+\_\+depth, double breath\+\_\+hold)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classanimals_1_1Seal}{Seal} class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classanimals_1_1Seal_ab017fcadb90761e73f71d19fd532e39f}{Get\+Species}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Implements the Get\+Species function for seal. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classanimals_1_1Seal_a3b734110135663cf36b8da5afeb09b9d}{Can\+Balance\+Ball}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Checks if the seal can balance a ball. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classanimals_1_1Seal_afc574f1bcf543a2e5ff06b4754141bf8}{Balance\+Ball}} () const
+\begin{DoxyCompactList}\small\item\em Makes the seal balance a ball. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classanimals_1_1SeaMammal}{animals\+::\+Sea\+Mammal}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classanimals_1_1SeaMammal_a9faf50ae76d8ac431fce55860f1c32c0}{Sea\+Mammal}} (std\+::string name, double milk\+\_\+production, double dive\+\_\+depth, double breath\+\_\+hold)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classanimals_1_1SeaMammal}{Sea\+Mammal} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classanimals_1_1SeaMammal_a4504e29f9adb768db7c14cc7ab9ee5cc}{Move}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Implements the Move function for sea mammal. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classanimals_1_1SeaMammal_a55497583060ea273c2a04408ab054ab4}{Get\+Species}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Implements the Get\+Species function for sea mammal. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classanimals_1_1SeaMammal_a7facee70e866834a68be3c5ae92df2e8}{Get\+Dive\+Depth}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the maximum dive depth of the sea mammal. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classanimals_1_1SeaMammal_a6f22546c2a2cf7bea3e1c38d44561d75}{Get\+Breath\+Hold\+Time}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the breath hold time of the sea mammal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classanimals_1_1Mammal}{animals\+::\+Mammal}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classanimals_1_1Mammal_a152ab832049c10fc9ddaa272fae8b5d9}{Mammal}} (std\+::string name, double milk\+\_\+production)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classanimals_1_1Mammal}{Mammal} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classanimals_1_1Mammal_a64fa9e0bfd3accdded0d69808fce5353}{Set\+Milk\+Production}} (double milk\+\_\+production)
+\begin{DoxyCompactList}\small\item\em Sets the milk production rate of the mammal. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classanimals_1_1Mammal_a3a8f73dbf7302a0cb3814909f8e7e403}{Get\+Milk\+Production}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the milk production rate of the mammal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classanimals_1_1Animal}{animals\+::\+Animal}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classanimals_1_1Animal_a4566837ea2fe896184f998b7e78ba864}{Animal}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classanimals_1_1Animal}{Animal} class. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Animal} () noexcept=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{classanimals_1_1Animal}{Animal} class. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classanimals_1_1Animal_a88c36cb9b50ce91773d784698df867a4}{Get\+Name}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the name of the animal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classanimals_1_1Seal_a5c6791ed71c02bf922aede52dace0b52}{Eat}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Implements the Eat function for seal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classanimals_1_1Seal_abb73ec83f653b46716ae511e620d50f4}\label{classanimals_1_1Seal_abb73ec83f653b46716ae511e620d50f4} 
+class {\bfseries staff\+::\+Trainer}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classanimals_1_1SeaMammal}{animals\+::\+Sea\+Mammal}}}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries dive\+\_\+depth\+\_\+}
+\item 
+double {\bfseries breath\+\_\+hold\+\_\+time\+\_\+}
+\begin{DoxyCompactList}\small\item\em The maximum dive depth of the sea mammal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classanimals_1_1Mammal}{animals\+::\+Mammal}}}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries milk\+\_\+production\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classanimals_1_1Animal}{animals\+::\+Animal}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries name\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Derived class representing a seal, inheriting from \doxylink{classanimals_1_1SeaMammal}{Sea\+Mammal}. 
+
+\label{doc-constructors}
+\Hypertarget{classanimals_1_1Seal_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classanimals_1_1Seal_a1586255de78579fba2b6008bcb7f3abb}\index{animals::Seal@{animals::Seal}!Seal@{Seal}}
+\index{Seal@{Seal}!animals::Seal@{animals::Seal}}
+\doxysubsubsection{\texorpdfstring{Seal()}{Seal()}}
+{\footnotesize\ttfamily \label{classanimals_1_1Seal_a1586255de78579fba2b6008bcb7f3abb} 
+animals\+::\+Seal\+::\+Seal (\begin{DoxyParamCaption}\item[{std\+::string}]{name}{, }\item[{double}]{milk\+\_\+production}{, }\item[{double}]{dive\+\_\+depth}{, }\item[{double}]{breath\+\_\+hold}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{classanimals_1_1Seal}{Seal} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the seal. \\
+\hline
+{\em milk\+\_\+production} & The milk production rate of the seal. \\
+\hline
+{\em dive\+\_\+depth} & The maximum dive depth of the seal. \\
+\hline
+{\em breath\+\_\+hold} & The breath hold time of the seal. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classanimals_1_1Seal_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classanimals_1_1Seal_afc574f1bcf543a2e5ff06b4754141bf8}\index{animals::Seal@{animals::Seal}!BalanceBall@{BalanceBall}}
+\index{BalanceBall@{BalanceBall}!animals::Seal@{animals::Seal}}
+\doxysubsubsection{\texorpdfstring{BalanceBall()}{BalanceBall()}}
+{\footnotesize\ttfamily \label{classanimals_1_1Seal_afc574f1bcf543a2e5ff06b4754141bf8} 
+void animals\+::\+Seal\+::\+Balance\+Ball (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Makes the seal balance a ball. 
+
+\begin{DoxyNote}{Note}
+This function performs the ball balancing action. 
+\end{DoxyNote}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{classutils_1_1exceptions_1_1CannotPerformActionException}{utils\+::exceptions\+::\+Cannot\+Perform\+Action\+Exception}} & if the seal has not learned to balance a ball yet. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classanimals_1_1Seal_a3b734110135663cf36b8da5afeb09b9d}\index{animals::Seal@{animals::Seal}!CanBalanceBall@{CanBalanceBall}}
+\index{CanBalanceBall@{CanBalanceBall}!animals::Seal@{animals::Seal}}
+\doxysubsubsection{\texorpdfstring{CanBalanceBall()}{CanBalanceBall()}}
+{\footnotesize\ttfamily \label{classanimals_1_1Seal_a3b734110135663cf36b8da5afeb09b9d} 
+bool animals\+::\+Seal\+::\+Can\+Balance\+Ball (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Checks if the seal can balance a ball. 
+
+\begin{DoxyReturn}{Returns}
+True if the seal can balance a ball, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classanimals_1_1Seal_a5c6791ed71c02bf922aede52dace0b52}\index{animals::Seal@{animals::Seal}!Eat@{Eat}}
+\index{Eat@{Eat}!animals::Seal@{animals::Seal}}
+\doxysubsubsection{\texorpdfstring{Eat()}{Eat()}}
+{\footnotesize\ttfamily \label{classanimals_1_1Seal_a5c6791ed71c02bf922aede52dace0b52} 
+void animals\+::\+Seal\+::\+Eat (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Implements the Eat function for seal. 
+
+\begin{DoxyNote}{Note}
+Overrides the Eat function from the \doxylink{classanimals_1_1SeaMammal}{Sea\+Mammal} base class. 
+
+Accessible only to Diver\+Feeder staff. 
+\end{DoxyNote}
+
+
+Reimplemented from \mbox{\hyperlink{classanimals_1_1Mammal_ab1192270c9102674f39a932f20e630b6}{animals\+::\+Mammal}}.
+
+\Hypertarget{classanimals_1_1Seal_ab017fcadb90761e73f71d19fd532e39f}\index{animals::Seal@{animals::Seal}!GetSpecies@{GetSpecies}}
+\index{GetSpecies@{GetSpecies}!animals::Seal@{animals::Seal}}
+\doxysubsubsection{\texorpdfstring{GetSpecies()}{GetSpecies()}}
+{\footnotesize\ttfamily \label{classanimals_1_1Seal_ab017fcadb90761e73f71d19fd532e39f} 
+std\+::string animals\+::\+Seal\+::\+Get\+Species (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Implements the Get\+Species function for seal. 
+
+\begin{DoxyReturn}{Returns}
+The species of the seal as a string. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Overrides the Get\+Species function from the \doxylink{classanimals_1_1SeaMammal}{Sea\+Mammal} base class. 
+\end{DoxyNote}
+
+
+Reimplemented from \mbox{\hyperlink{classanimals_1_1Mammal_a7694d93e0bcd312732cd083972dee1d3}{animals\+::\+Mammal}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+animals/mammals/\mbox{\hyperlink{seal_8h}{seal.\+h}}\item 
+animals/mammals/seal.\+cc\end{DoxyCompactItemize}

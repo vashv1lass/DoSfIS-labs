@@ -1,0 +1,32 @@
+\doxysection{context.\+h}
+\hypertarget{context_8h_source}{}\label{context_8h_source}\index{payment/context.h@{payment/context.h}}
+\mbox{\hyperlink{context_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ PAYMENT\_CONTEXT\_H\_}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ PAYMENT\_CONTEXT\_H\_}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{account_8h}{payment/account.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacepayment}{payment}}\ \{}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classpayment_1_1PaymentContext_a66bdd5395bb6f38edb0e9a4ef215966c}{PaymentContext}}\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classpayment_1_1PaymentContext_a66bdd5395bb6f38edb0e9a4ef215966c}{PaymentContext}}(std::shared\_ptr<Account>\ oceanarium\_account);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00034\ \ \ \mbox{\hyperlink{classpayment_1_1Account}{Account}}\&\ \mbox{\hyperlink{classpayment_1_1PaymentContext_ab184cdd0cfb56995c63f7cf5c12947e0}{GetAquariumAccount}}()\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00040\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classpayment_1_1Account}{Account}}\&\ \mbox{\hyperlink{classpayment_1_1PaymentContext_ab184cdd0cfb56995c63f7cf5c12947e0}{GetAquariumAccount}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00043\ \ \ std::shared\_ptr<Account>\ aquarium\_account\_;\ \ }
+\DoxyCodeLine{00044\ \};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \}\ \ \textcolor{comment}{//\ namespace\ payment}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ PAYMENT\_CONTEXT\_H\_}}
+
+\end{DoxyCode}

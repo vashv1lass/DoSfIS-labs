@@ -1,0 +1,37 @@
+\doxysection{ecosystem.\+h}
+\hypertarget{ecosystem_8h_source}{}\label{ecosystem_8h_source}\index{infrastructure/ecosystem.h@{infrastructure/ecosystem.h}}
+\mbox{\hyperlink{ecosystem_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ INFRASTRUCTURE\_ECOSYSTEM\_H\_}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ INFRASTRUCTURE\_ECOSYSTEM\_H\_}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{animal_8h}{animals/animal.h}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceinfrastructure}{infrastructure}}\ \{}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classinfrastructure_1_1Ecosystem_afa57e497c9ab37e3c0582b20a6a3ad2e}{Ecosystem}}\ \{}
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \mbox{\hyperlink{classinfrastructure_1_1Ecosystem_afa57e497c9ab37e3c0582b20a6a3ad2e}{Ecosystem}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classinfrastructure_1_1Ecosystem_a3eba07f3a4edd18320b50187e1f87528}{AddAnimal}}(std::unique\_ptr<animals::Animal>\ animal);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00042\ \ \ std::vector<std::string>\ \mbox{\hyperlink{classinfrastructure_1_1Ecosystem_add9e2d1d3ac1282da8750b2e3668e8f8}{GetStatusReport}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00048\ \ \ std::size\_t\ \mbox{\hyperlink{classinfrastructure_1_1Ecosystem_aacaf42c22b812a0e83ef1339e6fb983c}{GetCount}}()\ const\ noexcept;}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ private:}
+\DoxyCodeLine{00051\ \ \ std::vector<std::unique\_ptr<\mbox{\hyperlink{namespaceanimals}{animals}}::Animal>>\ animals\_;\ \ }
+\DoxyCodeLine{00052\ \};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \}\ \ \textcolor{comment}{//\ namespace\ infrastructure}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ INFRASTRUCTURE\_ECOSYSTEM\_H\_}}
+
+\end{DoxyCode}

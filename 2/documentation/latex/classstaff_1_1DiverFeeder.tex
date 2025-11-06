@@ -1,0 +1,136 @@
+\doxysection{staff\+::Diver\+Feeder Class Reference}
+\hypertarget{classstaff_1_1DiverFeeder}{}\label{classstaff_1_1DiverFeeder}\index{staff::DiverFeeder@{staff::DiverFeeder}}
+
+
+Derived class representing a diver feeder, inheriting from \doxylink{classstaff_1_1Employee}{Employee}.  
+
+
+
+
+{\ttfamily \#include $<$diver\+\_\+feeder.\+h$>$}
+
+Inheritance diagram for staff\+::Diver\+Feeder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classstaff_1_1DiverFeeder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstaff_1_1DiverFeeder_ab61b9e013131b463a5b40d7253026536}{Diver\+Feeder}} (std\+::string name, double salary, double oxygen\+\_\+tank\+\_\+volume)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classstaff_1_1DiverFeeder}{Diver\+Feeder} class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classstaff_1_1DiverFeeder_a96805c9b6bf5dd32be8e9745feb27d7e}{Get\+Role}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Retrieves the role of the diver feeder. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classstaff_1_1DiverFeeder_a77758392b0dad42e97f59a3c7a69a210}{Get\+Oxygen\+Tank\+Volume}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the volume of the oxygen tank. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstaff_1_1DiverFeeder_a50dde8a1b91398df296efd26489d78cb}{Feed}} (\mbox{\hyperlink{classanimals_1_1Animal}{animals\+::\+Animal}} \&animal)
+\begin{DoxyCompactList}\small\item\em Feeds an animal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classstaff_1_1Employee}{staff\+::\+Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstaff_1_1Employee_aa599c2ee48214cf94d5769a65716d344}{Employee}} (std\+::string name, double salary)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classstaff_1_1Employee}{Employee} class. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Employee} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{classstaff_1_1Employee}{Employee} class. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classstaff_1_1Employee_a665822942c1323ed1570a61ed6d8be37}{Get\+Name}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the name of the employee. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classstaff_1_1Employee_a6c4a27ea3653828445a1499404c7e517}{Get\+Salary}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the salary of the employee. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classstaff_1_1Employee}{staff\+::\+Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries name\+\_\+}
+\item 
+double {\bfseries salary\+\_\+}
+\begin{DoxyCompactList}\small\item\em The name of the employee. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Derived class representing a diver feeder, inheriting from \doxylink{classstaff_1_1Employee}{Employee}. 
+
+\label{doc-constructors}
+\Hypertarget{classstaff_1_1DiverFeeder_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classstaff_1_1DiverFeeder_ab61b9e013131b463a5b40d7253026536}\index{staff::DiverFeeder@{staff::DiverFeeder}!DiverFeeder@{DiverFeeder}}
+\index{DiverFeeder@{DiverFeeder}!staff::DiverFeeder@{staff::DiverFeeder}}
+\doxysubsubsection{\texorpdfstring{DiverFeeder()}{DiverFeeder()}}
+{\footnotesize\ttfamily \label{classstaff_1_1DiverFeeder_ab61b9e013131b463a5b40d7253026536} 
+staff\+::\+Diver\+Feeder\+::\+Diver\+Feeder (\begin{DoxyParamCaption}\item[{std\+::string}]{name}{, }\item[{double}]{salary}{, }\item[{double}]{oxygen\+\_\+tank\+\_\+volume}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{classstaff_1_1DiverFeeder}{Diver\+Feeder} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the diver feeder. \\
+\hline
+{\em salary} & The salary of the diver feeder. \\
+\hline
+{\em oxygen\+\_\+tank\+\_\+volume} & The volume of the oxygen tank used by the diver feeder. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classstaff_1_1DiverFeeder_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classstaff_1_1DiverFeeder_a50dde8a1b91398df296efd26489d78cb}\index{staff::DiverFeeder@{staff::DiverFeeder}!Feed@{Feed}}
+\index{Feed@{Feed}!staff::DiverFeeder@{staff::DiverFeeder}}
+\doxysubsubsection{\texorpdfstring{Feed()}{Feed()}}
+{\footnotesize\ttfamily \label{classstaff_1_1DiverFeeder_a50dde8a1b91398df296efd26489d78cb} 
+void staff\+::\+Diver\+Feeder\+::\+Feed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classanimals_1_1Animal}{animals\+::\+Animal}} \&}]{animal}{}\end{DoxyParamCaption})}
+
+
+
+Feeds an animal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animal} & Reference to the animal to feed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function accesses the protected Eat method of the animal. 
+\end{DoxyNote}
+\Hypertarget{classstaff_1_1DiverFeeder_a77758392b0dad42e97f59a3c7a69a210}\index{staff::DiverFeeder@{staff::DiverFeeder}!GetOxygenTankVolume@{GetOxygenTankVolume}}
+\index{GetOxygenTankVolume@{GetOxygenTankVolume}!staff::DiverFeeder@{staff::DiverFeeder}}
+\doxysubsubsection{\texorpdfstring{GetOxygenTankVolume()}{GetOxygenTankVolume()}}
+{\footnotesize\ttfamily \label{classstaff_1_1DiverFeeder_a77758392b0dad42e97f59a3c7a69a210} 
+double staff\+::\+Diver\+Feeder\+::\+Get\+Oxygen\+Tank\+Volume (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the volume of the oxygen tank. 
+
+\begin{DoxyReturn}{Returns}
+The volume of the oxygen tank. 
+\end{DoxyReturn}
+\Hypertarget{classstaff_1_1DiverFeeder_a96805c9b6bf5dd32be8e9745feb27d7e}\index{staff::DiverFeeder@{staff::DiverFeeder}!GetRole@{GetRole}}
+\index{GetRole@{GetRole}!staff::DiverFeeder@{staff::DiverFeeder}}
+\doxysubsubsection{\texorpdfstring{GetRole()}{GetRole()}}
+{\footnotesize\ttfamily \label{classstaff_1_1DiverFeeder_a96805c9b6bf5dd32be8e9745feb27d7e} 
+std\+::string staff\+::\+Diver\+Feeder\+::\+Get\+Role (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Retrieves the role of the diver feeder. 
+
+\begin{DoxyReturn}{Returns}
+The role as a string ("{}\+Diver\+Feeder"{}). 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Overrides the Get\+Role function from the \doxylink{classstaff_1_1Employee}{Employee} base class. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{classstaff_1_1Employee_a5519cf9c53dd049fc3a0859c3530f71d}{staff\+::\+Employee}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+staff/\mbox{\hyperlink{diver__feeder_8h}{diver\+\_\+feeder.\+h}}\item 
+staff/diver\+\_\+feeder.\+cc\end{DoxyCompactItemize}

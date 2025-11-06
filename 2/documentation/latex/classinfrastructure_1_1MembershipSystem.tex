@@ -1,0 +1,108 @@
+\doxysection{infrastructure\+::Membership\+System Class Reference}
+\hypertarget{classinfrastructure_1_1MembershipSystem}{}\label{classinfrastructure_1_1MembershipSystem}\index{infrastructure::MembershipSystem@{infrastructure::MembershipSystem}}
+
+
+Manages the membership system for the aquarium.  
+
+
+
+
+{\ttfamily \#include $<$membership.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classinfrastructure_1_1MembershipSystem_ab63f4ce16d7415869311a4738a37968a}\label{classinfrastructure_1_1MembershipSystem_ab63f4ce16d7415869311a4738a37968a} 
+{\bfseries Membership\+System} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{classinfrastructure_1_1MembershipSystem}{Membership\+System} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinfrastructure_1_1MembershipSystem_a64950bd576eaa3f88c9a6de7a8625885}{Register\+Member}} (std\+::string name, \mbox{\hyperlink{namespaceinfrastructure_adf3d48a6aef3fe786b4b3b8a52b7120e}{Membership\+Level}} level)
+\begin{DoxyCompactList}\small\item\em Registers a new member in the system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinfrastructure_1_1MembershipSystem_af18f1d621990238a8440a93a37fa8f33}{Add\+Points}} (const std\+::string \&name, int points)
+\begin{DoxyCompactList}\small\item\em Adds points to a member\textquotesingle{}s account. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinfrastructure_1_1MembershipSystem_a6c2701a86ec156017a54084563e463ce}{Redeem\+Points}} (const std\+::string \&name, int points)
+\begin{DoxyCompactList}\small\item\em Redeems points from a member\textquotesingle{}s account. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classinfrastructure_1_1MembershipSystem_ac0d0dd79d39706facf9fb3c76aa432f9}{Get\+Member\+Points}} (const std\+::string \&name) const
+\begin{DoxyCompactList}\small\item\em Retrieves the number of points for a specific member. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the membership system for the aquarium. 
+
+\label{doc-func-members}
+\Hypertarget{classinfrastructure_1_1MembershipSystem_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classinfrastructure_1_1MembershipSystem_af18f1d621990238a8440a93a37fa8f33}\index{infrastructure::MembershipSystem@{infrastructure::MembershipSystem}!AddPoints@{AddPoints}}
+\index{AddPoints@{AddPoints}!infrastructure::MembershipSystem@{infrastructure::MembershipSystem}}
+\doxysubsubsection{\texorpdfstring{AddPoints()}{AddPoints()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1MembershipSystem_af18f1d621990238a8440a93a37fa8f33} 
+void infrastructure\+::\+Membership\+System\+::\+Add\+Points (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name}{, }\item[{int}]{points}{}\end{DoxyParamCaption})}
+
+
+
+Adds points to a member\textquotesingle{}s account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the member to add points for. \\
+\hline
+{\em points} & The number of points to add. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classinfrastructure_1_1MembershipSystem_ac0d0dd79d39706facf9fb3c76aa432f9}\index{infrastructure::MembershipSystem@{infrastructure::MembershipSystem}!GetMemberPoints@{GetMemberPoints}}
+\index{GetMemberPoints@{GetMemberPoints}!infrastructure::MembershipSystem@{infrastructure::MembershipSystem}}
+\doxysubsubsection{\texorpdfstring{GetMemberPoints()}{GetMemberPoints()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1MembershipSystem_ac0d0dd79d39706facf9fb3c76aa432f9} 
+int infrastructure\+::\+Membership\+System\+::\+Get\+Member\+Points (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name}{}\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the number of points for a specific member. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the member to query. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of points the member has. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1MembershipSystem_a6c2701a86ec156017a54084563e463ce}\index{infrastructure::MembershipSystem@{infrastructure::MembershipSystem}!RedeemPoints@{RedeemPoints}}
+\index{RedeemPoints@{RedeemPoints}!infrastructure::MembershipSystem@{infrastructure::MembershipSystem}}
+\doxysubsubsection{\texorpdfstring{RedeemPoints()}{RedeemPoints()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1MembershipSystem_a6c2701a86ec156017a54084563e463ce} 
+void infrastructure\+::\+Membership\+System\+::\+Redeem\+Points (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name}{, }\item[{int}]{points}{}\end{DoxyParamCaption})}
+
+
+
+Redeems points from a member\textquotesingle{}s account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the member to redeem points for. \\
+\hline
+{\em points} & The number of points to redeem. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classinfrastructure_1_1MembershipSystem_a64950bd576eaa3f88c9a6de7a8625885}\index{infrastructure::MembershipSystem@{infrastructure::MembershipSystem}!RegisterMember@{RegisterMember}}
+\index{RegisterMember@{RegisterMember}!infrastructure::MembershipSystem@{infrastructure::MembershipSystem}}
+\doxysubsubsection{\texorpdfstring{RegisterMember()}{RegisterMember()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1MembershipSystem_a64950bd576eaa3f88c9a6de7a8625885} 
+void infrastructure\+::\+Membership\+System\+::\+Register\+Member (\begin{DoxyParamCaption}\item[{std\+::string}]{name}{, }\item[{\mbox{\hyperlink{namespaceinfrastructure_adf3d48a6aef3fe786b4b3b8a52b7120e}{Membership\+Level}}}]{level}{}\end{DoxyParamCaption})}
+
+
+
+Registers a new member in the system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the member to register. \\
+\hline
+{\em level} & The initial membership level of the member. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+infrastructure/\mbox{\hyperlink{membership_8h}{membership.\+h}}\item 
+infrastructure/membership.\+cc\end{DoxyCompactItemize}

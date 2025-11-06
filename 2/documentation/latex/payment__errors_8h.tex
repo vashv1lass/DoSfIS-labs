@@ -1,0 +1,31 @@
+\doxysection{utils/exceptions/payment\+\_\+errors.h File Reference}
+\hypertarget{payment__errors_8h}{}\label{payment__errors_8h}\index{utils/exceptions/payment\_errors.h@{utils/exceptions/payment\_errors.h}}
+
+
+Declaration of specific payment-\/related exception classes.  
+
+
+{\ttfamily \#include "{}utils/exceptions/base\+\_\+exceptions.\+h"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classutils_1_1exceptions_1_1InsufficientFundsError}{utils\+::exceptions\+::\+Insufficient\+Funds\+Error}}
+\begin{DoxyCompactList}\small\item\em Exception thrown when an account has insufficient funds for a transaction. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classutils_1_1exceptions_1_1CardVerificationError}{utils\+::exceptions\+::\+Card\+Verification\+Error}}
+\begin{DoxyCompactList}\small\item\em Exception thrown when card verification fails during a payment. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classutils_1_1exceptions_1_1TransactionAlreadyProcessedError}{utils\+::exceptions\+::\+Transaction\+Already\+Processed\+Error}}
+\begin{DoxyCompactList}\small\item\em Exception thrown when attempting to process a transaction that has already been processed. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classutils_1_1exceptions_1_1MismatchingPaymentMethodError}{utils\+::exceptions\+::\+Mismatching\+Payment\+Method\+Error}}
+\begin{DoxyCompactList}\small\item\em Exception thrown when an incorrect payment method is used for a transaction type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceutils}{utils}}
+\begin{DoxyCompactList}\small\item\em Namespace for utility functions and classes. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespaceutils_1_1exceptions}{utils\+::exceptions}}
+\begin{DoxyCompactList}\small\item\em Namespace for exception classes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Declaration of specific payment-\/related exception classes. 
+

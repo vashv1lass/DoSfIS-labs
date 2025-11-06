@@ -1,0 +1,146 @@
+\doxysection{animals\+::Animal Class Reference}
+\hypertarget{classanimals_1_1Animal}{}\label{classanimals_1_1Animal}\index{animals::Animal@{animals::Animal}}
+
+
+Abstract base class representing a generic animal.  
+
+
+
+
+{\ttfamily \#include $<$animal.\+h$>$}
+
+Inheritance diagram for animals\+::Animal\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classanimals_1_1Animal}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classanimals_1_1Animal_a4566837ea2fe896184f998b7e78ba864}{Animal}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classanimals_1_1Animal}{Animal} class. \end{DoxyCompactList}\item 
+\Hypertarget{classanimals_1_1Animal_a5eba86791a4b444b62cda61fb63aa0aa}\label{classanimals_1_1Animal_a5eba86791a4b444b62cda61fb63aa0aa} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Animal} () noexcept=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{classanimals_1_1Animal}{Animal} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classanimals_1_1Animal_aadd4c22b3bac68f247687c0d3098279b}{Move}} () const noexcept=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to imitate the animal movement. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classanimals_1_1Animal_a11bed746f38494b5ea871a57802983e5}{Get\+Species}} () const noexcept=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to get the species of the animal. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classanimals_1_1Animal_a88c36cb9b50ce91773d784698df867a4}{Get\+Name}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the name of the animal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classanimals_1_1Animal_a21dcef7e5fd352f3c819f78384b6875a}{Eat}} () const noexcept=0
+\begin{DoxyCompactList}\small\item\em The name of the animal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classanimals_1_1Animal_a4baddf833316167441ee006e33618459}\label{classanimals_1_1Animal_a4baddf833316167441ee006e33618459} 
+std\+::string {\bfseries name\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classanimals_1_1Animal_a56ea4580ba1cf3bd1e5768e5d5a291eb}\label{classanimals_1_1Animal_a56ea4580ba1cf3bd1e5768e5d5a291eb} 
+class {\bfseries staff\+::\+Diver\+Feeder}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class representing a generic animal. 
+
+\label{doc-constructors}
+\Hypertarget{classanimals_1_1Animal_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classanimals_1_1Animal_a4566837ea2fe896184f998b7e78ba864}\index{animals::Animal@{animals::Animal}!Animal@{Animal}}
+\index{Animal@{Animal}!animals::Animal@{animals::Animal}}
+\doxysubsubsection{\texorpdfstring{Animal()}{Animal()}}
+{\footnotesize\ttfamily \label{classanimals_1_1Animal_a4566837ea2fe896184f998b7e78ba864} 
+animals\+::\+Animal\+::\+Animal (\begin{DoxyParamCaption}\item[{std\+::string}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor for \doxylink{classanimals_1_1Animal}{Animal} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the animal. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classanimals_1_1Animal_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classanimals_1_1Animal_a21dcef7e5fd352f3c819f78384b6875a}\index{animals::Animal@{animals::Animal}!Eat@{Eat}}
+\index{Eat@{Eat}!animals::Animal@{animals::Animal}}
+\doxysubsubsection{\texorpdfstring{Eat()}{Eat()}}
+{\footnotesize\ttfamily \label{classanimals_1_1Animal_a21dcef7e5fd352f3c819f78384b6875a} 
+virtual void animals\+::\+Animal\+::\+Eat (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+
+
+The name of the animal. 
+
+Pure virtual function to imitate the animal eating. \begin{DoxyNote}{Note}
+Accessible only to Diver\+Feeder staff. 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{classanimals_1_1Dolphin_a36d7fa48055c7c0990918add7563c719}{animals\+::\+Dolphin}}, \mbox{\hyperlink{classanimals_1_1Fish_a7d42d8ef537ccf0f3b3a18d73869a90f}{animals\+::\+Fish}}, \mbox{\hyperlink{classanimals_1_1Mammal_ab1192270c9102674f39a932f20e630b6}{animals\+::\+Mammal}}, \mbox{\hyperlink{classanimals_1_1Reptile_ab6e12a0c0027cabfac2be6ef5bf1ca2b}{animals\+::\+Reptile}}, \mbox{\hyperlink{classanimals_1_1Seal_a5c6791ed71c02bf922aede52dace0b52}{animals\+::\+Seal}}, and \mbox{\hyperlink{classanimals_1_1Shark_a6c38825aefbe959fdc9c418ee61be28c}{animals\+::\+Shark}}.
+
+\Hypertarget{classanimals_1_1Animal_a88c36cb9b50ce91773d784698df867a4}\index{animals::Animal@{animals::Animal}!GetName@{GetName}}
+\index{GetName@{GetName}!animals::Animal@{animals::Animal}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily \label{classanimals_1_1Animal_a88c36cb9b50ce91773d784698df867a4} 
+const std\+::string \& animals\+::\+Animal\+::\+Get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the name of the animal. 
+
+\begin{DoxyReturn}{Returns}
+The name of the animal as a string. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The name is guaranteed to be non-\/empty. 
+\end{DoxyNote}
+\Hypertarget{classanimals_1_1Animal_a11bed746f38494b5ea871a57802983e5}\index{animals::Animal@{animals::Animal}!GetSpecies@{GetSpecies}}
+\index{GetSpecies@{GetSpecies}!animals::Animal@{animals::Animal}}
+\doxysubsubsection{\texorpdfstring{GetSpecies()}{GetSpecies()}}
+{\footnotesize\ttfamily \label{classanimals_1_1Animal_a11bed746f38494b5ea871a57802983e5} 
+virtual std\+::string animals\+::\+Animal\+::\+Get\+Species (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Pure virtual function to get the species of the animal. 
+
+\begin{DoxyReturn}{Returns}
+The species of the animal as a string. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classanimals_1_1Dolphin_ad3e785d4eed2fcdd7d786f5424ec57a4}{animals\+::\+Dolphin}}, \mbox{\hyperlink{classanimals_1_1Fish_a3bec71e7a8402395e5548256c85a99a9}{animals\+::\+Fish}}, \mbox{\hyperlink{classanimals_1_1Mammal_a7694d93e0bcd312732cd083972dee1d3}{animals\+::\+Mammal}}, \mbox{\hyperlink{classanimals_1_1Reptile_adaeaa7fa9f212d04d0706821835a7879}{animals\+::\+Reptile}}, \mbox{\hyperlink{classanimals_1_1Seal_ab017fcadb90761e73f71d19fd532e39f}{animals\+::\+Seal}}, \mbox{\hyperlink{classanimals_1_1SeaMammal_a55497583060ea273c2a04408ab054ab4}{animals\+::\+Sea\+Mammal}}, \mbox{\hyperlink{classanimals_1_1SeaTurtle_a0883d01da55a7fa618dd2985415c22b1}{animals\+::\+Sea\+Turtle}}, \mbox{\hyperlink{classanimals_1_1Shark_aad97ab64f786cc6f9bcde9b44a1a54a8}{animals\+::\+Shark}}, and \mbox{\hyperlink{classanimals_1_1Stingray_a24e6ec77615f2dc9f82184b5118cb8de}{animals\+::\+Stingray}}.
+
+\Hypertarget{classanimals_1_1Animal_aadd4c22b3bac68f247687c0d3098279b}\index{animals::Animal@{animals::Animal}!Move@{Move}}
+\index{Move@{Move}!animals::Animal@{animals::Animal}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily \label{classanimals_1_1Animal_aadd4c22b3bac68f247687c0d3098279b} 
+virtual void animals\+::\+Animal\+::\+Move (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Pure virtual function to imitate the animal movement. 
+
+
+
+Implemented in \mbox{\hyperlink{classanimals_1_1Fish_a844fe048769c7b71594c48d1ec37eaba}{animals\+::\+Fish}}, \mbox{\hyperlink{classanimals_1_1Mammal_a61f1e07129f11487d58511663d45bc8c}{animals\+::\+Mammal}}, \mbox{\hyperlink{classanimals_1_1Reptile_a39563791b67d375307ab5accc61ae842}{animals\+::\+Reptile}}, \mbox{\hyperlink{classanimals_1_1SeaMammal_a4504e29f9adb768db7c14cc7ab9ee5cc}{animals\+::\+Sea\+Mammal}}, \mbox{\hyperlink{classanimals_1_1SeaTurtle_ac6bde5a8a1032ea7b6089b161e993507}{animals\+::\+Sea\+Turtle}}, and \mbox{\hyperlink{classanimals_1_1Stingray_a9f93c9a9278658e85bde4371dddb51ea}{animals\+::\+Stingray}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+animals/\mbox{\hyperlink{animal_8h}{animal.\+h}}\item 
+animals/animal.\+cc\end{DoxyCompactItemize}

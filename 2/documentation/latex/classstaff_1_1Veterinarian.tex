@@ -1,0 +1,123 @@
+\doxysection{staff\+::Veterinarian Class Reference}
+\hypertarget{classstaff_1_1Veterinarian}{}\label{classstaff_1_1Veterinarian}\index{staff::Veterinarian@{staff::Veterinarian}}
+
+
+Derived class representing a veterinarian, inheriting from \doxylink{classstaff_1_1Employee}{Employee}.  
+
+
+
+
+{\ttfamily \#include $<$veterinarian.\+h$>$}
+
+Inheritance diagram for staff\+::Veterinarian\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classstaff_1_1Veterinarian}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstaff_1_1Veterinarian_ab629380042f6a8dc9c025154c98ac54b}{Veterinarian}} (std\+::string name, double salary)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classstaff_1_1Veterinarian}{Veterinarian} class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classstaff_1_1Veterinarian_a96103968b9de9262d2d15eb80f8b3a71}{Get\+Role}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Retrieves the role of the veterinarian. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstaff_1_1Veterinarian_a9f81681d0bc26410235eee361f5f0d4c}{Diagnose}} (\mbox{\hyperlink{classanimals_1_1Animal}{animals\+::\+Animal}} \&animal, \mbox{\hyperlink{classinfrastructure_1_1MedicalDepartment}{infrastructure\+::\+Medical\+Department}} \&department, \mbox{\hyperlink{classanimals_1_1medical_1_1Diagnosis}{animals\+::medical\+::\+Diagnosis}} diagnosis)
+\begin{DoxyCompactList}\small\item\em Performs a diagnosis on an animal and records it in the medical record book. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classstaff_1_1Employee}{staff\+::\+Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstaff_1_1Employee_aa599c2ee48214cf94d5769a65716d344}{Employee}} (std\+::string name, double salary)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classstaff_1_1Employee}{Employee} class. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Employee} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{classstaff_1_1Employee}{Employee} class. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classstaff_1_1Employee_a665822942c1323ed1570a61ed6d8be37}{Get\+Name}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the name of the employee. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classstaff_1_1Employee_a6c4a27ea3653828445a1499404c7e517}{Get\+Salary}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the salary of the employee. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classstaff_1_1Employee}{staff\+::\+Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries name\+\_\+}
+\item 
+double {\bfseries salary\+\_\+}
+\begin{DoxyCompactList}\small\item\em The name of the employee. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Derived class representing a veterinarian, inheriting from \doxylink{classstaff_1_1Employee}{Employee}. 
+
+\label{doc-constructors}
+\Hypertarget{classstaff_1_1Veterinarian_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classstaff_1_1Veterinarian_ab629380042f6a8dc9c025154c98ac54b}\index{staff::Veterinarian@{staff::Veterinarian}!Veterinarian@{Veterinarian}}
+\index{Veterinarian@{Veterinarian}!staff::Veterinarian@{staff::Veterinarian}}
+\doxysubsubsection{\texorpdfstring{Veterinarian()}{Veterinarian()}}
+{\footnotesize\ttfamily \label{classstaff_1_1Veterinarian_ab629380042f6a8dc9c025154c98ac54b} 
+staff\+::\+Veterinarian\+::\+Veterinarian (\begin{DoxyParamCaption}\item[{std\+::string}]{name}{, }\item[{double}]{salary}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{classstaff_1_1Veterinarian}{Veterinarian} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the veterinarian. \\
+\hline
+{\em salary} & The salary of the veterinarian. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classstaff_1_1Veterinarian_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classstaff_1_1Veterinarian_a9f81681d0bc26410235eee361f5f0d4c}\index{staff::Veterinarian@{staff::Veterinarian}!Diagnose@{Diagnose}}
+\index{Diagnose@{Diagnose}!staff::Veterinarian@{staff::Veterinarian}}
+\doxysubsubsection{\texorpdfstring{Diagnose()}{Diagnose()}}
+{\footnotesize\ttfamily \label{classstaff_1_1Veterinarian_a9f81681d0bc26410235eee361f5f0d4c} 
+void staff\+::\+Veterinarian\+::\+Diagnose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classanimals_1_1Animal}{animals\+::\+Animal}} \&}]{animal}{, }\item[{\mbox{\hyperlink{classinfrastructure_1_1MedicalDepartment}{infrastructure\+::\+Medical\+Department}} \&}]{department}{, }\item[{\mbox{\hyperlink{classanimals_1_1medical_1_1Diagnosis}{animals\+::medical\+::\+Diagnosis}}}]{diagnosis}{}\end{DoxyParamCaption})}
+
+
+
+Performs a diagnosis on an animal and records it in the medical record book. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animal} & Reference to the animal to diagnose. \\
+\hline
+{\em record\+\_\+book} & Reference to the medical record book to update. \\
+\hline
+{\em diagnosis} & The diagnosis to record. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function creates a new medical record with the given diagnosis. 
+\end{DoxyNote}
+\Hypertarget{classstaff_1_1Veterinarian_a96103968b9de9262d2d15eb80f8b3a71}\index{staff::Veterinarian@{staff::Veterinarian}!GetRole@{GetRole}}
+\index{GetRole@{GetRole}!staff::Veterinarian@{staff::Veterinarian}}
+\doxysubsubsection{\texorpdfstring{GetRole()}{GetRole()}}
+{\footnotesize\ttfamily \label{classstaff_1_1Veterinarian_a96103968b9de9262d2d15eb80f8b3a71} 
+std\+::string staff\+::\+Veterinarian\+::\+Get\+Role (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Retrieves the role of the veterinarian. 
+
+\begin{DoxyReturn}{Returns}
+The role as a string ("{}\+Veterinarian"{}). 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Overrides the Get\+Role function from the \doxylink{classstaff_1_1Employee}{Employee} base class. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{classstaff_1_1Employee_a5519cf9c53dd049fc3a0859c3530f71d}{staff\+::\+Employee}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+staff/\mbox{\hyperlink{veterinarian_8h}{veterinarian.\+h}}\item 
+staff/veterinarian.\+cc\end{DoxyCompactItemize}

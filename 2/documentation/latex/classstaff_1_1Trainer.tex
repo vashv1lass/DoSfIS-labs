@@ -1,0 +1,139 @@
+\doxysection{staff\+::Trainer Class Reference}
+\hypertarget{classstaff_1_1Trainer}{}\label{classstaff_1_1Trainer}\index{staff::Trainer@{staff::Trainer}}
+
+
+Derived class representing a trainer, inheriting from \doxylink{classstaff_1_1Employee}{Employee}.  
+
+
+
+
+{\ttfamily \#include $<$trainer.\+h$>$}
+
+Inheritance diagram for staff\+::Trainer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classstaff_1_1Trainer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstaff_1_1Trainer_ad832568dce19774a11343aa8d3215b55}{Trainer}} (std\+::string name, double salary)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classstaff_1_1Trainer}{Trainer} class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classstaff_1_1Trainer_a34e3137e5c697257a10d8ac7dfe765c4}{Get\+Role}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Retrieves the role of the trainer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstaff_1_1Trainer_a68d6f112fc471c6698beb9312436b0f1}{Teach\+Drawing}} (\mbox{\hyperlink{classanimals_1_1Dolphin}{animals\+::\+Dolphin}} \&dolphin)
+\begin{DoxyCompactList}\small\item\em Teaches a dolphin to draw. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstaff_1_1Trainer_a05df82cd7f8f601ed24d56180537d086}{Teach\+Ball\+Balancing}} (\mbox{\hyperlink{classanimals_1_1Seal}{animals\+::\+Seal}} \&seal)
+\begin{DoxyCompactList}\small\item\em Teaches a seal to balance a ball. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classstaff_1_1Employee}{staff\+::\+Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstaff_1_1Employee_aa599c2ee48214cf94d5769a65716d344}{Employee}} (std\+::string name, double salary)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classstaff_1_1Employee}{Employee} class. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Employee} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{classstaff_1_1Employee}{Employee} class. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classstaff_1_1Employee_a665822942c1323ed1570a61ed6d8be37}{Get\+Name}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the name of the employee. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classstaff_1_1Employee_a6c4a27ea3653828445a1499404c7e517}{Get\+Salary}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the salary of the employee. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classstaff_1_1Employee}{staff\+::\+Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries name\+\_\+}
+\item 
+double {\bfseries salary\+\_\+}
+\begin{DoxyCompactList}\small\item\em The name of the employee. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Derived class representing a trainer, inheriting from \doxylink{classstaff_1_1Employee}{Employee}. 
+
+\label{doc-constructors}
+\Hypertarget{classstaff_1_1Trainer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classstaff_1_1Trainer_ad832568dce19774a11343aa8d3215b55}\index{staff::Trainer@{staff::Trainer}!Trainer@{Trainer}}
+\index{Trainer@{Trainer}!staff::Trainer@{staff::Trainer}}
+\doxysubsubsection{\texorpdfstring{Trainer()}{Trainer()}}
+{\footnotesize\ttfamily \label{classstaff_1_1Trainer_ad832568dce19774a11343aa8d3215b55} 
+staff\+::\+Trainer\+::\+Trainer (\begin{DoxyParamCaption}\item[{std\+::string}]{name}{, }\item[{double}]{salary}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{classstaff_1_1Trainer}{Trainer} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the trainer. \\
+\hline
+{\em salary} & The salary of the trainer. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classstaff_1_1Trainer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classstaff_1_1Trainer_a34e3137e5c697257a10d8ac7dfe765c4}\index{staff::Trainer@{staff::Trainer}!GetRole@{GetRole}}
+\index{GetRole@{GetRole}!staff::Trainer@{staff::Trainer}}
+\doxysubsubsection{\texorpdfstring{GetRole()}{GetRole()}}
+{\footnotesize\ttfamily \label{classstaff_1_1Trainer_a34e3137e5c697257a10d8ac7dfe765c4} 
+std\+::string staff\+::\+Trainer\+::\+Get\+Role (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Retrieves the role of the trainer. 
+
+\begin{DoxyReturn}{Returns}
+The role as a string ("{}\+Trainer"{}). 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Overrides the Get\+Role function from the \doxylink{classstaff_1_1Employee}{Employee} base class. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{classstaff_1_1Employee_a5519cf9c53dd049fc3a0859c3530f71d}{staff\+::\+Employee}}.
+
+\Hypertarget{classstaff_1_1Trainer_a05df82cd7f8f601ed24d56180537d086}\index{staff::Trainer@{staff::Trainer}!TeachBallBalancing@{TeachBallBalancing}}
+\index{TeachBallBalancing@{TeachBallBalancing}!staff::Trainer@{staff::Trainer}}
+\doxysubsubsection{\texorpdfstring{TeachBallBalancing()}{TeachBallBalancing()}}
+{\footnotesize\ttfamily \label{classstaff_1_1Trainer_a05df82cd7f8f601ed24d56180537d086} 
+void staff\+::\+Trainer\+::\+Teach\+Ball\+Balancing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classanimals_1_1Seal}{animals\+::\+Seal}} \&}]{seal}{}\end{DoxyParamCaption})}
+
+
+
+Teaches a seal to balance a ball. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seal} & Reference to the seal to teach. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function accesses the protected Learn\+To\+Balance\+Ball method of the seal. 
+\end{DoxyNote}
+\Hypertarget{classstaff_1_1Trainer_a68d6f112fc471c6698beb9312436b0f1}\index{staff::Trainer@{staff::Trainer}!TeachDrawing@{TeachDrawing}}
+\index{TeachDrawing@{TeachDrawing}!staff::Trainer@{staff::Trainer}}
+\doxysubsubsection{\texorpdfstring{TeachDrawing()}{TeachDrawing()}}
+{\footnotesize\ttfamily \label{classstaff_1_1Trainer_a68d6f112fc471c6698beb9312436b0f1} 
+void staff\+::\+Trainer\+::\+Teach\+Drawing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classanimals_1_1Dolphin}{animals\+::\+Dolphin}} \&}]{dolphin}{}\end{DoxyParamCaption})}
+
+
+
+Teaches a dolphin to draw. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dolphin} & Reference to the dolphin to teach. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function accesses the protected Learn\+To\+Draw method of the dolphin. 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+staff/\mbox{\hyperlink{trainer_8h}{trainer.\+h}}\item 
+staff/trainer.\+cc\end{DoxyCompactItemize}

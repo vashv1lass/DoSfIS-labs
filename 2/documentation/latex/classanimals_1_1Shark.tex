@@ -1,0 +1,135 @@
+\doxysection{animals\+::Shark Class Reference}
+\hypertarget{classanimals_1_1Shark}{}\label{classanimals_1_1Shark}\index{animals::Shark@{animals::Shark}}
+
+
+Derived class representing a shark, inheriting from \doxylink{classanimals_1_1Fish}{Fish}.  
+
+
+
+
+{\ttfamily \#include $<$shark.\+h$>$}
+
+Inheritance diagram for animals\+::Shark\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classanimals_1_1Shark}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classanimals_1_1Shark_a4be07753e271de099c0db381567741d7}{Shark}} (std\+::string name, double swim\+\_\+speed)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classanimals_1_1Shark}{Shark} class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classanimals_1_1Shark_aad97ab64f786cc6f9bcde9b44a1a54a8}{Get\+Species}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Implements the Get\+Species function for shark. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classanimals_1_1Fish}{animals\+::\+Fish}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classanimals_1_1Fish_aa668cbddb72db5e09b2597968373ea72}{Fish}} (std\+::string name, double swim\+\_\+speed)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classanimals_1_1Fish}{Fish} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classanimals_1_1Fish_a844fe048769c7b71594c48d1ec37eaba}{Move}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Implements the Move function for fish. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classanimals_1_1Fish_adec4775ea403b9792f7ce17402743525}{Get\+Swim\+Speed}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the swimming speed of the fish. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classanimals_1_1Fish_a1193eaae89edf17805758c35d5902b02}{Set\+Swim\+Speed}} (double speed)
+\begin{DoxyCompactList}\small\item\em Sets the swimming speed of the fish. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classanimals_1_1Animal}{animals\+::\+Animal}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classanimals_1_1Animal_a4566837ea2fe896184f998b7e78ba864}{Animal}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classanimals_1_1Animal}{Animal} class. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Animal} () noexcept=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{classanimals_1_1Animal}{Animal} class. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classanimals_1_1Animal_a88c36cb9b50ce91773d784698df867a4}{Get\+Name}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the name of the animal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classanimals_1_1Shark_a6c38825aefbe959fdc9c418ee61be28c}{Eat}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Implements the Eat function for shark. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classanimals_1_1Fish}{animals\+::\+Fish}}}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries swim\+\_\+speed\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classanimals_1_1Animal}{animals\+::\+Animal}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries name\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Derived class representing a shark, inheriting from \doxylink{classanimals_1_1Fish}{Fish}. 
+
+\label{doc-constructors}
+\Hypertarget{classanimals_1_1Shark_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classanimals_1_1Shark_a4be07753e271de099c0db381567741d7}\index{animals::Shark@{animals::Shark}!Shark@{Shark}}
+\index{Shark@{Shark}!animals::Shark@{animals::Shark}}
+\doxysubsubsection{\texorpdfstring{Shark()}{Shark()}}
+{\footnotesize\ttfamily \label{classanimals_1_1Shark_a4be07753e271de099c0db381567741d7} 
+animals\+::\+Shark\+::\+Shark (\begin{DoxyParamCaption}\item[{std\+::string}]{name}{, }\item[{double}]{swim\+\_\+speed}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{classanimals_1_1Shark}{Shark} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the shark. \\
+\hline
+{\em swim\+\_\+speed} & The swimming speed of the shark. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classanimals_1_1Shark_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classanimals_1_1Shark_a6c38825aefbe959fdc9c418ee61be28c}\index{animals::Shark@{animals::Shark}!Eat@{Eat}}
+\index{Eat@{Eat}!animals::Shark@{animals::Shark}}
+\doxysubsubsection{\texorpdfstring{Eat()}{Eat()}}
+{\footnotesize\ttfamily \label{classanimals_1_1Shark_a6c38825aefbe959fdc9c418ee61be28c} 
+void animals\+::\+Shark\+::\+Eat (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Implements the Eat function for shark. 
+
+\begin{DoxyNote}{Note}
+Overrides the Eat function from the \doxylink{classanimals_1_1Fish}{Fish} base class. 
+
+Accessible only to Diver\+Feeder staff. 
+\end{DoxyNote}
+
+
+Reimplemented from \mbox{\hyperlink{classanimals_1_1Fish_a7d42d8ef537ccf0f3b3a18d73869a90f}{animals\+::\+Fish}}.
+
+\Hypertarget{classanimals_1_1Shark_aad97ab64f786cc6f9bcde9b44a1a54a8}\index{animals::Shark@{animals::Shark}!GetSpecies@{GetSpecies}}
+\index{GetSpecies@{GetSpecies}!animals::Shark@{animals::Shark}}
+\doxysubsubsection{\texorpdfstring{GetSpecies()}{GetSpecies()}}
+{\footnotesize\ttfamily \label{classanimals_1_1Shark_aad97ab64f786cc6f9bcde9b44a1a54a8} 
+std\+::string animals\+::\+Shark\+::\+Get\+Species (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Implements the Get\+Species function for shark. 
+
+\begin{DoxyReturn}{Returns}
+The species of the shark as a string. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Overrides the Get\+Species function from the \doxylink{classanimals_1_1Fish}{Fish} base class. 
+\end{DoxyNote}
+
+
+Reimplemented from \mbox{\hyperlink{classanimals_1_1Fish_a3bec71e7a8402395e5548256c85a99a9}{animals\+::\+Fish}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+animals/fish/\mbox{\hyperlink{shark_8h}{shark.\+h}}\item 
+animals/fish/shark.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,83 @@
+\doxysection{aquarium.\+h}
+\hypertarget{aquarium_8h_source}{}\label{aquarium_8h_source}\index{infrastructure/aquarium.h@{infrastructure/aquarium.h}}
+\mbox{\hyperlink{aquarium_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ INFRASTRUCTURE\_AQUARIUM\_H\_}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ INFRASTRUCTURE\_AQUARIUM\_H\_}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ecosystem_8h}{infrastructure/ecosystem.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{human__resources_8h}{infrastructure/human\_resources.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{medical__department_8h}{infrastructure/medical\_department.h}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{membership_8h}{infrastructure/membership.h}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{maintenance_8h}{infrastructure/maintenance.h}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{schedule_8h}{infrastructure/schedule.h}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{context_8h}{payment/context.h}}"{}}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceinfrastructure}{infrastructure}}\ \{}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classinfrastructure_1_1Aquarium_a5e5c3902aa6352da2eb900d174df28e4}{Aquarium}}\ \{}
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a5e5c3902aa6352da2eb900d174df28e4}{Aquarium}}\&\ \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a4c0daa8fdfa9eaab3933694f3080e5e5}{Instance}}();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00040\ \ \ \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a5e5c3902aa6352da2eb900d174df28e4}{Aquarium}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a5e5c3902aa6352da2eb900d174df28e4}{Aquarium}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00045\ \ \ \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a5e5c3902aa6352da2eb900d174df28e4}{Aquarium}}\&\ \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a2c391bdad014d142da96acad0f507e14}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a5e5c3902aa6352da2eb900d174df28e4}{Aquarium}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00050\ \ \ \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a77aedaf44f3c5119d7040c4a23c712c1}{Aquarium}}(\mbox{\hyperlink{classinfrastructure_1_1Aquarium_a5e5c3902aa6352da2eb900d174df28e4}{Aquarium}}\&\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00055\ \ \ \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a5e5c3902aa6352da2eb900d174df28e4}{Aquarium}}\&\ \mbox{\hyperlink{classinfrastructure_1_1Aquarium_ae343d491fb8931cbee1af0bfb33e3857}{operator=}}(\mbox{\hyperlink{classinfrastructure_1_1Aquarium_a5e5c3902aa6352da2eb900d174df28e4}{Aquarium}}\&\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00061\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classinfrastructure_1_1Aquarium_ae96f3206ac3ca6488e0247d5b64bf619}{Open}}()\ noexcept;}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00067\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a756319f2abaef8051e3f840fbb1ce673}{Close}}()\ noexcept;}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00073\ \ \ \mbox{\hyperlink{classinfrastructure_1_1Ecosystem}{Ecosystem}}\&\ \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a85d962e4d489dc65d52c37c47dde33f1}{GetEcosystem}}();}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00079\ \ \ const\ \mbox{\hyperlink{classinfrastructure_1_1Ecosystem}{Ecosystem}}\&\ \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a85d962e4d489dc65d52c37c47dde33f1}{GetEcosystem}}()\ const;}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00085\ \ \ \mbox{\hyperlink{classinfrastructure_1_1HumanResources}{HumanResources}}\&\ \mbox{\hyperlink{classinfrastructure_1_1Aquarium_aacefa43ea207555cacf186c2d9047b76}{GetHumanResources}}();}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00091\ \ \ const\ \mbox{\hyperlink{classinfrastructure_1_1HumanResources}{HumanResources}}\&\ \mbox{\hyperlink{classinfrastructure_1_1Aquarium_aacefa43ea207555cacf186c2d9047b76}{GetHumanResources}}()\ const;}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00097\ \ \ \mbox{\hyperlink{classinfrastructure_1_1MembershipSystem}{MembershipSystem}}\&\ \mbox{\hyperlink{classinfrastructure_1_1Aquarium_accc3cb56375dbb5229549e97efa79b1b}{GetMembershipSystem}}();}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00103\ \ \ const\ \mbox{\hyperlink{classinfrastructure_1_1MembershipSystem}{MembershipSystem}}\&\ \mbox{\hyperlink{classinfrastructure_1_1Aquarium_accc3cb56375dbb5229549e97efa79b1b}{GetMembershipSystem}}()\ const;}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00109\ \ \ \mbox{\hyperlink{classinfrastructure_1_1MaintenanceUnit}{MaintenanceUnit}}\&\ \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a1cff2e1d2730849cc5b6edf5b9a8f9c4}{GetMaintenanceUnit}}();}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00115\ \ \ const\ \mbox{\hyperlink{classinfrastructure_1_1MaintenanceUnit}{MaintenanceUnit}}\&\ \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a1cff2e1d2730849cc5b6edf5b9a8f9c4}{GetMaintenanceUnit}}()\ const;}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00121\ \ \ \mbox{\hyperlink{classinfrastructure_1_1Schedule}{Schedule}}\&\ \mbox{\hyperlink{classinfrastructure_1_1Aquarium_adc260d120f338d899af703f7b4c0ca09}{GetSchedule}}();}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00127\ \ \ const\ \mbox{\hyperlink{classinfrastructure_1_1Schedule}{Schedule}}\&\ \mbox{\hyperlink{classinfrastructure_1_1Aquarium_adc260d120f338d899af703f7b4c0ca09}{GetSchedule}}()\ const;}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00133\ \ \ \mbox{\hyperlink{namespacepayment}{payment}}::PaymentContext\&\ \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a1764493392b754d0aedececacf10d7aa}{GetPaymentContext}}();}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00139\ \ \ const\ \mbox{\hyperlink{namespacepayment}{payment}}::PaymentContext\&\ \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a1764493392b754d0aedececacf10d7aa}{GetPaymentContext}}()\ const;}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00141\ private:}
+\DoxyCodeLine{00145\ \ \ \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a5e5c3902aa6352da2eb900d174df28e4}{Aquarium}}();}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00150\ \ \ \string~\mbox{\hyperlink{classinfrastructure_1_1Aquarium_a5e5c3902aa6352da2eb900d174df28e4}{Aquarium}}()\ =\ default;}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00152\ \ \ \mbox{\hyperlink{classinfrastructure_1_1Ecosystem}{Ecosystem}}\ ecosystem\_;\ \ }
+\DoxyCodeLine{00153\ \ \ \mbox{\hyperlink{classinfrastructure_1_1HumanResources}{HumanResources}}\ human\_resources\_;\ \ }
+\DoxyCodeLine{00154\ \ \ \mbox{\hyperlink{classinfrastructure_1_1MedicalDepartment}{MedicalDepartment}}\ medical\_department\_;\ \ }
+\DoxyCodeLine{00155\ \ \ \mbox{\hyperlink{classinfrastructure_1_1MembershipSystem}{MembershipSystem}}\ membership\_system\_;\ \ }
+\DoxyCodeLine{00156\ \ \ \mbox{\hyperlink{classinfrastructure_1_1MaintenanceUnit}{MaintenanceUnit}}\ maintenance\_unit\_;\ \ }
+\DoxyCodeLine{00157\ \ \ \mbox{\hyperlink{classinfrastructure_1_1Schedule}{Schedule}}\ schedule\_;\ \ }
+\DoxyCodeLine{00158\ \ \ \mbox{\hyperlink{namespacepayment}{payment}}::PaymentContext\ payment\_context\_;\ \ }
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00160\ \ \ \textcolor{keywordtype}{bool}\ is\_opened\_;\ \ }
+\DoxyCodeLine{00161\ \};}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00163\ \}\ \ \textcolor{comment}{//\ namespace\ infrastructure}}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00165\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ INFRASTRUCTURE\_AQUARIUM\_H\_}}
+
+\end{DoxyCode}

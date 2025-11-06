@@ -1,0 +1,81 @@
+\doxysection{payment\+::payment\+\_\+methods\+::IPayment\+Method Class Reference}
+\hypertarget{classpayment_1_1payment__methods_1_1IPaymentMethod}{}\label{classpayment_1_1payment__methods_1_1IPaymentMethod}\index{payment::payment\_methods::IPaymentMethod@{payment::payment\_methods::IPaymentMethod}}
+
+
+Abstract interface for payment methods that do not require an account.  
+
+
+
+
+{\ttfamily \#include $<$payment\+\_\+method\+\_\+interfaces.\+h$>$}
+
+Inheritance diagram for payment\+::payment\+\_\+methods\+::IPayment\+Method\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpayment_1_1payment__methods_1_1IPaymentMethod}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpayment_1_1payment__methods_1_1IPaymentMethod_a5516bd3763244f2c5508ebdf313867e1}\label{classpayment_1_1payment__methods_1_1IPaymentMethod_a5516bd3763244f2c5508ebdf313867e1} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IPayment\+Method} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{classpayment_1_1payment__methods_1_1IPaymentMethod}{IPayment\+Method} class. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classpayment_1_1payment__methods_1_1IPaymentMethod_ac05c70a44b1ee15b2c126f3f38ca01d4}{Get\+Payment\+Method\+Info}} () const noexcept=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to get payment method information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classpayment_1_1payment__methods_1_1IPaymentMethod_a7dad9a452cd605744f18d6c5a2ab4e18}{Pay}} (double amount)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to perform a payment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpayment_1_1payment__methods_1_1IPaymentMethod_a88cef9065fce628dcfd5aed3edf139da}\label{classpayment_1_1payment__methods_1_1IPaymentMethod_a88cef9065fce628dcfd5aed3edf139da} 
+class {\bfseries payment\+::\+Transaction}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract interface for payment methods that do not require an account. 
+
+\label{doc-func-members}
+\Hypertarget{classpayment_1_1payment__methods_1_1IPaymentMethod_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpayment_1_1payment__methods_1_1IPaymentMethod_ac05c70a44b1ee15b2c126f3f38ca01d4}\index{payment::payment\_methods::IPaymentMethod@{payment::payment\_methods::IPaymentMethod}!GetPaymentMethodInfo@{GetPaymentMethodInfo}}
+\index{GetPaymentMethodInfo@{GetPaymentMethodInfo}!payment::payment\_methods::IPaymentMethod@{payment::payment\_methods::IPaymentMethod}}
+\doxysubsubsection{\texorpdfstring{GetPaymentMethodInfo()}{GetPaymentMethodInfo()}}
+{\footnotesize\ttfamily \label{classpayment_1_1payment__methods_1_1IPaymentMethod_ac05c70a44b1ee15b2c126f3f38ca01d4} 
+virtual std\+::string payment\+::payment\+\_\+methods\+::\+IPayment\+Method\+::\+Get\+Payment\+Method\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Pure virtual function to get payment method information. 
+
+\begin{DoxyReturn}{Returns}
+A string containing information about the payment method. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classpayment_1_1payment__methods_1_1CashPayment_a93ba909b0b05737d3a21b6ae1e7bd7c3}{payment\+::payment\+\_\+methods\+::\+Cash\+Payment}}.
+
+\Hypertarget{classpayment_1_1payment__methods_1_1IPaymentMethod_a7dad9a452cd605744f18d6c5a2ab4e18}\index{payment::payment\_methods::IPaymentMethod@{payment::payment\_methods::IPaymentMethod}!Pay@{Pay}}
+\index{Pay@{Pay}!payment::payment\_methods::IPaymentMethod@{payment::payment\_methods::IPaymentMethod}}
+\doxysubsubsection{\texorpdfstring{Pay()}{Pay()}}
+{\footnotesize\ttfamily \label{classpayment_1_1payment__methods_1_1IPaymentMethod_a7dad9a452cd605744f18d6c5a2ab4e18} 
+virtual void payment\+::payment\+\_\+methods\+::\+IPayment\+Method\+::\+Pay (\begin{DoxyParamCaption}\item[{double}]{amount}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function to perform a payment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount to pay. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+payment/payment\+\_\+methods/\mbox{\hyperlink{payment__method__interfaces_8h}{payment\+\_\+method\+\_\+interfaces.\+h}}\end{DoxyCompactItemize}

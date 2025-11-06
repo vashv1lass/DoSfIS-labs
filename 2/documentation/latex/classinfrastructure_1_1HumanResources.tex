@@ -1,0 +1,100 @@
+\doxysection{infrastructure\+::Human\+Resources Class Reference}
+\hypertarget{classinfrastructure_1_1HumanResources}{}\label{classinfrastructure_1_1HumanResources}\index{infrastructure::HumanResources@{infrastructure::HumanResources}}
+
+
+Manages the employees within the aquarium.  
+
+
+
+
+{\ttfamily \#include $<$human\+\_\+resources.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classinfrastructure_1_1HumanResources_a948619a2e349fdb248306f655c62e299}\label{classinfrastructure_1_1HumanResources_a948619a2e349fdb248306f655c62e299} 
+{\bfseries Human\+Resources} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{classinfrastructure_1_1HumanResources}{Human\+Resources} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinfrastructure_1_1HumanResources_a33662faa3d3f76a452d038e85f078244}{Hire}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classstaff_1_1Employee}{staff\+::\+Employee}} $>$ employee)
+\begin{DoxyCompactList}\small\item\em Hires a new employee. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinfrastructure_1_1HumanResources_a2538b62a03d01279e33625da5dbacd6f}{Fire}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Fires an employee by name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstaff_1_1Employee}{staff\+::\+Employee}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classinfrastructure_1_1HumanResources_a46139b8643328ddd8418bf3e2b07d293}{Find\+Employee}} (const std\+::string \&name) noexcept
+\begin{DoxyCompactList}\small\item\em Finds an employee by name. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{structinfrastructure_1_1EmployeeInfo}{Employee\+Info}} $>$ \mbox{\hyperlink{classinfrastructure_1_1HumanResources_a29ca47b0e84b096a4dfe993ce98cd271}{List\+Employees}} () const
+\begin{DoxyCompactList}\small\item\em Lists all employees with their information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the employees within the aquarium. 
+
+\label{doc-func-members}
+\Hypertarget{classinfrastructure_1_1HumanResources_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classinfrastructure_1_1HumanResources_a46139b8643328ddd8418bf3e2b07d293}\index{infrastructure::HumanResources@{infrastructure::HumanResources}!FindEmployee@{FindEmployee}}
+\index{FindEmployee@{FindEmployee}!infrastructure::HumanResources@{infrastructure::HumanResources}}
+\doxysubsubsection{\texorpdfstring{FindEmployee()}{FindEmployee()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1HumanResources_a46139b8643328ddd8418bf3e2b07d293} 
+\mbox{\hyperlink{classstaff_1_1Employee}{staff\+::\+Employee}} \texorpdfstring{$\ast$}{*} infrastructure\+::\+Human\+Resources\+::\+Find\+Employee (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Finds an employee by name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the employee to find. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the employee, or nullptr if not found. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1HumanResources_a2538b62a03d01279e33625da5dbacd6f}\index{infrastructure::HumanResources@{infrastructure::HumanResources}!Fire@{Fire}}
+\index{Fire@{Fire}!infrastructure::HumanResources@{infrastructure::HumanResources}}
+\doxysubsubsection{\texorpdfstring{Fire()}{Fire()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1HumanResources_a2538b62a03d01279e33625da5dbacd6f} 
+void infrastructure\+::\+Human\+Resources\+::\+Fire (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name}{}\end{DoxyParamCaption})}
+
+
+
+Fires an employee by name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the employee to fire. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classinfrastructure_1_1HumanResources_a33662faa3d3f76a452d038e85f078244}\index{infrastructure::HumanResources@{infrastructure::HumanResources}!Hire@{Hire}}
+\index{Hire@{Hire}!infrastructure::HumanResources@{infrastructure::HumanResources}}
+\doxysubsubsection{\texorpdfstring{Hire()}{Hire()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1HumanResources_a33662faa3d3f76a452d038e85f078244} 
+void infrastructure\+::\+Human\+Resources\+::\+Hire (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classstaff_1_1Employee}{staff\+::\+Employee}} $>$}]{employee}{}\end{DoxyParamCaption})}
+
+
+
+Hires a new employee. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em employee} & Unique pointer to the employee to hire. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classinfrastructure_1_1HumanResources_a29ca47b0e84b096a4dfe993ce98cd271}\index{infrastructure::HumanResources@{infrastructure::HumanResources}!ListEmployees@{ListEmployees}}
+\index{ListEmployees@{ListEmployees}!infrastructure::HumanResources@{infrastructure::HumanResources}}
+\doxysubsubsection{\texorpdfstring{ListEmployees()}{ListEmployees()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1HumanResources_a29ca47b0e84b096a4dfe993ce98cd271} 
+std\+::vector$<$ \mbox{\hyperlink{structinfrastructure_1_1EmployeeInfo}{Employee\+Info}} $>$ infrastructure\+::\+Human\+Resources\+::\+List\+Employees (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Lists all employees with their information. 
+
+\begin{DoxyReturn}{Returns}
+A vector of \doxylink{structinfrastructure_1_1EmployeeInfo}{Employee\+Info} structures. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+infrastructure/\mbox{\hyperlink{human__resources_8h}{human\+\_\+resources.\+h}}\item 
+infrastructure/human\+\_\+resources.\+cc\end{DoxyCompactItemize}

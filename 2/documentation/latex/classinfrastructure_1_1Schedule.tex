@@ -1,0 +1,131 @@
+\doxysection{infrastructure\+::Schedule Class Reference}
+\hypertarget{classinfrastructure_1_1Schedule}{}\label{classinfrastructure_1_1Schedule}\index{infrastructure::Schedule@{infrastructure::Schedule}}
+
+
+Manages a collection of scheduled events.  
+
+
+
+
+{\ttfamily \#include $<$schedule.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classinfrastructure_1_1Schedule_a4457f527c830f33268f841726f21877e}\label{classinfrastructure_1_1Schedule_a4457f527c830f33268f841726f21877e} 
+{\bfseries Schedule} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{classinfrastructure_1_1Schedule}{Schedule} class. \end{DoxyCompactList}\item 
+\Hypertarget{classinfrastructure_1_1Schedule_a3ed775376ffff579dbd05a83bcd0aff1}\label{classinfrastructure_1_1Schedule_a3ed775376ffff579dbd05a83bcd0aff1} 
+{\bfseries Schedule} (const Schedule \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor is deleted. \end{DoxyCompactList}\item 
+\Hypertarget{classinfrastructure_1_1Schedule_a86bb68b05e0413bc8db23e36c152d748}\label{classinfrastructure_1_1Schedule_a86bb68b05e0413bc8db23e36c152d748} 
+\mbox{\hyperlink{classinfrastructure_1_1Schedule_a4457f527c830f33268f841726f21877e}{Schedule}} \& {\bfseries operator=} (const \mbox{\hyperlink{classinfrastructure_1_1Schedule_a4457f527c830f33268f841726f21877e}{Schedule}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator is deleted. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinfrastructure_1_1Schedule_a8d239df494287b5652e76c9b91f2b6e5}{Add\+Event}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classinfrastructure_1_1ScheduleEvent}{Schedule\+Event}} $>$ event)
+\begin{DoxyCompactList}\small\item\em Adds an event to the schedule. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinfrastructure_1_1Schedule_afa745f81d70caa32697d64ebcbd66ca9}{Remove\+Event}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Removes an event from the schedule by name. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classinfrastructure_1_1ScheduleEvent}{Schedule\+Event}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classinfrastructure_1_1Schedule_a5d9e0d4ac659ce9ea47e80772092f361}{Get\+Next\+Event}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the next scheduled event. \end{DoxyCompactList}\item 
+std\+::vector$<$ const \mbox{\hyperlink{classinfrastructure_1_1ScheduleEvent}{Schedule\+Event}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classinfrastructure_1_1Schedule_acdf7bb538b07f8e627a81664cb369ef9}{Get\+All\+Events}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves all scheduled events. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinfrastructure_1_1Schedule_a4d0f915359cbbc6f87568161d4722505}{Execute\+Due\+Events}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Executes all events that are due based on the current time. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classinfrastructure_1_1Schedule_a648cb9c7284acf79b11eca641c8baf48}{Get\+Summary}} () const
+\begin{DoxyCompactList}\small\item\em Generates a summary of the schedule. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages a collection of scheduled events. 
+
+\label{doc-func-members}
+\Hypertarget{classinfrastructure_1_1Schedule_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classinfrastructure_1_1Schedule_a8d239df494287b5652e76c9b91f2b6e5}\index{infrastructure::Schedule@{infrastructure::Schedule}!AddEvent@{AddEvent}}
+\index{AddEvent@{AddEvent}!infrastructure::Schedule@{infrastructure::Schedule}}
+\doxysubsubsection{\texorpdfstring{AddEvent()}{AddEvent()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Schedule_a8d239df494287b5652e76c9b91f2b6e5} 
+void infrastructure\+::\+Schedule\+::\+Add\+Event (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classinfrastructure_1_1ScheduleEvent}{Schedule\+Event}} $>$}]{event}{}\end{DoxyParamCaption})}
+
+
+
+Adds an event to the schedule. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Unique pointer to the event to add. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classinfrastructure_1_1Schedule_a4d0f915359cbbc6f87568161d4722505}\index{infrastructure::Schedule@{infrastructure::Schedule}!ExecuteDueEvents@{ExecuteDueEvents}}
+\index{ExecuteDueEvents@{ExecuteDueEvents}!infrastructure::Schedule@{infrastructure::Schedule}}
+\doxysubsubsection{\texorpdfstring{ExecuteDueEvents()}{ExecuteDueEvents()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Schedule_a4d0f915359cbbc6f87568161d4722505} 
+void infrastructure\+::\+Schedule\+::\+Execute\+Due\+Events (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Executes all events that are due based on the current time. 
+
+\begin{DoxyNote}{Note}
+This function iterates through the events and executes the due ones. 
+\end{DoxyNote}
+\Hypertarget{classinfrastructure_1_1Schedule_acdf7bb538b07f8e627a81664cb369ef9}\index{infrastructure::Schedule@{infrastructure::Schedule}!GetAllEvents@{GetAllEvents}}
+\index{GetAllEvents@{GetAllEvents}!infrastructure::Schedule@{infrastructure::Schedule}}
+\doxysubsubsection{\texorpdfstring{GetAllEvents()}{GetAllEvents()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Schedule_acdf7bb538b07f8e627a81664cb369ef9} 
+std\+::vector$<$ const \mbox{\hyperlink{classinfrastructure_1_1ScheduleEvent}{Schedule\+Event}} \texorpdfstring{$\ast$}{*} $>$ infrastructure\+::\+Schedule\+::\+Get\+All\+Events (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves all scheduled events. 
+
+\begin{DoxyReturn}{Returns}
+A vector containing pointers to all scheduled events. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Schedule_a5d9e0d4ac659ce9ea47e80772092f361}\index{infrastructure::Schedule@{infrastructure::Schedule}!GetNextEvent@{GetNextEvent}}
+\index{GetNextEvent@{GetNextEvent}!infrastructure::Schedule@{infrastructure::Schedule}}
+\doxysubsubsection{\texorpdfstring{GetNextEvent()}{GetNextEvent()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Schedule_a5d9e0d4ac659ce9ea47e80772092f361} 
+const \mbox{\hyperlink{classinfrastructure_1_1ScheduleEvent}{Schedule\+Event}} \texorpdfstring{$\ast$}{*} infrastructure\+::\+Schedule\+::\+Get\+Next\+Event (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the next scheduled event. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the next event, or nullptr if no events exist. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Schedule_a648cb9c7284acf79b11eca641c8baf48}\index{infrastructure::Schedule@{infrastructure::Schedule}!GetSummary@{GetSummary}}
+\index{GetSummary@{GetSummary}!infrastructure::Schedule@{infrastructure::Schedule}}
+\doxysubsubsection{\texorpdfstring{GetSummary()}{GetSummary()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Schedule_a648cb9c7284acf79b11eca641c8baf48} 
+std\+::string infrastructure\+::\+Schedule\+::\+Get\+Summary (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Generates a summary of the schedule. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the schedule summary. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Schedule_afa745f81d70caa32697d64ebcbd66ca9}\index{infrastructure::Schedule@{infrastructure::Schedule}!RemoveEvent@{RemoveEvent}}
+\index{RemoveEvent@{RemoveEvent}!infrastructure::Schedule@{infrastructure::Schedule}}
+\doxysubsubsection{\texorpdfstring{RemoveEvent()}{RemoveEvent()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Schedule_afa745f81d70caa32697d64ebcbd66ca9} 
+void infrastructure\+::\+Schedule\+::\+Remove\+Event (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name}{}\end{DoxyParamCaption})}
+
+
+
+Removes an event from the schedule by name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the event to remove. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+infrastructure/\mbox{\hyperlink{schedule_8h}{schedule.\+h}}\item 
+infrastructure/schedule.\+cc\end{DoxyCompactItemize}

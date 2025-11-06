@@ -1,0 +1,115 @@
+\doxysection{payment\+::Ticket Class Reference}
+\hypertarget{classpayment_1_1Ticket}{}\label{classpayment_1_1Ticket}\index{payment::Ticket@{payment::Ticket}}
+
+
+Represents a ticket with a category and price.  
+
+
+
+
+{\ttfamily \#include $<$ticket.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpayment_1_1Ticket_aa3a3a70bae84d0500df377033f1cb63e}{Ticket}} (\mbox{\hyperlink{namespacepayment_a0f55980729c6083f0c9cec72d3a4b69f}{Ticket\+Category}} category)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classpayment_1_1Ticket}{Ticket} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacepayment_a0f55980729c6083f0c9cec72d3a4b69f}{Ticket\+Category}} \mbox{\hyperlink{classpayment_1_1Ticket_ae234d155502716624d830f621818bddb}{Get\+Category}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the category of the ticket. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classpayment_1_1Ticket_a32bbff8ecab3bfc445654d40ecad445c}{Get\+Price}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the price of the ticket. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classpayment_1_1Ticket_ab60f3e69f51ba26b2fb5fd50357daa16}{Get\+ID}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the ID of the ticket. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classpayment_1_1Ticket_af05282d68a61df7ce0db02f2d7b9500b}{Get\+Info}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves information about the ticket. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a ticket with a category and price. 
+
+\label{doc-constructors}
+\Hypertarget{classpayment_1_1Ticket_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpayment_1_1Ticket_aa3a3a70bae84d0500df377033f1cb63e}\index{payment::Ticket@{payment::Ticket}!Ticket@{Ticket}}
+\index{Ticket@{Ticket}!payment::Ticket@{payment::Ticket}}
+\doxysubsubsection{\texorpdfstring{Ticket()}{Ticket()}}
+{\footnotesize\ttfamily \label{classpayment_1_1Ticket_aa3a3a70bae84d0500df377033f1cb63e} 
+payment\+::\+Ticket\+::\+Ticket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacepayment_a0f55980729c6083f0c9cec72d3a4b69f}{Ticket\+Category}}}]{category}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor for \doxylink{classpayment_1_1Ticket}{Ticket} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category} & The category of the ticket. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if the category is unknown. \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-func-members}
+\Hypertarget{classpayment_1_1Ticket_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpayment_1_1Ticket_ae234d155502716624d830f621818bddb}\index{payment::Ticket@{payment::Ticket}!GetCategory@{GetCategory}}
+\index{GetCategory@{GetCategory}!payment::Ticket@{payment::Ticket}}
+\doxysubsubsection{\texorpdfstring{GetCategory()}{GetCategory()}}
+{\footnotesize\ttfamily \label{classpayment_1_1Ticket_ae234d155502716624d830f621818bddb} 
+\mbox{\hyperlink{namespacepayment_a0f55980729c6083f0c9cec72d3a4b69f}{Ticket\+Category}} payment\+::\+Ticket\+::\+Get\+Category (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the category of the ticket. 
+
+\begin{DoxyReturn}{Returns}
+The category of the ticket. 
+\end{DoxyReturn}
+\Hypertarget{classpayment_1_1Ticket_ab60f3e69f51ba26b2fb5fd50357daa16}\index{payment::Ticket@{payment::Ticket}!GetID@{GetID}}
+\index{GetID@{GetID}!payment::Ticket@{payment::Ticket}}
+\doxysubsubsection{\texorpdfstring{GetID()}{GetID()}}
+{\footnotesize\ttfamily \label{classpayment_1_1Ticket_ab60f3e69f51ba26b2fb5fd50357daa16} 
+int payment\+::\+Ticket\+::\+Get\+ID (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the ID of the ticket. 
+
+\begin{DoxyReturn}{Returns}
+The ID of the ticket. 
+\end{DoxyReturn}
+\Hypertarget{classpayment_1_1Ticket_af05282d68a61df7ce0db02f2d7b9500b}\index{payment::Ticket@{payment::Ticket}!GetInfo@{GetInfo}}
+\index{GetInfo@{GetInfo}!payment::Ticket@{payment::Ticket}}
+\doxysubsubsection{\texorpdfstring{GetInfo()}{GetInfo()}}
+{\footnotesize\ttfamily \label{classpayment_1_1Ticket_af05282d68a61df7ce0db02f2d7b9500b} 
+std\+::string payment\+::\+Ticket\+::\+Get\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves information about the ticket. 
+
+\begin{DoxyReturn}{Returns}
+A string containing information about the ticket. 
+\end{DoxyReturn}
+\Hypertarget{classpayment_1_1Ticket_a32bbff8ecab3bfc445654d40ecad445c}\index{payment::Ticket@{payment::Ticket}!GetPrice@{GetPrice}}
+\index{GetPrice@{GetPrice}!payment::Ticket@{payment::Ticket}}
+\doxysubsubsection{\texorpdfstring{GetPrice()}{GetPrice()}}
+{\footnotesize\ttfamily \label{classpayment_1_1Ticket_a32bbff8ecab3bfc445654d40ecad445c} 
+double payment\+::\+Ticket\+::\+Get\+Price (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the price of the ticket. 
+
+\begin{DoxyReturn}{Returns}
+The price of the ticket. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+payment/\mbox{\hyperlink{ticket_8h}{ticket.\+h}}\item 
+payment/ticket.\+cc\end{DoxyCompactItemize}

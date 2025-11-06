@@ -1,0 +1,114 @@
+\doxysection{infrastructure\+::Visitor Class Reference}
+\hypertarget{classinfrastructure_1_1Visitor}{}\label{classinfrastructure_1_1Visitor}\index{infrastructure::Visitor@{infrastructure::Visitor}}
+
+
+Represents a visitor to the aquarium.  
+
+
+
+
+{\ttfamily \#include $<$visitor.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classinfrastructure_1_1Visitor_af4e316ea92ffdee5b725b81d186901eb}{Visitor}} (std\+::string name, int age)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classinfrastructure_1_1Visitor}{Visitor} class. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classinfrastructure_1_1Visitor_a91b7ae0d0b2f76c4a440b8ec351a3c6b}{Get\+Name}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the name of the visitor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classinfrastructure_1_1Visitor_a7b185f48a541b888e4a54b00ce57de81}{Get\+Age}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the age of the visitor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinfrastructure_1_1Visitor_ad6a5cf181dc8f3e2752bbd5e8430cf2d}{Add\+Ticket}} (\mbox{\hyperlink{classpayment_1_1Ticket}{payment\+::\+Ticket}} ticket)
+\begin{DoxyCompactList}\small\item\em Adds a ticket to the visitor\textquotesingle{}s collection. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classpayment_1_1Ticket}{payment\+::\+Ticket}} $>$ \mbox{\hyperlink{classinfrastructure_1_1Visitor_ac7be21d6c72da95ea31a18f667be38ae}{Get\+Tickets}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves all tickets held by the visitor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a visitor to the aquarium. 
+
+\label{doc-constructors}
+\Hypertarget{classinfrastructure_1_1Visitor_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classinfrastructure_1_1Visitor_af4e316ea92ffdee5b725b81d186901eb}\index{infrastructure::Visitor@{infrastructure::Visitor}!Visitor@{Visitor}}
+\index{Visitor@{Visitor}!infrastructure::Visitor@{infrastructure::Visitor}}
+\doxysubsubsection{\texorpdfstring{Visitor()}{Visitor()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Visitor_af4e316ea92ffdee5b725b81d186901eb} 
+infrastructure\+::\+Visitor\+::\+Visitor (\begin{DoxyParamCaption}\item[{std\+::string}]{name}{, }\item[{int}]{age}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor for \doxylink{classinfrastructure_1_1Visitor}{Visitor} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the visitor. \\
+\hline
+{\em age} & The age of the visitor. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classinfrastructure_1_1Visitor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classinfrastructure_1_1Visitor_ad6a5cf181dc8f3e2752bbd5e8430cf2d}\index{infrastructure::Visitor@{infrastructure::Visitor}!AddTicket@{AddTicket}}
+\index{AddTicket@{AddTicket}!infrastructure::Visitor@{infrastructure::Visitor}}
+\doxysubsubsection{\texorpdfstring{AddTicket()}{AddTicket()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Visitor_ad6a5cf181dc8f3e2752bbd5e8430cf2d} 
+void infrastructure\+::\+Visitor\+::\+Add\+Ticket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpayment_1_1Ticket}{payment\+::\+Ticket}}}]{ticket}{}\end{DoxyParamCaption})}
+
+
+
+Adds a ticket to the visitor\textquotesingle{}s collection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ticket} & The ticket to add. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classinfrastructure_1_1Visitor_a7b185f48a541b888e4a54b00ce57de81}\index{infrastructure::Visitor@{infrastructure::Visitor}!GetAge@{GetAge}}
+\index{GetAge@{GetAge}!infrastructure::Visitor@{infrastructure::Visitor}}
+\doxysubsubsection{\texorpdfstring{GetAge()}{GetAge()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Visitor_a7b185f48a541b888e4a54b00ce57de81} 
+int infrastructure\+::\+Visitor\+::\+Get\+Age (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the age of the visitor. 
+
+\begin{DoxyReturn}{Returns}
+The age of the visitor. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Visitor_a91b7ae0d0b2f76c4a440b8ec351a3c6b}\index{infrastructure::Visitor@{infrastructure::Visitor}!GetName@{GetName}}
+\index{GetName@{GetName}!infrastructure::Visitor@{infrastructure::Visitor}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Visitor_a91b7ae0d0b2f76c4a440b8ec351a3c6b} 
+const std\+::string \& infrastructure\+::\+Visitor\+::\+Get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the name of the visitor. 
+
+\begin{DoxyReturn}{Returns}
+The name of the visitor as a string. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Visitor_ac7be21d6c72da95ea31a18f667be38ae}\index{infrastructure::Visitor@{infrastructure::Visitor}!GetTickets@{GetTickets}}
+\index{GetTickets@{GetTickets}!infrastructure::Visitor@{infrastructure::Visitor}}
+\doxysubsubsection{\texorpdfstring{GetTickets()}{GetTickets()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Visitor_ac7be21d6c72da95ea31a18f667be38ae} 
+std\+::vector$<$ \mbox{\hyperlink{classpayment_1_1Ticket}{payment\+::\+Ticket}} $>$ infrastructure\+::\+Visitor\+::\+Get\+Tickets (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves all tickets held by the visitor. 
+
+\begin{DoxyReturn}{Returns}
+A vector containing all the visitor\textquotesingle{}s tickets. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+infrastructure/\mbox{\hyperlink{visitor_8h}{visitor.\+h}}\item 
+infrastructure/visitor.\+cc\end{DoxyCompactItemize}

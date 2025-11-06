@@ -1,0 +1,116 @@
+\doxysection{animals\+::medical\+::Medical\+Record\+Book Class Reference}
+\hypertarget{classanimals_1_1medical_1_1MedicalRecordBook}{}\label{classanimals_1_1medical_1_1MedicalRecordBook}\index{animals::medical::MedicalRecordBook@{animals::medical::MedicalRecordBook}}
+
+
+Manages a collection of medical records for an animal.  
+
+
+
+
+{\ttfamily \#include $<$medical.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classanimals_1_1medical_1_1MedicalRecordBook_a46afdd8091b8dd43ea4955bbb0092063}{Medical\+Record\+Book}} (std\+::string owner)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classanimals_1_1medical_1_1MedicalRecordBook}{Medical\+Record\+Book} class. \end{DoxyCompactList}\item 
+std\+::optional$<$ const \mbox{\hyperlink{classanimals_1_1medical_1_1MedicalRecord}{Medical\+Record}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classanimals_1_1medical_1_1MedicalRecordBook_a29b31123e1f0865d45f0378df4e513c9}{Get\+Last\+Record}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the last medical record in the record book. \end{DoxyCompactList}\item 
+std\+::vector$<$ const \mbox{\hyperlink{classanimals_1_1medical_1_1MedicalRecord}{Medical\+Record}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classanimals_1_1medical_1_1MedicalRecordBook_ac1bb05308be9d5498374b770c8ca020b}{Get\+Records}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves all medical records in the record book. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classanimals_1_1medical_1_1MedicalRecordBook_a7471d6de474a679dc762f4814b63183c}{Get\+Summary}} () const
+\begin{DoxyCompactList}\small\item\em Generates a summary of the medical record book. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classanimals_1_1medical_1_1MedicalRecordBook_a82ce01ee1d34789b1e28db3689b4a282}{Get\+Owner}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the name of the animal that owns this record book. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classanimals_1_1medical_1_1MedicalRecordBook_a4b743d47d93d0b4f8db55dd388e7a7c3}\label{classanimals_1_1medical_1_1MedicalRecordBook_a4b743d47d93d0b4f8db55dd388e7a7c3} 
+class {\bfseries infrastructure\+::\+Medical\+Department}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages a collection of medical records for an animal. 
+
+\label{doc-constructors}
+\Hypertarget{classanimals_1_1medical_1_1MedicalRecordBook_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classanimals_1_1medical_1_1MedicalRecordBook_a46afdd8091b8dd43ea4955bbb0092063}\index{animals::medical::MedicalRecordBook@{animals::medical::MedicalRecordBook}!MedicalRecordBook@{MedicalRecordBook}}
+\index{MedicalRecordBook@{MedicalRecordBook}!animals::medical::MedicalRecordBook@{animals::medical::MedicalRecordBook}}
+\doxysubsubsection{\texorpdfstring{MedicalRecordBook()}{MedicalRecordBook()}}
+{\footnotesize\ttfamily \label{classanimals_1_1medical_1_1MedicalRecordBook_a46afdd8091b8dd43ea4955bbb0092063} 
+animals\+::medical\+::\+Medical\+Record\+Book\+::\+Medical\+Record\+Book (\begin{DoxyParamCaption}\item[{std\+::string}]{owner}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor for \doxylink{classanimals_1_1medical_1_1MedicalRecordBook}{Medical\+Record\+Book} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em owner} & The name of the animal that owns this record book. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classanimals_1_1medical_1_1MedicalRecordBook_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classanimals_1_1medical_1_1MedicalRecordBook_a29b31123e1f0865d45f0378df4e513c9}\index{animals::medical::MedicalRecordBook@{animals::medical::MedicalRecordBook}!GetLastRecord@{GetLastRecord}}
+\index{GetLastRecord@{GetLastRecord}!animals::medical::MedicalRecordBook@{animals::medical::MedicalRecordBook}}
+\doxysubsubsection{\texorpdfstring{GetLastRecord()}{GetLastRecord()}}
+{\footnotesize\ttfamily \label{classanimals_1_1medical_1_1MedicalRecordBook_a29b31123e1f0865d45f0378df4e513c9} 
+std\+::optional$<$ const \mbox{\hyperlink{classanimals_1_1medical_1_1MedicalRecord}{Medical\+Record}} \texorpdfstring{$\ast$}{*} $>$ animals\+::medical\+::\+Medical\+Record\+Book\+::\+Get\+Last\+Record (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the last medical record in the record book. 
+
+\begin{DoxyReturn}{Returns}
+An optional containing a pointer to the last record, or std\+::nullopt if no records exist. 
+\end{DoxyReturn}
+\Hypertarget{classanimals_1_1medical_1_1MedicalRecordBook_a82ce01ee1d34789b1e28db3689b4a282}\index{animals::medical::MedicalRecordBook@{animals::medical::MedicalRecordBook}!GetOwner@{GetOwner}}
+\index{GetOwner@{GetOwner}!animals::medical::MedicalRecordBook@{animals::medical::MedicalRecordBook}}
+\doxysubsubsection{\texorpdfstring{GetOwner()}{GetOwner()}}
+{\footnotesize\ttfamily \label{classanimals_1_1medical_1_1MedicalRecordBook_a82ce01ee1d34789b1e28db3689b4a282} 
+const std\+::string \& animals\+::medical\+::\+Medical\+Record\+Book\+::\+Get\+Owner (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the name of the animal that owns this record book. 
+
+\begin{DoxyReturn}{Returns}
+The name of the owner as a string. 
+\end{DoxyReturn}
+\Hypertarget{classanimals_1_1medical_1_1MedicalRecordBook_ac1bb05308be9d5498374b770c8ca020b}\index{animals::medical::MedicalRecordBook@{animals::medical::MedicalRecordBook}!GetRecords@{GetRecords}}
+\index{GetRecords@{GetRecords}!animals::medical::MedicalRecordBook@{animals::medical::MedicalRecordBook}}
+\doxysubsubsection{\texorpdfstring{GetRecords()}{GetRecords()}}
+{\footnotesize\ttfamily \label{classanimals_1_1medical_1_1MedicalRecordBook_ac1bb05308be9d5498374b770c8ca020b} 
+std\+::vector$<$ const \mbox{\hyperlink{classanimals_1_1medical_1_1MedicalRecord}{Medical\+Record}} \texorpdfstring{$\ast$}{*} $>$ animals\+::medical\+::\+Medical\+Record\+Book\+::\+Get\+Records (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves all medical records in the record book. 
+
+\begin{DoxyReturn}{Returns}
+A vector containing pointers to all medical records. 
+\end{DoxyReturn}
+\Hypertarget{classanimals_1_1medical_1_1MedicalRecordBook_a7471d6de474a679dc762f4814b63183c}\index{animals::medical::MedicalRecordBook@{animals::medical::MedicalRecordBook}!GetSummary@{GetSummary}}
+\index{GetSummary@{GetSummary}!animals::medical::MedicalRecordBook@{animals::medical::MedicalRecordBook}}
+\doxysubsubsection{\texorpdfstring{GetSummary()}{GetSummary()}}
+{\footnotesize\ttfamily \label{classanimals_1_1medical_1_1MedicalRecordBook_a7471d6de474a679dc762f4814b63183c} 
+std\+::string animals\+::medical\+::\+Medical\+Record\+Book\+::\+Get\+Summary (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Generates a summary of the medical record book. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the summary. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+animals/medical/\mbox{\hyperlink{medical_8h}{medical.\+h}}\item 
+animals/medical/medical.\+cc\end{DoxyCompactItemize}

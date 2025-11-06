@@ -1,0 +1,51 @@
+\doxysection{base\+\_\+exceptions.\+h}
+\hypertarget{base__exceptions_8h_source}{}\label{base__exceptions_8h_source}\index{utils/exceptions/base\_exceptions.h@{utils/exceptions/base\_exceptions.h}}
+\mbox{\hyperlink{base__exceptions_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ BASE\_EXCEPTIONS\_H\_}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ BASE\_EXCEPTIONS\_H\_}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceutils}{utils}}\ \{}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceutils_1_1exceptions}{exceptions}}\ \{}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classutils_1_1exceptions_1_1BaseException_a5f7e6059003816de5dfe4ba515be21bd}{BaseException}}\ :\ \textcolor{keyword}{public}\ std::runtime\_error\ \{}
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \mbox{\hyperlink{classutils_1_1exceptions_1_1BaseException_a5f7e6059003816de5dfe4ba515be21bd}{BaseException}}(std::string\ message);}
+\DoxyCodeLine{00032\ \};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classutils_1_1exceptions_1_1NotFoundError_a7f14c88c6f77a50e8163d7e0c92152a3}{NotFoundError}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classutils_1_1exceptions_1_1BaseException_a5f7e6059003816de5dfe4ba515be21bd}{BaseException}}\ \{}
+\DoxyCodeLine{00039\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00044\ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classutils_1_1exceptions_1_1NotFoundError_a7f14c88c6f77a50e8163d7e0c92152a3}{NotFoundError}}(std::string\ message);}
+\DoxyCodeLine{00045\ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classutils_1_1exceptions_1_1AlreadyExistsError_a81866ed11a3dd582575e869f7bc1daaf}{AlreadyExistsError}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classutils_1_1exceptions_1_1BaseException_a5f7e6059003816de5dfe4ba515be21bd}{BaseException}}\ \{}
+\DoxyCodeLine{00052\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00057\ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classutils_1_1exceptions_1_1AlreadyExistsError_a81866ed11a3dd582575e869f7bc1daaf}{AlreadyExistsError}}(std::string\ message);}
+\DoxyCodeLine{00058\ \};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00064\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classutils_1_1exceptions_1_1PaymentError_a9183b76e96c57b552cd7c7189d27efc2}{PaymentError}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classutils_1_1exceptions_1_1BaseException_a5f7e6059003816de5dfe4ba515be21bd}{BaseException}}\ \{}
+\DoxyCodeLine{00065\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00070\ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classutils_1_1exceptions_1_1PaymentError_a9183b76e96c57b552cd7c7189d27efc2}{PaymentError}}(std::string\ message);}
+\DoxyCodeLine{00071\ \};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00077\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classutils_1_1exceptions_1_1UnknownTypeError_adec93e63fe29e1c14eccbb0cfbb4cad7}{UnknownTypeError}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classutils_1_1exceptions_1_1BaseException_a5f7e6059003816de5dfe4ba515be21bd}{BaseException}}\ \{}
+\DoxyCodeLine{00078\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00083\ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classutils_1_1exceptions_1_1UnknownTypeError_adec93e63fe29e1c14eccbb0cfbb4cad7}{UnknownTypeError}}(std::string\ message);}
+\DoxyCodeLine{00084\ \};}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00090\ \textcolor{keyword}{class\ }CannotPerformActionException\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classutils_1_1exceptions_1_1BaseException_a5f7e6059003816de5dfe4ba515be21bd}{BaseException}}\ \{}
+\DoxyCodeLine{00091\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00092\ \ \ \textcolor{keyword}{explicit}\ CannotPerformActionException(std::string\ message);}
+\DoxyCodeLine{00093\ \};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \}\ \ \textcolor{comment}{//\ namespace\ exceptions}}
+\DoxyCodeLine{00096\ \}\ \ \textcolor{comment}{//\ namespace\ utils}}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ BASE\_EXCEPTIONS\_H\_}}
+
+\end{DoxyCode}

@@ -1,0 +1,46 @@
+\doxysection{human\+\_\+resources.\+h}
+\hypertarget{human__resources_8h_source}{}\label{human__resources_8h_source}\index{infrastructure/human\_resources.h@{infrastructure/human\_resources.h}}
+\mbox{\hyperlink{human__resources_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ INFRASTRUCTURE\_HUMAN\_RESOURCES\_H\_}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ INFRASTRUCTURE\_HUMAN\_RESOURCES\_H\_}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{employee_8h}{staff/employee.h}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceinfrastructure}{infrastructure}}\ \{}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structinfrastructure_1_1EmployeeInfo_ab5a2827760721111cf9500132336b120}{EmployeeInfo}}\ \{}
+\DoxyCodeLine{00031\ \ \ \mbox{\hyperlink{structinfrastructure_1_1EmployeeInfo_ab5a2827760721111cf9500132336b120}{EmployeeInfo}}(std::string\ name,\ std::string\ \mbox{\hyperlink{structinfrastructure_1_1EmployeeInfo_a1922a83cad0d0b4e93b5fdc12a05d0bc}{role}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structinfrastructure_1_1EmployeeInfo_abfb70ea30948db3932aa60c4721db2c2}{salary}});}
+\DoxyCodeLine{00032\ \ \ }
+\DoxyCodeLine{00033\ \ \ std::string\ name;\ \ \ }
+\DoxyCodeLine{00034\ \ \ std::string\ \mbox{\hyperlink{structinfrastructure_1_1EmployeeInfo_a1922a83cad0d0b4e93b5fdc12a05d0bc}{role}};\ \ \ }
+\DoxyCodeLine{00035\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structinfrastructure_1_1EmployeeInfo_abfb70ea30948db3932aa60c4721db2c2}{salary}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00036\ \};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classinfrastructure_1_1HumanResources_a948619a2e349fdb248306f655c62e299}{HumanResources}}\ \{}
+\DoxyCodeLine{00043\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00047\ \ \ \mbox{\hyperlink{classinfrastructure_1_1HumanResources_a948619a2e349fdb248306f655c62e299}{HumanResources}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classinfrastructure_1_1HumanResources_a33662faa3d3f76a452d038e85f078244}{Hire}}(std::unique\_ptr<staff::Employee>\ employee);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00059\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classinfrastructure_1_1HumanResources_a2538b62a03d01279e33625da5dbacd6f}{Fire}}(\textcolor{keyword}{const}\ std::string\&\ name);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00066\ \ \ \mbox{\hyperlink{classstaff_1_1Employee}{staff::Employee}}*\ \mbox{\hyperlink{classinfrastructure_1_1HumanResources_a46139b8643328ddd8418bf3e2b07d293}{FindEmployee}}(\textcolor{keyword}{const}\ std::string\&\ name)\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00072\ \ \ std::vector<EmployeeInfo>\ \mbox{\hyperlink{classinfrastructure_1_1HumanResources_a29ca47b0e84b096a4dfe993ce98cd271}{ListEmployees}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00075\ \ \ std::vector<std::unique\_ptr<staff::Employee>>\ employees\_;\ \ }
+\DoxyCodeLine{00076\ \};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \}\ \ \textcolor{comment}{//\ namespace\ infrastructure}}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ INFRASTRUCTURE\_HUMAN\_RESOURCES\_H\_}}
+
+\end{DoxyCode}

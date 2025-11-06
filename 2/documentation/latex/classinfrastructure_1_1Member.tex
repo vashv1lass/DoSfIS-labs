@@ -1,0 +1,146 @@
+\doxysection{infrastructure\+::Member Class Reference}
+\hypertarget{classinfrastructure_1_1Member}{}\label{classinfrastructure_1_1Member}\index{infrastructure::Member@{infrastructure::Member}}
+
+
+Represents a member of the aquarium membership system.  
+
+
+
+
+{\ttfamily \#include $<$membership.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classinfrastructure_1_1Member_a8a317ceb38f239a4bad2432b052553c3}{Member}} (std\+::string name, \mbox{\hyperlink{namespaceinfrastructure_adf3d48a6aef3fe786b4b3b8a52b7120e}{Membership\+Level}} level)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classinfrastructure_1_1Member}{Member} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinfrastructure_1_1Member_a4a034a2a8853e327b85548dc5d093d72}{Add\+Points}} (int points)
+\begin{DoxyCompactList}\small\item\em Adds points to the member\textquotesingle{}s account. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinfrastructure_1_1Member_a720867659922b52d1b27c95ed9b00ce0}{Redeem\+Points}} (int points)
+\begin{DoxyCompactList}\small\item\em Redeems points from the member\textquotesingle{}s account. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinfrastructure_1_1Member_ad00bbd3f5eb0ae0b4920d8bce6ca7389}{Upgrade}} ()
+\begin{DoxyCompactList}\small\item\em Upgrades the member\textquotesingle{}s membership level based on accumulated points. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classinfrastructure_1_1Member_a75ae0c4ccddf6e4f54aafdf4c45bdf5d}{Get\+Points}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the number of points the member has. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceinfrastructure_adf3d48a6aef3fe786b4b3b8a52b7120e}{Membership\+Level}} \mbox{\hyperlink{classinfrastructure_1_1Member_abeeabff8bd5595488242a3d563889d76}{Get\+Level}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the membership level of the member. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classinfrastructure_1_1Member_af3b27bc4b14a92e30a33a2da92f41464}{Get\+Name}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the name of the member. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a member of the aquarium membership system. 
+
+\label{doc-constructors}
+\Hypertarget{classinfrastructure_1_1Member_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classinfrastructure_1_1Member_a8a317ceb38f239a4bad2432b052553c3}\index{infrastructure::Member@{infrastructure::Member}!Member@{Member}}
+\index{Member@{Member}!infrastructure::Member@{infrastructure::Member}}
+\doxysubsubsection{\texorpdfstring{Member()}{Member()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Member_a8a317ceb38f239a4bad2432b052553c3} 
+infrastructure\+::\+Member\+::\+Member (\begin{DoxyParamCaption}\item[{std\+::string}]{name}{, }\item[{\mbox{\hyperlink{namespaceinfrastructure_adf3d48a6aef3fe786b4b3b8a52b7120e}{Membership\+Level}}}]{level}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{classinfrastructure_1_1Member}{Member} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the member. \\
+\hline
+{\em level} & The membership level of the member. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classinfrastructure_1_1Member_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classinfrastructure_1_1Member_a4a034a2a8853e327b85548dc5d093d72}\index{infrastructure::Member@{infrastructure::Member}!AddPoints@{AddPoints}}
+\index{AddPoints@{AddPoints}!infrastructure::Member@{infrastructure::Member}}
+\doxysubsubsection{\texorpdfstring{AddPoints()}{AddPoints()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Member_a4a034a2a8853e327b85548dc5d093d72} 
+void infrastructure\+::\+Member\+::\+Add\+Points (\begin{DoxyParamCaption}\item[{int}]{points}{}\end{DoxyParamCaption})}
+
+
+
+Adds points to the member\textquotesingle{}s account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & The number of points to add. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classinfrastructure_1_1Member_abeeabff8bd5595488242a3d563889d76}\index{infrastructure::Member@{infrastructure::Member}!GetLevel@{GetLevel}}
+\index{GetLevel@{GetLevel}!infrastructure::Member@{infrastructure::Member}}
+\doxysubsubsection{\texorpdfstring{GetLevel()}{GetLevel()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Member_abeeabff8bd5595488242a3d563889d76} 
+\mbox{\hyperlink{namespaceinfrastructure_adf3d48a6aef3fe786b4b3b8a52b7120e}{Membership\+Level}} infrastructure\+::\+Member\+::\+Get\+Level (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the membership level of the member. 
+
+\begin{DoxyReturn}{Returns}
+The membership level. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Member_af3b27bc4b14a92e30a33a2da92f41464}\index{infrastructure::Member@{infrastructure::Member}!GetName@{GetName}}
+\index{GetName@{GetName}!infrastructure::Member@{infrastructure::Member}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Member_af3b27bc4b14a92e30a33a2da92f41464} 
+const std\+::string \& infrastructure\+::\+Member\+::\+Get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the name of the member. 
+
+\begin{DoxyReturn}{Returns}
+The name of the member as a string. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Member_a75ae0c4ccddf6e4f54aafdf4c45bdf5d}\index{infrastructure::Member@{infrastructure::Member}!GetPoints@{GetPoints}}
+\index{GetPoints@{GetPoints}!infrastructure::Member@{infrastructure::Member}}
+\doxysubsubsection{\texorpdfstring{GetPoints()}{GetPoints()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Member_a75ae0c4ccddf6e4f54aafdf4c45bdf5d} 
+int infrastructure\+::\+Member\+::\+Get\+Points (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the number of points the member has. 
+
+\begin{DoxyReturn}{Returns}
+The number of points. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Member_a720867659922b52d1b27c95ed9b00ce0}\index{infrastructure::Member@{infrastructure::Member}!RedeemPoints@{RedeemPoints}}
+\index{RedeemPoints@{RedeemPoints}!infrastructure::Member@{infrastructure::Member}}
+\doxysubsubsection{\texorpdfstring{RedeemPoints()}{RedeemPoints()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Member_a720867659922b52d1b27c95ed9b00ce0} 
+void infrastructure\+::\+Member\+::\+Redeem\+Points (\begin{DoxyParamCaption}\item[{int}]{points}{}\end{DoxyParamCaption})}
+
+
+
+Redeems points from the member\textquotesingle{}s account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & The number of points to redeem. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classinfrastructure_1_1Member_ad00bbd3f5eb0ae0b4920d8bce6ca7389}\index{infrastructure::Member@{infrastructure::Member}!Upgrade@{Upgrade}}
+\index{Upgrade@{Upgrade}!infrastructure::Member@{infrastructure::Member}}
+\doxysubsubsection{\texorpdfstring{Upgrade()}{Upgrade()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Member_ad00bbd3f5eb0ae0b4920d8bce6ca7389} 
+void infrastructure\+::\+Member\+::\+Upgrade (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Upgrades the member\textquotesingle{}s membership level based on accumulated points. 
+
+\begin{DoxyNote}{Note}
+The upgrade logic depends on the current level and points. 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+infrastructure/\mbox{\hyperlink{membership_8h}{membership.\+h}}\item 
+infrastructure/membership.\+cc\end{DoxyCompactItemize}

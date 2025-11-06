@@ -1,0 +1,65 @@
+\doxysection{infrastructure\+::Maintenance\+Unit Class Reference}
+\hypertarget{classinfrastructure_1_1MaintenanceUnit}{}\label{classinfrastructure_1_1MaintenanceUnit}\index{infrastructure::MaintenanceUnit@{infrastructure::MaintenanceUnit}}
+
+
+Manages the maintenance tasks for the aquarium tanks.  
+
+
+
+
+{\ttfamily \#include $<$maintenance.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classinfrastructure_1_1MaintenanceUnit_a0b075a0b781a96ed51efda8368b1c354}\label{classinfrastructure_1_1MaintenanceUnit_a0b075a0b781a96ed51efda8368b1c354} 
+{\bfseries Maintenance\+Unit} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{classinfrastructure_1_1MaintenanceUnit}{Maintenance\+Unit} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinfrastructure_1_1MaintenanceUnit_ae0667d44f9c020bd6206ff4f669c53fb}{Register\+Tank}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classinfrastructure_1_1Tank}{Tank}} $>$ tank)
+\begin{DoxyCompactList}\small\item\em Registers a tank with the maintenance unit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinfrastructure_1_1MaintenanceUnit_ae815a2ac4aa1699b2fb401f356d858ff}{Clean\+Tank}} (int id)
+\begin{DoxyCompactList}\small\item\em Initiates the cleaning process for a tank by its ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the maintenance tasks for the aquarium tanks. 
+
+\label{doc-func-members}
+\Hypertarget{classinfrastructure_1_1MaintenanceUnit_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classinfrastructure_1_1MaintenanceUnit_ae815a2ac4aa1699b2fb401f356d858ff}\index{infrastructure::MaintenanceUnit@{infrastructure::MaintenanceUnit}!CleanTank@{CleanTank}}
+\index{CleanTank@{CleanTank}!infrastructure::MaintenanceUnit@{infrastructure::MaintenanceUnit}}
+\doxysubsubsection{\texorpdfstring{CleanTank()}{CleanTank()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1MaintenanceUnit_ae815a2ac4aa1699b2fb401f356d858ff} 
+void infrastructure\+::\+Maintenance\+Unit\+::\+Clean\+Tank (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+
+
+Initiates the cleaning process for a tank by its ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the tank to clean. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classinfrastructure_1_1MaintenanceUnit_ae0667d44f9c020bd6206ff4f669c53fb}\index{infrastructure::MaintenanceUnit@{infrastructure::MaintenanceUnit}!RegisterTank@{RegisterTank}}
+\index{RegisterTank@{RegisterTank}!infrastructure::MaintenanceUnit@{infrastructure::MaintenanceUnit}}
+\doxysubsubsection{\texorpdfstring{RegisterTank()}{RegisterTank()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1MaintenanceUnit_ae0667d44f9c020bd6206ff4f669c53fb} 
+void infrastructure\+::\+Maintenance\+Unit\+::\+Register\+Tank (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classinfrastructure_1_1Tank}{Tank}} $>$}]{tank}{}\end{DoxyParamCaption})}
+
+
+
+Registers a tank with the maintenance unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tank} & Shared pointer to the tank to register. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+infrastructure/\mbox{\hyperlink{maintenance_8h}{maintenance.\+h}}\item 
+infrastructure/maintenance.\+cc\end{DoxyCompactItemize}

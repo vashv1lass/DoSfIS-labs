@@ -1,0 +1,80 @@
+\doxysection{infrastructure\+::Ecosystem Class Reference}
+\hypertarget{classinfrastructure_1_1Ecosystem}{}\label{classinfrastructure_1_1Ecosystem}\index{infrastructure::Ecosystem@{infrastructure::Ecosystem}}
+
+
+Namespace for all infrastructure-\/related classes and functions.  
+
+
+
+
+{\ttfamily \#include $<$ecosystem.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classinfrastructure_1_1Ecosystem_afa57e497c9ab37e3c0582b20a6a3ad2e}\label{classinfrastructure_1_1Ecosystem_afa57e497c9ab37e3c0582b20a6a3ad2e} 
+{\bfseries Ecosystem} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{classinfrastructure_1_1Ecosystem}{Ecosystem} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinfrastructure_1_1Ecosystem_a3eba07f3a4edd18320b50187e1f87528}{Add\+Animal}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classanimals_1_1Animal}{animals\+::\+Animal}} $>$ animal)
+\begin{DoxyCompactList}\small\item\em Adds an animal to the ecosystem. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classinfrastructure_1_1Ecosystem_add9e2d1d3ac1282da8750b2e3668e8f8}{Get\+Status\+Report}} () const
+\begin{DoxyCompactList}\small\item\em Generates a status report for all animals in the ecosystem. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classinfrastructure_1_1Ecosystem_aacaf42c22b812a0e83ef1339e6fb983c}{Get\+Count}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the number of animals in the ecosystem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Namespace for all infrastructure-\/related classes and functions. 
+
+Manages the collection of animals within the aquarium ecosystem. 
+
+\label{doc-func-members}
+\Hypertarget{classinfrastructure_1_1Ecosystem_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classinfrastructure_1_1Ecosystem_a3eba07f3a4edd18320b50187e1f87528}\index{infrastructure::Ecosystem@{infrastructure::Ecosystem}!AddAnimal@{AddAnimal}}
+\index{AddAnimal@{AddAnimal}!infrastructure::Ecosystem@{infrastructure::Ecosystem}}
+\doxysubsubsection{\texorpdfstring{AddAnimal()}{AddAnimal()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Ecosystem_a3eba07f3a4edd18320b50187e1f87528} 
+void infrastructure\+::\+Ecosystem\+::\+Add\+Animal (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classanimals_1_1Animal}{animals\+::\+Animal}} $>$}]{animal}{}\end{DoxyParamCaption})}
+
+
+
+Adds an animal to the ecosystem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animal} & Unique pointer to the animal to add. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classinfrastructure_1_1Ecosystem_aacaf42c22b812a0e83ef1339e6fb983c}\index{infrastructure::Ecosystem@{infrastructure::Ecosystem}!GetCount@{GetCount}}
+\index{GetCount@{GetCount}!infrastructure::Ecosystem@{infrastructure::Ecosystem}}
+\doxysubsubsection{\texorpdfstring{GetCount()}{GetCount()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Ecosystem_aacaf42c22b812a0e83ef1339e6fb983c} 
+std\+::size\+\_\+t infrastructure\+::\+Ecosystem\+::\+Get\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the number of animals in the ecosystem. 
+
+\begin{DoxyReturn}{Returns}
+The count of animals. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Ecosystem_add9e2d1d3ac1282da8750b2e3668e8f8}\index{infrastructure::Ecosystem@{infrastructure::Ecosystem}!GetStatusReport@{GetStatusReport}}
+\index{GetStatusReport@{GetStatusReport}!infrastructure::Ecosystem@{infrastructure::Ecosystem}}
+\doxysubsubsection{\texorpdfstring{GetStatusReport()}{GetStatusReport()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Ecosystem_add9e2d1d3ac1282da8750b2e3668e8f8} 
+std\+::vector$<$ std\+::string $>$ infrastructure\+::\+Ecosystem\+::\+Get\+Status\+Report (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Generates a status report for all animals in the ecosystem. 
+
+\begin{DoxyReturn}{Returns}
+A vector of strings containing the status report. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+infrastructure/\mbox{\hyperlink{ecosystem_8h}{ecosystem.\+h}}\item 
+infrastructure/ecosystem.\+cc\end{DoxyCompactItemize}

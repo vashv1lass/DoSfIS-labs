@@ -1,0 +1,64 @@
+\doxysection{utils\+::IDGenerator Class Reference}
+\hypertarget{classutils_1_1IDGenerator}{}\label{classutils_1_1IDGenerator}\index{utils::IDGenerator@{utils::IDGenerator}}
+
+
+Singleton class for generating unique IDs.  
+
+
+
+
+{\ttfamily \#include $<$id\+\_\+generator.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classutils_1_1IDGenerator_abcdba95eadb234f81ddb4bcab0f31c37}{Next\+ID}} () noexcept
+\begin{DoxyCompactList}\small\item\em Generates the next unique ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static IDGenerator \& \mbox{\hyperlink{classutils_1_1IDGenerator_af1bebcff8eb18c81d543dafa65fc79e1}{Instance}} () noexcept
+\begin{DoxyCompactList}\small\item\em Gets the singleton instance of the \doxylink{classutils_1_1IDGenerator}{IDGenerator}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton class for generating unique IDs. 
+
+\label{doc-func-members}
+\Hypertarget{classutils_1_1IDGenerator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classutils_1_1IDGenerator_af1bebcff8eb18c81d543dafa65fc79e1}\index{utils::IDGenerator@{utils::IDGenerator}!Instance@{Instance}}
+\index{Instance@{Instance}!utils::IDGenerator@{utils::IDGenerator}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily \label{classutils_1_1IDGenerator_af1bebcff8eb18c81d543dafa65fc79e1} 
+IDGenerator \& utils\+::\+IDGenerator\+::\+Instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [noexcept]}}
+
+
+
+Gets the singleton instance of the \doxylink{classutils_1_1IDGenerator}{IDGenerator}. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the \doxylink{classutils_1_1IDGenerator}{IDGenerator} instance. 
+\end{DoxyReturn}
+\Hypertarget{classutils_1_1IDGenerator_abcdba95eadb234f81ddb4bcab0f31c37}\index{utils::IDGenerator@{utils::IDGenerator}!NextID@{NextID}}
+\index{NextID@{NextID}!utils::IDGenerator@{utils::IDGenerator}}
+\doxysubsubsection{\texorpdfstring{NextID()}{NextID()}}
+{\footnotesize\ttfamily \label{classutils_1_1IDGenerator_abcdba95eadb234f81ddb4bcab0f31c37} 
+int utils\+::\+IDGenerator\+::\+Next\+ID (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Generates the next unique ID. 
+
+\begin{DoxyReturn}{Returns}
+The next unique ID. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function is thread-\/safe. 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+utils/\mbox{\hyperlink{id__generator_8h}{id\+\_\+generator.\+h}}\item 
+utils/id\+\_\+generator.\+cc\end{DoxyCompactItemize}

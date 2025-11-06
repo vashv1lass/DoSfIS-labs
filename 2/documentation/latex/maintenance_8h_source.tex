@@ -1,0 +1,36 @@
+\doxysection{maintenance.\+h}
+\hypertarget{maintenance_8h_source}{}\label{maintenance_8h_source}\index{infrastructure/maintenance.h@{infrastructure/maintenance.h}}
+\mbox{\hyperlink{maintenance_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ INFRASTRUCTURE\_MAINTENANCE\_H\_}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ INFRASTRUCTURE\_MAINTENANCE\_H\_}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{tank_8h}{infrastructure/tank.h}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceinfrastructure}{infrastructure}}\ \{}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classinfrastructure_1_1MaintenanceUnit_a0b075a0b781a96ed51efda8368b1c354}{MaintenanceUnit}}\ \{}
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \mbox{\hyperlink{classinfrastructure_1_1MaintenanceUnit_a0b075a0b781a96ed51efda8368b1c354}{MaintenanceUnit}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00035\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classinfrastructure_1_1MaintenanceUnit_ae0667d44f9c020bd6206ff4f669c53fb}{RegisterTank}}(std::shared\_ptr<Tank>\ tank);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00041\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classinfrastructure_1_1MaintenanceUnit_ae815a2ac4aa1699b2fb401f356d858ff}{CleanTank}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00044\ \ \ std::unordered\_map<int,\ std::shared\_ptr<Tank>>\ tanks\_;\ \ }
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00051\ \ \ \textcolor{keywordtype}{void}\ PerformCleaning(\mbox{\hyperlink{classinfrastructure_1_1Tank}{Tank}}\&\ tank)\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00052\ \};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \}\ \ \textcolor{comment}{//\ namespace\ infrastructure}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ INFRASTRUCTURE\_MAINTENANCE\_H\_}}
+
+\end{DoxyCode}

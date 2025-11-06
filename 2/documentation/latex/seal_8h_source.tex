@@ -1,0 +1,47 @@
+\doxysection{seal.\+h}
+\hypertarget{seal_8h_source}{}\label{seal_8h_source}\index{animals/mammals/seal.h@{animals/mammals/seal.h}}
+\mbox{\hyperlink{seal_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ ANIMALS\_MAMMALS\_SEAL\_H\_}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ ANIMALS\_MAMMALS\_SEAL\_H\_}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{mammal_8h}{animals/mammals/mammal.h}}"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{comment}{//\ Forward\ declaration\ of\ Trainer\ class\ in\ staff\ namespace}}
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacestaff}{staff}}\ \{}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstaff_1_1Trainer}{Trainer}};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \}\ \ \textcolor{comment}{//\ namespace\ staff}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceanimals}{animals}}\ \{}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classanimals_1_1Seal_a1586255de78579fba2b6008bcb7f3abb}{Seal}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classanimals_1_1SeaMammal_a9faf50ae76d8ac431fce55860f1c32c0}{SeaMammal}}\ \{}
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \mbox{\hyperlink{classanimals_1_1Seal_a1586255de78579fba2b6008bcb7f3abb}{Seal}}(std::string\ name,\ \textcolor{keywordtype}{double}\ milk\_production,\ \textcolor{keywordtype}{double}\ dive\_depth,}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ breath\_hold);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00044\ \ \ std::string\ \mbox{\hyperlink{classanimals_1_1Seal_ab017fcadb90761e73f71d19fd532e39f}{GetSpecies}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00050\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classanimals_1_1Seal_a3b734110135663cf36b8da5afeb09b9d}{CanBalanceBall}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00058\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classanimals_1_1Seal_afc574f1bcf543a2e5ff06b4754141bf8}{BalanceBall}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00066\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classanimals_1_1Seal_a5c6791ed71c02bf922aede52dace0b52}{Eat}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00067\ \ \ }
+\DoxyCodeLine{00068\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00069\ \ \ \textcolor{keywordtype}{bool}\ can\_balance\_ball\_;\ \ }
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00076\ \ \ \textcolor{keywordtype}{void}\ LearnToBalanceBall()\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstaff_1_1Trainer}{staff::Trainer}};\ \ }
+\DoxyCodeLine{00079\ \};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \}\ \ \textcolor{comment}{//\ namespace\ animals}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ ANIMALS\_MAMMALS\_SEAL\_H\_}}
+
+\end{DoxyCode}

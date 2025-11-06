@@ -1,0 +1,127 @@
+\doxysection{payment\+::payment\+\_\+methods\+::Card\+Payment Class Reference}
+\hypertarget{classpayment_1_1payment__methods_1_1CardPayment}{}\label{classpayment_1_1payment__methods_1_1CardPayment}\index{payment::payment\_methods::CardPayment@{payment::payment\_methods::CardPayment}}
+
+
+Implementation of the \doxylink{classpayment_1_1payment__methods_1_1IAccountPaymentMethod}{IAccount\+Payment\+Method} interface for card payments.  
+
+
+
+
+{\ttfamily \#include $<$card\+\_\+payment.\+h$>$}
+
+Inheritance diagram for payment\+::payment\+\_\+methods\+::Card\+Payment\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpayment_1_1payment__methods_1_1CardPayment}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpayment_1_1payment__methods_1_1CardPayment_a5f37c0f96701352fbc9e161263570e88}{Card\+Payment}} (\mbox{\hyperlink{classpayment_1_1PaymentContext}{Payment\+Context}} \&context, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpayment_1_1Account}{Account}} $>$ card\+\_\+account)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classpayment_1_1payment__methods_1_1CardPayment}{Card\+Payment} class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classpayment_1_1payment__methods_1_1CardPayment_acca2f8315dc1ce15b1710d8eef0056a0}{Get\+Payment\+Method\+Info}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Retrieves information about the card payment method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpayment_1_1payment__methods_1_1IAccountPaymentMethod}{payment\+::payment\+\_\+methods\+::\+IAccount\+Payment\+Method}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IAccount\+Payment\+Method} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{classpayment_1_1payment__methods_1_1IAccountPaymentMethod}{IAccount\+Payment\+Method} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classpayment_1_1payment__methods_1_1CardPayment_aff081f6b9d6ad79c8d54ca58e3ef3be7}{Pay}} (\mbox{\hyperlink{classpayment_1_1Account}{Account}} \&customer, double amount) override
+\begin{DoxyCompactList}\small\item\em Shared pointer to the card account used for payment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpayment_1_1payment__methods_1_1CardPayment_a10fe11bb8a4a6db95704c2447b734c9d}\label{classpayment_1_1payment__methods_1_1CardPayment_a10fe11bb8a4a6db95704c2447b734c9d} 
+\mbox{\hyperlink{classpayment_1_1PaymentContext}{Payment\+Context}} \& {\bfseries context\+\_\+}
+\item 
+\Hypertarget{classpayment_1_1payment__methods_1_1CardPayment_a1521ca86d84265e45610edfd676e1b5d}\label{classpayment_1_1payment__methods_1_1CardPayment_a1521ca86d84265e45610edfd676e1b5d} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpayment_1_1Account}{Account}} $>$ {\bfseries card\+\_\+account\+\_\+}
+\begin{DoxyCompactList}\small\item\em Reference to the payment context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of the \doxylink{classpayment_1_1payment__methods_1_1IAccountPaymentMethod}{IAccount\+Payment\+Method} interface for card payments. 
+
+\label{doc-constructors}
+\Hypertarget{classpayment_1_1payment__methods_1_1CardPayment_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpayment_1_1payment__methods_1_1CardPayment_a5f37c0f96701352fbc9e161263570e88}\index{payment::payment\_methods::CardPayment@{payment::payment\_methods::CardPayment}!CardPayment@{CardPayment}}
+\index{CardPayment@{CardPayment}!payment::payment\_methods::CardPayment@{payment::payment\_methods::CardPayment}}
+\doxysubsubsection{\texorpdfstring{CardPayment()}{CardPayment()}}
+{\footnotesize\ttfamily \label{classpayment_1_1payment__methods_1_1CardPayment_a5f37c0f96701352fbc9e161263570e88} 
+payment\+::payment\+\_\+methods\+::\+Card\+Payment\+::\+Card\+Payment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpayment_1_1PaymentContext}{Payment\+Context}} \&}]{context}{, }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpayment_1_1Account}{Account}} $>$}]{card\+\_\+account}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{classpayment_1_1payment__methods_1_1CardPayment}{Card\+Payment} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & Reference to the payment context. \\
+\hline
+{\em card\+\_\+account} & Shared pointer to the card account used for payment. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classpayment_1_1payment__methods_1_1CardPayment_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpayment_1_1payment__methods_1_1CardPayment_acca2f8315dc1ce15b1710d8eef0056a0}\index{payment::payment\_methods::CardPayment@{payment::payment\_methods::CardPayment}!GetPaymentMethodInfo@{GetPaymentMethodInfo}}
+\index{GetPaymentMethodInfo@{GetPaymentMethodInfo}!payment::payment\_methods::CardPayment@{payment::payment\_methods::CardPayment}}
+\doxysubsubsection{\texorpdfstring{GetPaymentMethodInfo()}{GetPaymentMethodInfo()}}
+{\footnotesize\ttfamily \label{classpayment_1_1payment__methods_1_1CardPayment_acca2f8315dc1ce15b1710d8eef0056a0} 
+std\+::string payment\+::payment\+\_\+methods\+::\+Card\+Payment\+::\+Get\+Payment\+Method\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Retrieves information about the card payment method. 
+
+\begin{DoxyReturn}{Returns}
+A string containing information about the payment method. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Overrides the Get\+Payment\+Method\+Info function from the \doxylink{classpayment_1_1payment__methods_1_1IAccountPaymentMethod}{IAccount\+Payment\+Method} interface. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{classpayment_1_1payment__methods_1_1IAccountPaymentMethod_aaaf18839a6c962097b3e8960a9fdd79e}{payment\+::payment\+\_\+methods\+::\+IAccount\+Payment\+Method}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classpayment_1_1payment__methods_1_1OnlineCardPayment_af13a0c2930682435509fa19b37484c69}{payment\+::payment\+\_\+methods\+::\+Online\+Card\+Payment}}.
+
+\Hypertarget{classpayment_1_1payment__methods_1_1CardPayment_aff081f6b9d6ad79c8d54ca58e3ef3be7}\index{payment::payment\_methods::CardPayment@{payment::payment\_methods::CardPayment}!Pay@{Pay}}
+\index{Pay@{Pay}!payment::payment\_methods::CardPayment@{payment::payment\_methods::CardPayment}}
+\doxysubsubsection{\texorpdfstring{Pay()}{Pay()}}
+{\footnotesize\ttfamily \label{classpayment_1_1payment__methods_1_1CardPayment_aff081f6b9d6ad79c8d54ca58e3ef3be7} 
+void payment\+::payment\+\_\+methods\+::\+Card\+Payment\+::\+Pay (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpayment_1_1Account}{Account}} \&}]{customer}{, }\item[{double}]{amount}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Shared pointer to the card account used for payment. 
+
+Performs a payment using the card account. 
+\begin{DoxyParams}{Parameters}
+{\em customer} & Reference to the customer\textquotesingle{}s account to debit. \\
+\hline
+{\em amount} & The amount to pay. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Overrides the Pay function from the \doxylink{classpayment_1_1payment__methods_1_1IAccountPaymentMethod}{IAccount\+Payment\+Method} interface. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{classpayment_1_1payment__methods_1_1IAccountPaymentMethod_a0743f691e51e597de842a5937205d934}{payment\+::payment\+\_\+methods\+::\+IAccount\+Payment\+Method}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+payment/payment\+\_\+methods/card\+\_\+payment/\mbox{\hyperlink{card__payment_8h}{card\+\_\+payment.\+h}}\item 
+payment/payment\+\_\+methods/card\+\_\+payment/card\+\_\+payment.\+cc\end{DoxyCompactItemize}

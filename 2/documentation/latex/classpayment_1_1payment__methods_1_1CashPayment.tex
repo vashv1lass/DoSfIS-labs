@@ -1,0 +1,85 @@
+\doxysection{payment\+::payment\+\_\+methods\+::Cash\+Payment Class Reference}
+\hypertarget{classpayment_1_1payment__methods_1_1CashPayment}{}\label{classpayment_1_1payment__methods_1_1CashPayment}\index{payment::payment\_methods::CashPayment@{payment::payment\_methods::CashPayment}}
+
+
+Implementation of the \doxylink{classpayment_1_1payment__methods_1_1IPaymentMethod}{IPayment\+Method} interface for cash payments.  
+
+
+
+
+{\ttfamily \#include $<$cash\+\_\+payment.\+h$>$}
+
+Inheritance diagram for payment\+::payment\+\_\+methods\+::Cash\+Payment\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpayment_1_1payment__methods_1_1CashPayment}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpayment_1_1payment__methods_1_1CashPayment_a2585473273a2878d8fc4c9c11efd4131}{Cash\+Payment}} (\mbox{\hyperlink{classpayment_1_1PaymentContext}{Payment\+Context}} \&context, double amount\+\_\+given)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classpayment_1_1payment__methods_1_1CashPayment}{Cash\+Payment} class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classpayment_1_1payment__methods_1_1CashPayment_a93ba909b0b05737d3a21b6ae1e7bd7c3}{Get\+Payment\+Method\+Info}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Retrieves information about the cash payment method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpayment_1_1payment__methods_1_1IPaymentMethod}{payment\+::payment\+\_\+methods\+::\+IPayment\+Method}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IPayment\+Method} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{classpayment_1_1payment__methods_1_1IPaymentMethod}{IPayment\+Method} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of the \doxylink{classpayment_1_1payment__methods_1_1IPaymentMethod}{IPayment\+Method} interface for cash payments. 
+
+\label{doc-constructors}
+\Hypertarget{classpayment_1_1payment__methods_1_1CashPayment_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpayment_1_1payment__methods_1_1CashPayment_a2585473273a2878d8fc4c9c11efd4131}\index{payment::payment\_methods::CashPayment@{payment::payment\_methods::CashPayment}!CashPayment@{CashPayment}}
+\index{CashPayment@{CashPayment}!payment::payment\_methods::CashPayment@{payment::payment\_methods::CashPayment}}
+\doxysubsubsection{\texorpdfstring{CashPayment()}{CashPayment()}}
+{\footnotesize\ttfamily \label{classpayment_1_1payment__methods_1_1CashPayment_a2585473273a2878d8fc4c9c11efd4131} 
+payment\+::payment\+\_\+methods\+::\+Cash\+Payment\+::\+Cash\+Payment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpayment_1_1PaymentContext}{Payment\+Context}} \&}]{context}{, }\item[{double}]{amount\+\_\+given}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor for \doxylink{classpayment_1_1payment__methods_1_1CashPayment}{Cash\+Payment} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & Reference to the payment context. \\
+\hline
+{\em amount\+\_\+given} & The amount of cash provided by the customer. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classpayment_1_1payment__methods_1_1CashPayment_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpayment_1_1payment__methods_1_1CashPayment_a93ba909b0b05737d3a21b6ae1e7bd7c3}\index{payment::payment\_methods::CashPayment@{payment::payment\_methods::CashPayment}!GetPaymentMethodInfo@{GetPaymentMethodInfo}}
+\index{GetPaymentMethodInfo@{GetPaymentMethodInfo}!payment::payment\_methods::CashPayment@{payment::payment\_methods::CashPayment}}
+\doxysubsubsection{\texorpdfstring{GetPaymentMethodInfo()}{GetPaymentMethodInfo()}}
+{\footnotesize\ttfamily \label{classpayment_1_1payment__methods_1_1CashPayment_a93ba909b0b05737d3a21b6ae1e7bd7c3} 
+std\+::string payment\+::payment\+\_\+methods\+::\+Cash\+Payment\+::\+Get\+Payment\+Method\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Retrieves information about the cash payment method. 
+
+\begin{DoxyReturn}{Returns}
+A string containing information about the payment method. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Overrides the Get\+Payment\+Method\+Info function from the \doxylink{classpayment_1_1payment__methods_1_1IPaymentMethod}{IPayment\+Method} interface. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{classpayment_1_1payment__methods_1_1IPaymentMethod_ac05c70a44b1ee15b2c126f3f38ca01d4}{payment\+::payment\+\_\+methods\+::\+IPayment\+Method}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+payment/payment\+\_\+methods/cash\+\_\+payment/\mbox{\hyperlink{cash__payment_8h}{cash\+\_\+payment.\+h}}\item 
+payment/payment\+\_\+methods/cash\+\_\+payment/cash\+\_\+payment.\+cc\end{DoxyCompactItemize}

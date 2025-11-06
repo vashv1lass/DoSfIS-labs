@@ -1,0 +1,37 @@
+\doxysection{account.\+h}
+\hypertarget{account_8h_source}{}\label{account_8h_source}\index{payment/account.h@{payment/account.h}}
+\mbox{\hyperlink{account_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ PAYMENT\_ACCOUNT\_H\_}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ PAYMENT\_ACCOUNT\_H\_}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacepayment}{payment}}\ \{}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classpayment_1_1Account_af15d73adb8ea58b84d8410f382dc7e1b}{Account}}\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classpayment_1_1Account_af15d73adb8ea58b84d8410f382dc7e1b}{Account}}(std::string\ owner,\ \textcolor{keywordtype}{double}\ balance);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00033\ \ \ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classpayment_1_1Account_abf94059717f150995cecd56055f60364}{GetOwner}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00039\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classpayment_1_1Account_ac2df578aad331d9a4361624177c3fcb1}{GetBalance}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00046\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classpayment_1_1Account_a71a8a88c02ab2fde3542fbc0ef22ec24}{Deposit}}(\textcolor{keywordtype}{double}\ amount);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00053\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classpayment_1_1Account_a79de049b500113f61f1e16d83b865cb4}{Withdraw}}(\textcolor{keywordtype}{double}\ amount);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00060\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classpayment_1_1Account_aebcba026be1b16cc47063ea6d16e2235}{HasEnough}}(\textcolor{keywordtype}{double}\ amount)\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00063\ \ \ std::string\ owner\_;\ \ }
+\DoxyCodeLine{00064\ \ \ \textcolor{keywordtype}{double}\ balance\_;\ \ \ \ \ }
+\DoxyCodeLine{00065\ \};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \}\ \ \textcolor{comment}{//\ namespace\ payment}}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ PAYMENT\_ACCOUNT\_H\_}}
+
+\end{DoxyCode}

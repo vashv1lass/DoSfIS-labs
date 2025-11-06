@@ -1,0 +1,90 @@
+\doxysection{payment\+::payment\+\_\+methods\+::IAccount\+Payment\+Method Class Reference}
+\hypertarget{classpayment_1_1payment__methods_1_1IAccountPaymentMethod}{}\label{classpayment_1_1payment__methods_1_1IAccountPaymentMethod}\index{payment::payment\_methods::IAccountPaymentMethod@{payment::payment\_methods::IAccountPaymentMethod}}
+
+
+Abstract interface for payment methods that require an account.  
+
+
+
+
+{\ttfamily \#include $<$payment\+\_\+method\+\_\+interfaces.\+h$>$}
+
+Inheritance diagram for payment\+::payment\+\_\+methods\+::IAccount\+Payment\+Method\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpayment_1_1payment__methods_1_1IAccountPaymentMethod}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpayment_1_1payment__methods_1_1IAccountPaymentMethod_ad37eb1ec0a13e9bcef88a8fa4edd0e09}\label{classpayment_1_1payment__methods_1_1IAccountPaymentMethod_ad37eb1ec0a13e9bcef88a8fa4edd0e09} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IAccount\+Payment\+Method} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{classpayment_1_1payment__methods_1_1IAccountPaymentMethod}{IAccount\+Payment\+Method} class. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classpayment_1_1payment__methods_1_1IAccountPaymentMethod_aaaf18839a6c962097b3e8960a9fdd79e}{Get\+Payment\+Method\+Info}} () const noexcept=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to get payment method information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classpayment_1_1payment__methods_1_1IAccountPaymentMethod_a0743f691e51e597de842a5937205d934}{Pay}} (\mbox{\hyperlink{classpayment_1_1Account}{payment\+::\+Account}} \&account, double amount)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to perform a payment using an account. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpayment_1_1payment__methods_1_1IAccountPaymentMethod_a88cef9065fce628dcfd5aed3edf139da}\label{classpayment_1_1payment__methods_1_1IAccountPaymentMethod_a88cef9065fce628dcfd5aed3edf139da} 
+class {\bfseries payment\+::\+Transaction}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract interface for payment methods that require an account. 
+
+\label{doc-func-members}
+\Hypertarget{classpayment_1_1payment__methods_1_1IAccountPaymentMethod_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpayment_1_1payment__methods_1_1IAccountPaymentMethod_aaaf18839a6c962097b3e8960a9fdd79e}\index{payment::payment\_methods::IAccountPaymentMethod@{payment::payment\_methods::IAccountPaymentMethod}!GetPaymentMethodInfo@{GetPaymentMethodInfo}}
+\index{GetPaymentMethodInfo@{GetPaymentMethodInfo}!payment::payment\_methods::IAccountPaymentMethod@{payment::payment\_methods::IAccountPaymentMethod}}
+\doxysubsubsection{\texorpdfstring{GetPaymentMethodInfo()}{GetPaymentMethodInfo()}}
+{\footnotesize\ttfamily \label{classpayment_1_1payment__methods_1_1IAccountPaymentMethod_aaaf18839a6c962097b3e8960a9fdd79e} 
+virtual std\+::string payment\+::payment\+\_\+methods\+::\+IAccount\+Payment\+Method\+::\+Get\+Payment\+Method\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Pure virtual function to get payment method information. 
+
+\begin{DoxyReturn}{Returns}
+A string containing information about the payment method. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classpayment_1_1payment__methods_1_1CardPayment_acca2f8315dc1ce15b1710d8eef0056a0}{payment\+::payment\+\_\+methods\+::\+Card\+Payment}}, and \mbox{\hyperlink{classpayment_1_1payment__methods_1_1OnlineCardPayment_af13a0c2930682435509fa19b37484c69}{payment\+::payment\+\_\+methods\+::\+Online\+Card\+Payment}}.
+
+\Hypertarget{classpayment_1_1payment__methods_1_1IAccountPaymentMethod_a0743f691e51e597de842a5937205d934}\index{payment::payment\_methods::IAccountPaymentMethod@{payment::payment\_methods::IAccountPaymentMethod}!Pay@{Pay}}
+\index{Pay@{Pay}!payment::payment\_methods::IAccountPaymentMethod@{payment::payment\_methods::IAccountPaymentMethod}}
+\doxysubsubsection{\texorpdfstring{Pay()}{Pay()}}
+{\footnotesize\ttfamily \label{classpayment_1_1payment__methods_1_1IAccountPaymentMethod_a0743f691e51e597de842a5937205d934} 
+virtual void payment\+::payment\+\_\+methods\+::\+IAccount\+Payment\+Method\+::\+Pay (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpayment_1_1Account}{payment\+::\+Account}} \&}]{account}{, }\item[{double}]{amount}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function to perform a payment using an account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em account} & Reference to the account to use for payment. \\
+\hline
+{\em amount} & The amount to pay. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function is protected to restrict access to payment processing. 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{classpayment_1_1payment__methods_1_1CardPayment_aff081f6b9d6ad79c8d54ca58e3ef3be7}{payment\+::payment\+\_\+methods\+::\+Card\+Payment}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+payment/payment\+\_\+methods/\mbox{\hyperlink{payment__method__interfaces_8h}{payment\+\_\+method\+\_\+interfaces.\+h}}\end{DoxyCompactItemize}

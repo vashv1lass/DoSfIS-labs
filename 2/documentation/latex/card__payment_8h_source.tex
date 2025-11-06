@@ -1,0 +1,39 @@
+\doxysection{card\+\_\+payment.\+h}
+\hypertarget{card__payment_8h_source}{}\label{card__payment_8h_source}\index{payment/payment\_methods/card\_payment/card\_payment.h@{payment/payment\_methods/card\_payment/card\_payment.h}}
+\mbox{\hyperlink{card__payment_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ PAYMENT\_PAYMENT\_METHODS\_CARD\_PAYMENT\_CARD\_PAYMENT\_H\_}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ PAYMENT\_PAYMENT\_METHODS\_CARD\_PAYMENT\_CARD\_PAYMENT\_H\_}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{account_8h}{payment/account.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{context_8h}{payment/context.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{payment__method__interfaces_8h}{payment/payment\_methods/payment\_method\_interfaces.h}}"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacepayment}{payment}}\ \{}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacepayment_1_1payment__methods}{payment\_methods}}\ \{}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classpayment_1_1payment__methods_1_1CardPayment_a5f37c0f96701352fbc9e161263570e88}{CardPayment}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classpayment_1_1payment__methods_1_1IAccountPaymentMethod}{IAccountPaymentMethod}}\ \{}
+\DoxyCodeLine{00031\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00037\ \ \ \mbox{\hyperlink{classpayment_1_1payment__methods_1_1CardPayment_a5f37c0f96701352fbc9e161263570e88}{CardPayment}}(\mbox{\hyperlink{classpayment_1_1PaymentContext}{PaymentContext}}\&\ context,\ std::shared\_ptr<Account>\ card\_account);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00044\ \ \ std::string\ \mbox{\hyperlink{classpayment_1_1payment__methods_1_1CardPayment_acca2f8315dc1ce15b1710d8eef0056a0}{GetPaymentMethodInfo}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00045\ \ \ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00047\ \ \ \mbox{\hyperlink{classpayment_1_1PaymentContext}{PaymentContext}}\&\ context\_;\ \ }
+\DoxyCodeLine{00048\ \ \ std::shared\_ptr<Account>\ \mbox{\hyperlink{classpayment_1_1payment__methods_1_1CardPayment_a1521ca86d84265e45610edfd676e1b5d}{card\_account\_}};\ \ }
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00056\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classpayment_1_1payment__methods_1_1CardPayment_aff081f6b9d6ad79c8d54ca58e3ef3be7}{Pay}}(\mbox{\hyperlink{classpayment_1_1Account}{Account}}\&\ customer,\ \textcolor{keywordtype}{double}\ amount)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00057\ \};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \}\ \ \textcolor{comment}{//\ namespace\ payment}}
+\DoxyCodeLine{00060\ \}\ \ \textcolor{comment}{//\ namespace\ payment\_methods}}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ PAYMENT\_PAYMENT\_METHODS\_CARD\_PAYMENT\_CARD\_PAYMENT\_H\_}}
+
+\end{DoxyCode}

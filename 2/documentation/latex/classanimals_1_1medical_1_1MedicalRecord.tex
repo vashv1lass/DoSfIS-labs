@@ -1,0 +1,95 @@
+\doxysection{animals\+::medical\+::Medical\+Record Class Reference}
+\hypertarget{classanimals_1_1medical_1_1MedicalRecord}{}\label{classanimals_1_1medical_1_1MedicalRecord}\index{animals::medical::MedicalRecord@{animals::medical::MedicalRecord}}
+
+
+Represents a single medical record for an animal.  
+
+
+
+
+{\ttfamily \#include $<$medical.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classanimals_1_1medical_1_1MedicalRecord_abd17371c8b6b0a42c4f821a2b00995e9}{Medical\+Record}} (\mbox{\hyperlink{classanimals_1_1medical_1_1Diagnosis}{Diagnosis}} diagnosis)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classanimals_1_1medical_1_1MedicalRecord}{Medical\+Record} class. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classanimals_1_1medical_1_1Diagnosis}{Diagnosis}} \& \mbox{\hyperlink{classanimals_1_1medical_1_1MedicalRecord_adca6615b4a65bbd32b3ab8044f77bf4e}{Get\+Diagnosis}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the diagnosis associated with this record. \end{DoxyCompactList}\item 
+std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point \mbox{\hyperlink{classanimals_1_1medical_1_1MedicalRecord_a719eedd096e60c7489306828eb37660a}{Get\+Creation\+Date}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the creation date of this record. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classanimals_1_1medical_1_1MedicalRecord_a2432ce0ad41739eecdb43f52c501ddd3}{Get\+Formatted\+Creation\+Date}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the formatted creation date of this record. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a single medical record for an animal. 
+
+\label{doc-constructors}
+\Hypertarget{classanimals_1_1medical_1_1MedicalRecord_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classanimals_1_1medical_1_1MedicalRecord_abd17371c8b6b0a42c4f821a2b00995e9}\index{animals::medical::MedicalRecord@{animals::medical::MedicalRecord}!MedicalRecord@{MedicalRecord}}
+\index{MedicalRecord@{MedicalRecord}!animals::medical::MedicalRecord@{animals::medical::MedicalRecord}}
+\doxysubsubsection{\texorpdfstring{MedicalRecord()}{MedicalRecord()}}
+{\footnotesize\ttfamily \label{classanimals_1_1medical_1_1MedicalRecord_abd17371c8b6b0a42c4f821a2b00995e9} 
+animals\+::medical\+::\+Medical\+Record\+::\+Medical\+Record (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classanimals_1_1medical_1_1Diagnosis}{Diagnosis}}}]{diagnosis}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{classanimals_1_1medical_1_1MedicalRecord}{Medical\+Record} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em diagnosis} & The diagnosis associated with this record. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classanimals_1_1medical_1_1MedicalRecord_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classanimals_1_1medical_1_1MedicalRecord_a719eedd096e60c7489306828eb37660a}\index{animals::medical::MedicalRecord@{animals::medical::MedicalRecord}!GetCreationDate@{GetCreationDate}}
+\index{GetCreationDate@{GetCreationDate}!animals::medical::MedicalRecord@{animals::medical::MedicalRecord}}
+\doxysubsubsection{\texorpdfstring{GetCreationDate()}{GetCreationDate()}}
+{\footnotesize\ttfamily \label{classanimals_1_1medical_1_1MedicalRecord_a719eedd096e60c7489306828eb37660a} 
+std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point animals\+::medical\+::\+Medical\+Record\+::\+Get\+Creation\+Date (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the creation date of this record. 
+
+\begin{DoxyReturn}{Returns}
+The creation date as a system clock time point. 
+\end{DoxyReturn}
+\Hypertarget{classanimals_1_1medical_1_1MedicalRecord_adca6615b4a65bbd32b3ab8044f77bf4e}\index{animals::medical::MedicalRecord@{animals::medical::MedicalRecord}!GetDiagnosis@{GetDiagnosis}}
+\index{GetDiagnosis@{GetDiagnosis}!animals::medical::MedicalRecord@{animals::medical::MedicalRecord}}
+\doxysubsubsection{\texorpdfstring{GetDiagnosis()}{GetDiagnosis()}}
+{\footnotesize\ttfamily \label{classanimals_1_1medical_1_1MedicalRecord_adca6615b4a65bbd32b3ab8044f77bf4e} 
+const \mbox{\hyperlink{classanimals_1_1medical_1_1Diagnosis}{Diagnosis}} \& animals\+::medical\+::\+Medical\+Record\+::\+Get\+Diagnosis (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the diagnosis associated with this record. 
+
+\begin{DoxyReturn}{Returns}
+A const reference to the diagnosis. 
+\end{DoxyReturn}
+\Hypertarget{classanimals_1_1medical_1_1MedicalRecord_a2432ce0ad41739eecdb43f52c501ddd3}\index{animals::medical::MedicalRecord@{animals::medical::MedicalRecord}!GetFormattedCreationDate@{GetFormattedCreationDate}}
+\index{GetFormattedCreationDate@{GetFormattedCreationDate}!animals::medical::MedicalRecord@{animals::medical::MedicalRecord}}
+\doxysubsubsection{\texorpdfstring{GetFormattedCreationDate()}{GetFormattedCreationDate()}}
+{\footnotesize\ttfamily \label{classanimals_1_1medical_1_1MedicalRecord_a2432ce0ad41739eecdb43f52c501ddd3} 
+std\+::string animals\+::medical\+::\+Medical\+Record\+::\+Get\+Formatted\+Creation\+Date (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the formatted creation date of this record. 
+
+\begin{DoxyReturn}{Returns}
+The formatted creation date as a string. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+animals/medical/\mbox{\hyperlink{medical_8h}{medical.\+h}}\item 
+animals/medical/medical.\+cc\end{DoxyCompactItemize}

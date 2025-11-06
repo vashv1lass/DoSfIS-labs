@@ -1,0 +1,142 @@
+\doxysection{payment\+::Account Class Reference}
+\hypertarget{classpayment_1_1Account}{}\label{classpayment_1_1Account}\index{payment::Account@{payment::Account}}
+
+
+Represents a payment account with an owner and balance.  
+
+
+
+
+{\ttfamily \#include $<$account.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpayment_1_1Account_af15d73adb8ea58b84d8410f382dc7e1b}{Account}} (std\+::string owner, double balance)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classpayment_1_1Account}{Account} class. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classpayment_1_1Account_abf94059717f150995cecd56055f60364}{Get\+Owner}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the name of the account owner. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classpayment_1_1Account_ac2df578aad331d9a4361624177c3fcb1}{Get\+Balance}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the current balance of the account. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpayment_1_1Account_a71a8a88c02ab2fde3542fbc0ef22ec24}{Deposit}} (double amount)
+\begin{DoxyCompactList}\small\item\em Deposits an amount into the account. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpayment_1_1Account_a79de049b500113f61f1e16d83b865cb4}{Withdraw}} (double amount)
+\begin{DoxyCompactList}\small\item\em Withdraws an amount from the account. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpayment_1_1Account_aebcba026be1b16cc47063ea6d16e2235}{Has\+Enough}} (double amount) const noexcept
+\begin{DoxyCompactList}\small\item\em Checks if the account has enough balance for a transaction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a payment account with an owner and balance. 
+
+\label{doc-constructors}
+\Hypertarget{classpayment_1_1Account_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpayment_1_1Account_af15d73adb8ea58b84d8410f382dc7e1b}\index{payment::Account@{payment::Account}!Account@{Account}}
+\index{Account@{Account}!payment::Account@{payment::Account}}
+\doxysubsubsection{\texorpdfstring{Account()}{Account()}}
+{\footnotesize\ttfamily \label{classpayment_1_1Account_af15d73adb8ea58b84d8410f382dc7e1b} 
+payment\+::\+Account\+::\+Account (\begin{DoxyParamCaption}\item[{std\+::string}]{owner}{, }\item[{double}]{balance}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor for \doxylink{classpayment_1_1Account}{Account} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em owner} & The name of the account owner. \\
+\hline
+{\em balance} & The initial balance of the account. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classpayment_1_1Account_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpayment_1_1Account_a71a8a88c02ab2fde3542fbc0ef22ec24}\index{payment::Account@{payment::Account}!Deposit@{Deposit}}
+\index{Deposit@{Deposit}!payment::Account@{payment::Account}}
+\doxysubsubsection{\texorpdfstring{Deposit()}{Deposit()}}
+{\footnotesize\ttfamily \label{classpayment_1_1Account_a71a8a88c02ab2fde3542fbc0ef22ec24} 
+void payment\+::\+Account\+::\+Deposit (\begin{DoxyParamCaption}\item[{double}]{amount}{}\end{DoxyParamCaption})}
+
+
+
+Deposits an amount into the account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount to deposit. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The amount must be non-\/negative. 
+\end{DoxyNote}
+\Hypertarget{classpayment_1_1Account_ac2df578aad331d9a4361624177c3fcb1}\index{payment::Account@{payment::Account}!GetBalance@{GetBalance}}
+\index{GetBalance@{GetBalance}!payment::Account@{payment::Account}}
+\doxysubsubsection{\texorpdfstring{GetBalance()}{GetBalance()}}
+{\footnotesize\ttfamily \label{classpayment_1_1Account_ac2df578aad331d9a4361624177c3fcb1} 
+double payment\+::\+Account\+::\+Get\+Balance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the current balance of the account. 
+
+\begin{DoxyReturn}{Returns}
+The current balance of the account. 
+\end{DoxyReturn}
+\Hypertarget{classpayment_1_1Account_abf94059717f150995cecd56055f60364}\index{payment::Account@{payment::Account}!GetOwner@{GetOwner}}
+\index{GetOwner@{GetOwner}!payment::Account@{payment::Account}}
+\doxysubsubsection{\texorpdfstring{GetOwner()}{GetOwner()}}
+{\footnotesize\ttfamily \label{classpayment_1_1Account_abf94059717f150995cecd56055f60364} 
+const std\+::string \& payment\+::\+Account\+::\+Get\+Owner (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the name of the account owner. 
+
+\begin{DoxyReturn}{Returns}
+The name of the account owner as a string. 
+\end{DoxyReturn}
+\Hypertarget{classpayment_1_1Account_aebcba026be1b16cc47063ea6d16e2235}\index{payment::Account@{payment::Account}!HasEnough@{HasEnough}}
+\index{HasEnough@{HasEnough}!payment::Account@{payment::Account}}
+\doxysubsubsection{\texorpdfstring{HasEnough()}{HasEnough()}}
+{\footnotesize\ttfamily \label{classpayment_1_1Account_aebcba026be1b16cc47063ea6d16e2235} 
+bool payment\+::\+Account\+::\+Has\+Enough (\begin{DoxyParamCaption}\item[{double}]{amount}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Checks if the account has enough balance for a transaction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount to check against the balance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the account has enough balance, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classpayment_1_1Account_a79de049b500113f61f1e16d83b865cb4}\index{payment::Account@{payment::Account}!Withdraw@{Withdraw}}
+\index{Withdraw@{Withdraw}!payment::Account@{payment::Account}}
+\doxysubsubsection{\texorpdfstring{Withdraw()}{Withdraw()}}
+{\footnotesize\ttfamily \label{classpayment_1_1Account_a79de049b500113f61f1e16d83b865cb4} 
+void payment\+::\+Account\+::\+Withdraw (\begin{DoxyParamCaption}\item[{double}]{amount}{}\end{DoxyParamCaption})}
+
+
+
+Withdraws an amount from the account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount to withdraw. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The amount must be non-\/negative and not exceed the current balance. 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+payment/\mbox{\hyperlink{account_8h}{account.\+h}}\item 
+payment/account.\+cc\end{DoxyCompactItemize}

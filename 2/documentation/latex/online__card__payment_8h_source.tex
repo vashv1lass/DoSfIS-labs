@@ -1,0 +1,42 @@
+\doxysection{online\+\_\+card\+\_\+payment.\+h}
+\hypertarget{online__card__payment_8h_source}{}\label{online__card__payment_8h_source}\index{payment/payment\_methods/card\_payment/online\_card\_payment.h@{payment/payment\_methods/card\_payment/online\_card\_payment.h}}
+\mbox{\hyperlink{online__card__payment_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ PAYMENT\_PAYMENT\_METHODS\_CARD\_PAYMENT\_ONLINE\_CARD\_PAYMENT\_H\_}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ PAYMENT\_PAYMENT\_METHODS\_CARD\_PAYMENT\_ONLINE\_CARD\_PAYMENT\_H\_}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{account_8h}{payment/account.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{context_8h}{payment/context.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{card__payment_8h}{payment/payment\_methods/card\_payment/card\_payment.h}}"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacepayment}{payment}}\ \{}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacepayment_1_1payment__methods}{payment\_methods}}\ \{}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classpayment_1_1payment__methods_1_1OnlineCardPayment_a353c6d72d4034fe2ed9be53b39aefa9d}{OnlineCardPayment}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classpayment_1_1payment__methods_1_1CardPayment_a5f37c0f96701352fbc9e161263570e88}{CardPayment}}\ \{}
+\DoxyCodeLine{00031\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00038\ \ \ \mbox{\hyperlink{classpayment_1_1payment__methods_1_1OnlineCardPayment_a353c6d72d4034fe2ed9be53b39aefa9d}{OnlineCardPayment}}(\mbox{\hyperlink{classpayment_1_1PaymentContext}{PaymentContext}}\&\ context,}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<Account>\ card\_account,}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ cvv);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00047\ \ \ std::string\ \mbox{\hyperlink{classpayment_1_1payment__methods_1_1OnlineCardPayment_af13a0c2930682435509fa19b37484c69}{GetPaymentMethodInfo}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00048\ \ \ }
+\DoxyCodeLine{00049\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00050\ \ \ std::string\ cvv\_;\ \ }
+\DoxyCodeLine{00051\ \ \ }
+\DoxyCodeLine{00057\ \ \ \textcolor{keywordtype}{bool}\ VerifyCardData()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00065\ \ \ \textcolor{keywordtype}{void}\ Pay(\mbox{\hyperlink{classpayment_1_1Account}{Account}}\&\ customer,\ \textcolor{keywordtype}{double}\ amount)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00066\ \};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \}\ \ \textcolor{comment}{//\ namespace\ payment\_methods}}
+\DoxyCodeLine{00069\ \}\ \ \textcolor{comment}{//\ namespace\ payment}}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ PAYMENT\_PAYMENT\_METHODS\_CARD\_PAYMENT\_ONLINE\_CARD\_PAYMENT\_H\_}}
+
+\end{DoxyCode}

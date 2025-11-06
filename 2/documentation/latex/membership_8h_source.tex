@@ -1,0 +1,64 @@
+\doxysection{membership.\+h}
+\hypertarget{membership_8h_source}{}\label{membership_8h_source}\index{infrastructure/membership.h@{infrastructure/membership.h}}
+\mbox{\hyperlink{membership_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ INFRASTRUCTURE\_MEMBERSHIP\_H\_}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ INFRASTRUCTURE\_MEMBERSHIP\_H\_}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceinfrastructure}{infrastructure}}\ \{}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{namespaceinfrastructure_adf3d48a6aef3fe786b4b3b8a52b7120e}{MembershipLevel}}\ \{}
+\DoxyCodeLine{00022\ \ \ kBasic,\ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \mbox{\hyperlink{namespaceinfrastructure_adf3d48a6aef3fe786b4b3b8a52b7120eab11e5daebc537774845221ead0e1aea2}{kSilver}},\ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \mbox{\hyperlink{namespaceinfrastructure_adf3d48a6aef3fe786b4b3b8a52b7120ea6df72338dab0f2fc977787b345ebd37e}{kGold}},\ \ \ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \mbox{\hyperlink{namespaceinfrastructure_adf3d48a6aef3fe786b4b3b8a52b7120ea31837bbbdb351d845a8467a56df94e45}{kPlatinum}}\ \ \ }
+\DoxyCodeLine{00026\ \};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classinfrastructure_1_1Member_a8a317ceb38f239a4bad2432b052553c3}{Member}}\ \{}
+\DoxyCodeLine{00033\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00039\ \ \ \mbox{\hyperlink{classinfrastructure_1_1Member_a8a317ceb38f239a4bad2432b052553c3}{Member}}(std::string\ name,\ \mbox{\hyperlink{namespaceinfrastructure_adf3d48a6aef3fe786b4b3b8a52b7120e}{MembershipLevel}}\ level);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00045\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classinfrastructure_1_1Member_a4a034a2a8853e327b85548dc5d093d72}{AddPoints}}(\textcolor{keywordtype}{int}\ points);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classinfrastructure_1_1Member_a720867659922b52d1b27c95ed9b00ce0}{RedeemPoints}}(\textcolor{keywordtype}{int}\ points);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00057\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classinfrastructure_1_1Member_ad00bbd3f5eb0ae0b4920d8bce6ca7389}{Upgrade}}();}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00063\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classinfrastructure_1_1Member_a75ae0c4ccddf6e4f54aafdf4c45bdf5d}{GetPoints}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00069\ \ \ \mbox{\hyperlink{namespaceinfrastructure_adf3d48a6aef3fe786b4b3b8a52b7120e}{MembershipLevel}}\ \mbox{\hyperlink{classinfrastructure_1_1Member_abeeabff8bd5595488242a3d563889d76}{GetLevel}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00075\ \ \ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classinfrastructure_1_1Member_af3b27bc4b14a92e30a33a2da92f41464}{GetName}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00078\ \ \ std::string\ name\_;\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00079\ \ \ \mbox{\hyperlink{namespaceinfrastructure_adf3d48a6aef3fe786b4b3b8a52b7120e}{MembershipLevel}}\ level\_;\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00080\ \ \ \textcolor{keywordtype}{int}\ points\_\{0\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00081\ \};}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00087\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classinfrastructure_1_1MembershipSystem_ab63f4ce16d7415869311a4738a37968a}{MembershipSystem}}\ \{}
+\DoxyCodeLine{00088\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00092\ \ \ \mbox{\hyperlink{classinfrastructure_1_1MembershipSystem_ab63f4ce16d7415869311a4738a37968a}{MembershipSystem}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00099\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classinfrastructure_1_1MembershipSystem_a64950bd576eaa3f88c9a6de7a8625885}{RegisterMember}}(std::string\ name,\ \mbox{\hyperlink{namespaceinfrastructure_adf3d48a6aef3fe786b4b3b8a52b7120e}{MembershipLevel}}\ level);}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00106\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classinfrastructure_1_1MembershipSystem_af18f1d621990238a8440a93a37fa8f33}{AddPoints}}(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keywordtype}{int}\ points);}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00113\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classinfrastructure_1_1MembershipSystem_a6c2701a86ec156017a54084563e463ce}{RedeemPoints}}(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keywordtype}{int}\ points);}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00120\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classinfrastructure_1_1MembershipSystem_ac0d0dd79d39706facf9fb3c76aa432f9}{GetMemberPoints}}(\textcolor{keyword}{const}\ std::string\&\ name)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00123\ \ \ std::unordered\_map<std::string,\ Member>\ members\_;\ \ }
+\DoxyCodeLine{00124\ \};}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ \}\ \ \textcolor{comment}{//\ namespace\ infrastructure}}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ INFRASTRUCTURE\_MEMBERSHIP\_H\_}}
+
+\end{DoxyCode}

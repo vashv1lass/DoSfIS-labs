@@ -1,0 +1,104 @@
+\doxysection{infrastructure\+::Medical\+Department Class Reference}
+\hypertarget{classinfrastructure_1_1MedicalDepartment}{}\label{classinfrastructure_1_1MedicalDepartment}\index{infrastructure::MedicalDepartment@{infrastructure::MedicalDepartment}}
+
+
+Manages the medical records and health status of animals in the aquarium.  
+
+
+
+
+{\ttfamily \#include $<$medical\+\_\+department.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classinfrastructure_1_1MedicalDepartment_ab350606128ed5d33e4f669ca4f119beb}\label{classinfrastructure_1_1MedicalDepartment_ab350606128ed5d33e4f669ca4f119beb} 
+{\bfseries Medical\+Department} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{classinfrastructure_1_1MedicalDepartment}{Medical\+Department} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinfrastructure_1_1MedicalDepartment_a64b3c3797cf7ccaee982ba0d97c5b0ef}{Register\+Book}} (std\+::string animal\+\_\+name, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classanimals_1_1medical_1_1MedicalRecordBook}{animals\+::medical\+::\+Medical\+Record\+Book}} $>$ book)
+\begin{DoxyCompactList}\small\item\em Registers a medical record book for an animal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinfrastructure_1_1MedicalDepartment_a63b5689cf8d8fb435c6e24f19128b97f}{Add\+Record}} (const std\+::string \&animal\+\_\+name, \mbox{\hyperlink{classanimals_1_1medical_1_1Diagnosis}{animals\+::medical\+::\+Diagnosis}} diagnosis, const \mbox{\hyperlink{classstaff_1_1Veterinarian}{staff\+::\+Veterinarian}} \&vet)
+\begin{DoxyCompactList}\small\item\em Adds a medical record to an animal\textquotesingle{}s record book. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classinfrastructure_1_1MedicalDepartment_a291a6ea4d5cf37d80e21e9750ec785da}{Get\+Summary}} (const std\+::string \&animal\+\_\+name) const
+\begin{DoxyCompactList}\small\item\em Retrieves the medical summary for an animal. \end{DoxyCompactList}\item 
+const std\+::unordered\+\_\+map$<$ std\+::string, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classanimals_1_1medical_1_1MedicalRecordBook}{animals\+::medical\+::\+Medical\+Record\+Book}} $>$ $>$ \& \mbox{\hyperlink{classinfrastructure_1_1MedicalDepartment_a7316df76998abc5806d7b991e8fb8aa5}{Get\+Record\+Books}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves all registered medical record books. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the medical records and health status of animals in the aquarium. 
+
+\label{doc-func-members}
+\Hypertarget{classinfrastructure_1_1MedicalDepartment_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classinfrastructure_1_1MedicalDepartment_a63b5689cf8d8fb435c6e24f19128b97f}\index{infrastructure::MedicalDepartment@{infrastructure::MedicalDepartment}!AddRecord@{AddRecord}}
+\index{AddRecord@{AddRecord}!infrastructure::MedicalDepartment@{infrastructure::MedicalDepartment}}
+\doxysubsubsection{\texorpdfstring{AddRecord()}{AddRecord()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1MedicalDepartment_a63b5689cf8d8fb435c6e24f19128b97f} 
+void infrastructure\+::\+Medical\+Department\+::\+Add\+Record (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{animal\+\_\+name}{, }\item[{\mbox{\hyperlink{classanimals_1_1medical_1_1Diagnosis}{animals\+::medical\+::\+Diagnosis}}}]{diagnosis}{, }\item[{const \mbox{\hyperlink{classstaff_1_1Veterinarian}{staff\+::\+Veterinarian}} \&}]{vet}{}\end{DoxyParamCaption})}
+
+
+
+Adds a medical record to an animal\textquotesingle{}s record book. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animal\+\_\+name} & The name of the animal to add the record for. \\
+\hline
+{\em diagnosis} & The diagnosis to add to the record. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classinfrastructure_1_1MedicalDepartment_a7316df76998abc5806d7b991e8fb8aa5}\index{infrastructure::MedicalDepartment@{infrastructure::MedicalDepartment}!GetRecordBooks@{GetRecordBooks}}
+\index{GetRecordBooks@{GetRecordBooks}!infrastructure::MedicalDepartment@{infrastructure::MedicalDepartment}}
+\doxysubsubsection{\texorpdfstring{GetRecordBooks()}{GetRecordBooks()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1MedicalDepartment_a7316df76998abc5806d7b991e8fb8aa5} 
+const std\+::unordered\+\_\+map$<$ std\+::string, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classanimals_1_1medical_1_1MedicalRecordBook}{animals\+::medical\+::\+Medical\+Record\+Book}} $>$ $>$ \& infrastructure\+::\+Medical\+Department\+::\+Get\+Record\+Books (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Retrieves all registered medical record books. 
+
+\begin{DoxyReturn}{Returns}
+A constant reference to the map of medical record books. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1MedicalDepartment_a291a6ea4d5cf37d80e21e9750ec785da}\index{infrastructure::MedicalDepartment@{infrastructure::MedicalDepartment}!GetSummary@{GetSummary}}
+\index{GetSummary@{GetSummary}!infrastructure::MedicalDepartment@{infrastructure::MedicalDepartment}}
+\doxysubsubsection{\texorpdfstring{GetSummary()}{GetSummary()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1MedicalDepartment_a291a6ea4d5cf37d80e21e9750ec785da} 
+std\+::string infrastructure\+::\+Medical\+Department\+::\+Get\+Summary (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{animal\+\_\+name}{}\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the medical summary for an animal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animal\+\_\+name} & The name of the animal to get the summary for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string containing the medical summary. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1MedicalDepartment_a64b3c3797cf7ccaee982ba0d97c5b0ef}\index{infrastructure::MedicalDepartment@{infrastructure::MedicalDepartment}!RegisterBook@{RegisterBook}}
+\index{RegisterBook@{RegisterBook}!infrastructure::MedicalDepartment@{infrastructure::MedicalDepartment}}
+\doxysubsubsection{\texorpdfstring{RegisterBook()}{RegisterBook()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1MedicalDepartment_a64b3c3797cf7ccaee982ba0d97c5b0ef} 
+void infrastructure\+::\+Medical\+Department\+::\+Register\+Book (\begin{DoxyParamCaption}\item[{std\+::string}]{animal\+\_\+name}{, }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classanimals_1_1medical_1_1MedicalRecordBook}{animals\+::medical\+::\+Medical\+Record\+Book}} $>$}]{book}{}\end{DoxyParamCaption})}
+
+
+
+Registers a medical record book for an animal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animal\+\_\+name} & The name of the animal associated with the book. \\
+\hline
+{\em book} & Unique pointer to the medical record book to register. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+infrastructure/\mbox{\hyperlink{medical__department_8h}{medical\+\_\+department.\+h}}\item 
+infrastructure/medical\+\_\+department.\+cc\end{DoxyCompactItemize}

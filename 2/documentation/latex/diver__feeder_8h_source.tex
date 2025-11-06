@@ -1,0 +1,42 @@
+\doxysection{diver\+\_\+feeder.\+h}
+\hypertarget{diver__feeder_8h_source}{}\label{diver__feeder_8h_source}\index{staff/diver\_feeder.h@{staff/diver\_feeder.h}}
+\mbox{\hyperlink{diver__feeder_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ STAFF\_DIVER\_FEEDER\_H\_}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ STAFF\_DIVER\_FEEDER\_H\_}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{employee_8h}{staff/employee.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{comment}{//\ Forward\ declaration\ of\ Animal\ class\ in\ animals\ namespace}}
+\DoxyCodeLine{00015\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceanimals}{animals}}\ \{}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classanimals_1_1Animal}{Animal}};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \}\ \ \textcolor{comment}{//\ namespace\ animals}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacestaff}{staff}}\ \{}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstaff_1_1DiverFeeder_ab61b9e013131b463a5b40d7253026536}{DiverFeeder}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classstaff_1_1Employee_aa599c2ee48214cf94d5769a65716d344}{Employee}}\ \{}
+\DoxyCodeLine{00031\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00038\ \ \ \mbox{\hyperlink{classstaff_1_1DiverFeeder_ab61b9e013131b463a5b40d7253026536}{DiverFeeder}}(std::string\ name,\ \textcolor{keywordtype}{double}\ salary,\ \textcolor{keywordtype}{double}\ oxygen\_tank\_volume);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00045\ \ \ std::string\ \mbox{\hyperlink{classstaff_1_1DiverFeeder_a96805c9b6bf5dd32be8e9745feb27d7e}{GetRole}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00046\ \ \ }
+\DoxyCodeLine{00051\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstaff_1_1DiverFeeder_a77758392b0dad42e97f59a3c7a69a210}{GetOxygenTankVolume}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00058\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstaff_1_1DiverFeeder_a50dde8a1b91398df296efd26489d78cb}{Feed}}(\mbox{\hyperlink{classanimals_1_1Animal}{animals::Animal}}\&\ animal);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00061\ \ \ \textcolor{keywordtype}{double}\ oxygen\_tank\_volume\_;\ \ }
+\DoxyCodeLine{00062\ \};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \}\ \ \textcolor{comment}{//\ namespace\ staff}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ STAFF\_DIVER\_FEEDER\_H\_}}
+
+\end{DoxyCode}

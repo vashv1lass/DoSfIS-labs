@@ -1,0 +1,119 @@
+\doxysection{staff\+::Employee Class Reference}
+\hypertarget{classstaff_1_1Employee}{}\label{classstaff_1_1Employee}\index{staff::Employee@{staff::Employee}}
+
+
+Abstract base class representing a generic employee.  
+
+
+
+
+{\ttfamily \#include $<$employee.\+h$>$}
+
+Inheritance diagram for staff\+::Employee\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classstaff_1_1Employee}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstaff_1_1Employee_aa599c2ee48214cf94d5769a65716d344}{Employee}} (std\+::string name, double salary)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classstaff_1_1Employee}{Employee} class. \end{DoxyCompactList}\item 
+\Hypertarget{classstaff_1_1Employee_a33c6908b7c6512cc98b93c10cf70ff4c}\label{classstaff_1_1Employee_a33c6908b7c6512cc98b93c10cf70ff4c} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Employee} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{classstaff_1_1Employee}{Employee} class. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classstaff_1_1Employee_a665822942c1323ed1570a61ed6d8be37}{Get\+Name}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the name of the employee. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classstaff_1_1Employee_a6c4a27ea3653828445a1499404c7e517}{Get\+Salary}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the salary of the employee. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classstaff_1_1Employee_a5519cf9c53dd049fc3a0859c3530f71d}{Get\+Role}} () const noexcept=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to get the role of the employee. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classstaff_1_1Employee_a96c03cc622483fcc002f32742189600a}\label{classstaff_1_1Employee_a96c03cc622483fcc002f32742189600a} 
+std\+::string {\bfseries name\+\_\+}
+\item 
+\Hypertarget{classstaff_1_1Employee_a4da2bb25e62cc13cf2fa58bfdd9b27bf}\label{classstaff_1_1Employee_a4da2bb25e62cc13cf2fa58bfdd9b27bf} 
+double {\bfseries salary\+\_\+}
+\begin{DoxyCompactList}\small\item\em The name of the employee. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class representing a generic employee. 
+
+\label{doc-constructors}
+\Hypertarget{classstaff_1_1Employee_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classstaff_1_1Employee_aa599c2ee48214cf94d5769a65716d344}\index{staff::Employee@{staff::Employee}!Employee@{Employee}}
+\index{Employee@{Employee}!staff::Employee@{staff::Employee}}
+\doxysubsubsection{\texorpdfstring{Employee()}{Employee()}}
+{\footnotesize\ttfamily \label{classstaff_1_1Employee_aa599c2ee48214cf94d5769a65716d344} 
+staff\+::\+Employee\+::\+Employee (\begin{DoxyParamCaption}\item[{std\+::string}]{name}{, }\item[{double}]{salary}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor for \doxylink{classstaff_1_1Employee}{Employee} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the employee. \\
+\hline
+{\em salary} & The salary of the employee. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classstaff_1_1Employee_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classstaff_1_1Employee_a665822942c1323ed1570a61ed6d8be37}\index{staff::Employee@{staff::Employee}!GetName@{GetName}}
+\index{GetName@{GetName}!staff::Employee@{staff::Employee}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily \label{classstaff_1_1Employee_a665822942c1323ed1570a61ed6d8be37} 
+const std\+::string \& staff\+::\+Employee\+::\+Get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the name of the employee. 
+
+\begin{DoxyReturn}{Returns}
+The name of the employee as a string. 
+\end{DoxyReturn}
+\Hypertarget{classstaff_1_1Employee_a5519cf9c53dd049fc3a0859c3530f71d}\index{staff::Employee@{staff::Employee}!GetRole@{GetRole}}
+\index{GetRole@{GetRole}!staff::Employee@{staff::Employee}}
+\doxysubsubsection{\texorpdfstring{GetRole()}{GetRole()}}
+{\footnotesize\ttfamily \label{classstaff_1_1Employee_a5519cf9c53dd049fc3a0859c3530f71d} 
+virtual std\+::string staff\+::\+Employee\+::\+Get\+Role (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Pure virtual function to get the role of the employee. 
+
+\begin{DoxyReturn}{Returns}
+The role of the employee as a string. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classstaff_1_1Cashier_a872431878b91d418e89f118b35aeb686}{staff\+::\+Cashier}}, \mbox{\hyperlink{classstaff_1_1DiverFeeder_a96805c9b6bf5dd32be8e9745feb27d7e}{staff\+::\+Diver\+Feeder}}, \mbox{\hyperlink{classstaff_1_1Trainer_a34e3137e5c697257a10d8ac7dfe765c4}{staff\+::\+Trainer}}, and \mbox{\hyperlink{classstaff_1_1Veterinarian_a96103968b9de9262d2d15eb80f8b3a71}{staff\+::\+Veterinarian}}.
+
+\Hypertarget{classstaff_1_1Employee_a6c4a27ea3653828445a1499404c7e517}\index{staff::Employee@{staff::Employee}!GetSalary@{GetSalary}}
+\index{GetSalary@{GetSalary}!staff::Employee@{staff::Employee}}
+\doxysubsubsection{\texorpdfstring{GetSalary()}{GetSalary()}}
+{\footnotesize\ttfamily \label{classstaff_1_1Employee_a6c4a27ea3653828445a1499404c7e517} 
+double staff\+::\+Employee\+::\+Get\+Salary (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Retrieves the salary of the employee. 
+
+\begin{DoxyReturn}{Returns}
+The salary of the employee. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+staff/\mbox{\hyperlink{employee_8h}{employee.\+h}}\item 
+staff/employee.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,169 @@
+\doxysection{staff\+::Cashier Class Reference}
+\hypertarget{classstaff_1_1Cashier}{}\label{classstaff_1_1Cashier}\index{staff::Cashier@{staff::Cashier}}
+
+
+Derived class representing a cashier, inheriting from \doxylink{classstaff_1_1Employee}{Employee}.  
+
+
+
+
+{\ttfamily \#include $<$cashier.\+h$>$}
+
+Inheritance diagram for staff\+::Cashier\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classstaff_1_1Cashier}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstaff_1_1Cashier_a3906c0fc9c51be4b5ec5316346a82b39}{Cashier}} (std\+::string name, double salary)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classstaff_1_1Cashier}{Cashier} class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classstaff_1_1Cashier_a872431878b91d418e89f118b35aeb686}{Get\+Role}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Retrieves the role of the cashier. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classpayment_1_1Transaction}{payment\+::\+Transaction}} $>$ \mbox{\hyperlink{classstaff_1_1Cashier_a4c1ef2d4e9c8b9b421659aa29a78f6cf}{Create\+Transaction}} (std\+::string visitor\+\_\+name, \mbox{\hyperlink{classpayment_1_1Ticket}{payment\+::\+Ticket}} ticket, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classpayment_1_1payment__methods_1_1IPaymentMethod}{payment\+::payment\+\_\+methods\+::\+IPayment\+Method}} $>$ method)
+\begin{DoxyCompactList}\small\item\em Creates a payment transaction. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classpayment_1_1Transaction}{payment\+::\+Transaction}} $>$ \mbox{\hyperlink{classstaff_1_1Cashier_ad6459b38ddbfba75eeb2dfdaa10ff1d3}{Create\+Transaction}} (std\+::string visitor\+\_\+name, \mbox{\hyperlink{classpayment_1_1Ticket}{payment\+::\+Ticket}} ticket, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classpayment_1_1payment__methods_1_1IAccountPaymentMethod}{payment\+::payment\+\_\+methods\+::\+IAccount\+Payment\+Method}} $>$ method, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpayment_1_1Account}{payment\+::\+Account}} $>$ account)
+\begin{DoxyCompactList}\small\item\em Creates a payment transaction using an account-\/based payment method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstaff_1_1Cashier_a0c570132958f25d3bc67d927b7b09d0f}{Process\+Transaction}} (\mbox{\hyperlink{classpayment_1_1Transaction}{payment\+::\+Transaction}} \&transaction)
+\begin{DoxyCompactList}\small\item\em Processes a payment transaction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classstaff_1_1Employee}{staff\+::\+Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstaff_1_1Employee_aa599c2ee48214cf94d5769a65716d344}{Employee}} (std\+::string name, double salary)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classstaff_1_1Employee}{Employee} class. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Employee} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{classstaff_1_1Employee}{Employee} class. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classstaff_1_1Employee_a665822942c1323ed1570a61ed6d8be37}{Get\+Name}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the name of the employee. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classstaff_1_1Employee_a6c4a27ea3653828445a1499404c7e517}{Get\+Salary}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Retrieves the salary of the employee. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classstaff_1_1Employee}{staff\+::\+Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries name\+\_\+}
+\item 
+double {\bfseries salary\+\_\+}
+\begin{DoxyCompactList}\small\item\em The name of the employee. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Derived class representing a cashier, inheriting from \doxylink{classstaff_1_1Employee}{Employee}. 
+
+\label{doc-constructors}
+\Hypertarget{classstaff_1_1Cashier_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classstaff_1_1Cashier_a3906c0fc9c51be4b5ec5316346a82b39}\index{staff::Cashier@{staff::Cashier}!Cashier@{Cashier}}
+\index{Cashier@{Cashier}!staff::Cashier@{staff::Cashier}}
+\doxysubsubsection{\texorpdfstring{Cashier()}{Cashier()}}
+{\footnotesize\ttfamily \label{classstaff_1_1Cashier_a3906c0fc9c51be4b5ec5316346a82b39} 
+staff\+::\+Cashier\+::\+Cashier (\begin{DoxyParamCaption}\item[{std\+::string}]{name}{, }\item[{double}]{salary}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{classstaff_1_1Cashier}{Cashier} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the cashier. \\
+\hline
+{\em salary} & The salary of the cashier. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classstaff_1_1Cashier_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classstaff_1_1Cashier_ad6459b38ddbfba75eeb2dfdaa10ff1d3}\index{staff::Cashier@{staff::Cashier}!CreateTransaction@{CreateTransaction}}
+\index{CreateTransaction@{CreateTransaction}!staff::Cashier@{staff::Cashier}}
+\doxysubsubsection{\texorpdfstring{CreateTransaction()}{CreateTransaction()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classstaff_1_1Cashier_ad6459b38ddbfba75eeb2dfdaa10ff1d3} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classpayment_1_1Transaction}{payment\+::\+Transaction}} $>$ staff\+::\+Cashier\+::\+Create\+Transaction (\begin{DoxyParamCaption}\item[{std\+::string}]{visitor\+\_\+name}{, }\item[{\mbox{\hyperlink{classpayment_1_1Ticket}{payment\+::\+Ticket}}}]{ticket}{, }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classpayment_1_1payment__methods_1_1IAccountPaymentMethod}{payment\+::payment\+\_\+methods\+::\+IAccount\+Payment\+Method}} $>$}]{method}{, }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpayment_1_1Account}{payment\+::\+Account}} $>$}]{account}{}\end{DoxyParamCaption})}
+
+
+
+Creates a payment transaction using an account-\/based payment method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em visitor\+\_\+name} & The name of the visitor making the purchase. \\
+\hline
+{\em ticket} & The ticket being purchased. \\
+\hline
+{\em method} & Unique pointer to the account-\/based payment method to use. \\
+\hline
+{\em account} & Shared pointer to the visitor\textquotesingle{}s account. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Unique pointer to the created Transaction object. 
+\end{DoxyReturn}
+\Hypertarget{classstaff_1_1Cashier_a4c1ef2d4e9c8b9b421659aa29a78f6cf}\index{staff::Cashier@{staff::Cashier}!CreateTransaction@{CreateTransaction}}
+\index{CreateTransaction@{CreateTransaction}!staff::Cashier@{staff::Cashier}}
+\doxysubsubsection{\texorpdfstring{CreateTransaction()}{CreateTransaction()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classstaff_1_1Cashier_a4c1ef2d4e9c8b9b421659aa29a78f6cf} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classpayment_1_1Transaction}{payment\+::\+Transaction}} $>$ staff\+::\+Cashier\+::\+Create\+Transaction (\begin{DoxyParamCaption}\item[{std\+::string}]{visitor\+\_\+name}{, }\item[{\mbox{\hyperlink{classpayment_1_1Ticket}{payment\+::\+Ticket}}}]{ticket}{, }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classpayment_1_1payment__methods_1_1IPaymentMethod}{payment\+::payment\+\_\+methods\+::\+IPayment\+Method}} $>$}]{method}{}\end{DoxyParamCaption})}
+
+
+
+Creates a payment transaction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em visitor\+\_\+name} & The name of the visitor making the purchase. \\
+\hline
+{\em ticket} & The ticket being purchased. \\
+\hline
+{\em method} & Unique pointer to the payment method to use. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Unique pointer to the created Transaction object. 
+\end{DoxyReturn}
+\Hypertarget{classstaff_1_1Cashier_a872431878b91d418e89f118b35aeb686}\index{staff::Cashier@{staff::Cashier}!GetRole@{GetRole}}
+\index{GetRole@{GetRole}!staff::Cashier@{staff::Cashier}}
+\doxysubsubsection{\texorpdfstring{GetRole()}{GetRole()}}
+{\footnotesize\ttfamily \label{classstaff_1_1Cashier_a872431878b91d418e89f118b35aeb686} 
+std\+::string staff\+::\+Cashier\+::\+Get\+Role (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Retrieves the role of the cashier. 
+
+\begin{DoxyReturn}{Returns}
+The role as a string ("{}\+Cashier"{}). 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Overrides the Get\+Role function from the \doxylink{classstaff_1_1Employee}{Employee} base class. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{classstaff_1_1Employee_a5519cf9c53dd049fc3a0859c3530f71d}{staff\+::\+Employee}}.
+
+\Hypertarget{classstaff_1_1Cashier_a0c570132958f25d3bc67d927b7b09d0f}\index{staff::Cashier@{staff::Cashier}!ProcessTransaction@{ProcessTransaction}}
+\index{ProcessTransaction@{ProcessTransaction}!staff::Cashier@{staff::Cashier}}
+\doxysubsubsection{\texorpdfstring{ProcessTransaction()}{ProcessTransaction()}}
+{\footnotesize\ttfamily \label{classstaff_1_1Cashier_a0c570132958f25d3bc67d927b7b09d0f} 
+void staff\+::\+Cashier\+::\+Process\+Transaction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpayment_1_1Transaction}{payment\+::\+Transaction}} \&}]{transaction}{}\end{DoxyParamCaption})}
+
+
+
+Processes a payment transaction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transaction} & Reference to the transaction to process. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function handles the payment and completes the transaction. 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+staff/\mbox{\hyperlink{cashier_8h}{cashier.\+h}}\item 
+staff/cashier.\+cc\end{DoxyCompactItemize}

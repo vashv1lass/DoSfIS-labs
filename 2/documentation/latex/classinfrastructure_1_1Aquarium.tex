@@ -1,0 +1,268 @@
+\doxysection{infrastructure\+::Aquarium Class Reference}
+\hypertarget{classinfrastructure_1_1Aquarium}{}\label{classinfrastructure_1_1Aquarium}\index{infrastructure::Aquarium@{infrastructure::Aquarium}}
+
+
+Singleton class representing the aquarium facility.  
+
+
+
+
+{\ttfamily \#include $<$aquarium.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classinfrastructure_1_1Aquarium_a5e5c3902aa6352da2eb900d174df28e4}\label{classinfrastructure_1_1Aquarium_a5e5c3902aa6352da2eb900d174df28e4} 
+{\bfseries Aquarium} (const Aquarium \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor is deleted. \end{DoxyCompactList}\item 
+\Hypertarget{classinfrastructure_1_1Aquarium_a2c391bdad014d142da96acad0f507e14}\label{classinfrastructure_1_1Aquarium_a2c391bdad014d142da96acad0f507e14} 
+\mbox{\hyperlink{classinfrastructure_1_1Aquarium_a5e5c3902aa6352da2eb900d174df28e4}{Aquarium}} \& {\bfseries operator=} (const \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a5e5c3902aa6352da2eb900d174df28e4}{Aquarium}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator is deleted. \end{DoxyCompactList}\item 
+\Hypertarget{classinfrastructure_1_1Aquarium_a77aedaf44f3c5119d7040c4a23c712c1}\label{classinfrastructure_1_1Aquarium_a77aedaf44f3c5119d7040c4a23c712c1} 
+{\bfseries Aquarium} (Aquarium \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor is deleted. \end{DoxyCompactList}\item 
+\Hypertarget{classinfrastructure_1_1Aquarium_ae343d491fb8931cbee1af0bfb33e3857}\label{classinfrastructure_1_1Aquarium_ae343d491fb8931cbee1af0bfb33e3857} 
+\mbox{\hyperlink{classinfrastructure_1_1Aquarium_a5e5c3902aa6352da2eb900d174df28e4}{Aquarium}} \& {\bfseries operator=} (\mbox{\hyperlink{classinfrastructure_1_1Aquarium_a5e5c3902aa6352da2eb900d174df28e4}{Aquarium}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator is deleted. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinfrastructure_1_1Aquarium_ae96f3206ac3ca6488e0247d5b64bf619}{Open}} () noexcept
+\begin{DoxyCompactList}\small\item\em Opens the aquarium. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a756319f2abaef8051e3f840fbb1ce673}{Close}} () noexcept
+\begin{DoxyCompactList}\small\item\em Closes the aquarium. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classinfrastructure_1_1Ecosystem}{Ecosystem}} \& \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a85d962e4d489dc65d52c37c47dde33f1}{Get\+Ecosystem}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the ecosystem component of the aquarium. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classinfrastructure_1_1Ecosystem}{Ecosystem}} \& \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a275b7037f9b7a206eb2e47af77b44a10}{Get\+Ecosystem}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the ecosystem component of the aquarium. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classinfrastructure_1_1HumanResources}{Human\+Resources}} \& \mbox{\hyperlink{classinfrastructure_1_1Aquarium_aacefa43ea207555cacf186c2d9047b76}{Get\+Human\+Resources}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the human resources component of the aquarium. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classinfrastructure_1_1HumanResources}{Human\+Resources}} \& \mbox{\hyperlink{classinfrastructure_1_1Aquarium_ab8e8294842f18195be71d1217b50acf6}{Get\+Human\+Resources}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the human resources component of the aquarium. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classinfrastructure_1_1MembershipSystem}{Membership\+System}} \& \mbox{\hyperlink{classinfrastructure_1_1Aquarium_accc3cb56375dbb5229549e97efa79b1b}{Get\+Membership\+System}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the membership system component of the aquarium. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classinfrastructure_1_1MembershipSystem}{Membership\+System}} \& \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a0888a0b6ec3fb15d30226f8375114a27}{Get\+Membership\+System}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the membership system component of the aquarium. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classinfrastructure_1_1MaintenanceUnit}{Maintenance\+Unit}} \& \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a1cff2e1d2730849cc5b6edf5b9a8f9c4}{Get\+Maintenance\+Unit}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the maintenance unit component of the aquarium. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classinfrastructure_1_1MaintenanceUnit}{Maintenance\+Unit}} \& \mbox{\hyperlink{classinfrastructure_1_1Aquarium_aa8e93bf2cc95cd7666ba8cb0c5c0b808}{Get\+Maintenance\+Unit}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the maintenance unit component of the aquarium. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classinfrastructure_1_1Schedule}{Schedule}} \& \mbox{\hyperlink{classinfrastructure_1_1Aquarium_adc260d120f338d899af703f7b4c0ca09}{Get\+Schedule}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the schedule component of the aquarium. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classinfrastructure_1_1Schedule}{Schedule}} \& \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a3f17eb92de20f9c0d346ceb19b250e8c}{Get\+Schedule}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the schedule component of the aquarium. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classpayment_1_1PaymentContext}{payment\+::\+Payment\+Context}} \& \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a1764493392b754d0aedececacf10d7aa}{Get\+Payment\+Context}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the payment context component of the aquarium. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classpayment_1_1PaymentContext}{payment\+::\+Payment\+Context}} \& \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a3e81fc6328e0c08d07f4beb7e3e9ef6f}{Get\+Payment\+Context}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the payment context component of the aquarium. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a5e5c3902aa6352da2eb900d174df28e4}{Aquarium}} \& \mbox{\hyperlink{classinfrastructure_1_1Aquarium_a4c0daa8fdfa9eaab3933694f3080e5e5}{Instance}} ()
+\begin{DoxyCompactList}\small\item\em Gets the singleton instance of the \doxylink{classinfrastructure_1_1Aquarium}{Aquarium}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton class representing the aquarium facility. 
+
+\label{doc-func-members}
+\Hypertarget{classinfrastructure_1_1Aquarium_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classinfrastructure_1_1Aquarium_a756319f2abaef8051e3f840fbb1ce673}\index{infrastructure::Aquarium@{infrastructure::Aquarium}!Close@{Close}}
+\index{Close@{Close}!infrastructure::Aquarium@{infrastructure::Aquarium}}
+\doxysubsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Aquarium_a756319f2abaef8051e3f840fbb1ce673} 
+void infrastructure\+::\+Aquarium\+::\+Close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Closes the aquarium. 
+
+\begin{DoxyNote}{Note}
+This function performs the necessary operations to close the aquarium. 
+\end{DoxyNote}
+\Hypertarget{classinfrastructure_1_1Aquarium_a85d962e4d489dc65d52c37c47dde33f1}\index{infrastructure::Aquarium@{infrastructure::Aquarium}!GetEcosystem@{GetEcosystem}}
+\index{GetEcosystem@{GetEcosystem}!infrastructure::Aquarium@{infrastructure::Aquarium}}
+\doxysubsubsection{\texorpdfstring{GetEcosystem()}{GetEcosystem()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Aquarium_a85d962e4d489dc65d52c37c47dde33f1} 
+\mbox{\hyperlink{classinfrastructure_1_1Ecosystem}{Ecosystem}} \& infrastructure\+::\+Aquarium\+::\+Get\+Ecosystem (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retrieves the ecosystem component of the aquarium. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the \doxylink{classinfrastructure_1_1Ecosystem}{Ecosystem}. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Aquarium_a275b7037f9b7a206eb2e47af77b44a10}\index{infrastructure::Aquarium@{infrastructure::Aquarium}!GetEcosystem@{GetEcosystem}}
+\index{GetEcosystem@{GetEcosystem}!infrastructure::Aquarium@{infrastructure::Aquarium}}
+\doxysubsubsection{\texorpdfstring{GetEcosystem()}{GetEcosystem()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Aquarium_a275b7037f9b7a206eb2e47af77b44a10} 
+const \mbox{\hyperlink{classinfrastructure_1_1Ecosystem}{Ecosystem}} \& infrastructure\+::\+Aquarium\+::\+Get\+Ecosystem (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the ecosystem component of the aquarium. 
+
+\begin{DoxyReturn}{Returns}
+A const reference to the \doxylink{classinfrastructure_1_1Ecosystem}{Ecosystem}. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Aquarium_aacefa43ea207555cacf186c2d9047b76}\index{infrastructure::Aquarium@{infrastructure::Aquarium}!GetHumanResources@{GetHumanResources}}
+\index{GetHumanResources@{GetHumanResources}!infrastructure::Aquarium@{infrastructure::Aquarium}}
+\doxysubsubsection{\texorpdfstring{GetHumanResources()}{GetHumanResources()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Aquarium_aacefa43ea207555cacf186c2d9047b76} 
+\mbox{\hyperlink{classinfrastructure_1_1HumanResources}{Human\+Resources}} \& infrastructure\+::\+Aquarium\+::\+Get\+Human\+Resources (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retrieves the human resources component of the aquarium. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the \doxylink{classinfrastructure_1_1HumanResources}{Human\+Resources}. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Aquarium_ab8e8294842f18195be71d1217b50acf6}\index{infrastructure::Aquarium@{infrastructure::Aquarium}!GetHumanResources@{GetHumanResources}}
+\index{GetHumanResources@{GetHumanResources}!infrastructure::Aquarium@{infrastructure::Aquarium}}
+\doxysubsubsection{\texorpdfstring{GetHumanResources()}{GetHumanResources()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Aquarium_ab8e8294842f18195be71d1217b50acf6} 
+const \mbox{\hyperlink{classinfrastructure_1_1HumanResources}{Human\+Resources}} \& infrastructure\+::\+Aquarium\+::\+Get\+Human\+Resources (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the human resources component of the aquarium. 
+
+\begin{DoxyReturn}{Returns}
+A const reference to the \doxylink{classinfrastructure_1_1HumanResources}{Human\+Resources}. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Aquarium_a1cff2e1d2730849cc5b6edf5b9a8f9c4}\index{infrastructure::Aquarium@{infrastructure::Aquarium}!GetMaintenanceUnit@{GetMaintenanceUnit}}
+\index{GetMaintenanceUnit@{GetMaintenanceUnit}!infrastructure::Aquarium@{infrastructure::Aquarium}}
+\doxysubsubsection{\texorpdfstring{GetMaintenanceUnit()}{GetMaintenanceUnit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Aquarium_a1cff2e1d2730849cc5b6edf5b9a8f9c4} 
+\mbox{\hyperlink{classinfrastructure_1_1MaintenanceUnit}{Maintenance\+Unit}} \& infrastructure\+::\+Aquarium\+::\+Get\+Maintenance\+Unit (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retrieves the maintenance unit component of the aquarium. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the \doxylink{classinfrastructure_1_1MaintenanceUnit}{Maintenance\+Unit}. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Aquarium_aa8e93bf2cc95cd7666ba8cb0c5c0b808}\index{infrastructure::Aquarium@{infrastructure::Aquarium}!GetMaintenanceUnit@{GetMaintenanceUnit}}
+\index{GetMaintenanceUnit@{GetMaintenanceUnit}!infrastructure::Aquarium@{infrastructure::Aquarium}}
+\doxysubsubsection{\texorpdfstring{GetMaintenanceUnit()}{GetMaintenanceUnit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Aquarium_aa8e93bf2cc95cd7666ba8cb0c5c0b808} 
+const \mbox{\hyperlink{classinfrastructure_1_1MaintenanceUnit}{Maintenance\+Unit}} \& infrastructure\+::\+Aquarium\+::\+Get\+Maintenance\+Unit (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the maintenance unit component of the aquarium. 
+
+\begin{DoxyReturn}{Returns}
+A const reference to the \doxylink{classinfrastructure_1_1MaintenanceUnit}{Maintenance\+Unit}. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Aquarium_accc3cb56375dbb5229549e97efa79b1b}\index{infrastructure::Aquarium@{infrastructure::Aquarium}!GetMembershipSystem@{GetMembershipSystem}}
+\index{GetMembershipSystem@{GetMembershipSystem}!infrastructure::Aquarium@{infrastructure::Aquarium}}
+\doxysubsubsection{\texorpdfstring{GetMembershipSystem()}{GetMembershipSystem()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Aquarium_accc3cb56375dbb5229549e97efa79b1b} 
+\mbox{\hyperlink{classinfrastructure_1_1MembershipSystem}{Membership\+System}} \& infrastructure\+::\+Aquarium\+::\+Get\+Membership\+System (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retrieves the membership system component of the aquarium. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the \doxylink{classinfrastructure_1_1MembershipSystem}{Membership\+System}. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Aquarium_a0888a0b6ec3fb15d30226f8375114a27}\index{infrastructure::Aquarium@{infrastructure::Aquarium}!GetMembershipSystem@{GetMembershipSystem}}
+\index{GetMembershipSystem@{GetMembershipSystem}!infrastructure::Aquarium@{infrastructure::Aquarium}}
+\doxysubsubsection{\texorpdfstring{GetMembershipSystem()}{GetMembershipSystem()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Aquarium_a0888a0b6ec3fb15d30226f8375114a27} 
+const \mbox{\hyperlink{classinfrastructure_1_1MembershipSystem}{Membership\+System}} \& infrastructure\+::\+Aquarium\+::\+Get\+Membership\+System (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the membership system component of the aquarium. 
+
+\begin{DoxyReturn}{Returns}
+A const reference to the \doxylink{classinfrastructure_1_1MembershipSystem}{Membership\+System}. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Aquarium_a1764493392b754d0aedececacf10d7aa}\index{infrastructure::Aquarium@{infrastructure::Aquarium}!GetPaymentContext@{GetPaymentContext}}
+\index{GetPaymentContext@{GetPaymentContext}!infrastructure::Aquarium@{infrastructure::Aquarium}}
+\doxysubsubsection{\texorpdfstring{GetPaymentContext()}{GetPaymentContext()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Aquarium_a1764493392b754d0aedececacf10d7aa} 
+\mbox{\hyperlink{classpayment_1_1PaymentContext}{payment\+::\+Payment\+Context}} \& infrastructure\+::\+Aquarium\+::\+Get\+Payment\+Context (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retrieves the payment context component of the aquarium. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the Payment\+Context. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Aquarium_a3e81fc6328e0c08d07f4beb7e3e9ef6f}\index{infrastructure::Aquarium@{infrastructure::Aquarium}!GetPaymentContext@{GetPaymentContext}}
+\index{GetPaymentContext@{GetPaymentContext}!infrastructure::Aquarium@{infrastructure::Aquarium}}
+\doxysubsubsection{\texorpdfstring{GetPaymentContext()}{GetPaymentContext()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Aquarium_a3e81fc6328e0c08d07f4beb7e3e9ef6f} 
+const \mbox{\hyperlink{classpayment_1_1PaymentContext}{payment\+::\+Payment\+Context}} \& infrastructure\+::\+Aquarium\+::\+Get\+Payment\+Context (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the payment context component of the aquarium. 
+
+\begin{DoxyReturn}{Returns}
+A const reference to the Payment\+Context. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Aquarium_adc260d120f338d899af703f7b4c0ca09}\index{infrastructure::Aquarium@{infrastructure::Aquarium}!GetSchedule@{GetSchedule}}
+\index{GetSchedule@{GetSchedule}!infrastructure::Aquarium@{infrastructure::Aquarium}}
+\doxysubsubsection{\texorpdfstring{GetSchedule()}{GetSchedule()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Aquarium_adc260d120f338d899af703f7b4c0ca09} 
+\mbox{\hyperlink{classinfrastructure_1_1Schedule}{Schedule}} \& infrastructure\+::\+Aquarium\+::\+Get\+Schedule (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retrieves the schedule component of the aquarium. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the \doxylink{classinfrastructure_1_1Schedule}{Schedule}. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Aquarium_a3f17eb92de20f9c0d346ceb19b250e8c}\index{infrastructure::Aquarium@{infrastructure::Aquarium}!GetSchedule@{GetSchedule}}
+\index{GetSchedule@{GetSchedule}!infrastructure::Aquarium@{infrastructure::Aquarium}}
+\doxysubsubsection{\texorpdfstring{GetSchedule()}{GetSchedule()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Aquarium_a3f17eb92de20f9c0d346ceb19b250e8c} 
+const \mbox{\hyperlink{classinfrastructure_1_1Schedule}{Schedule}} \& infrastructure\+::\+Aquarium\+::\+Get\+Schedule (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the schedule component of the aquarium. 
+
+\begin{DoxyReturn}{Returns}
+A const reference to the \doxylink{classinfrastructure_1_1Schedule}{Schedule}. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Aquarium_a4c0daa8fdfa9eaab3933694f3080e5e5}\index{infrastructure::Aquarium@{infrastructure::Aquarium}!Instance@{Instance}}
+\index{Instance@{Instance}!infrastructure::Aquarium@{infrastructure::Aquarium}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Aquarium_a4c0daa8fdfa9eaab3933694f3080e5e5} 
+\mbox{\hyperlink{classinfrastructure_1_1Aquarium_a5e5c3902aa6352da2eb900d174df28e4}{Aquarium}} \& infrastructure\+::\+Aquarium\+::\+Instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the singleton instance of the \doxylink{classinfrastructure_1_1Aquarium}{Aquarium}. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the \doxylink{classinfrastructure_1_1Aquarium}{Aquarium} instance. 
+\end{DoxyReturn}
+\Hypertarget{classinfrastructure_1_1Aquarium_ae96f3206ac3ca6488e0247d5b64bf619}\index{infrastructure::Aquarium@{infrastructure::Aquarium}!Open@{Open}}
+\index{Open@{Open}!infrastructure::Aquarium@{infrastructure::Aquarium}}
+\doxysubsubsection{\texorpdfstring{Open()}{Open()}}
+{\footnotesize\ttfamily \label{classinfrastructure_1_1Aquarium_ae96f3206ac3ca6488e0247d5b64bf619} 
+void infrastructure\+::\+Aquarium\+::\+Open (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Opens the aquarium. 
+
+\begin{DoxyNote}{Note}
+This function performs the necessary operations to open the aquarium. 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+infrastructure/\mbox{\hyperlink{aquarium_8h}{aquarium.\+h}}\item 
+infrastructure/aquarium.\+cc\end{DoxyCompactItemize}

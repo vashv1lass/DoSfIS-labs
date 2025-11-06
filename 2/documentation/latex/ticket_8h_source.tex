@@ -1,0 +1,42 @@
+\doxysection{ticket.\+h}
+\hypertarget{ticket_8h_source}{}\label{ticket_8h_source}\index{payment/ticket.h@{payment/ticket.h}}
+\mbox{\hyperlink{ticket_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ PAYMENT\_TICKET\_H\_}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ PAYMENT\_TICKET\_H\_}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacepayment}{payment}}\ \{}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{namespacepayment_a0f55980729c6083f0c9cec72d3a4b69f}{TicketCategory}}\ \{}
+\DoxyCodeLine{00021\ \ \ kBase,\ \ \ \ \ \ }
+\DoxyCodeLine{00022\ \ \ \mbox{\hyperlink{namespacepayment_a0f55980729c6083f0c9cec72d3a4b69faeaf8d10ed21cb232bdd2a26efb6474ea}{kVip}},\ \ \ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \mbox{\hyperlink{namespacepayment_a0f55980729c6083f0c9cec72d3a4b69fa6d9d03bfbaa74c0c0433c8782fb31d2b}{kChildBase}},\ }
+\DoxyCodeLine{00024\ \ \ \mbox{\hyperlink{namespacepayment_a0f55980729c6083f0c9cec72d3a4b69faa5bef21225bac6a7113ecb2f3e490600}{kChildVip}}\ \ \ }
+\DoxyCodeLine{00025\ \};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classpayment_1_1Ticket_aa3a3a70bae84d0500df377033f1cb63e}{Ticket}}\ \{}
+\DoxyCodeLine{00032\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00038\ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classpayment_1_1Ticket_aa3a3a70bae84d0500df377033f1cb63e}{Ticket}}(\mbox{\hyperlink{namespacepayment_a0f55980729c6083f0c9cec72d3a4b69f}{TicketCategory}}\ category);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00044\ \ \ \mbox{\hyperlink{namespacepayment_a0f55980729c6083f0c9cec72d3a4b69f}{TicketCategory}}\ \mbox{\hyperlink{classpayment_1_1Ticket_ae234d155502716624d830f621818bddb}{GetCategory}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00050\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classpayment_1_1Ticket_a32bbff8ecab3bfc445654d40ecad445c}{GetPrice}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00056\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classpayment_1_1Ticket_ab60f3e69f51ba26b2fb5fd50357daa16}{GetID}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00062\ \ \ std::string\ \mbox{\hyperlink{classpayment_1_1Ticket_af05282d68a61df7ce0db02f2d7b9500b}{GetInfo}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00063\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00064\ \ \ \mbox{\hyperlink{namespacepayment_a0f55980729c6083f0c9cec72d3a4b69f}{TicketCategory}}\ category\_;\ \ }
+\DoxyCodeLine{00065\ \ \ \textcolor{keywordtype}{double}\ price\_;\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00066\ \ \ \textcolor{keywordtype}{int}\ id\_;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00067\ \};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \}\ \ \textcolor{comment}{//\ namespace\ payment}}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ PAYMENT\_TICKET\_H\_}}
+
+\end{DoxyCode}

@@ -1,0 +1,41 @@
+\doxysection{payment\+\_\+errors.\+h}
+\hypertarget{payment__errors_8h_source}{}\label{payment__errors_8h_source}\index{utils/exceptions/payment\_errors.h@{utils/exceptions/payment\_errors.h}}
+\mbox{\hyperlink{payment__errors_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ PAYMENT\_ERRORS\_H\_}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ PAYMENT\_ERRORS\_H\_}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{base__exceptions_8h}{utils/exceptions/base\_exceptions.h}}"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceutils}{utils}}\ \{}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceutils_1_1exceptions}{exceptions}}\ \{}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classutils_1_1exceptions_1_1InsufficientFundsError_abb057a9abd57583d8222e648681efece}{InsufficientFundsError}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classutils_1_1exceptions_1_1PaymentError_a9183b76e96c57b552cd7c7189d27efc2}{PaymentError}}\ \{}
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classutils_1_1exceptions_1_1InsufficientFundsError_abb057a9abd57583d8222e648681efece}{InsufficientFundsError}}(std::string\ message);}
+\DoxyCodeLine{00032\ \};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classutils_1_1exceptions_1_1CardVerificationError_a1be453d53e55184a0ffcbfa6278e8af3}{CardVerificationError}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classutils_1_1exceptions_1_1PaymentError_a9183b76e96c57b552cd7c7189d27efc2}{PaymentError}}\ \{}
+\DoxyCodeLine{00039\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00044\ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classutils_1_1exceptions_1_1CardVerificationError_a1be453d53e55184a0ffcbfa6278e8af3}{CardVerificationError}}(std::string\ message);}
+\DoxyCodeLine{00045\ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classutils_1_1exceptions_1_1TransactionAlreadyProcessedError_a15ba89551e0389ae6dc94fdb5e5b6e2e}{TransactionAlreadyProcessedError}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classutils_1_1exceptions_1_1PaymentError_a9183b76e96c57b552cd7c7189d27efc2}{PaymentError}}\ \{}
+\DoxyCodeLine{00052\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00057\ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classutils_1_1exceptions_1_1TransactionAlreadyProcessedError_a15ba89551e0389ae6dc94fdb5e5b6e2e}{TransactionAlreadyProcessedError}}(std::string\ message);}
+\DoxyCodeLine{00058\ \};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00064\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classutils_1_1exceptions_1_1MismatchingPaymentMethodError_a45753866f2f40d1fef35f99208b19957}{MismatchingPaymentMethodError}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classutils_1_1exceptions_1_1PaymentError_a9183b76e96c57b552cd7c7189d27efc2}{PaymentError}}\ \{}
+\DoxyCodeLine{00065\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00070\ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classutils_1_1exceptions_1_1MismatchingPaymentMethodError_a45753866f2f40d1fef35f99208b19957}{MismatchingPaymentMethodError}}(std::string\ message);}
+\DoxyCodeLine{00071\ \};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \}\ \ \textcolor{comment}{//\ namespace\ exceptions}}
+\DoxyCodeLine{00074\ \}\ \ \textcolor{comment}{//\ namespace\ utils}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ PAYMENT\_ERRORS\_H\_}}
+
+\end{DoxyCode}
